@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compilar projeto",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-o",
+                "sorting_project",
+                "main.c",
+                "bubble_sort.c",
+                "insertion_sort.c",
+                "selection_sort.c",
+                "recursive_merge_sort.c",
+                "iterative_merge_sort.c",
+                "quicksort_last_pivot.c",
+                "quicksort_random_pivot.c",
+                "quicksort_median_of_three.c",
+                "heapsort.c"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
