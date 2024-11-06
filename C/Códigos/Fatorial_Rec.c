@@ -1,3 +1,4 @@
+//Lucas Fernandes 10419400
 #include <stdio.h>
 
 int fatorial(int n) {
