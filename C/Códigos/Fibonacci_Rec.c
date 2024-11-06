@@ -1,3 +1,5 @@
+//Lucas Fernandes 10419400
+
 #include <stdio.h>
 #include <time.h>
 
