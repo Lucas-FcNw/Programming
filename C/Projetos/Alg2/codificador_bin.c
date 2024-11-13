@@ -1,203 +1,238 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 
-// Structure to represent a binary image
+#define MAX_LINE_SIZE 1024
+#define PBM_CODE_SIZE 3  // Tamanho do código PBM (P1)
+
 typedef struct {
-    int rows;
-    int cols;
-    int **pixels;
+    int width;
+    int height;
+    int *pixels;
 } Image;
 
-// Function to check uniformity
-int isUniform(Image *img, int startRow, int startCol, int numRows, int numCols) {
-    int firstPixel = img->pixels[startRow][startCol];
+// Função para verificar se um arquivo é um arquivo PBM válido
+bool is_pbm_file(FILE *image_file)
+{
+    char magic_number[PBM_CODE_SIZE];
+    fscanf(image_file, "%2s", magic_number);
+    return strcmp(magic_number, "P1") == 0;
+}
 
-    for (int i = startRow; i < startRow + numRows; i++) {
-        for (int j = startCol; j < startCol + numCols; j++) {
-            if (img->pixels[i][j] != firstPixel) {
-                return 0; // Not uniform
-            }
+// Função para ler uma imagem binária de um arquivo PBM
+Image read_binary_image(const char path[])
+{
+    FILE *image_file = fopen(path, "r");
+
+    if (image_file == NULL)
+    {
+        perror("Erro ao abrir o arquivo");
+        exit(EXIT_FAILURE);
+    }
+
+    Image img;
+    img.width = 0;
+    img.height = 0;
+    img.pixels = NULL;
+
+    if (!is_pbm_file(image_file))
+    {
+        fprintf(stderr, "Formato PBM inválido\n");
+        exit(EXIT_FAILURE);
+    }
+
+    // Ignorar comentários
+    int break_char;
+    while ((break_char = fgetc(image_file)) == '#' || isspace(break_char))
+    {
+        if (break_char == '#')
+        {
+            fscanf(image_file, "%*[^\n]"); // Pular a linha de comentário
+        }
+    }
+    ungetc(break_char, image_file); // Devolver o caractere que encerrou o loop
+
+    // Ler largura e altura do arquivo
+    if (fscanf(image_file, "%d %d", &img.width, &img.height) != 2)
+    {
+        fprintf(stderr, "Erro ao ler largura e altura.\n");
+        exit(EXIT_FAILURE);
+    }
+
+    img.pixels = (int *)malloc(img.width * img.height * sizeof(int));
+
+    // Ler os pixels
+    for (int i = 0; i < img.height; ++i)
+    {
+        for (int j = 0; j < img.width; ++j)
+        {
+            int pixel;
+            fscanf(image_file, "%d", &pixel);
+            img.pixels[i * img.width + j] = pixel;
         }
     }
 
-    return 1; // Uniform
-}
-
-// Function to divide the image and encode recursively
-void divideAndEncode(Image *img, int startRow, int startCol, int numRows, int numCols) {
-    // Uniform image
-    if (isUniform(img, startRow, startCol, numRows, numCols)) {
-        printf("%c", img->pixels[startRow][startCol] ? 'P' : 'B');
-    } else {
-        // Division and encoding of each quadrant
-        printf("X");
-
-        int midRow = startRow + numRows / 2;
-        int midCol = startCol + numCols / 2;
-
-        // Division and encoding of each quadrant
-        divideAndEncode(img, startRow, startCol, midRow - startRow, midCol - startCol);
-        divideAndEncode(img, startRow, midCol, midRow - startRow, startCol + numCols - midCol);
-        divideAndEncode(img, midRow, startCol, startRow + numRows - midRow, midCol - startCol);
-        divideAndEncode(img, midRow, midCol, startRow + numRows - midRow, startCol + numCols - midCol);
-    }
-}
-
-// Function to encode the image
-void encodeImage(Image *img) {
-    divideAndEncode(img, 0, 0, img->rows, img->cols);
-}
-
-// Function to free the memory allocated for the image
-void freeImage(Image *img) {
-    for (int i = 0; i < img->rows; i++) {
-        free(img->pixels[i]);
-    }
-    free(img->pixels);
-    free(img);
-}
-
-// Function for manual input
-Image *manualInput() {
-    int rows, cols;
-
-    printf("Modo Manual: Insira as dimensões (largura altura): ");
-    scanf("%d %d", &cols, &rows);
-
-    Image *img = (Image *)malloc(sizeof(Image));
-    img->rows = rows;
-    img->cols = cols;
-    img->pixels = (int **)malloc(rows * sizeof(int *));
-    for (int i = 0; i < rows; i++) {
-        img->pixels[i] = (int *)malloc(cols * sizeof(int));
-    }
-
-    printf("Insira os pixels (0 para branco, 1 para preto):\n");
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
-            scanf("%d", &img->pixels[i][j]);
-        }
-    }
-
+    fclose(image_file);
     return img;
 }
 
-// Function for file input
-Image *fileInput() {
-    char filename[100];
-    printf("Digite o nome do arquivo PBM: ");
-    scanf("%s", filename);
+// Função para verificar se uma parte da imagem é uniforme
+bool is_uniform(Image image, int start_row, int end_row, int start_col, int end_col)
+{
+    bool uniform = true;
+    int first_pixel = image.pixels[start_row * image.width + start_col];
 
-    FILE *file = fopen(filename, "r");
-    if (!file) {
-        printf("Erro ao abrir o arquivo.\n");
-        return NULL;
-    }
-
-    char magicNumber[3];
-    fscanf(file, "%2s", magicNumber);
-
-    if (magicNumber[0] != 'P' && magicNumber[0] != 'p') {
-        printf("Erro: Formato de arquivo PBM inválido.\n");
-        fclose(file);
-        return NULL;
-    }
-
-    int cols, rows;
-    fscanf(file, "%d %d", &cols, &rows);
-
-    Image *img = (Image *)malloc(sizeof(Image));
-    img->rows = rows;
-    img->cols = cols;
-    img->pixels = (int **)malloc(rows * sizeof(int *));
-    for (int i = 0; i < rows; i++) {
-        img->pixels[i] = (int *)malloc(cols * sizeof(int));
-    }
-
-    // Read pixels from the file
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
-            fscanf(file, "%d", &img->pixels[i][j]);
-        }
-    }
-
-    fclose(file);
-
-    return img;
-}
-
-// Function to display usage instructions
-void displayHelp() {
-    printf("Uso: ImageEncoder [-? | -m | -f ARQ]\n");
-    printf("Codifica imagens binárias dadas em arquivos PBM ou por dados informados manualmente.\n");
-    printf("Argumentos:\n");
-    printf("-?, --help  : apresenta essa orientação na tela.\n");
-    printf("-m, --manual: ativa o modo de entrada manual.\n");
-    printf("-f, --file ARQ: considera a imagem representada no arquivo PBM.\n");
-}
-
-// Function for user interaction and program execution
-void interactiveMenu() {
-    char choice[2]; // Use an array of characters to accept a string
-
-    while (1) {
-        printf("\nSelecione uma opcao:\n");
-        printf("1. Modo Manual\n");
-        printf("2. Modo Arquivo PBM\n");
-        printf("3. Ajuda\n");
-        printf("0. Sair\n");
-
-        printf("Opcao: ");
-
-        // Use %1s to read at most 1 character
-        if (scanf("%1s", choice) != 1) {
-            // Clear the input buffer
-            while (getchar() != '\n');
-            printf("Entrada inválida. ");
-            // Call displayHelp for invalid input
-            displayHelp();
-            continue;
-        }
-
-        // Compare the choice string
-        if (strcmp(choice, "1") == 0 || strcmp(choice, "m") == 0) {
-            // Manual Mode
-            Image *img = manualInput();
-            if (img != NULL) {
-                encodeImage(img);
-                freeImage(img);
+    for (int i = start_row; i <= end_row; ++i)
+    {
+        for (int j = start_col; j <= end_col; ++j)
+        {
+            if (image.pixels[i * image.width + j] != first_pixel)
+            {
+                uniform = false;
+                break;
             }
-        } else if (strcmp(choice, "2") == 0 || strcmp(choice, "f") == 0) {
-            // File Mode
-            Image *img = fileInput();
-            if (img != NULL) {
-                encodeImage(img);
-                freeImage(img);
-            }
-        } else if (strcmp(choice, "3") == 0 || strcmp(choice, "?") == 0) {
-            // Help
-            displayHelp();
-        } else if (strcmp(choice, "0") == 0) {
-            // Exit
-            printf("Saindo do programa.\n");
-            return;
-        } else {
-            // Invalid choice
-            printf("Opcao invalida. ");
-            // Call displayHelp for invalid input
-            displayHelp();
         }
 
-        // Clear the input buffer
-        while (getchar() != '\n');
+        if (!uniform)
+        {
+            break;
+        }
+    }
+
+    return uniform;
+}
+
+// Função recursiva para codificar a imagem
+void encode(Image image, int start_row, int end_row, int start_col, int end_col, char *code)
+{
+    if (start_row > end_row || start_col > end_col)
+    {
+        return; // Caso base: subimagem inválida
+    }
+
+    // Se for uniforme, adicionar o código correspondente
+    if (is_uniform(image, start_row, end_row, start_col, end_col))
+    {
+        int first_pixel = image.pixels[start_row * image.width + start_col];
+        // Realloc só se necessário e garantir espaço suficiente
+        size_t len = strlen(code);
+        code = realloc(code, len + 2);
+        sprintf(code + len, "%c", (first_pixel == 0) ? 'B' : 'P');
+    }
+    else
+    {
+        // Se não for uniforme, adicionar 'X' e dividir a imagem em 4 quadrantes
+        size_t len = strlen(code);
+        code = realloc(code, len + 2);
+        sprintf(code + len, "X");
+
+        int mid_row = (start_row + end_row) / 2;
+        int mid_col = (start_col + end_col) / 2;
+
+        // Chamar a função recursivamente para cada quadrante
+        encode(image, start_row, mid_row, start_col, mid_col, code);     // 1º quadrante
+        encode(image, start_row, mid_row, mid_col + 1, end_col, code);   // 2º quadrante
+        encode(image, mid_row + 1, end_row, start_col, mid_col, code);   // 3º quadrante
+        encode(image, mid_row + 1, end_row, mid_col + 1, end_col, code); // 4º quadrante
     }
 }
 
-// Main function
-int main() {   
-    // Call the interactive menu
-    interactiveMenu();
+// Função para exibir o manual de ajuda
+void help()
+{
+    puts("Uso: ImageEncoder [-? | -m | -f ARQ]");
+    puts("Codifica imagens binárias dadas em arquivos PBM ou por dados informados manualmente.");
+    puts("Argumentos:");
+    puts("-?, --help  : apresenta essa orientação na tela.");
+    puts("-m, --manual: ativa o modo de entrada manual, em que o usuário fornece todos os dados da imagem informando-os através do teclado.");
+    puts("-f, --file: considera a imagem representada no arquivo PBM (Portable bitmap).");
+}
 
+// Função para leitura manual da imagem
+void manual()
+{
+    Image img;
+    img.width = 0;
+    img.height = 0;
+    img.pixels = NULL;
+
+    printf("Insira as dimensões da imagem (largura altura): ");
+    scanf("%d %d", &img.width, &img.height);
+
+    img.pixels = (int *)malloc(img.width * img.height * sizeof(int));
+
+    printf("Insira os pixels da imagem (0 para branco, 1 para preto):\n");
+    for (int i = 0; i < img.height; ++i)
+    {
+        char line[MAX_LINE_SIZE];
+        scanf(" %[^\n]", line); // Adicionando um espaço antes de %[^\n] para consumir o \n no buffer
+
+        char *token = strtok(line, " ");
+        int j = 0;
+
+        while (token != NULL && j < img.width)
+        {
+            img.pixels[i * img.width + j] = atoi(token);
+
+            token = strtok(NULL, " ");
+            j++;
+        }
+    }
+
+    // Codificação da imagem
+    char *code = (char *)malloc(1);  // Começando com um tamanho de 1 byte (para o '\0')
+    code[0] = '\0';
+
+    encode(img, 0, img.height - 1, 0, img.width - 1, code);
+
+    printf("Código gerado: %s\n", code);
+
+    // Liberação de memória
+    free(code);
+    free(img.pixels);
+}
+
+// Função para processar os argumentos de linha de comando
+int main(int argc, char const *argv[])
+{
+    if (argc == 2)
+    {
+        if (strcmp(argv[1], "-?") == 0 || strcmp(argv[1], "--help") == 0)
+        {
+            help();
+            return 0;
+        }
+
+        if (strcmp(argv[1], "-m") == 0 || strcmp(argv[1], "--manual") == 0)
+        {
+            manual();
+            return 0;
+        }
+    }
+
+    if (argc == 3)
+    {
+        if (strcmp(argv[1], "-f") == 0 || strcmp(argv[1], "--file") == 0)
+        {
+            Image img = read_binary_image(argv[2]);
+
+            // Codificação da imagem
+            char *code = (char *)malloc(1);  // Começando com um tamanho de 1 byte
+            code[0] = '\0';
+
+            encode(img, 0, img.height - 1, 0, img.width - 1, code);
+
+            printf("Código gerado: %s\n", code);
+
+            // Liberação de memória
+            free(code);
+            free(img.pixels);
+            return 0;
+        }
+    }
+
+    // Caso não tenha argumentos ou argumentos inválidos
+    help();
     return 0;
 }
