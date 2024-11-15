@@ -430,3 +430,5 @@ int main()
 
     return 0;
 }
+
+//Versão do dia 14/11/2024 as 23:12
