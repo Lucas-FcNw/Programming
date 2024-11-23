@@ -1,3 +1,4 @@
+//Lucas Fernandes 10419400
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -430,5 +431,3 @@ int main()
 
     return 0;
 }
-
-//Versão do dia 14/11/2024 as 23:12
