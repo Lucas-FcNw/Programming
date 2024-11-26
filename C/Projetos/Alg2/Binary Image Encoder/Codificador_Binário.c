@@ -23,6 +23,7 @@ bool is_pbm_file(FILE *image_file);
 Image read_binary_image(const char path[]);
 bool is_uniform(Image image, int start_row, int end_row, int start_col, int end_col);
 void encode(Image image, int start_row, int end_row, int start_col, int end_col, char *code);
+void print_help();
 
 int main() {
     int option;
@@ -53,6 +54,8 @@ int main() {
                 break;
             case 0:
                 printf("Saindo...\n");
+                printf("\nTrabalho feito por Lucas Fernandes 10419400\n\n");
+
                 break;
             default:
                 printf("Opção inválida! Tente novamente.\n");
@@ -63,14 +66,14 @@ int main() {
 }
 
 void help() {
-    puts("Uso: ImageEncoder [-? | -m | -f ARQ]");
-    puts("Codifica imagens binárias dadas em arquivos PBM ou por dados informados manualmente.");
-    puts("Opções do menu:");
-    puts("1 - Apresenta esta ajuda.");
-    puts("2 - Ativa o modo de entrada manual.");
-    puts("3 - Processa um arquivo PBM informado pelo usuário.");
-    puts("4 - Exibe o conteúdo de um arquivo informado pelo usuário.");
-    puts("0 - Encerra o programa.");
+    puts("\n \nCodifica imagens binárias dadas em arquivos PBM ou por dados informados manualmente.");
+    puts("\nOpções do menu:");
+    puts("1 - Ajuda: Apresenta esta ajuda.");
+    puts("2 - Modo manual: Ativa o modo de entrada manual, em que o usuário fornece todos os dados da imagem informando-os através do teclado.");
+    puts("3 - Modo arquivo: Processa um arquivo PBM informado pelo usuário.");
+    puts("4 - Ler arquivo: Exibe o conteúdo de um arquivo informado pelo usuário.");
+    puts("0 - Sair: Encerra o programa.");
+    puts("\n==========================\n");
 }
 
 void manual() {
