@@ -1,6 +1,0 @@
-P2
-# Exemplo 1 do arquivo
-5 3
-1 1 0 1 0
-1 1 0 0 1
-0 0 1 1 1
