@@ -256,4 +256,14 @@ void encode(Image image, int start_row, int end_row, int start_col, int end_col,
         int first_pixel = image.pixels[start_row * image.width + start_col];
         sprintf(code, "%s%c", code, (first_pixel == 0) ? 'B' : 'P');
     } else {
-       
+        strcat(code, "D");
+
+        int mid_row = (start_row + end_row) / 2;
+        int mid_col = (start_col + end_col) / 2;
+
+        encode(image, start_row, mid_row, start_col, mid_col, code);
+        encode(image, start_row, mid_row, mid_col + 1, end_col, code);
+        encode(image, mid_row + 1, end_row, start_col, mid_col, code);
+        encode(image, mid_row + 1, end_row, mid_col + 1, end_col, code);
+    }
+}
