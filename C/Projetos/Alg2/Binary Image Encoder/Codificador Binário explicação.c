@@ -4,13 +4,13 @@
 #include <string.h>
 #include <ctype.h>
 
-inclui bibliotecas padrão necessárias:
+/*inclui bibliotecas padrão necessárias:
 stdio.h: Para entrada e saída.
 stdlib.h: Para alocação dinâmica de memória e controle de execução.
 stdbool.h: Para uso de valores booleanos (true e false).
 string.h: Para manipulação de strings.
 ctype.h: Para verificar caracteres (como espaço em branco).
-
+*/
 
 Estrutura de Dados para Imagem  
 typedef struct {
@@ -21,7 +21,7 @@ typedef struct {
 
 
 
-Declaração de funções
+//Declaração de funções
 
 void help();
 void manual();
@@ -33,7 +33,7 @@ bool is_uniform(Image image, int start_row, int end_row, int start_col, int end_
 void encode(Image image, int start_row, int end_row, int start_col, int end_col, char *code);
 void print_help();
 
-Declara funções para modularizar o programa, permitindo um código mais limpo em geral.
+//Declara funções para modularizar o programa, permitindo um código mais limpo em geral.
 
 
 int main() {
@@ -76,7 +76,7 @@ int main() {
     return 0;
 }
 
-Menu simples de navegação pelo úsuario
+//Menu simples de navegação pelo úsuario
 
 
 
@@ -131,10 +131,10 @@ void manual() {
     free(img.pixels); // Libera a memória alocada.
 }
 
-Essa é a MAIN
+//Essa é a MAIN ^
 
 
-Função FILE uma das mais importantes
+//Função FILE uma das mais importantes
 
 void file() {
     char path[MAX_LINE_SIZE];
@@ -154,7 +154,7 @@ void file() {
     free(img.pixels);
 }
 
-É aqui que é feito a mágica da identificação e abertura e leitura de arquivos no formato PBM
+//É aqui que é feito a mágica da identificação e abertura e leitura de arquivos no formato PBM
 
 Funções Auxiliares
 is_pbm_file: Verifica se o arquivo é um PBM válido.
@@ -163,7 +163,7 @@ is_uniform: Verifica se uma submatriz de pixels é uniforme.
 encode: Gera o código de compressão recursivamente.
 
 
-Verificação da matriz e o passo a passo para a codificação
+//Verificação da matriz e o passo a passo para a codificação
 
  (is_uniform(image, start_row, end_row, start_col, end_col)) {
         int first_pixel = image.pixels[start_row * image.width + start_col];
