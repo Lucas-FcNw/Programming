@@ -1,7 +1,40 @@
 // 2. Fundamentos de Programação Orientada a Objetos (POO)
 
 // Conceitos de POO:
+// Encapsulamento: É o princípio de esconder os detalhes internos de um objeto e expor apenas o que é necessário.
+// Exemplo:
+class Retangulo {
+    private double largura; // Atributo privado para encapsulamento
+    private double altura;
 
+    // Construtor para inicializar os atributos
+    public Retangulo(double largura, double altura) {
+        this.largura = largura;
+        this.altura = altura;
+    }
+
+    // Método público para calcular a área do retângulo
+    public double calcularArea() {
+        return largura * altura;
+    }
+
+    // Métodos públicos para acessar e modificar os atributos privados
+    public double getLargura() {
+        return largura;
+    }
+
+    public void setLargura(double largura) {
+        this.largura = largura;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+}
 /*Abstração: É o processo de ocultar os detalhes de implementação e mostrar apenas a funcionalidade essencial de um objeto.
  Exemplo: */
 class Pessoa {
@@ -63,7 +96,46 @@ class Pilha {
 // Exercícios POO/Java aplicados a TAD Pilha sequencial:
 // 1. Implemente uma pilha que armazene strings.
 // 2. Adicione um método para visualizar o elemento no topo da pilha sem removê-lo.
+// Classe PilhaStrings para armazenar strings
+class PilhaStrings {
+    private String[] elementos; // Array para armazenar os elementos da pilha
+    private int topo; // Índice do topo da pilha
 
+    // Construtor para inicializar a pilha com uma capacidade específica
+    public PilhaStrings(int capacidade) {
+        elementos = new String[capacidade]; // Cria o array com a capacidade fornecida
+        topo = -1; // Inicializa o topo como -1, indicando que a pilha está vazia
+    }
+
+    // Método para adicionar um elemento à pilha
+    public void push(String elemento) {
+        if (topo == elementos.length - 1) { // Verifica se a pilha está cheia
+            throw new StackOverflowError("Pilha cheia"); // Lança uma exceção se a pilha estiver cheia
+        }
+        elementos[++topo] = elemento; // Incrementa o topo e adiciona o elemento
+    }
+
+    // Método para remover e retornar o elemento no topo da pilha
+    public String pop() {
+        if (isEmpty()) { // Verifica se a pilha está vazia
+            throw new IllegalStateException("Pilha vazia"); // Lança uma exceção se a pilha estiver vazia
+        }
+        return elementos[topo--]; // Retorna o elemento no topo e decrementa o índice do topo
+    }
+
+    // Método para visualizar o elemento no topo da pilha sem removê-lo
+    public String peek() {
+        if (isEmpty()) { // Verifica se a pilha está vazia
+            throw new IllegalStateException("Pilha vazia"); // Lança uma exceção se a pilha estiver vazia
+        }
+        return elementos[topo]; // Retorna o elemento no topo sem removê-lo
+    }
+
+    // Método para verificar se a pilha está vazia
+    public boolean isEmpty() {
+        return topo == -1; // Retorna true se o topo for -1, indicando que a pilha está vazia
+    }
+}
 // TAD Pilha sequencial genérica:
 class PilhaGenerica<T> {
     private T[] elementos;
