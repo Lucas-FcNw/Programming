@@ -11,7 +11,7 @@ package rpn.model;
 
 // ISSO É o RPN, Notação Polonesa Inversa  ' a b + '
 public class Conversor {
-    // Ordem de operação matemática, adnedo que o '1' é 'especial'
+    // Ordem de operação matemática, adendo que o '1' é 'especial'
     private static final char[] OPERADORES = {'^', '*', '/', '+', '-', '('};
     private static final int[] PREFERENCIAS = {4, 3, 3, 2, 2, 1};
 
