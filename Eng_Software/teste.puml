@@ -1,0 +1,71 @@
+@startuml
+skinparam rectangle {
+  BackgroundColor #F4F7F9
+  BorderColor #777777
+  RoundCorner 15
+}
+
+skinparam note {
+  BackgroundColor #FFFBCC
+  BorderColor #999999
+}
+
+start
+
+: Civil inicia registro;
+
+rectangle "Criação" {
+  :UC1 - Registrar problema;
+  :UC3 - Informa local;
+  :UC2 - Anexa fotos (opcional);
+  :Submete formulário;
+}
+
+:Sistema registra ocorrência;
+
+:Status -> Pendente;
+
+if (Civil cancela?) then (Sim)
+  -> Cancelada
+else (Não)
+  :Sistema valida dados;
+  :Status -> Em Análise;
+endif
+
+:Sistema gera ordem de serviço;
+
+if (Sem prestadores disponíveis?) then (Sim)
+  -> Recusada
+else (Não)
+  :Status -> Atribuída;
+endif
+
+if (Prestador aceita?) then (Sim)
+  :Status -> Em Andamento;
+  :UC7 - Prestador atualiza status;
+  :Prestador finaliza serviço;
+  :Status -> Concluída;
+else (Não)
+  -> Recusada;
+endif
+
+if (Civil reporta problema persistente?) then (Sim)
+  -> Reaberta;
+  :Sistema reavalia;
+  -> Em Análise;
+else (Não)
+  :UC5 - Civil avalia serviço;
+  :Status -> Avaliada;
+endif
+
+stop
+
+note right
+UC1: Registrar problema  
+UC2: Anexar fotos (opcional)  
+UC3: Informar local  
+UC5: Avaliar serviço  
+UC7: Atualizar status  
+end note
+
+@enduml

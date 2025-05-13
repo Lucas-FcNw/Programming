@@ -12,7 +12,7 @@
 package rpn.service;
 
 import java.util.Scanner;
-import rpn.model.ConversorInfixoParaPosfixo;
+import rpn.model.Conversor;
 
 // """GRUB""" da calculadora
 public class REPL {
@@ -93,7 +93,7 @@ public class REPL {
 
     // Converte e processa as infixas
     private void processarExpressao(String entrada) {
-        String posfixa = ConversorInfixoParaPosfixo.converter(entrada);
+        String posfixa = Conversor.converter(entrada);
         double resultado = avaliador.avaliar(posfixa);
         System.out.println(resultado);
     }
