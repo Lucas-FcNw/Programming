@@ -1,0 +1,19 @@
+# Executáveis
+coordinator
+worker
+test_hash
+
+# Arquivos de resultado
+password_found.txt
+
+# Object files
+*.o
+SO/Quebra_Paralelos/src/*.o
+
+# Arquivos de backup
+*~
+*.bak
+
+# Diretórios
+build/
+dist/
