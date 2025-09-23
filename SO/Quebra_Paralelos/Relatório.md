@@ -1,4 +1,4 @@
-# Mini-Projeto 1: Quebra-Senhas Paralelo MD5
+# "Mini"-Projeto 1: Quebra-Senhas Paralelo MD5
 **Relatório Técnico de Entrega**
 
 ---
