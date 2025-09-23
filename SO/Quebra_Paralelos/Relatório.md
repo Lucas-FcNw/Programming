@@ -90,29 +90,9 @@ O coordinator é o processo principal responsável por gerenciar todo o sistema 
 #include <time.h>
 #include "hash_utils.h"
 
-/**
- * PROCESSO COORDENADOR - Mini-Projeto 1: Quebra de Senhas Paralelo
- * 
- * Este programa coordena múltiplos workers para quebrar senhas MD5 em paralelo.
- * O MD5 JÁ ESTÁ IMPLEMENTADO - você deve focar na paralelização (fork/exec/wait).
- * 
- * Uso: ./coordinator <hash_md5> <tamanho> <charset> <num_workers>
- * 
- * Exemplo: ./coordinator "900150983cd24fb0d6963f7d28e17f72" 3 "abc" 4
- * 
- * SEU TRABALHO: Implementar os TODOs marcados abaixo
- */
-
 #define MAX_WORKERS 16
 #define RESULT_FILE "password_found.txt"
 
-/**
- * Calcula o tamanho total do espaço de busca
- * 
- * @param charset_len Tamanho do conjunto de caracteres
- * @param password_len Comprimento da senha
- * @return Número total de combinações possíveis
- */
 long long calculate_search_space(int charset_len, int password_len) {
     long long total = 1;
     for (int i = 0; i < password_len; i++) {
@@ -121,16 +101,6 @@ long long calculate_search_space(int charset_len, int password_len) {
     return total;
 }
 
-/**
- * Converte um índice numérico para uma senha
- * Usado para definir os limites de cada worker
- * 
- * @param index Índice numérico da senha
- * @param charset Conjunto de caracteres
- * @param charset_len Tamanho do conjunto
- * @param password_len Comprimento da senha
- * @param output Buffer para armazenar a senha gerada
- */
 void index_to_password(long long index, const char *charset, int charset_len, int password_len, char *output) {
     for (int i = password_len - 1; i >= 0; i--) {
         output[i] = charset[index % charset_len];
@@ -139,106 +109,72 @@ void index_to_password(long long index, const char *charset, int charset_len, in
     output[password_len] = '\0';
 }
 
-/**
- * Função principal do coordenador
- */
 int main(int argc, char *argv[]) {
 
-    // TODO 1: Validar argumentos de entrada
-    // Verificar se argc == 5 (programa + 4 argumentos)
-    // Se não, imprimir mensagem de uso e sair com código 1
     if (argc != 5){
         fprintf(stderr,"Uso: %s <hash_md5> <tamanho> <charset> <num_workers>\n",argv[0]);
         return 1;
     }
     
-    // Parsing dos argumentos (após validação)
     const char *target_hash = argv[1];
     int password_len = atoi(argv[2]);
     const char *charset = argv[3];
     int num_workers = atoi(argv[4]);
     int charset_len = strlen(charset);
     
-    // TODO: Adicionar validações dos parâmetros
-    // - password_len deve estar entre 1 e 10
     if (password_len <1 || password_len > 10){
         printf("Erro: senha deve ter tamanho entre 1 e 10\n");
         return 1;
     }
-
-    // - num_workers deve estar entre 1 e MAX_WORKERS
     if (num_workers < 1 || num_workers > MAX_WORKERS){
         printf("Erro: número de workers deve estar entre 1 e %d\n", MAX_WORKERS);
         return 1;
     }
-
-    // - charset não pode ser vazio
     if (charset_len <= 0){
         printf("Erro: número de caracteres deve ser maior que 0\n");
         return 1;
     }
-    
     printf("=== Mini-Projeto 1: Quebra de Senhas Paralelo ===\n");
     printf("Hash MD5 alvo: %s\n", target_hash);
     printf("Tamanho da senha: %d\n", password_len);
     printf("Charset: %s (tamanho: %d)\n", charset, charset_len);
     printf("Número de workers: %d\n", num_workers);
-    
-    // Calcular espaço de busca total
+
     long long total_space = calculate_search_space(charset_len, password_len);
     printf("Espaço de busca total: %lld combinações\n\n", total_space);
     
-    // Remover arquivo de resultado anterior se existir
     unlink(RESULT_FILE);
     
-    // Registrar tempo de início
     time_t start_time = time(NULL);
     
-    // TODO 2: Dividir o espaço de busca entre os workers
-    // Calcular quantas senhas cada worker deve verificar
-    // DICA: Use divisão inteira e distribua o resto entre os primeiros workers
-    //long long passwords_per_worker = total_space/ num_workers;
-    //long long remaining = total_space % num_workers;
-    
-    // Arrays para armazenar PIDs dos workers
     pid_t workers[MAX_WORKERS];
     
-    // TODO 3: Criar os processos workers usando fork()
     printf("Iniciando workers...\n");
     
-    // IMPLEMENTE AQUI: Loop para criar workers
     for (int i = 0; i < num_workers; i++) {
-        // TODO: Calcular intervalo de senhas para este worker
         long long primeiro_num = i * (total_space / num_workers);
         long long ultimo_num   = (i == num_workers - 1) ? total_space - 1 : (primeiro_num + (total_space / num_workers) - 1);
 
-        // TODO: Converter indices para senhas de inicio e fim
         char primeira_senha[11], ultima_senha[11];
         index_to_password(primeiro_num, charset, charset_len, password_len, primeira_senha);
         index_to_password(ultimo_num,   charset, charset_len, password_len, ultima_senha);
 
-        // TODO 4: Usar fork() para criar processo pid
         pid_t pid = fork();
 
         if (pid < 0) {
             fprintf(stderr, "Erro ao criar worker %d\n", i);
             continue;
         }
-
-        
-        // TODO 6: No processo pid: usar execl() para executar worker
-        if (pid == 0) {
+            if (pid == 0) {
             char id_worker[10], tam_senha[10];
             sprintf(id_worker, "%d", i);
             sprintf(tam_senha, "%d", password_len);
             
             execl("./worker", "worker", target_hash, primeira_senha, ultima_senha, charset, tam_senha, id_worker, (char *)NULL);
             
-            // TODO 7: Tratar erros de fork() e execl()
             perror("Erro no execl");
             exit(1);
         }
-        // TODO 5: No processo pai: armazenar PID
         else {
             workers [i] = pid;
         }
@@ -247,16 +183,10 @@ int main(int argc, char *argv[]) {
     
     printf("\nTodos os workers foram iniciados. Aguardando conclusão...\n");
     
-    // TODO 8: Aguardar todos os workers terminarem usando wait()
-    // IMPORTANTE: O pai deve aguardar TODOS os filhos para evitar zumbis
-    
-    // IMPLEMENTE AQUI:
-    // - Loop para aguardar cada worker terminar
     for (int i = 0; i < num_workers; i++) {
         int status;
         pid_t terminated_pid = waitpid(workers[i], &status, 0);
 
-        // - Identificar qual worker terminou
         if (terminated_pid > 0) {
             if (WIFEXITED(status) && WEXITSTATUS(status) == 0) {
                 printf("Worker (PID %d) terminou normalmente.\n", terminated_pid);
@@ -266,23 +196,16 @@ int main(int argc, char *argv[]) {
         }
     }
     
-    // Registrar tempo de fim
     time_t end_time = time(NULL);
     double elapsed_time = difftime(end_time, start_time);
     
     printf("\n=== Resultado ===\n");
-    
-    // TODO 9: Verificar se algum worker encontrou a senha
-    // Ler o arquivo password_found.txt se existir
-    
-    // IMPLEMENTE AQUI:
+
     FILE *fp = fopen(RESULT_FILE, "r");
 
-    // - Ler conteúdo do arquivo
     if (fp) {
         char line[256];
         if (fgets(line, sizeof(line), fp) != NULL) {
-            // - Fazer parse do formato "worker_id:password"
             char *separador = strchr(line, ':');
             if (separador) {
                 *separador = '\0';
@@ -290,10 +213,7 @@ int main(int argc, char *argv[]) {
                 char *pwd = separador + 1;
 
                 char hash_out[33] = {0};
-                // - Verificar o hash usando md5_string()
                 md5_string(pwd, hash_out);
-
-                // - Exibir resultado encontrado
                 printf("Worker %s encontrou senha \"%s\".\n", id_str, pwd);
                 }
     }
@@ -302,14 +222,13 @@ int main(int argc, char *argv[]) {
     else {
     printf("Nenhum worker reportou senha (arquivo não existe).\n");
     }
-    
-    // Estatísticas finais (opcional)
-    // TODO: Calcular e exibir estatísticas de performance
+ 
     if (elapsed_time > 0) {
         long long passwords_per_second = total_space / elapsed_time;
         printf("Tempo total de execução: %.2f segundos\n", elapsed_time);
         printf("Taxa média de processamento: %lld senhas/segundo\n", passwords_per_second);
-    } else {
+    }
+      else {
         printf("Tempo total de execução: < 1 segundo\n");
     }
     
@@ -355,96 +274,38 @@ O worker realiza a busca por força bruta em um subconjunto do espaço de senhas
 #include <time.h>
 #include "hash_utils.h"
 
-/**
- * PROCESSO TRABALHADOR - Mini-Projeto 1: Quebra de Senhas Paralelo
- * 
- * Este programa verifica um subconjunto do espaço de senhas, usando a biblioteca
- * MD5 FORNECIDA para calcular hashes e comparar com o hash alvo.
- * 
- * Uso: ./worker <hash_alvo> <senha_inicial> <senha_final> <charset> <tamanho> <worker_id>
- * 
- * EXECUTADO AUTOMATICAMENTE pelo coordinator através de fork() + execl()
- * SEU TRABALHO: Implementar os TODOs de busca e comunicação
- */
-
 #define RESULT_FILE "password_found.txt"
-#define PROGRESS_INTERVAL 100000  // Reportar progresso a cada N senhas
+#define PROGRESS_INTERVAL 100000  
 
-/**
- * Incrementa uma senha para a próxima na ordem lexicográfica (aaa -> aab -> aac...)
- * 
- * @param password Senha atual (será modificada)
- * @param charset Conjunto de caracteres permitidos
- * @param charset_len Tamanho do conjunto
- * @param password_len Comprimento da senha
- * @return 1 se incrementou com sucesso, 0 se chegou ao limite (overflow)
- */
 int increment_password(char *password, const char *charset, int charset_len, int password_len) {
-    
-    // TODO 1: Implementar o algoritmo de incremento de senha
-    // OBJETIVO: Incrementar senha como um contador (ex: aaa -> aab -> aac -> aad...)
-    // DICA: Começar do último caractere, como somar 1 em um número
-    // DICA: Se um caractere "estoura", volta ao primeiro e incrementa o caracter a esquerda (aay -> aaz -> aba)
-    
-    // IMPLEMENTE AQUI:
+ 
     for (int pos = password_len - 1; pos >= 0; pos--) {
         int idx = -1;
 
-        // procura manual do caractere no charset
         for (int j = 0; j < charset_len; j++) {
             if (password[pos] == charset[j]) {
                 idx = j;
                 break;
             }
         }
-
         if (idx == -1) {
-            // caractere inválido na senha
             return 0;
         }
-
         if (idx + 1 < charset_len) {
-            // incrementa e finaliza
             password[pos] = charset[idx + 1];
             return 1;
         }
-
-        // se chegou no fim, volta pro primeiro e continua o "vai-um"
         password[pos] = charset[0];
     }
-
-    // se todos voltaram pro começo, não tem mais incremento possível
     return 0;
 }
-
-/**
- * Compara duas senhas lexicograficamente
- * 
- * @return -1 se a < b, 0 se a == b, 1 se a > b
- */
 int password_compare(const char *a, const char *b) {
     return strcmp(a, b);
 }
-
-/**
- * Verifica se o arquivo de resultado já existe
- * Usado para parada antecipada se outro worker já encontrou a senha
- */
 int check_result_exists() {
     return access(RESULT_FILE, F_OK) == 0;
 }
-
-/**
- * Salva a senha encontrada no arquivo de resultado
- * Usa O_CREAT | O_EXCL para garantir escrita atômica (apenas um worker escreve)
- */
 void save_result(int worker_id, const char *password) {
-    // TODO 2: Implementar gravação atômica do resultado
-    // OBJETIVO: Garantir que apenas UM worker escreva no arquivo
-    // DICA: Use O_CREAT | O_EXCL - falha se arquivo já existe
-    // FORMATO DO ARQUIVO: "worker_id:password\n"
-    
-    // IMPLEMENTE AQUI:
         int fd = open(RESULT_FILE, O_CREAT | O_EXCL | O_WRONLY, 0644);
         if (fd >= 0) {
             char buffer[256];
@@ -453,23 +314,13 @@ void save_result(int worker_id, const char *password) {
             close(fd);
             printf("[Worker %d] Resultado salvo!\n", worker_id);
         }
-
-    // - Tentar abrir arquivo com O_CREAT | O_EXCL | O_WRONLY
-    // - Se sucesso: escrever resultado e fechar
-    // - Se falhou: outro worker já encontrou
 }
-
-/**
- * Função principal do worker
- */
 int main(int argc, char *argv[]) {   
     // Validar argumentos
     if (argc != 7) {
         fprintf(stderr, "Uso interno: %s <hash> <start> <end> <charset> <len> <id>\n", argv[0]);
         return 1;
     }
-    
-    // Parse dos argumentos
     const char *target_hash = argv[1];
     char *start_password = argv[2];
     const char *end_password = argv[3];
@@ -480,22 +331,15 @@ int main(int argc, char *argv[]) {
     
     printf("[Worker %d] Iniciado: %s até %s\n", worker_id, start_password, end_password);
     
-    // Buffer para a senha atual
     char current_password[11];
     strcpy(current_password, start_password);
     
-    // Buffer para o hash calculado
     char computed_hash[33];
     
-    // Contadores para estatísticas
     long long passwords_checked = 0;
     time_t start_time = time(NULL);
-    //time_t last_progress_time = start_time;
     
-    // Loop principal de verificação
     while (1) {
-        // TODO 3: Verificar periodicamente se outro worker já encontrou a senha
-        // DICA: A cada PROGRESS_INTERVAL senhas, verificar se arquivo resultado existe
         if (passwords_checked % PROGRESS_INTERVAL == 0) {
             if (check_result_exists()) {
                 printf("[Worker %d] Resultado já encontrado.\n", worker_id);
@@ -508,36 +352,21 @@ int main(int argc, char *argv[]) {
                 exit(0); 
         }
     }
-
-        
-        // TODO 4: Calcular o hash MD5 da senha atual
-        // IMPORTANTE: Use a biblioteca MD5 FORNECIDA - md5_string(senha, hash_buffer)
         md5_string(current_password, computed_hash);
         
-        // TODO 5: Comparar com o hash alvo
-        // Se encontrou: salvar resultado e terminar
         if (strcmp(computed_hash, target_hash) == 0) {
             printf("[Worker %d] SENHA ENCONTRADA: %s\n", worker_id, current_password);
             save_result(worker_id, current_password);
             break;
         }
-        
-        // TODO 6: Incrementar para a próxima senha
-        // DICA: Use a função increment_password implementada acima
         if (!increment_password(current_password, charset, charset_len, password_len)) {
             break; 
         }
-        
-        // TODO: Verificar se chegou ao fim do intervalo
         if (password_compare(current_password, end_password) > 0) {
             break;
-        }
-        
-        
+        }   
         passwords_checked++;
     }
-    
-    // Estatísticas finais
     time_t end_time = time(NULL);
     double total_time = difftime(end_time, start_time);
     
@@ -577,9 +406,6 @@ Implementação completa do algoritmo MD5 conforme RFC 1321.
 
 ```c
 #include "hash_utils.h"
-
-// Implementação MD5 de domínio público
-// Baseada na RFC 1321
 
 typedef struct {
     uint32_t state[4];
@@ -637,7 +463,6 @@ static uint8_t PADDING[64] = {
     (a) = ROTATE_LEFT ((a), (s)); \
     (a) += (b); \
 }
-
 static void MD5Transform(uint32_t state[4], const uint8_t block[64]);
 static void Encode(uint8_t *output, const uint32_t *input, size_t len);
 static void Decode(uint32_t *output, const uint8_t *input, size_t len);
@@ -649,7 +474,6 @@ static void MD5Init(MD5_CTX *context) {
     context->state[2] = 0x98badcfe;
     context->state[3] = 0x10325476;
 }
-
 static void MD5Update(MD5_CTX *context, const uint8_t *input, size_t inputLen) {
     size_t i, index, partLen;
 
@@ -672,10 +496,8 @@ static void MD5Update(MD5_CTX *context, const uint8_t *input, size_t inputLen) {
     } else {
         i = 0;
     }
-
     memcpy(&context->buffer[index], &input[i], inputLen - i);
 }
-
 static void MD5Final(uint8_t digest[MD5_DIGEST_LENGTH], MD5_CTX *context) {
     uint8_t bits[8];
     size_t index, padLen;
@@ -692,7 +514,6 @@ static void MD5Final(uint8_t digest[MD5_DIGEST_LENGTH], MD5_CTX *context) {
 
     memset(context, 0, sizeof(*context));
 }
-
 static void MD5Transform(uint32_t state[4], const uint8_t block[64]) {
     uint32_t a = state[0], b = state[1], c = state[2], d = state[3], x[16];
 
@@ -773,7 +594,6 @@ static void MD5Transform(uint32_t state[4], const uint8_t block[64]) {
 
     memset(x, 0, sizeof(x));
 }
-
 static void Encode(uint8_t *output, const uint32_t *input, size_t len) {
     size_t i, j;
 
@@ -784,7 +604,6 @@ static void Encode(uint8_t *output, const uint32_t *input, size_t len) {
         output[j+3] = (uint8_t)((input[i] >> 24) & 0xff);
     }
 }
-
 static void Decode(uint32_t *output, const uint8_t *input, size_t len) {
     size_t i, j;
 
@@ -792,29 +611,21 @@ static void Decode(uint32_t *output, const uint8_t *input, size_t len) {
         output[i] = ((uint32_t)input[j]) | (((uint32_t)input[j+1]) << 8) |
                     (((uint32_t)input[j+2]) << 16) | (((uint32_t)input[j+3]) << 24);
 }
-
-/**
- * Função pública para calcular MD5 de uma string
- */
 void md5_string(const char *input, char output[33]) {
     MD5_CTX ctx;
     uint8_t digest[MD5_DIGEST_LENGTH];
     int i;
     
-    // Verificação de segurança
     if (input == NULL || output == NULL) {
         if (output != NULL) {
             output[0] = '\0';
         }
         return;
     }
-    
-    // Calcula o hash MD5
     MD5Init(&ctx);
     MD5Update(&ctx, (const uint8_t*)input, strlen(input));
     MD5Final(digest, &ctx);
     
-    // Converte para string hexadecimal
     for (i = 0; i < MD5_DIGEST_LENGTH; i++) {
         sprintf(output + (i * 2), "%02x", digest[i]);
     }
@@ -849,17 +660,6 @@ void md5_string(const char *input, char output[33]) {
 
 #define MD5_DIGEST_LENGTH 16
 
-/**
- * Computa o hash MD5 de uma string de entrada
- * 
- * @param input String de entrada para calcular o hash
- * @param output Buffer de saída com pelo menos 33 bytes (32 caracteres hex + '\0')
- * 
- * Exemplo de uso:
- *   char hash[33];
- *   md5_string("senha123", hash);
- *   printf("MD5: %s\n", hash);  // Imprime: 482c811da5d5b4bc6d497ffa98491e38
- */
 void md5_string(const char *input, char output[33]);
 
 #endif // HASH_UTILS_H
@@ -874,21 +674,12 @@ void md5_string(const char *input, char output[33]);
 #include <string.h>
 #include "hash_utils.h"
 
-/**
- * Programa de teste para verificar a implementação MD5
- * 
- * Uso:
- *   ./test_hash           - Executa testes padrão
- *   ./test_hash "string"  - Calcula MD5 de uma string específica
- */
-
 typedef struct {
     const char *input;
     const char *expected_hash;
 } TestCase;
 
 int main(int argc, char *argv[]) {
-    // Se argumentos fornecidos, calcula hash da string
     if (argc > 1) {
         char hash[33];
         md5_string(argv[1], hash);
@@ -897,7 +688,6 @@ int main(int argc, char *argv[]) {
         return 0;
     }
     
-    // Casos de teste conhecidos
     TestCase tests[] = {
         {"", "d41d8cd98f00b204e9800998ecf8427e"},
         {"a", "0cc175b9c0f1b6a831c399e269772661"},
