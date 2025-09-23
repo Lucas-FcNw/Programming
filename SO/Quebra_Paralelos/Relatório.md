@@ -19,7 +19,7 @@
 
 ---
 
-## 1. Resumo Executivo
+## 1. Resumo 
 
 Este projeto implementa um sistema paralelo de quebra de senhas MD5 utilizando programação de sistemas Unix. O objetivo é demonstrar conceitos fundamentais de paralelização através das system calls `fork()`, `exec()` e `wait()`, implementando uma arquitetura Master-Worker onde um processo coordenador gerencia múltiplos processos trabalhadores que realizam busca por força bruta em paralelo.
 
