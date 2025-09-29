@@ -1,16 +1,36 @@
+# Compilador a ser usado
+CC = gcc
 
-CC=gcc
-CFLAGS=-Wall -Wno-unused-result -g -Og
-INCLUDE=-Iinclude
+# Flags de compilação: -Wall (todos os warnings), -g (para debug)
+# Adicionamos o caminho para a pasta "include" aqui
+CFLAGS = -Wall -g -Iinclude
 
-SRC=src/compilador.c src/lexer.c src/parser.c src/tokens.c
-OBJ=$(SRC:.c=.o)
+# Nome do executável final
+TARGET = compilador
 
-compilador: $(OBJ)
-	$(CC) $(CFLAGS) -o $@ $(OBJ)
+# Diretórios
+SRC_DIR = src
+# É uma boa prática colocar os arquivos objeto (.o) em sua própria pasta
+OBJ_DIR = obj
 
-%.o: %.c
-	$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
+# Encontra automaticamente todos os arquivos .c na pasta src
+SOURCES = $(wildcard $(SRC_DIR)/*.c)
 
+# Gera os nomes dos arquivos objeto, colocando-os na pasta obj
+OBJECTS = $(SOURCES:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
+
+# A regra principal (default), que é chamada quando você digita "make"
+all: $(TARGET)
+
+# Regra para "linkar" o executável final a partir dos arquivos objeto
+$(TARGET): $(OBJECTS)
+	$(CC) $(CFLAGS) -o $(TARGET) $(OBJECTS)
+
+# Regra para compilar um arquivo .c da pasta src para um arquivo .o na pasta obj
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
+	@mkdir -p $(OBJ_DIR)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Regra para limpar o projeto (apagar executável e arquivos objeto)
 clean:
-	rm -f src/*.o compilador
+	rm -rf $(OBJ_DIR) $(TARGET)
