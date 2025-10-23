@@ -1,10 +1,16 @@
-# ============================================================================
+ # ============================================================================
 # MANUAL COMPLETO DE PYTHON - DO BÁSICO AO AVANÇADO
 # ============================================================================
 
 # ============================================================================
 # 1. CONCEITOS BÁSICOS
 # ============================================================================
+# ! 
+# *
+# *
+# ?
+# TODO:
+
 
 # 1.1 Variáveis e Tipos de Dados
 # --------------------------------
@@ -78,7 +84,7 @@ print(palavra[0])  # P (primeiro caractere)
 print(palavra[-1])  # n (último caractere)
 print(palavra[0:3])  # Pyt (do índice 0 ao 2)
 print(palavra[::2])  # Pto (a cada 2 caracteres)
-print(palavra[::-1])  # nohtyP (inverte a string)
+print(palavra[::-1])  # noht (inverte a string)
 
 # ============================================================================
 # 2. ESTRUTURAS DE DADOS
@@ -178,7 +184,7 @@ diferenca_simetrica = a ^ b  # {1, 2, 5, 6}
 
 # 3.1 Condicionais (if, elif, else)
 # --------------------------------
-
+# * O if é um avaliador, se no if a condição for verdade ele executa o que vem depois do :
 idade = 18
 
 if idade < 18:
