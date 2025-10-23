@@ -1,82 +1,117 @@
- # ============================================================================
-# MANUAL COMPLETO DE PYTHON - DO BÁSICO AO AVANÇADO
-# ============================================================================
 
-# ============================================================================
-# 1. CONCEITOS BÁSICOS
-# ============================================================================
-# ! 
-# *
+# !
 # *
 # ?
 # TODO:
 
+''' Atalhos úteis:
+Selecionar linha inteira:
+Ctrl + L
 
-# 1.1 Variáveis e Tipos de Dados
+Clonar linha para baixo:
+Shift + Alt + ↓
+
+Clonar linha para cima:
+Shift + Alt + ↑
+
+Mover linha para baixo:
+Alt + ↓
+
+Mover linha para cima:
+Alt + ↑
+    
+Apagar linha inteira:
+Ctrl + Shift + K
+
+Abrir terminal embutido:
+Ctrl + ` (crase)
+
+Selecionar todas as ocorrências da palavra:
+Ctrl + F2
+
+Ir para a linha:
+Ctrl + G
+
+Comentar/descomentar linha:
+Ctrl + /
+'''
+
+
+# ============================================================================
+# ? M     ANUAL COMPLETO DE PYTHON - DO BÁSICO AO AVANÇADO
+# ============================================================================
+
+# ============================================================================
+#! 1. CONCEITOS BÁSICOS
+# ============================================================================
+
+
+
+#! 1.1 Variáveis e Tipos de Dados
 # --------------------------------
 
-# Variáveis não precisam de declaração de tipo
-nome = "Python"  # String
-idade = 30  # Integer
-altura = 1.75  # Float
-ativo = True  # Boolean
-nada = None  # NoneType
+#! Variáveis não precisam de declaração de tipo
+nome = "Python"  #! String
+idade = 30  #! Integer
+altura = 1.75  #! Float
+ativo = True  #! Boolean
+nada = None  #! NoneType
 
-# Verificar tipo de variável
+#! Verificar tipo de variável
 print(type(nome))  # <class 'str'>
 
-# 1.2 Operadores
+# * 1.2 Operadores
 # --------------------------------
 
-# Operadores Aritméticos
-soma = 10 + 5  # Adição
-subtracao = 10 - 5  # Subtração
-multiplicacao = 10 * 5  # Multiplicação
-divisao = 10 / 5  # Divisão (retorna float)
-divisao_inteira = 10 // 3  # Divisão inteira
-resto = 10 % 3  # Módulo (resto da divisão)
-potencia = 2 ** 3  # Exponenciação
+#* Operadores Aritméticos
+soma = 10 + 5  #* Adição
+subtracao = 10 - 5  #* Subtração
+multiplicacao = 10 * 5  #* Multiplicação
+divisao = 10 / 5  #* Divisão (retorna float)
+divisao_inteira = 10 // 3  #* Divisão inteira
+resto = 10 % 3  #* Módulo (resto da divisão)
+potencia = 2 ** 3  #* Exponenciação
 
-# Operadores de Comparação
-igual = (5 == 5)  # True
-diferente = (5 != 3)  # True
-maior = (5 > 3)  # True
-menor = (3 < 5)  # True
-maior_igual = (5 >= 5)  # True
-menor_igual = (3 <= 5)  # True
+#* Operadores de Comparação
+igual = (5 == 5)  #* True
+diferente = (5 != 3)  #* True
+maior = (5 > 3)  # *True
+menor = (3 < 5)  #* True
+maior_igual = (5 >= 5)  #* True
+menor_igual = (3 <= 5)  #* True
 
-# Operadores Lógicos
-e_logico = True and False  # False
-ou_logico = True or False  # True
-negacao = not True  # False
+#* Operadores Lógicos
+e_logico = True and False  #* False
+ou_logico = True or False  #* True
+negacao = not True  #* False
 
-# 1.3 Strings
+#! 1.3 Strings
 # --------------------------------
 
 texto = "Python é incrível!"
 
-# Concatenação
+#!  Concatenação
 saudacao = "Olá" + " " + "Mundo"
 
-# Formatação de strings
+#! Formatação de strings
 nome = "João"
 idade = 25
-# f-strings (Python 3.6+)
+#!  f-strings (Python 3.6+)
 mensagem = f"Meu nome é {nome} e tenho {idade} anos"
-# format()
+#!  format()
 mensagem2 = "Meu nome é {} e tenho {} anos".format(nome, idade)
-# Operador %
+#!  Operador %
 mensagem3 = "Meu nome é %s e tenho %d anos" % (nome, idade)
 
 # Métodos de string
-texto_maiusculo = texto.upper()  # PYTHON É INCRÍVEL!
-texto_minusculo = texto.lower()  # python é incrível!
-texto_titulo = texto.title()  # Python É Incrível!
-texto_sem_espacos = "  texto  ".strip()  # Remove espaços das extremidades
+texto_maiusculo = texto.upper()  #!  PYTHON É INCRÍVEL!
+texto_minusculo = texto.lower()  #!  python é incrível!
+texto_titulo = texto.title()  #!  Python É Incrível!
+texto_sem_espacos = "  texto  ".strip()  #!  Remove espaços das extremidades
 texto_substituido = texto.replace("incrível", "fantástico")
-texto_dividido = texto.split()  # Divide em lista de palavras
-inicio = texto.startswith("Python")  # True
-fim = texto.endswith("!")  # True
+texto_dividido = texto.split()  #!  Divide em lista de palavras
+inicio = texto.startswith("Python")  #!  True
+fim = texto.endswith("!")  #!  True
 
 # Slicing (fatiamento)
 palavra = "Python"
