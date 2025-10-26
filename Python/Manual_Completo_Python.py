@@ -4,6 +4,7 @@
 # ?
 # TODO:
 
+
 ''' Atalhos úteis:
 Selecionar linha inteira:
 Ctrl + L
@@ -38,14 +39,42 @@ Ctrl + /
 
 
 # ============================================================================
-# ? M     ANUAL COMPLETO DE PYTHON - DO BÁSICO AO AVANÇADO
+# ?      MANUAL COMPLETO DE PYTHON - DO BÁSICO AO AVANÇADO
 # ============================================================================
+
+
+''' 
+ÍNDICE DO MANUAL
+================
+
+1. CONCEITOS BÁSICOS
+2. ESTRUTURAS DE DADOS
+3. ESTRUTURAS DE CONTROLE
+4. FUNÇÕES
+5. PROGRAMAÇÃO ORIENTADA A OBJETOS (POO)
+6. MANIPULAÇÃO DE ARQUIVOS
+7. TRATAMENTO DE EXCEÇÕES
+8. MÓDULOS E PACOTES
+9. COMPREENSÕES AVANÇADAS
+10. GERADORES E ITERADORES
+11. EXPRESSÕES REGULARES (REGEX)
+12. PROGRAMAÇÃO FUNCIONAL
+13. CONTEXT MANAGERS
+14. MULTITHREADING E MULTIPROCESSING
+15. TÓPICOS AVANÇADOS
+16. BOAS PRÁTICAS
+17. ANÁLISE E CIÊNCIA DE DADOS          
+'''
+
+
 
 # ============================================================================
 #! 1. CONCEITOS BÁSICOS
 # ============================================================================
-
-
+texto =  """ print 
+multi 
+linha """
+#* Nele você pode quebrar a identação, só lembrar do print(variavel) no caso print(texto)
 
 #! 1.1 Variáveis e Tipos de Dados
 # --------------------------------
@@ -1505,6 +1534,315 @@ with open('arquivo.txt', 'r') as f:
 f = open('arquivo.txt', 'r')
 dados = f.read()
 f.close()  # Pode não ser executado se houver exceção
+
+
+# ============================================================================
+# TODO: 17. ANÁLISE E CIÊNCIA DE DADOS
+# ============================================================================
+
+# 17.1 NumPy - Computação Numérica
+# --------------------------------
+
+import numpy as np
+
+# Criando arrays
+array_1d = np.array([1, 2, 3, 4, 5])
+array_2d = np.array([[1, 2, 3], [4, 5, 6]])
+array_zeros = np.zeros((3, 3))  # Matriz 3x3 de zeros
+array_ones = np.ones((2, 4))    # Matriz 2x4 de uns
+array_range = np.arange(0, 10, 2)  # [0, 2, 4, 6, 8]
+array_linspace = np.linspace(0, 1, 5)  # 5 números entre 0 e 1
+
+# Operações com arrays
+soma_elementos = np.sum(array_1d)  # 15
+media = np.mean(array_1d)  # 3.0
+desvio_padrao = np.std(array_1d)  # Desvio padrão
+maximo = np.max(array_1d)  # 5
+minimo = np.min(array_1d)  # 1
+
+# Operações elemento a elemento
+arr1 = np.array([1, 2, 3])
+arr2 = np.array([4, 5, 6])
+soma = arr1 + arr2  # [5, 7, 9]
+produto = arr1 * arr2  # [4, 10, 18]
+potencia = arr1 ** 2  # [1, 4, 9]
+
+# Indexação e slicing
+primeiro = array_1d[0]  # 1
+ultimos_dois = array_1d[-2:]  # [4, 5]
+elementos_pares = array_1d[::2]  # [1, 3, 5]
+
+# Reshape - redimensionar arrays
+array_original = np.array([1, 2, 3, 4, 5, 6])
+matriz = array_original.reshape(2, 3)  # Converte em matriz 2x3
+achatado = matriz.flatten()  # Converte de volta para 1D
+
+# 17.2 Pandas - Manipulação de Dados
+# --------------------------------
+
+import pandas as pd
+
+# Criando DataFrames
+dados = {
+    'nome': ['João', 'Maria', 'Pedro', 'Ana'],
+    'idade': [25, 30, 35, 28],
+    'salario': [3000, 3500, 4000, 3200]
+}
+df = pd.DataFrame(dados)
+
+# Acessando informações
+print(df.head())  # Primeiras 5 linhas
+print(df.tail())  # Últimas 5 linhas
+print(df.info())  # Informações sobre o DataFrame
+print(df.describe())  # Estatísticas descritivas
+
+# Selecionando colunas
+nomes = df['nome']
+coluna_multipla = df[['nome', 'idade']]
+
+# Filtrando dados
+maiores_30 = df[df['idade'] > 30]
+faixa_salarial = df[(df['salario'] >= 3000) & (df['salario'] <= 3500)]
+
+# Operações com colunas
+df['categoria'] = df['idade'].apply(lambda x: 'Senior' if x > 30 else 'Junior')
+df['salario_dobrado'] = df['salario'] * 2
+
+# Agregações
+media_idade = df['idade'].mean()
+soma_salarios = df['salario'].sum()
+contagem = df['nome'].count()
+
+# Agrupamento
+por_categoria = df.groupby('categoria')['salario'].mean()
+
+# Ordenação
+df_ordenado = df.sort_values('salario', ascending=False)
+
+# Manipulação de dados faltantes
+df_sem_nulos = df.dropna()
+df_preenchido = df.fillna(0)
+
+# Leitura e escrita de dados
+df_csv = pd.read_csv('dados.csv')
+df.to_csv('saida.csv', index=False)
+
+df_excel = pd.read_excel('dados.xlsx')
+df.to_excel('saida.xlsx', index=False)
+
+# 17.3 Matplotlib - Visualização de Dados
+# --------------------------------
+
+import matplotlib.pyplot as plt
+
+# Gráfico de linhas
+x = [1, 2, 3, 4, 5]
+y = [2, 4, 6, 8, 10]
+plt.plot(x, y, marker='o', label='Dados')
+plt.xlabel('Eixo X')
+plt.ylabel('Eixo Y')
+plt.title('Gráfico de Linhas')
+plt.legend()
+plt.grid(True)
+plt.show()
+
+# Gráfico de barras
+nomes_graf = ['A', 'B', 'C', 'D']
+valores = [10, 24, 36, 18]
+plt.bar(nomes_graf, valores, color='skyblue')
+plt.title('Gráfico de Barras')
+plt.ylabel('Valores')
+plt.show()
+
+# Histograma
+dados_hist = np.random.randn(1000)
+plt.hist(dados_hist, bins=30, edgecolor='black')
+plt.title('Histograma')
+plt.xlabel('Valores')
+plt.ylabel('Frequência')
+plt.show()
+
+# Scatter plot
+x_scatter = np.random.randn(100)
+y_scatter = np.random.randn(100)
+plt.scatter(x_scatter, y_scatter, alpha=0.6)
+plt.title('Scatter Plot')
+plt.show()
+
+# Múltiplos gráficos
+fig, axes = plt.subplots(2, 2, figsize=(10, 8))
+axes[0, 0].plot(x, y)
+axes[0, 0].set_title('Gráfico 1')
+axes[0, 1].bar(nomes_graf, valores)
+axes[0, 1].set_title('Gráfico 2')
+axes[1, 0].hist(dados_hist, bins=20)
+axes[1, 0].set_title('Gráfico 3')
+axes[1, 1].scatter(x_scatter, y_scatter)
+axes[1, 1].set_title('Gráfico 4')
+plt.tight_layout()
+plt.show()
+
+# 17.4 Estatística Descritiva
+# --------------------------------
+
+from scipy import stats
+
+# Medidas de tendência central
+dados = [1, 2, 3, 4, 5, 100]
+media = np.mean(dados)  # 19.33
+mediana = np.median(dados)  # 3.5
+moda = stats.mode(dados, keepdims=True).mode  # 1
+
+# Medidas de dispersão
+variancia = np.var(dados)  # Variância
+desvio = np.std(dados)  # Desvio padrão
+amplitude = max(dados) - min(dados)  # 99
+
+# Percentis
+percentil_25 = np.percentile(dados, 25)
+percentil_75 = np.percentile(dados, 75)
+
+# Correlação
+x = [1, 2, 3, 4, 5]
+y = [2, 4, 5, 4, 6]
+correlacao = np.corrcoef(x, y)[0, 1]  # Coeficiente de correlação
+
+# 17.5 Análise Exploratória de Dados (EDA)
+# --------------------------------
+
+# Exemplo com dataset
+df_dados = pd.DataFrame({
+    'idade': [25, 30, 35, 40, 45, 50],
+    'renda': [3000, 3500, 4000, 4500, 5000, 5500],
+    'educacao': ['Médio', 'Superior', 'Superior', 'Pós', 'Pós', 'Pós']
+})
+
+# Dimensões do dataset
+linhas, colunas = df_dados.shape
+
+# Tipos de dados
+tipos = df_dados.dtypes
+
+# Valores únicos
+educacao_unica = df_dados['educacao'].unique()
+contagem_educacao = df_dados['educacao'].value_counts()
+
+# Distribuição de dados
+print(df_dados.describe())  # Resumo estatístico
+
+# Correlação entre variáveis numéricas
+correlacao_matrix = df_dados[['idade', 'renda']].corr()
+
+# Valores faltantes
+valores_nulos = df_dados.isnull().sum()
+
+# 17.6 Tratamento de Dados
+# --------------------------------
+
+# Limpeza de dados
+df_limpo = df_dados.copy()
+
+# Remover duplicatas
+df_limpo = df_limpo.drop_duplicates()
+
+# Remover valores outliers
+Q1 = df_limpo['idade'].quantile(0.25)
+Q3 = df_limpo['idade'].quantile(0.75)
+IQR = Q3 - Q1
+df_sem_outliers = df_limpo[(df_limpo['idade'] >= Q1 - 1.5*IQR) & 
+                            (df_limpo['idade'] <= Q3 + 1.5*IQR)]
+
+# Normalização (0-1)
+from sklearn.preprocessing import MinMaxScaler
+scaler = MinMaxScaler()
+df_normalizado = scaler.fit_transform(df_limpo[['idade', 'renda']])
+
+# Padronização (média 0, desvio 1)
+from sklearn.preprocessing import StandardScaler
+standardizer = StandardScaler()
+df_padronizado = standardizer.fit_transform(df_limpo[['idade', 'renda']])
+
+# Encoding de variáveis categóricas
+df_encoded = pd.get_dummies(df_limpo, columns=['educacao'])
+
+# 17.7 Machine Learning Básico
+# --------------------------------
+
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error, r2_score
+
+# Preparando dados
+X = df_limpo[['idade']]  # Features
+y = df_limpo['renda']  # Target
+
+# Dividindo dados em treino e teste
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Criando e treinando modelo
+modelo = LinearRegression()
+modelo.fit(X_train, y_train)
+
+# Fazendo predições
+y_pred = modelo.predict(X_test)
+
+# Avaliando modelo
+mse = mean_squared_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+
+print(f"MSE: {mse}")
+print(f"R²: {r2}")
+print(f"Coeficiente: {modelo.coef_}")
+print(f"Intercepto: {modelo.intercept_}")
+
+# 17.8 Exemplo Prático Completo
+# --------------------------------
+
+# Simulando um dataset de vendas
+np.random.seed(42)
+vendas_data = {
+    'mes': np.repeat(['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'], 10),
+    'regiao': np.tile(['Norte', 'Sul', 'Leste', 'Oeste', 'Centro']*12, 1)[:60],
+    'vendas': np.random.randint(1000, 5000, 60),
+    'custo': np.random.randint(500, 2000, 60)
+}
+
+df_vendas = pd.DataFrame(vendas_data)
+
+# Análise exploratória
+print("Primeiras linhas:")
+print(df_vendas.head())
+
+print("\nEstatísticas:")
+print(df_vendas.describe())
+
+# Lucro
+df_vendas['lucro'] = df_vendas['vendas'] - df_vendas['custo']
+
+# Análise por região
+vendas_por_regiao = df_vendas.groupby('regiao')[['vendas', 'custo', 'lucro']].sum()
+print("\nVendas por região:")
+print(vendas_por_regiao)
+
+# Visualização
+plt.figure(figsize=(12, 5))
+
+plt.subplot(1, 2, 1)
+vendas_por_regiao['vendas'].plot(kind='bar', color='skyblue')
+plt.title('Vendas por Região')
+plt.ylabel('Vendas (R$)')
+
+plt.subplot(1, 2, 2)
+vendas_por_regiao['lucro'].plot(kind='bar', color='lightgreen')
+plt.title('Lucro por Região')
+plt.ylabel('Lucro (R$)')
+
+plt.tight_layout()
+plt.show()
+
+# ============================================================================
+# FIM DO MANUAL
+# ============================================================================
 
 # ============================================================================
 # FIM DO MANUAL
