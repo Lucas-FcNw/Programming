@@ -125,7 +125,7 @@ saudacao = "Olá" + " " + "Mundo"
 #! Formatação de strings
 nome = "João"
 idade = 25
-#!  f-strings (Python 3.6+)
+#!  f-strings (Python 3.6+) Ela é quem permite usar textos e comandos em um unico print
 mensagem = f"Meu nome é {nome} e tenho {idade} anos"
 #!  format()
 mensagem2 = "Meu nome é {} e tenho {} anos".format(nome, idade)
@@ -1685,7 +1685,7 @@ plt.show()
 # 17.4 Estatística Descritiva
 # --------------------------------
 
-from scipy import stats
+#from scipy import stats
 
 # Medidas de tendência central
 dados = [1, 2, 3, 4, 5, 100]
