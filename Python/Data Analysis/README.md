@@ -1,5 +1,5 @@
-# Manual Completo de Análise de Dados com Python, Pandas, Matplotlib e Seaborn
-
+# Manual Completo de Análise de Dados com Python, Pandas, Matplotlib, Seaborn e de brinde PySpark
+ 
 Este manual é pensado como **guia de bolso**: se você precisar fazer algo em análise de dados ("quero filtrar linhas", "quero ver correlação", "quero um gráfico de distribuição"), deve conseguir achar **um exemplo pronto** aqui.
 
 - Cada seção diz **quando usar**, **para que serve** e **mostra o padrão de código**.
@@ -2404,5 +2404,3 @@ print("\n✅ Pipeline completo executado com sucesso!")
 8. **KPIs consolidados** para relatórios executivos
 
 ---
-
-## 7) Boas Práticas e Desempenho
