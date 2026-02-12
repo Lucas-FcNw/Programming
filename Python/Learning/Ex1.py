@@ -19,3 +19,8 @@ print(f"Em um ano, eu terei recebido R${salario * ano}")
 
 print(f"Se receber o aumento que espero irei ganhar R${(salario * aumento)+salario} por mês e no ano será deR${ novo_salario * ano}")
 
+print(f"\nCaixa alta: {nome.upper()}")
+
+comida = "PASTEL"
+
+print(f"\nLower case: {comida.lower()}")
