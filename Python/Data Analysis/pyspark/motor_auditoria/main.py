@@ -2,7 +2,7 @@
 ORQUESTRADOR — Motor de Auditoria de Políticas de Crédito
 ==========================================================
 Pipeline completo:
-  1. Gera mocks (DOCX + Notebook)          — Componente A
+  1. Carrega fontes (Notebook + DOCX)       — Múltiplas fontes suportadas
   2. Infere políticas do Notebook           — Componente B
   3. Extrai políticas do DOCX               — Componente C
   4. Matching DOC ↔ Notebook                — Componente D
@@ -10,8 +10,10 @@ Pipeline completo:
   6. Relatório final consolidado
 
 Uso:
-  python main.py                    → Gera mocks e audita
-  python main.py doc.docx nb.ipynb  → Audita arquivos reais
+  python main.py doc.docx nb.ipynb            → Audita arquivos locais
+  python main.py doc.docx --databricks-url URL --token TOKEN --notebook-path /path
+  python main.py doc.docx --fico-url URL --fico-token TOKEN
+  python main.py                              → Gera mocks e audita (modo teste)
 """
 
 from __future__ import annotations
@@ -19,6 +21,8 @@ from __future__ import annotations
 import os
 import sys
 import time
+import argparse
+import tempfile
 from datetime import datetime
 from typing import Optional
 
@@ -30,6 +34,85 @@ from leitor_notebook import LeitorNotebook
 from leitor_docx import LeitorDocx
 from matcher import Matcher, StatusMatch
 from validador import Validador, StatusValidacao
+
+
+# ═══════════════════════════════════════════════════════════════
+#  Baixar Notebooks de Fontes Remotas
+# ═══════════════════════════════════════════════════════════════
+
+def baixar_notebook_databricks(
+    workspace_url: str,
+    token: str,
+    notebook_path: str,
+    destino: Optional[str] = None,
+) -> str:
+    """
+    Baixa um notebook do Databricks Workspace via REST API.
+
+    Args:
+        workspace_url: URL do workspace (ex: https://adb-xxx.azuredatabricks.net)
+        token: Token de acesso pessoal (PAT)
+        notebook_path: Caminho do notebook no workspace (ex: /Users/user@co.com/nb)
+        destino: Caminho local para salvar (opcional)
+
+    Returns:
+        Caminho do arquivo .ipynb local
+    """
+    import requests
+    import base64
+
+    url = f"{workspace_url.rstrip('/')}/api/2.0/workspace/export"
+    headers = {"Authorization": f"Bearer {token}"}
+    params = {"path": notebook_path, "format": "JUPYTER"}
+
+    print(f"  📥 Baixando notebook do Databricks: {notebook_path}")
+    resp = requests.get(url, headers=headers, params=params, timeout=60)
+    resp.raise_for_status()
+
+    conteudo_b64 = resp.json().get("content", "")
+    conteudo = base64.b64decode(conteudo_b64)
+
+    if destino is None:
+        nome = notebook_path.split("/")[-1]
+        if not nome.endswith(".ipynb"):
+            nome += ".ipynb"
+        destino = os.path.join(tempfile.gettempdir(), nome)
+
+    with open(destino, "wb") as f:
+        f.write(conteudo)
+
+    print(f"  ✅ Notebook salvo em: {destino}")
+    return destino
+
+
+def baixar_notebook_url(url: str, destino: Optional[str] = None) -> str:
+    """
+    Baixa um notebook de qualquer URL (FICO, repositório, etc.).
+
+    Args:
+        url: URL direta do arquivo .ipynb
+        destino: Caminho local para salvar (opcional)
+
+    Returns:
+        Caminho do arquivo .ipynb local
+    """
+    import requests
+
+    print(f"  📥 Baixando notebook de: {url}")
+    resp = requests.get(url, timeout=60)
+    resp.raise_for_status()
+
+    if destino is None:
+        nome = url.split("/")[-1].split("?")[0]
+        if not nome.endswith(".ipynb"):
+            nome += ".ipynb"
+        destino = os.path.join(tempfile.gettempdir(), nome)
+
+    with open(destino, "wb") as f:
+        f.write(resp.content)
+
+    print(f"  ✅ Notebook salvo em: {destino}")
+    return destino
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -139,25 +222,58 @@ def executar_auditoria(
     caminho_docx: Optional[str] = None,
     caminho_nb: Optional[str] = None,
     verbose: bool = True,
+    # ─── Fontes remotas (opcional) ───
+    databricks_url: Optional[str] = None,
+    databricks_token: Optional[str] = None,
+    databricks_notebook_path: Optional[str] = None,
+    fico_url: Optional[str] = None,
+    fico_token: Optional[str] = None,
+    notebook_url: Optional[str] = None,
 ) -> dict:
     """
     Executa o pipeline completo de auditoria.
 
     Args:
-        caminho_docx: Caminho do DOCX (se None, gera mock)
-        caminho_nb:   Caminho do Notebook (se None, gera mock)
-        verbose:      Se True, imprime relatórios intermediários
+        caminho_docx:   Caminho do DOCX (se None, gera mock)
+        caminho_nb:     Caminho do Notebook local (se None, tenta fontes remotas ou gera mock)
+        verbose:        Se True, imprime relatórios intermediários
+        databricks_url: URL do workspace Databricks
+        databricks_token: Token de acesso Databricks
+        databricks_notebook_path: Caminho do notebook no Databricks
+        fico_url:       URL direta do notebook no FICO
+        fico_token:     Token de acesso FICO (se necessário)
+        notebook_url:   URL genérica para baixar notebook
 
     Returns:
         dict com todos os resultados
     """
     inicio = time.time()
 
-    # ─── ETAPA 1: Geração de mocks (se necessário) ───
+    # ─── ETAPA 1: Obtenção de arquivos ───
+    usar_mocks = False
+
+    # Tenta resolver o notebook de fontes remotas se não fornecido localmente
+    if caminho_nb is None:
+        if databricks_url and databricks_token and databricks_notebook_path:
+            print("\n📦 ETAPA 1 — Baixando notebook do Databricks...\n")
+            caminho_nb = baixar_notebook_databricks(
+                databricks_url, databricks_token, databricks_notebook_path
+            )
+        elif fico_url:
+            print("\n📦 ETAPA 1 — Baixando notebook do FICO...\n")
+            headers_extra = {"Authorization": f"Bearer {fico_token}"} if fico_token else {}
+            caminho_nb = baixar_notebook_url(fico_url)
+        elif notebook_url:
+            print("\n📦 ETAPA 1 — Baixando notebook de URL...\n")
+            caminho_nb = baixar_notebook_url(notebook_url)
+
     if caminho_docx is None or caminho_nb is None:
-        print("\n📦 ETAPA 1 — Gerando arquivos mock...\n")
+        print("\n📦 ETAPA 1 — Gerando arquivos mock (modo teste)...\n")
         diretorio = os.path.dirname(os.path.abspath(__file__))
-        caminho_docx, caminho_nb = gerar_tudo(diretorio)
+        caminho_docx_mock, caminho_nb_mock = gerar_tudo(diretorio)
+        caminho_docx = caminho_docx or caminho_docx_mock
+        caminho_nb = caminho_nb or caminho_nb_mock
+        usar_mocks = True
     else:
         print(f"\n📦 ETAPA 1 — Usando arquivos fornecidos:")
         print(f"  DOCX:     {caminho_docx}")
@@ -221,30 +337,76 @@ def executar_auditoria(
 
 
 # ═══════════════════════════════════════════════════════════════
-#  Execução
+#  Execução via CLI
 # ═══════════════════════════════════════════════════════════════
 
+def _parse_args():
+    """Parser de argumentos de linha de comando."""
+    parser = argparse.ArgumentParser(
+        description="Motor de Auditoria de Políticas de Crédito",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Exemplos:
+  # Modo teste (gera mocks)
+  python main.py
+
+  # Arquivos locais
+  python main.py doc.docx notebook.ipynb
+
+  # Notebook do Databricks
+  python main.py doc.docx --databricks-url https://adb-xxx.azuredatabricks.net \\
+      --databricks-token dapi... --databricks-path /Users/user/notebook
+
+  # Notebook de URL genérica (FICO, repositório, etc.)
+  python main.py doc.docx --notebook-url https://server/notebook.ipynb
+
+  # Notebook do FICO com autenticação
+  python main.py doc.docx --fico-url https://fico.corp/api/notebooks/regras.ipynb \\
+      --fico-token "Bearer xxx..."
+        """,
+    )
+
+    parser.add_argument("docx", nargs="?", default=None,
+                        help="Caminho do DOCX com especificações")
+    parser.add_argument("notebook", nargs="?", default=None,
+                        help="Caminho local do notebook .ipynb")
+
+    # Databricks
+    parser.add_argument("--databricks-url", default=None,
+                        help="URL do workspace Databricks")
+    parser.add_argument("--databricks-token", default=None,
+                        help="Token de acesso Databricks (PAT)")
+    parser.add_argument("--databricks-path", default=None,
+                        help="Caminho do notebook no Databricks")
+
+    # FICO
+    parser.add_argument("--fico-url", default=None,
+                        help="URL direta do notebook no FICO")
+    parser.add_argument("--fico-token", default=None,
+                        help="Token de autenticação FICO")
+
+    # URL genérica
+    parser.add_argument("--notebook-url", default=None,
+                        help="URL genérica para baixar o notebook")
+
+    # Opções
+    parser.add_argument("--quiet", action="store_true",
+                        help="Reduz output (desativa relatórios intermediários)")
+
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
-    if len(sys.argv) == 3:
-        # Modo: arquivos reais
-        docx_path = sys.argv[1]
-        nb_path = sys.argv[2]
+    args = _parse_args()
 
-        if not os.path.exists(docx_path):
-            print(f"❌ Arquivo não encontrado: {docx_path}")
-            sys.exit(1)
-        if not os.path.exists(nb_path):
-            print(f"❌ Arquivo não encontrado: {nb_path}")
-            sys.exit(1)
-
-        executar_auditoria(docx_path, nb_path)
-
-    elif len(sys.argv) == 1:
-        # Modo: mocks automáticos
-        executar_auditoria()
-
-    else:
-        print("Uso:")
-        print("  python main.py                      → Gera mocks e audita")
-        print("  python main.py <doc.docx> <nb.ipynb> → Audita arquivos reais")
-        sys.exit(1)
+    executar_auditoria(
+        caminho_docx=args.docx,
+        caminho_nb=args.notebook,
+        verbose=not args.quiet,
+        databricks_url=args.databricks_url,
+        databricks_token=args.databricks_token,
+        databricks_notebook_path=args.databricks_path,
+        fico_url=args.fico_url,
+        fico_token=args.fico_token,
+        notebook_url=args.notebook_url,
+    )
