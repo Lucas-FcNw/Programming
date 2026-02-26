@@ -1,4 +1,0 @@
-pyspark
-nbformat
-requests
-python-docx
