@@ -1,0 +1,762 @@
+[
+  {
+    "id": 1,
+    "nome": "Água Rasa",
+    "zona": "Leste",
+    "lat": -23.57,
+    "lon": -46.575,
+    "populacao": 84963
+  },
+  {
+    "id": 2,
+    "nome": "Alto de Pinheiros",
+    "zona": "Oeste",
+    "lat": -23.542,
+    "lon": -46.705,
+    "populacao": 43117
+  },
+  {
+    "id": 3,
+    "nome": "Anhanguera",
+    "zona": "Norte",
+    "lat": -23.42,
+    "lon": -46.79,
+    "populacao": 65859
+  },
+  {
+    "id": 4,
+    "nome": "Aricanduva",
+    "zona": "Leste",
+    "lat": -23.555,
+    "lon": -46.51,
+    "populacao": 89622
+  },
+  {
+    "id": 5,
+    "nome": "Artur Alvim",
+    "zona": "Leste",
+    "lat": -23.535,
+    "lon": -46.48,
+    "populacao": 105269
+  },
+  {
+    "id": 6,
+    "nome": "Belém",
+    "zona": "Leste",
+    "lat": -23.54,
+    "lon": -46.588,
+    "populacao": 39622
+  },
+  {
+    "id": 7,
+    "nome": "Bela Vista",
+    "zona": "Centro",
+    "lat": -23.5562,
+    "lon": -46.6471,
+    "populacao": 69460
+  },
+  {
+    "id": 8,
+    "nome": "Bom Retiro",
+    "zona": "Centro",
+    "lat": -23.5252,
+    "lon": -46.638,
+    "populacao": 33892
+  },
+  {
+    "id": 9,
+    "nome": "Brasilândia",
+    "zona": "Norte",
+    "lat": -23.46,
+    "lon": -46.68,
+    "populacao": 264918
+  },
+  {
+    "id": 10,
+    "nome": "Brás",
+    "zona": "Leste",
+    "lat": -23.538,
+    "lon": -46.612,
+    "populacao": 29265
+  },
+  {
+    "id": 11,
+    "nome": "Butantã",
+    "zona": "Oeste",
+    "lat": -23.57,
+    "lon": -46.73,
+    "populacao": 54196
+  },
+  {
+    "id": 12,
+    "nome": "Cachoeirinha",
+    "zona": "Norte",
+    "lat": -23.485,
+    "lon": -46.655,
+    "populacao": 143523
+  },
+  {
+    "id": 13,
+    "nome": "Cambuci",
+    "zona": "Centro",
+    "lat": -23.563,
+    "lon": -46.621,
+    "populacao": 36948
+  },
+  {
+    "id": 14,
+    "nome": "Campo Belo",
+    "zona": "Sul",
+    "lat": -23.62,
+    "lon": -46.665,
+    "populacao": 66646
+  },
+  {
+    "id": 15,
+    "nome": "Campo Grande",
+    "zona": "Sul",
+    "lat": -23.67,
+    "lon": -46.695,
+    "populacao": 100713
+  },
+  {
+    "id": 16,
+    "nome": "Campo Limpo",
+    "zona": "Sul",
+    "lat": -23.645,
+    "lon": -46.76,
+    "populacao": 211361
+  },
+  {
+    "id": 17,
+    "nome": "Cangaíba",
+    "zona": "Leste",
+    "lat": -23.505,
+    "lon": -46.525,
+    "populacao": 136623
+  },
+  {
+    "id": 18,
+    "nome": "Capão Redondo",
+    "zona": "Sul",
+    "lat": -23.67,
+    "lon": -46.77,
+    "populacao": 268729
+  },
+  {
+    "id": 19,
+    "nome": "Carrão",
+    "zona": "Leste",
+    "lat": -23.55,
+    "lon": -46.55,
+    "populacao": 78175
+  },
+  {
+    "id": 20,
+    "nome": "Casa Verde",
+    "zona": "Norte",
+    "lat": -23.51,
+    "lon": -46.65,
+    "populacao": 85624
+  },
+  {
+    "id": 21,
+    "nome": "Cidade Ademar",
+    "zona": "Sul",
+    "lat": -23.68,
+    "lon": -46.63,
+    "populacao": 266681
+  },
+  {
+    "id": 22,
+    "nome": "Cidade Dutra",
+    "zona": "Sul",
+    "lat": -23.7,
+    "lon": -46.66,
+    "populacao": 196360
+  },
+  {
+    "id": 23,
+    "nome": "Cidade Líder",
+    "zona": "Leste",
+    "lat": -23.56,
+    "lon": -46.47,
+    "populacao": 126597
+  },
+  {
+    "id": 24,
+    "nome": "Cidade Tiradentes",
+    "zona": "Leste",
+    "lat": -23.58,
+    "lon": -46.405,
+    "populacao": 211501
+  },
+  {
+    "id": 25,
+    "nome": "Consolação",
+    "zona": "Centro",
+    "lat": -23.5519,
+    "lon": -46.66,
+    "populacao": 57365
+  },
+  {
+    "id": 26,
+    "nome": "Cursino",
+    "zona": "Sul",
+    "lat": -23.615,
+    "lon": -46.615,
+    "populacao": 102089
+  },
+  {
+    "id": 27,
+    "nome": "Ermelino Matarazzo",
+    "zona": "Leste",
+    "lat": -23.51,
+    "lon": -46.49,
+    "populacao": 113615
+  },
+  {
+    "id": 28,
+    "nome": "Freguesia do Ó",
+    "zona": "Norte",
+    "lat": -23.49,
+    "lon": -46.69,
+    "populacao": 142327
+  },
+  {
+    "id": 29,
+    "nome": "Grajaú",
+    "zona": "Sul",
+    "lat": -23.75,
+    "lon": -46.67,
+    "populacao": 360787
+  },
+  {
+    "id": 30,
+    "nome": "Guaianases",
+    "zona": "Leste",
+    "lat": -23.555,
+    "lon": -46.42,
+    "populacao": 103996
+  },
+  {
+    "id": 31,
+    "nome": "Iguatemi",
+    "zona": "Leste",
+    "lat": -23.64,
+    "lon": -46.47,
+    "populacao": 127662
+  },
+  {
+    "id": 32,
+    "nome": "Ipiranga",
+    "zona": "Sul",
+    "lat": -23.59,
+    "lon": -46.605,
+    "populacao": 106865
+  },
+  {
+    "id": 33,
+    "nome": "Itaim Bibi",
+    "zona": "Oeste",
+    "lat": -23.585,
+    "lon": -46.675,
+    "populacao": 81456
+  },
+  {
+    "id": 34,
+    "nome": "Itaim Paulista",
+    "zona": "Leste",
+    "lat": -23.49,
+    "lon": -46.4,
+    "populacao": 224074
+  },
+  {
+    "id": 35,
+    "nome": "Itaquera",
+    "zona": "Leste",
+    "lat": -23.54,
+    "lon": -46.46,
+    "populacao": 204871
+  },
+  {
+    "id": 36,
+    "nome": "Jabaquara",
+    "zona": "Sul",
+    "lat": -23.63,
+    "lon": -46.64,
+    "populacao": 223780
+  },
+  {
+    "id": 37,
+    "nome": "Jaçanã",
+    "zona": "Norte",
+    "lat": -23.462,
+    "lon": -46.592,
+    "populacao": 94609
+  },
+  {
+    "id": 38,
+    "nome": "Jaguara",
+    "zona": "Oeste",
+    "lat": -23.52,
+    "lon": -46.74,
+    "populacao": 24895
+  },
+  {
+    "id": 39,
+    "nome": "Jaguaré",
+    "zona": "Oeste",
+    "lat": -23.535,
+    "lon": -46.735,
+    "populacao": 49863
+  },
+  {
+    "id": 40,
+    "nome": "Jardim Ângela",
+    "zona": "Sul",
+    "lat": -23.7,
+    "lon": -46.78,
+    "populacao": 295434
+  },
+  {
+    "id": 41,
+    "nome": "Jardim Helena",
+    "zona": "Leste",
+    "lat": -23.48,
+    "lon": -46.435,
+    "populacao": 135043
+  },
+  {
+    "id": 42,
+    "nome": "Jardim Paulista",
+    "zona": "Oeste",
+    "lat": -23.57,
+    "lon": -46.66,
+    "populacao": 83667
+  },
+  {
+    "id": 43,
+    "nome": "Jardim São Luís",
+    "zona": "Sul",
+    "lat": -23.66,
+    "lon": -46.745,
+    "populacao": 267871
+  },
+  {
+    "id": 44,
+    "nome": "José Bonifácio",
+    "zona": "Leste",
+    "lat": -23.53,
+    "lon": -46.435,
+    "populacao": 124122
+  },
+  {
+    "id": 45,
+    "nome": "Lajeado",
+    "zona": "Leste",
+    "lat": -23.57,
+    "lon": -46.4,
+    "populacao": 164512
+  },
+  {
+    "id": 46,
+    "nome": "Lapa",
+    "zona": "Oeste",
+    "lat": -23.525,
+    "lon": -46.69,
+    "populacao": 60184
+  },
+  {
+    "id": 47,
+    "nome": "Liberdade",
+    "zona": "Centro",
+    "lat": -23.5585,
+    "lon": -46.636,
+    "populacao": 69092
+  },
+  {
+    "id": 48,
+    "nome": "Limão",
+    "zona": "Norte",
+    "lat": -23.51,
+    "lon": -46.67,
+    "populacao": 80229
+  },
+  {
+    "id": 49,
+    "nome": "Mandaqui",
+    "zona": "Norte",
+    "lat": -23.478,
+    "lon": -46.635,
+    "populacao": 107580
+  },
+  {
+    "id": 50,
+    "nome": "Marsilac",
+    "zona": "Sul",
+    "lat": -23.83,
+    "lon": -46.7,
+    "populacao": 8258
+  },
+  {
+    "id": 51,
+    "nome": "Moema",
+    "zona": "Sul",
+    "lat": -23.6,
+    "lon": -46.66,
+    "populacao": 80091
+  },
+  {
+    "id": 52,
+    "nome": "Mooca",
+    "zona": "Leste",
+    "lat": -23.56,
+    "lon": -46.598,
+    "populacao": 63280
+  },
+  {
+    "id": 53,
+    "nome": "Morumbi",
+    "zona": "Oeste",
+    "lat": -23.6,
+    "lon": -46.72,
+    "populacao": 46957
+  },
+  {
+    "id": 54,
+    "nome": "Parelheiros",
+    "zona": "Sul",
+    "lat": -23.78,
+    "lon": -46.73,
+    "populacao": 131128
+  },
+  {
+    "id": 55,
+    "nome": "Pari",
+    "zona": "Centro",
+    "lat": -23.525,
+    "lon": -46.618,
+    "populacao": 17299
+  },
+  {
+    "id": 56,
+    "nome": "Parque do Carmo",
+    "zona": "Leste",
+    "lat": -23.57,
+    "lon": -46.45,
+    "populacao": 68258
+  },
+  {
+    "id": 57,
+    "nome": "Pedreira",
+    "zona": "Sul",
+    "lat": -23.705,
+    "lon": -46.635,
+    "populacao": 142372
+  },
+  {
+    "id": 58,
+    "nome": "Penha",
+    "zona": "Leste",
+    "lat": -23.52,
+    "lon": -46.54,
+    "populacao": 124292
+  },
+  {
+    "id": 59,
+    "nome": "Perdizes",
+    "zona": "Oeste",
+    "lat": -23.53,
+    "lon": -46.675,
+    "populacao": 104684
+  },
+  {
+    "id": 60,
+    "nome": "Perus",
+    "zona": "Norte",
+    "lat": -23.41,
+    "lon": -46.75,
+    "populacao": 80187
+  },
+  {
+    "id": 61,
+    "nome": "Pinheiros",
+    "zona": "Oeste",
+    "lat": -23.5615,
+    "lon": -46.692,
+    "populacao": 65364
+  },
+  {
+    "id": 62,
+    "nome": "Ponte Rasa",
+    "zona": "Leste",
+    "lat": -23.508,
+    "lon": -46.508,
+    "populacao": 93894
+  },
+  {
+    "id": 63,
+    "nome": "Raposo Tavares",
+    "zona": "Oeste",
+    "lat": -23.59,
+    "lon": -46.77,
+    "populacao": 100164
+  },
+  {
+    "id": 64,
+    "nome": "República",
+    "zona": "Centro",
+    "lat": -23.5432,
+    "lon": -46.6424,
+    "populacao": 56981
+  },
+  {
+    "id": 65,
+    "nome": "Rio Pequeno",
+    "zona": "Oeste",
+    "lat": -23.565,
+    "lon": -46.75,
+    "populacao": 118459
+  },
+  {
+    "id": 66,
+    "nome": "Sacomã",
+    "zona": "Sul",
+    "lat": -23.61,
+    "lon": -46.595,
+    "populacao": 247851
+  },
+  {
+    "id": 67,
+    "nome": "Santana",
+    "zona": "Norte",
+    "lat": -23.505,
+    "lon": -46.628,
+    "populacao": 118797
+  },
+  {
+    "id": 68,
+    "nome": "Santo Amaro",
+    "zona": "Sul",
+    "lat": -23.65,
+    "lon": -46.665,
+    "populacao": 71560
+  },
+  {
+    "id": 69,
+    "nome": "São Domingos",
+    "zona": "Norte",
+    "lat": -23.48,
+    "lon": -46.75,
+    "populacao": 84843
+  },
+  {
+    "id": 70,
+    "nome": "São Lucas",
+    "zona": "Leste",
+    "lat": -23.595,
+    "lon": -46.565,
+    "populacao": 142347
+  },
+  {
+    "id": 71,
+    "nome": "São Mateus",
+    "zona": "Leste",
+    "lat": -23.615,
+    "lon": -46.48,
+    "populacao": 155140
+  },
+  {
+    "id": 72,
+    "nome": "São Miguel Paulista",
+    "zona": "Leste",
+    "lat": -23.495,
+    "lon": -46.45,
+    "populacao": 97373
+  },
+  {
+    "id": 73,
+    "nome": "São Rafael",
+    "zona": "Leste",
+    "lat": -23.64,
+    "lon": -46.5,
+    "populacao": 143975
+  },
+  {
+    "id": 74,
+    "nome": "Santa Cecília",
+    "zona": "Centro",
+    "lat": -23.5367,
+    "lon": -46.653,
+    "populacao": 83717
+  },
+  {
+    "id": 75,
+    "nome": "Sapopemba",
+    "zona": "Leste",
+    "lat": -23.605,
+    "lon": -46.515,
+    "populacao": 284524
+  },
+  {
+    "id": 76,
+    "nome": "Saúde",
+    "zona": "Sul",
+    "lat": -23.61,
+    "lon": -46.628,
+    "populacao": 130780
+  },
+  {
+    "id": 77,
+    "nome": "Sé",
+    "zona": "Centro",
+    "lat": -23.5505,
+    "lon": -46.6333,
+    "populacao": 23651
+  },
+  {
+    "id": 78,
+    "nome": "Socorro",
+    "zona": "Sul",
+    "lat": -23.675,
+    "lon": -46.65,
+    "populacao": 37783
+  },
+  {
+    "id": 79,
+    "nome": "Tatuapé",
+    "zona": "Leste",
+    "lat": -23.535,
+    "lon": -46.573,
+    "populacao": 91672
+  },
+  {
+    "id": 80,
+    "nome": "Tremembé",
+    "zona": "Norte",
+    "lat": -23.455,
+    "lon": -46.628,
+    "populacao": 197258
+  },
+  {
+    "id": 81,
+    "nome": "Tucuruvi",
+    "zona": "Norte",
+    "lat": -23.48,
+    "lon": -46.61,
+    "populacao": 98438
+  },
+  {
+    "id": 82,
+    "nome": "Vila Andrade",
+    "zona": "Sul",
+    "lat": -23.62,
+    "lon": -46.735,
+    "populacao": 127015
+  },
+  {
+    "id": 83,
+    "nome": "Vila Curuçá",
+    "zona": "Leste",
+    "lat": -23.5,
+    "lon": -46.415,
+    "populacao": 149053
+  },
+  {
+    "id": 84,
+    "nome": "Vila Formosa",
+    "zona": "Leste",
+    "lat": -23.56,
+    "lon": -46.55,
+    "populacao": 93850
+  },
+  {
+    "id": 85,
+    "nome": "Vila Guilherme",
+    "zona": "Norte",
+    "lat": -23.515,
+    "lon": -46.605,
+    "populacao": 49984
+  },
+  {
+    "id": 86,
+    "nome": "Vila Jacuí",
+    "zona": "Leste",
+    "lat": -23.49,
+    "lon": -46.455,
+    "populacao": 141959
+  },
+  {
+    "id": 87,
+    "nome": "Vila Leopoldina",
+    "zona": "Oeste",
+    "lat": -23.525,
+    "lon": -46.72,
+    "populacao": 26870
+  },
+  {
+    "id": 88,
+    "nome": "Vila Maria",
+    "zona": "Norte",
+    "lat": -23.505,
+    "lon": -46.59,
+    "populacao": 113463
+  },
+  {
+    "id": 89,
+    "nome": "Vila Mariana",
+    "zona": "Sul",
+    "lat": -23.59,
+    "lon": -46.635,
+    "populacao": 130484
+  },
+  {
+    "id": 90,
+    "nome": "Vila Matilde",
+    "zona": "Leste",
+    "lat": -23.535,
+    "lon": -46.52,
+    "populacao": 104947
+  },
+  {
+    "id": 91,
+    "nome": "Vila Medeiros",
+    "zona": "Norte",
+    "lat": -23.492,
+    "lon": -46.58,
+    "populacao": 129479
+  },
+  {
+    "id": 92,
+    "nome": "Vila Prudente",
+    "zona": "Leste",
+    "lat": -23.585,
+    "lon": -46.575,
+    "populacao": 104242
+  },
+  {
+    "id": 93,
+    "nome": "Vila Sônia",
+    "zona": "Oeste",
+    "lat": -23.595,
+    "lon": -46.745,
+    "populacao": 108441
+  },
+  {
+    "id": 94,
+    "nome": "Pirituba",
+    "zona": "Norte",
+    "lat": -23.485,
+    "lon": -46.72,
+    "populacao": 167931
+  },
+  {
+    "id": 95,
+    "nome": "Barra Funda",
+    "zona": "Oeste",
+    "lat": -23.523,
+    "lon": -46.665,
+    "populacao": 14383
+  }
+]

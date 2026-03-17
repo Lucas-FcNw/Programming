@@ -1,0 +1,242 @@
+<!DOCTYPE html><html><head>
+      <title>ihc</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////home/lucasfc/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.21/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      <script type="text/javascript" src="file:////home/lucasfc/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.21/crossnote/dependencies/mermaid/mermaid.min.js" charset="UTF-8"></script>
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="análise-de-tarefas--projeto-redeacesso-sp">Análise de Tarefas – Projeto RedeAcesso-SP </h1>
+<h6 id="feito-por-anna-luiza-stella-santos---10417401">Feito por: Anna Luiza Stella Santos - 10417401 </h6>
+<h6 id="lendy-naiara-carpio-pacheco---10428525">Lendy Naiara Carpio Pacheco - 10428525 </h6>
+<h6 id="lucas-fernandes-de-camargo---10419400">Lucas Fernandes de Camargo - 10419400 </h6>
+<h2 id="contexto">Contexto </h2>
+<p>O projeto <strong>RedeAcesso-SP</strong> consiste em um sistema interativo destinado à análise da distribuição de serviços de saúde na cidade de São Paulo. Para isso, utiliza conceitos de <strong>Teoria dos Grafos</strong>, representando distritos como vértices e suas relações territoriais como conexões entre regiões.</p>
+<p>O sistema tem como objetivo permitir a visualização e exploração de indicadores relevantes relacionados ao acesso à saúde, tais como:</p>
+<ul>
+<li>número de UBS por distrito;</li>
+<li>relação entre população e capacidade de atendimento;</li>
+<li>comparação entre distritos vizinhos;</li>
+<li>identificação de desigualdades territoriais no acesso aos serviços de saúde.</li>
+</ul>
+<p>A análise de tarefas apresentada a seguir foi elaborada com base nos cenários previamente definidos no projeto e busca compreender como os usuários interagem com o sistema para interpretar os dados apresentados.</p>
+<hr>
+<h2 id="foco-em-interação-humano-computador-ihc">Foco em Interação Humano-Computador (IHC) </h2>
+<p>Esta análise é orientada pelos princípios de <strong>Interação Humano-Computador (IHC)</strong>, considerando principalmente <strong>quem utiliza o sistema</strong>, <strong>em qual contexto ele é utilizado</strong> e <strong>como a interface apoia o processo de compreensão e tomada de decisão</strong>.</p>
+<h3 id="perfil-de-usuários">Perfil de usuários </h3>
+<p>Os principais usuários considerados no projeto são:</p>
+<ul>
+<li>gestores públicos da área da saúde;</li>
+<li>analistas de dados e planejamento em saúde pública;</li>
+<li>estudantes e pesquisadores interessados em análise territorial e políticas públicas.</li>
+</ul>
+<h3 id="contexto-de-uso">Contexto de uso </h3>
+<p>O sistema pode ser utilizado em diferentes situações, tais como:</p>
+<ul>
+<li>consulta rápida de indicadores de saúde por distrito;</li>
+<li>comparação entre regiões para apoiar decisões de planejamento;</li>
+<li>exploração visual dos dados para identificação de desigualdades no acesso aos serviços de saúde.</li>
+</ul>
+<h3 id="metas-de-usabilidade">Metas de usabilidade </h3>
+<p>Com base nos princípios de IHC, foram estabelecidas as seguintes metas de usabilidade para o sistema:</p>
+<ul>
+<li><strong>eficácia</strong>: permitir identificar distritos com baixa cobertura de saúde de forma clara e sem ambiguidade;</li>
+<li><strong>eficiência</strong>: reduzir o número de passos necessários para acessar os indicadores principais;</li>
+<li><strong>facilidade de aprendizado</strong>: possibilitar que novos usuários compreendam o funcionamento do sistema com pouca ou nenhuma instrução prévia;</li>
+<li><strong>satisfação</strong>: oferecer uma navegação clara, com feedback visual adequado e linguagem acessível.</li>
+</ul>
+<h3 id="critérios-de-avaliação-ihc">Critérios de avaliação (IHC) </h3>
+<p>Para orientar o projeto da interface, foram considerados os seguintes critérios de usabilidade:</p>
+<ul>
+<li><strong>visibilidade do estado do sistema</strong>, garantindo que indicadores e filtros ativos estejam sempre visíveis;</li>
+<li><strong>consistência de termos</strong>, mantendo o uso padronizado de conceitos como distrito, cobertura e capacidade de atendimento;</li>
+<li><strong>prevenção de erros</strong>, evitando interpretações equivocadas durante a comparação entre regiões;</li>
+<li><strong>reconhecimento em vez de memorização</strong>, mantendo informações importantes sempre acessíveis ao usuário.</li>
+</ul>
+<hr>
+<h2 id="1-rede-de-proposições">1. Rede de Proposições </h2>
+<p>A <strong>rede de proposições</strong> representa as relações conceituais entre os elementos presentes no domínio do sistema e nas tarefas realizadas pelos usuários.</p>
+<p>Cada proposição descreve uma relação simples entre entidades relevantes para a compreensão do problema analisado.</p>
+<h3 id="proposições">Proposições </h3>
+<ul>
+<li>O usuário analisa informações apresentadas pelo sistema;</li>
+<li>O sistema apresenta indicadores relacionados à saúde;</li>
+<li>Os indicadores descrevem a cobertura de atendimento em cada região;</li>
+<li>Cada distrito possui uma determinada população;</li>
+<li>Cada distrito possui unidades básicas de saúde (UBS);</li>
+<li>Cada UBS possui uma capacidade de atendimento;</li>
+<li>A população gera demanda por serviços de saúde;</li>
+<li>O sistema permite a comparação entre distritos vizinhos.</li>
+</ul>
+<h3 id="diagrama-da-rede-de-proposições">Diagrama da Rede de Proposições </h3>
+<div class="mermaid">graph TD
+
+Usuario --&gt;|analisa| Sistema
+Sistema --&gt;|apresenta| Indicadores
+Indicadores --&gt;|descrevem| CoberturaSaude
+
+Distrito --&gt;|possui| Populacao
+Distrito --&gt;|possui| UBS
+
+UBS --&gt;|possui| CapacidadeAtendimento
+
+Populacao --&gt;|gera| DemandaAtendimento
+
+Sistema --&gt;|permite comparar| DistritosVizinhos
+DistritosVizinhos --&gt;|possuem| CoberturaSaude
+</div><h2 id="2-questionamentos-sistemáticos">2. Questionamentos Sistemáticos </h2>
+<p>A partir da rede de proposições, foram elaborados questionamentos sistemáticos que representam dúvidas reais que podem surgir durante a interação do usuário com o sistema.</p>
+<p>Essas perguntas ajudam a identificar quais informações a interface deve apresentar de forma clara e acessível.</p>
+<h3 id="sobre-o-distrito">Sobre o distrito </h3>
+<ul>
+<li>Quantas UBS existem neste distrito?</li>
+<li>Qual é a população desse distrito?</li>
+<li>A quantidade de UBS é suficiente para atender a população local?</li>
+</ul>
+<h3 id="sobre-capacidade-de-atendimento">Sobre capacidade de atendimento </h3>
+<ul>
+<li>Qual é a capacidade de atendimento das UBS presentes no distrito?</li>
+<li>Existe sobrecarga no atendimento?</li>
+<li>A relação entre população e capacidade de atendimento é adequada?</li>
+</ul>
+<h3 id="sobre-comparação-entre-regiões">Sobre comparação entre regiões </h3>
+<ul>
+<li>Distritos vizinhos possuem mais unidades de saúde?</li>
+<li>Existem regiões com menor cobertura de atendimento?</li>
+<li>Quais distritos apresentam maior desigualdade no acesso aos serviços de saúde?</li>
+</ul>
+<h2 id="3-modelo-goms">3. Modelo GOMS </h2>
+<p>O modelo GOMS descreve as tarefas realizadas pelo usuário durante a interação com o sistema, destacando os objetivos, as operações executadas e os diferentes caminhos possíveis para realizar uma tarefa.</p>
+<h3 id="objetivo">Objetivo </h3>
+<p>Identificar se o distrito selecionado possui baixa cobertura de serviços de saúde em relação à sua população.</p>
+<h3 id="operações">Operações </h3>
+<p>As operações representam ações básicas realizadas pelo usuário:</p>
+<ul>
+<li>abrir o sistema;</li>
+<li>selecionar um distrito;</li>
+<li>visualizar indicadores;</li>
+<li>comparar informações com distritos vizinhos.</li>
+</ul>
+<h3 id="métodos">Métodos </h3>
+<p>Os métodos representam diferentes formas de alcançar o objetivo definido.</p>
+<p><strong>Método 1 – Análise direta</strong></p>
+<ul>
+<li>abrir o sistema;</li>
+<li>selecionar um distrito;</li>
+<li>visualizar os indicadores de cobertura de saúde.</li>
+</ul>
+<p><strong>Método 2 – Comparação regional</strong></p>
+<ul>
+<li>selecionar um distrito;</li>
+<li>visualizar distritos vizinhos;</li>
+<li>comparar os indicadores de cobertura entre regiões.</li>
+</ul>
+<h3 id="regras-de-seleção">Regras de seleção </h3>
+<ul>
+<li>Se o usuário deseja analisar apenas a situação do distrito selecionado → utilizar Método 1;</li>
+<li>Se o usuário deseja compreender diferenças entre regiões → utilizar Método 2.</li>
+</ul>
+<h3 id="diagrama-do-modelo-goms">Diagrama do modelo GOMS </h3>
+<div class="mermaid">flowchart TD
+
+Objetivo["Objetivo: Identificar baixa cobertura de saúde"]
+
+Objetivo --&gt; Metodos
+Metodos["Métodos"]
+
+Metodos --&gt; M1["Método 1: Análise direta"]
+Metodos --&gt; M2["Método 2: Comparação regional"]
+
+M1 --&gt; O1["Operações: abrir sistema, selecionar distrito, visualizar indicadores"]
+M2 --&gt; O2["Operações: selecionar distrito, visualizar vizinhos, comparar cobertura"]
+
+Regras["Regras de seleção"] --&gt; R1["Se deseja analisar apenas o distrito: Método 1"]
+Regras --&gt; R2["Se deseja comparar regiões: Método 2"]
+
+R1 --&gt; M1
+R2 --&gt; M2
+</div><h2 id="4-estrutura-de-tarefas-hta">4. Estrutura de Tarefas (HTA) </h2>
+<p>A Hierarchical Task Analysis (HTA) representa a decomposição hierárquica da tarefa principal realizada pelo usuário dentro do sistema.</p>
+<div class="mermaid">flowchart TD
+
+ObjetivoHTA["Objetivo: Identificar cobertura de saúde do distrito"]
+
+ObjetivoHTA --&gt; Metodo1
+ObjetivoHTA --&gt; Metodo2
+
+Metodo1["Método 1: Analisar distrito"]
+Metodo2["Método 2: Comparar distritos"]
+
+Metodo1 --&gt; O1["Abrir sistema"]
+O1 --&gt; O2["Selecionar distrito"]
+O2 --&gt; O3["Visualizar indicadores"]
+
+Metodo2 --&gt; O4["Selecionar distrito"]
+O4 --&gt; O5["Visualizar distritos vizinhos"]
+O5 --&gt; O6["Comparar cobertura"]
+</div>
+      </div>
+      
+      
+    
+    
+    <script type="module">
+// TODO: If ZenUML gets integrated into mermaid in the future,
+//      we can remove the following lines.
+
+
+var MERMAID_CONFIG = ({"startOnLoad":false});
+if (typeof MERMAID_CONFIG !== 'undefined') {
+  MERMAID_CONFIG.startOnLoad = false
+  MERMAID_CONFIG.cloneCssStyles = false
+  MERMAID_CONFIG.theme = "default"
+}
+
+mermaid.initialize(MERMAID_CONFIG || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('div.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidetransitionend', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+  await mermaid.run({
+    nodes: document.querySelectorAll('div.mermaid')
+  })
+} else {
+  await mermaid.run({
+    nodes: document.querySelectorAll('div.mermaid')
+  })
+}
+</script>
+    
+    
+    
+  
+    </body></html>
