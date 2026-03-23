@@ -69,7 +69,7 @@ Essa modelagem atende ao requisito mínimo de aproximadamente **70 vértices e 1
 O usuário poderá:
 
 - Selecionar um distrito.
-- Escolher o tipo de serviço (UBS, hospital, escola ou CRAS).
+- Escolher o tipo de serviço (UBS, UPA ou hospital SUS).
 
 Visualizar:
 

@@ -2,1603 +2,871 @@
   {
     "id": 1,
     "nome": "Hospital das Clínicas",
-    "tipo": "hospital",
+    "tipo": "hospital_sus",
     "distrito_id": 25
   },
   {
     "id": 2,
     "nome": "Hospital São Paulo",
-    "tipo": "hospital",
+    "tipo": "hospital_sus",
     "distrito_id": 89
   },
   {
     "id": 3,
-    "nome": "Hospital Sírio-Libanês",
-    "tipo": "hospital",
-    "distrito_id": 7
-  },
-  {
-    "id": 4,
-    "nome": "Hospital Albert Einstein",
-    "tipo": "hospital",
-    "distrito_id": 53
-  },
-  {
-    "id": 5,
     "nome": "Hospital do Servidor Público Estadual",
-    "tipo": "hospital",
+    "tipo": "hospital_sus",
     "distrito_id": 32
   },
   {
-    "id": 6,
+    "id": 4,
     "nome": "Hospital Municipal Tide Setúbal",
-    "tipo": "hospital",
+    "tipo": "hospital_sus",
     "distrito_id": 72
   },
   {
-    "id": 7,
+    "id": 5,
     "nome": "Hospital Municipal Carmino Caricchio",
-    "tipo": "hospital",
+    "tipo": "hospital_sus",
     "distrito_id": 58
   },
   {
-    "id": 8,
+    "id": 6,
     "nome": "Hospital Santa Marcelina",
-    "tipo": "hospital",
+    "tipo": "hospital_sus",
     "distrito_id": 35
   },
   {
-    "id": 9,
+    "id": 7,
     "nome": "Hospital Municipal Dr. Fernando M. P. da Rocha",
-    "tipo": "hospital",
+    "tipo": "hospital_sus",
     "distrito_id": 16
   },
   {
-    "id": 10,
+    "id": 8,
     "nome": "Hospital Municipal Dr. José Soares Hungria",
-    "tipo": "hospital",
+    "tipo": "hospital_sus",
     "distrito_id": 94
   },
   {
-    "id": 11,
+    "id": 9,
     "nome": "Hospital Municipal M'Boi Mirim",
-    "tipo": "hospital",
+    "tipo": "hospital_sus",
     "distrito_id": 40
   },
   {
-    "id": 12,
+    "id": 10,
     "nome": "Hospital Municipal Dr. Alípio Corrêa Netto",
-    "tipo": "hospital",
+    "tipo": "hospital_sus",
     "distrito_id": 27
   },
   {
-    "id": 13,
+    "id": 11,
     "nome": "Hospital Geral de Pedreira",
-    "tipo": "hospital",
+    "tipo": "hospital_sus",
     "distrito_id": 57
   },
   {
-    "id": 14,
+    "id": 12,
     "nome": "Hospital Geral de Guaianases",
-    "tipo": "hospital",
+    "tipo": "hospital_sus",
     "distrito_id": 30
   },
   {
-    "id": 15,
+    "id": 13,
     "nome": "Hospital Geral de São Mateus",
-    "tipo": "hospital",
+    "tipo": "hospital_sus",
     "distrito_id": 71
   },
   {
-    "id": 16,
+    "id": 14,
     "nome": "Santa Casa de São Paulo",
-    "tipo": "hospital",
+    "tipo": "hospital_sus",
     "distrito_id": 77
   },
   {
-    "id": 17,
+    "id": 15,
     "nome": "Hospital Municipal Vereador José Storopoli",
-    "tipo": "hospital",
+    "tipo": "hospital_sus",
     "distrito_id": 88
   },
   {
-    "id": 18,
+    "id": 16,
     "nome": "Hospital Municipal Dr. Arthur Ribeiro de Saboya",
-    "tipo": "hospital",
+    "tipo": "hospital_sus",
     "distrito_id": 36
   },
   {
-    "id": 19,
-    "nome": "Hospital São Luiz Itaim",
-    "tipo": "hospital",
-    "distrito_id": 33
-  },
-  {
-    "id": 20,
+    "id": 17,
     "nome": "Hospital do Mandaqui",
-    "tipo": "hospital",
+    "tipo": "hospital_sus",
     "distrito_id": 67
   },
   {
+    "id": 18,
+    "nome": "UPA Brasilândia",
+    "tipo": "upa",
+    "distrito_id": 9
+  },
+  {
+    "id": 19,
+    "nome": "UPA Campo Limpo",
+    "tipo": "upa",
+    "distrito_id": 16
+  },
+  {
+    "id": 20,
+    "nome": "UPA Capão Redondo",
+    "tipo": "upa",
+    "distrito_id": 18
+  },
+  {
     "id": 21,
+    "nome": "UPA Cidade Ademar",
+    "tipo": "upa",
+    "distrito_id": 21
+  },
+  {
+    "id": 22,
+    "nome": "UPA Cidade Tiradentes",
+    "tipo": "upa",
+    "distrito_id": 24
+  },
+  {
+    "id": 23,
+    "nome": "UPA Grajaú",
+    "tipo": "upa",
+    "distrito_id": 29
+  },
+  {
+    "id": 24,
+    "nome": "UPA Guaianases",
+    "tipo": "upa",
+    "distrito_id": 30
+  },
+  {
+    "id": 25,
+    "nome": "UPA Itaim Paulista",
+    "tipo": "upa",
+    "distrito_id": 34
+  },
+  {
+    "id": 26,
+    "nome": "UPA Itaquera",
+    "tipo": "upa",
+    "distrito_id": 35
+  },
+  {
+    "id": 27,
+    "nome": "UPA Jardim Ângela",
+    "tipo": "upa",
+    "distrito_id": 40
+  },
+  {
+    "id": 28,
+    "nome": "UPA Jardim São Luís",
+    "tipo": "upa",
+    "distrito_id": 43
+  },
+  {
+    "id": 29,
+    "nome": "UPA Parelheiros",
+    "tipo": "upa",
+    "distrito_id": 54
+  },
+  {
+    "id": 30,
+    "nome": "UPA Sacomã",
+    "tipo": "upa",
+    "distrito_id": 66
+  },
+  {
+    "id": 31,
+    "nome": "UPA São Mateus",
+    "tipo": "upa",
+    "distrito_id": 71
+  },
+  {
+    "id": 32,
+    "nome": "UPA Sapopemba",
+    "tipo": "upa",
+    "distrito_id": 75
+  },
+  {
+    "id": 33,
+    "nome": "UPA Tremembé",
+    "tipo": "upa",
+    "distrito_id": 80
+  },
+  {
+    "id": 34,
+    "nome": "UPA Pirituba",
+    "tipo": "upa",
+    "distrito_id": 94
+  },
+  {
+    "id": 35,
     "nome": "UBS Água Rasa",
     "tipo": "ubs",
     "distrito_id": 1
   },
   {
-    "id": 22,
+    "id": 36,
     "nome": "UBS Alto de Pinheiros",
     "tipo": "ubs",
     "distrito_id": 2
   },
   {
-    "id": 23,
+    "id": 37,
     "nome": "UBS Aricanduva",
     "tipo": "ubs",
     "distrito_id": 4
   },
   {
-    "id": 24,
+    "id": 38,
     "nome": "UBS Artur Alvim",
     "tipo": "ubs",
     "distrito_id": 5
   },
   {
-    "id": 25,
+    "id": 39,
     "nome": "UBS Belém",
     "tipo": "ubs",
     "distrito_id": 6
   },
   {
-    "id": 26,
+    "id": 40,
     "nome": "UBS Bela Vista 1",
     "tipo": "ubs",
     "distrito_id": 7
   },
   {
-    "id": 27,
+    "id": 41,
     "nome": "UBS Bela Vista 2",
     "tipo": "ubs",
     "distrito_id": 7
   },
   {
-    "id": 28,
+    "id": 42,
     "nome": "UBS Bom Retiro 1",
     "tipo": "ubs",
     "distrito_id": 8
   },
   {
-    "id": 29,
+    "id": 43,
     "nome": "UBS Bom Retiro 2",
     "tipo": "ubs",
     "distrito_id": 8
   },
   {
-    "id": 30,
+    "id": 44,
     "nome": "UBS Brasilândia 1",
     "tipo": "ubs",
     "distrito_id": 9
   },
   {
-    "id": 31,
+    "id": 45,
     "nome": "UBS Brasilândia 2",
     "tipo": "ubs",
     "distrito_id": 9
   },
   {
-    "id": 32,
+    "id": 46,
     "nome": "UBS Brás",
     "tipo": "ubs",
     "distrito_id": 10
   },
   {
-    "id": 33,
+    "id": 47,
     "nome": "UBS Butantã",
     "tipo": "ubs",
     "distrito_id": 11
   },
   {
-    "id": 34,
+    "id": 48,
     "nome": "UBS Cachoeirinha",
     "tipo": "ubs",
     "distrito_id": 12
   },
   {
-    "id": 35,
+    "id": 49,
     "nome": "UBS Cambuci 1",
     "tipo": "ubs",
     "distrito_id": 13
   },
   {
-    "id": 36,
+    "id": 50,
     "nome": "UBS Cambuci 2",
     "tipo": "ubs",
     "distrito_id": 13
   },
   {
-    "id": 37,
+    "id": 51,
     "nome": "UBS Campo Belo",
     "tipo": "ubs",
     "distrito_id": 14
   },
   {
-    "id": 38,
+    "id": 52,
     "nome": "UBS Campo Grande",
     "tipo": "ubs",
     "distrito_id": 15
   },
   {
-    "id": 39,
+    "id": 53,
     "nome": "UBS Campo Limpo 1",
     "tipo": "ubs",
     "distrito_id": 16
   },
   {
-    "id": 40,
+    "id": 54,
     "nome": "UBS Campo Limpo 2",
     "tipo": "ubs",
     "distrito_id": 16
   },
   {
-    "id": 41,
+    "id": 55,
     "nome": "UBS Cangaíba",
     "tipo": "ubs",
     "distrito_id": 17
   },
   {
-    "id": 42,
+    "id": 56,
     "nome": "UBS Capão Redondo 1",
     "tipo": "ubs",
     "distrito_id": 18
   },
   {
-    "id": 43,
+    "id": 57,
     "nome": "UBS Capão Redondo 2",
     "tipo": "ubs",
     "distrito_id": 18
   },
   {
-    "id": 44,
+    "id": 58,
     "nome": "UBS Carrão",
     "tipo": "ubs",
     "distrito_id": 19
   },
   {
-    "id": 45,
+    "id": 59,
     "nome": "UBS Casa Verde",
     "tipo": "ubs",
     "distrito_id": 20
   },
   {
-    "id": 46,
+    "id": 60,
     "nome": "UBS Cidade Ademar 1",
     "tipo": "ubs",
     "distrito_id": 21
   },
   {
-    "id": 47,
+    "id": 61,
     "nome": "UBS Cidade Ademar 2",
     "tipo": "ubs",
     "distrito_id": 21
   },
   {
-    "id": 48,
+    "id": 62,
     "nome": "UBS Cidade Dutra",
     "tipo": "ubs",
     "distrito_id": 22
   },
   {
-    "id": 49,
+    "id": 63,
     "nome": "UBS Cidade Líder",
     "tipo": "ubs",
     "distrito_id": 23
   },
   {
-    "id": 50,
+    "id": 64,
     "nome": "UBS Consolação 1",
     "tipo": "ubs",
     "distrito_id": 25
   },
   {
-    "id": 51,
+    "id": 65,
     "nome": "UBS Consolação 2",
     "tipo": "ubs",
     "distrito_id": 25
   },
   {
-    "id": 52,
+    "id": 66,
     "nome": "UBS Cursino",
     "tipo": "ubs",
     "distrito_id": 26
   },
   {
-    "id": 53,
+    "id": 67,
     "nome": "UBS Ermelino Matarazzo",
     "tipo": "ubs",
     "distrito_id": 27
   },
   {
-    "id": 54,
+    "id": 68,
     "nome": "UBS Freguesia do Ó",
     "tipo": "ubs",
     "distrito_id": 28
   },
   {
-    "id": 55,
+    "id": 69,
     "nome": "UBS Grajaú 1",
     "tipo": "ubs",
     "distrito_id": 29
   },
   {
-    "id": 56,
+    "id": 70,
     "nome": "UBS Grajaú 2",
     "tipo": "ubs",
     "distrito_id": 29
   },
   {
-    "id": 57,
+    "id": 71,
     "nome": "UBS Guaianases",
     "tipo": "ubs",
     "distrito_id": 30
   },
   {
-    "id": 58,
+    "id": 72,
     "nome": "UBS Iguatemi",
     "tipo": "ubs",
     "distrito_id": 31
   },
   {
-    "id": 59,
+    "id": 73,
     "nome": "UBS Ipiranga",
     "tipo": "ubs",
     "distrito_id": 32
   },
   {
-    "id": 60,
+    "id": 74,
     "nome": "UBS Itaim Bibi",
     "tipo": "ubs",
     "distrito_id": 33
   },
   {
-    "id": 61,
+    "id": 75,
     "nome": "UBS Itaim Paulista 1",
     "tipo": "ubs",
     "distrito_id": 34
   },
   {
-    "id": 62,
+    "id": 76,
     "nome": "UBS Itaim Paulista 2",
     "tipo": "ubs",
     "distrito_id": 34
   },
   {
-    "id": 63,
+    "id": 77,
     "nome": "UBS Itaquera 1",
     "tipo": "ubs",
     "distrito_id": 35
   },
   {
-    "id": 64,
+    "id": 78,
     "nome": "UBS Itaquera 2",
     "tipo": "ubs",
     "distrito_id": 35
   },
   {
-    "id": 65,
+    "id": 79,
     "nome": "UBS Jabaquara 1",
     "tipo": "ubs",
     "distrito_id": 36
   },
   {
-    "id": 66,
+    "id": 80,
     "nome": "UBS Jabaquara 2",
     "tipo": "ubs",
     "distrito_id": 36
   },
   {
-    "id": 67,
+    "id": 81,
     "nome": "UBS Jaçanã",
     "tipo": "ubs",
     "distrito_id": 37
   },
   {
-    "id": 68,
+    "id": 82,
     "nome": "UBS Jaguara",
     "tipo": "ubs",
     "distrito_id": 38
   },
   {
-    "id": 69,
+    "id": 83,
     "nome": "UBS Jaguaré",
     "tipo": "ubs",
     "distrito_id": 39
   },
   {
-    "id": 70,
+    "id": 84,
     "nome": "UBS Jardim Ângela 1",
     "tipo": "ubs",
     "distrito_id": 40
   },
   {
-    "id": 71,
+    "id": 85,
     "nome": "UBS Jardim Ângela 2",
     "tipo": "ubs",
     "distrito_id": 40
   },
   {
-    "id": 72,
+    "id": 86,
     "nome": "UBS Jardim Helena",
     "tipo": "ubs",
     "distrito_id": 41
   },
   {
-    "id": 73,
+    "id": 87,
     "nome": "UBS Jardim Paulista",
     "tipo": "ubs",
     "distrito_id": 42
   },
   {
-    "id": 74,
+    "id": 88,
     "nome": "UBS Jardim São Luís 1",
     "tipo": "ubs",
     "distrito_id": 43
   },
   {
-    "id": 75,
+    "id": 89,
     "nome": "UBS Jardim São Luís 2",
     "tipo": "ubs",
     "distrito_id": 43
   },
   {
-    "id": 76,
+    "id": 90,
     "nome": "UBS José Bonifácio",
     "tipo": "ubs",
     "distrito_id": 44
   },
   {
-    "id": 77,
+    "id": 91,
     "nome": "UBS Lapa",
     "tipo": "ubs",
     "distrito_id": 46
   },
   {
-    "id": 78,
+    "id": 92,
     "nome": "UBS Liberdade 1",
     "tipo": "ubs",
     "distrito_id": 47
   },
   {
-    "id": 79,
+    "id": 93,
     "nome": "UBS Liberdade 2",
     "tipo": "ubs",
     "distrito_id": 47
   },
   {
-    "id": 80,
+    "id": 94,
     "nome": "UBS Limão",
     "tipo": "ubs",
     "distrito_id": 48
   },
   {
-    "id": 81,
+    "id": 95,
     "nome": "UBS Mandaqui",
     "tipo": "ubs",
     "distrito_id": 49
   },
   {
-    "id": 82,
+    "id": 96,
     "nome": "UBS Moema",
     "tipo": "ubs",
     "distrito_id": 51
   },
   {
-    "id": 83,
+    "id": 97,
     "nome": "UBS Mooca",
     "tipo": "ubs",
     "distrito_id": 52
   },
   {
-    "id": 84,
+    "id": 98,
     "nome": "UBS Morumbi",
     "tipo": "ubs",
     "distrito_id": 53
   },
   {
-    "id": 85,
+    "id": 99,
     "nome": "UBS Pari 1",
     "tipo": "ubs",
     "distrito_id": 55
   },
   {
-    "id": 86,
+    "id": 100,
     "nome": "UBS Pari 2",
     "tipo": "ubs",
     "distrito_id": 55
   },
   {
-    "id": 87,
+    "id": 101,
     "nome": "UBS Parque do Carmo",
     "tipo": "ubs",
     "distrito_id": 56
   },
   {
-    "id": 88,
+    "id": 102,
     "nome": "UBS Pedreira",
     "tipo": "ubs",
     "distrito_id": 57
   },
   {
-    "id": 89,
+    "id": 103,
     "nome": "UBS Penha",
     "tipo": "ubs",
     "distrito_id": 58
   },
   {
-    "id": 90,
+    "id": 104,
     "nome": "UBS Perdizes",
     "tipo": "ubs",
     "distrito_id": 59
   },
   {
-    "id": 91,
+    "id": 105,
     "nome": "UBS Perus",
     "tipo": "ubs",
     "distrito_id": 60
   },
   {
-    "id": 92,
+    "id": 106,
     "nome": "UBS Pinheiros",
     "tipo": "ubs",
     "distrito_id": 61
   },
   {
-    "id": 93,
+    "id": 107,
     "nome": "UBS Ponte Rasa",
     "tipo": "ubs",
     "distrito_id": 62
   },
   {
-    "id": 94,
+    "id": 108,
     "nome": "UBS Raposo Tavares",
     "tipo": "ubs",
     "distrito_id": 63
   },
   {
-    "id": 95,
+    "id": 109,
     "nome": "UBS República 1",
     "tipo": "ubs",
     "distrito_id": 64
   },
   {
-    "id": 96,
+    "id": 110,
     "nome": "UBS República 2",
     "tipo": "ubs",
     "distrito_id": 64
   },
   {
-    "id": 97,
+    "id": 111,
     "nome": "UBS Rio Pequeno",
     "tipo": "ubs",
     "distrito_id": 65
   },
   {
-    "id": 98,
+    "id": 112,
     "nome": "UBS Sacomã 1",
     "tipo": "ubs",
     "distrito_id": 66
   },
   {
-    "id": 99,
+    "id": 113,
     "nome": "UBS Sacomã 2",
     "tipo": "ubs",
     "distrito_id": 66
   },
   {
-    "id": 100,
+    "id": 114,
     "nome": "UBS Santana",
     "tipo": "ubs",
     "distrito_id": 67
   },
   {
-    "id": 101,
+    "id": 115,
     "nome": "UBS Santo Amaro",
     "tipo": "ubs",
     "distrito_id": 68
   },
   {
-    "id": 102,
+    "id": 116,
     "nome": "UBS São Domingos",
     "tipo": "ubs",
     "distrito_id": 69
   },
   {
-    "id": 103,
+    "id": 117,
     "nome": "UBS São Lucas",
     "tipo": "ubs",
     "distrito_id": 70
   },
   {
-    "id": 104,
+    "id": 118,
     "nome": "UBS São Mateus",
     "tipo": "ubs",
     "distrito_id": 71
   },
   {
-    "id": 105,
+    "id": 119,
     "nome": "UBS São Miguel Paulista",
     "tipo": "ubs",
     "distrito_id": 72
   },
   {
-    "id": 106,
+    "id": 120,
     "nome": "UBS São Rafael",
     "tipo": "ubs",
     "distrito_id": 73
   },
   {
-    "id": 107,
+    "id": 121,
     "nome": "UBS Santa Cecília 1",
     "tipo": "ubs",
     "distrito_id": 74
   },
   {
-    "id": 108,
+    "id": 122,
     "nome": "UBS Santa Cecília 2",
     "tipo": "ubs",
     "distrito_id": 74
   },
   {
-    "id": 109,
+    "id": 123,
     "nome": "UBS Sapopemba 1",
     "tipo": "ubs",
     "distrito_id": 75
   },
   {
-    "id": 110,
+    "id": 124,
     "nome": "UBS Sapopemba 2",
     "tipo": "ubs",
     "distrito_id": 75
   },
   {
-    "id": 111,
+    "id": 125,
     "nome": "UBS Saúde",
     "tipo": "ubs",
     "distrito_id": 76
   },
   {
-    "id": 112,
+    "id": 126,
     "nome": "UBS Sé 1",
     "tipo": "ubs",
     "distrito_id": 77
   },
   {
-    "id": 113,
+    "id": 127,
     "nome": "UBS Sé 2",
     "tipo": "ubs",
     "distrito_id": 77
   },
   {
-    "id": 114,
+    "id": 128,
     "nome": "UBS Socorro",
     "tipo": "ubs",
     "distrito_id": 78
   },
   {
-    "id": 115,
+    "id": 129,
     "nome": "UBS Tatuapé",
     "tipo": "ubs",
     "distrito_id": 79
   },
   {
-    "id": 116,
+    "id": 130,
     "nome": "UBS Tremembé",
     "tipo": "ubs",
     "distrito_id": 80
   },
   {
-    "id": 117,
+    "id": 131,
     "nome": "UBS Tucuruvi",
     "tipo": "ubs",
     "distrito_id": 81
   },
   {
-    "id": 118,
+    "id": 132,
     "nome": "UBS Vila Andrade",
     "tipo": "ubs",
     "distrito_id": 82
   },
   {
-    "id": 119,
+    "id": 133,
     "nome": "UBS Vila Curuçá",
     "tipo": "ubs",
     "distrito_id": 83
   },
   {
-    "id": 120,
+    "id": 134,
     "nome": "UBS Vila Formosa",
     "tipo": "ubs",
     "distrito_id": 84
   },
   {
-    "id": 121,
+    "id": 135,
     "nome": "UBS Vila Guilherme",
     "tipo": "ubs",
     "distrito_id": 85
   },
   {
-    "id": 122,
+    "id": 136,
     "nome": "UBS Vila Jacuí",
     "tipo": "ubs",
     "distrito_id": 86
   },
   {
-    "id": 123,
+    "id": 137,
     "nome": "UBS Vila Leopoldina",
     "tipo": "ubs",
     "distrito_id": 87
   },
   {
-    "id": 124,
+    "id": 138,
     "nome": "UBS Vila Maria",
     "tipo": "ubs",
     "distrito_id": 88
   },
   {
-    "id": 125,
+    "id": 139,
     "nome": "UBS Vila Mariana",
     "tipo": "ubs",
     "distrito_id": 89
   },
   {
-    "id": 126,
+    "id": 140,
     "nome": "UBS Vila Matilde",
     "tipo": "ubs",
     "distrito_id": 90
   },
   {
-    "id": 127,
+    "id": 141,
     "nome": "UBS Vila Medeiros",
     "tipo": "ubs",
     "distrito_id": 91
   },
   {
-    "id": 128,
+    "id": 142,
     "nome": "UBS Vila Prudente",
     "tipo": "ubs",
     "distrito_id": 92
   },
   {
-    "id": 129,
+    "id": 143,
     "nome": "UBS Vila Sônia",
     "tipo": "ubs",
     "distrito_id": 93
   },
   {
-    "id": 130,
+    "id": 144,
     "nome": "UBS Pirituba",
     "tipo": "ubs",
     "distrito_id": 94
   },
   {
-    "id": 131,
+    "id": 145,
     "nome": "UBS Barra Funda",
     "tipo": "ubs",
     "distrito_id": 95
-  },
-  {
-    "id": 132,
-    "nome": "EMEF Água Rasa",
-    "tipo": "escola",
-    "distrito_id": 1
-  },
-  {
-    "id": 133,
-    "nome": "EMEF Alto de Pinheiros",
-    "tipo": "escola",
-    "distrito_id": 2
-  },
-  {
-    "id": 134,
-    "nome": "EMEF Aricanduva",
-    "tipo": "escola",
-    "distrito_id": 4
-  },
-  {
-    "id": 135,
-    "nome": "EMEF Artur Alvim",
-    "tipo": "escola",
-    "distrito_id": 5
-  },
-  {
-    "id": 136,
-    "nome": "EMEF Belém",
-    "tipo": "escola",
-    "distrito_id": 6
-  },
-  {
-    "id": 137,
-    "nome": "EMEF Bela Vista",
-    "tipo": "escola",
-    "distrito_id": 7
-  },
-  {
-    "id": 138,
-    "nome": "EMEF Bom Retiro",
-    "tipo": "escola",
-    "distrito_id": 8
-  },
-  {
-    "id": 139,
-    "nome": "EMEF Brasilândia 1",
-    "tipo": "escola",
-    "distrito_id": 9
-  },
-  {
-    "id": 140,
-    "nome": "EMEF Brasilândia 2",
-    "tipo": "escola",
-    "distrito_id": 9
-  },
-  {
-    "id": 141,
-    "nome": "EMEF Brás",
-    "tipo": "escola",
-    "distrito_id": 10
-  },
-  {
-    "id": 142,
-    "nome": "EMEF Butantã",
-    "tipo": "escola",
-    "distrito_id": 11
-  },
-  {
-    "id": 143,
-    "nome": "EMEF Cachoeirinha",
-    "tipo": "escola",
-    "distrito_id": 12
-  },
-  {
-    "id": 144,
-    "nome": "EMEF Cambuci",
-    "tipo": "escola",
-    "distrito_id": 13
-  },
-  {
-    "id": 145,
-    "nome": "EMEF Campo Belo",
-    "tipo": "escola",
-    "distrito_id": 14
-  },
-  {
-    "id": 146,
-    "nome": "EMEF Campo Grande",
-    "tipo": "escola",
-    "distrito_id": 15
-  },
-  {
-    "id": 147,
-    "nome": "EMEF Campo Limpo 1",
-    "tipo": "escola",
-    "distrito_id": 16
-  },
-  {
-    "id": 148,
-    "nome": "EMEF Campo Limpo 2",
-    "tipo": "escola",
-    "distrito_id": 16
-  },
-  {
-    "id": 149,
-    "nome": "EMEF Cangaíba",
-    "tipo": "escola",
-    "distrito_id": 17
-  },
-  {
-    "id": 150,
-    "nome": "EMEF Capão Redondo 1",
-    "tipo": "escola",
-    "distrito_id": 18
-  },
-  {
-    "id": 151,
-    "nome": "EMEF Capão Redondo 2",
-    "tipo": "escola",
-    "distrito_id": 18
-  },
-  {
-    "id": 152,
-    "nome": "EMEF Carrão",
-    "tipo": "escola",
-    "distrito_id": 19
-  },
-  {
-    "id": 153,
-    "nome": "EMEF Casa Verde",
-    "tipo": "escola",
-    "distrito_id": 20
-  },
-  {
-    "id": 154,
-    "nome": "EMEF Cidade Ademar 1",
-    "tipo": "escola",
-    "distrito_id": 21
-  },
-  {
-    "id": 155,
-    "nome": "EMEF Cidade Ademar 2",
-    "tipo": "escola",
-    "distrito_id": 21
-  },
-  {
-    "id": 156,
-    "nome": "EMEF Cidade Dutra 1",
-    "tipo": "escola",
-    "distrito_id": 22
-  },
-  {
-    "id": 157,
-    "nome": "EMEF Cidade Dutra 2",
-    "tipo": "escola",
-    "distrito_id": 22
-  },
-  {
-    "id": 158,
-    "nome": "EMEF Cidade Líder",
-    "tipo": "escola",
-    "distrito_id": 23
-  },
-  {
-    "id": 159,
-    "nome": "EMEF Cidade Tiradentes 1",
-    "tipo": "escola",
-    "distrito_id": 24
-  },
-  {
-    "id": 160,
-    "nome": "EMEF Cidade Tiradentes 2",
-    "tipo": "escola",
-    "distrito_id": 24
-  },
-  {
-    "id": 161,
-    "nome": "EMEF Consolação",
-    "tipo": "escola",
-    "distrito_id": 25
-  },
-  {
-    "id": 162,
-    "nome": "EMEF Cursino",
-    "tipo": "escola",
-    "distrito_id": 26
-  },
-  {
-    "id": 163,
-    "nome": "EMEF Ermelino Matarazzo",
-    "tipo": "escola",
-    "distrito_id": 27
-  },
-  {
-    "id": 164,
-    "nome": "EMEF Freguesia do Ó",
-    "tipo": "escola",
-    "distrito_id": 28
-  },
-  {
-    "id": 165,
-    "nome": "EMEF Grajaú 1",
-    "tipo": "escola",
-    "distrito_id": 29
-  },
-  {
-    "id": 166,
-    "nome": "EMEF Grajaú 2",
-    "tipo": "escola",
-    "distrito_id": 29
-  },
-  {
-    "id": 167,
-    "nome": "EMEF Guaianases",
-    "tipo": "escola",
-    "distrito_id": 30
-  },
-  {
-    "id": 168,
-    "nome": "EMEF Iguatemi",
-    "tipo": "escola",
-    "distrito_id": 31
-  },
-  {
-    "id": 169,
-    "nome": "EMEF Ipiranga",
-    "tipo": "escola",
-    "distrito_id": 32
-  },
-  {
-    "id": 170,
-    "nome": "EMEF Itaim Bibi",
-    "tipo": "escola",
-    "distrito_id": 33
-  },
-  {
-    "id": 171,
-    "nome": "EMEF Itaim Paulista 1",
-    "tipo": "escola",
-    "distrito_id": 34
-  },
-  {
-    "id": 172,
-    "nome": "EMEF Itaim Paulista 2",
-    "tipo": "escola",
-    "distrito_id": 34
-  },
-  {
-    "id": 173,
-    "nome": "EMEF Itaquera 1",
-    "tipo": "escola",
-    "distrito_id": 35
-  },
-  {
-    "id": 174,
-    "nome": "EMEF Itaquera 2",
-    "tipo": "escola",
-    "distrito_id": 35
-  },
-  {
-    "id": 175,
-    "nome": "EMEF Jabaquara 1",
-    "tipo": "escola",
-    "distrito_id": 36
-  },
-  {
-    "id": 176,
-    "nome": "EMEF Jabaquara 2",
-    "tipo": "escola",
-    "distrito_id": 36
-  },
-  {
-    "id": 177,
-    "nome": "EMEF Jaçanã",
-    "tipo": "escola",
-    "distrito_id": 37
-  },
-  {
-    "id": 178,
-    "nome": "EMEF Jaguara",
-    "tipo": "escola",
-    "distrito_id": 38
-  },
-  {
-    "id": 179,
-    "nome": "EMEF Jaguaré",
-    "tipo": "escola",
-    "distrito_id": 39
-  },
-  {
-    "id": 180,
-    "nome": "EMEF Jardim Ângela 1",
-    "tipo": "escola",
-    "distrito_id": 40
-  },
-  {
-    "id": 181,
-    "nome": "EMEF Jardim Ângela 2",
-    "tipo": "escola",
-    "distrito_id": 40
-  },
-  {
-    "id": 182,
-    "nome": "EMEF Jardim Helena",
-    "tipo": "escola",
-    "distrito_id": 41
-  },
-  {
-    "id": 183,
-    "nome": "EMEF Jardim Paulista",
-    "tipo": "escola",
-    "distrito_id": 42
-  },
-  {
-    "id": 184,
-    "nome": "EMEF Jardim São Luís 1",
-    "tipo": "escola",
-    "distrito_id": 43
-  },
-  {
-    "id": 185,
-    "nome": "EMEF Jardim São Luís 2",
-    "tipo": "escola",
-    "distrito_id": 43
-  },
-  {
-    "id": 186,
-    "nome": "EMEF José Bonifácio",
-    "tipo": "escola",
-    "distrito_id": 44
-  },
-  {
-    "id": 187,
-    "nome": "EMEF Lajeado 1",
-    "tipo": "escola",
-    "distrito_id": 45
-  },
-  {
-    "id": 188,
-    "nome": "EMEF Lajeado 2",
-    "tipo": "escola",
-    "distrito_id": 45
-  },
-  {
-    "id": 189,
-    "nome": "EMEF Lapa",
-    "tipo": "escola",
-    "distrito_id": 46
-  },
-  {
-    "id": 190,
-    "nome": "EMEF Liberdade",
-    "tipo": "escola",
-    "distrito_id": 47
-  },
-  {
-    "id": 191,
-    "nome": "EMEF Limão",
-    "tipo": "escola",
-    "distrito_id": 48
-  },
-  {
-    "id": 192,
-    "nome": "EMEF Mandaqui",
-    "tipo": "escola",
-    "distrito_id": 49
-  },
-  {
-    "id": 193,
-    "nome": "EMEF Moema",
-    "tipo": "escola",
-    "distrito_id": 51
-  },
-  {
-    "id": 194,
-    "nome": "EMEF Mooca",
-    "tipo": "escola",
-    "distrito_id": 52
-  },
-  {
-    "id": 195,
-    "nome": "EMEF Morumbi",
-    "tipo": "escola",
-    "distrito_id": 53
-  },
-  {
-    "id": 196,
-    "nome": "EMEF Parelheiros",
-    "tipo": "escola",
-    "distrito_id": 54
-  },
-  {
-    "id": 197,
-    "nome": "EMEF Pari",
-    "tipo": "escola",
-    "distrito_id": 55
-  },
-  {
-    "id": 198,
-    "nome": "EMEF Parque do Carmo",
-    "tipo": "escola",
-    "distrito_id": 56
-  },
-  {
-    "id": 199,
-    "nome": "EMEF Pedreira",
-    "tipo": "escola",
-    "distrito_id": 57
-  },
-  {
-    "id": 200,
-    "nome": "EMEF Penha",
-    "tipo": "escola",
-    "distrito_id": 58
-  },
-  {
-    "id": 201,
-    "nome": "EMEF Perdizes",
-    "tipo": "escola",
-    "distrito_id": 59
-  },
-  {
-    "id": 202,
-    "nome": "EMEF Perus",
-    "tipo": "escola",
-    "distrito_id": 60
-  },
-  {
-    "id": 203,
-    "nome": "EMEF Pinheiros",
-    "tipo": "escola",
-    "distrito_id": 61
-  },
-  {
-    "id": 204,
-    "nome": "EMEF Ponte Rasa",
-    "tipo": "escola",
-    "distrito_id": 62
-  },
-  {
-    "id": 205,
-    "nome": "EMEF Raposo Tavares",
-    "tipo": "escola",
-    "distrito_id": 63
-  },
-  {
-    "id": 206,
-    "nome": "EMEF República",
-    "tipo": "escola",
-    "distrito_id": 64
-  },
-  {
-    "id": 207,
-    "nome": "EMEF Rio Pequeno",
-    "tipo": "escola",
-    "distrito_id": 65
-  },
-  {
-    "id": 208,
-    "nome": "EMEF Sacomã 1",
-    "tipo": "escola",
-    "distrito_id": 66
-  },
-  {
-    "id": 209,
-    "nome": "EMEF Sacomã 2",
-    "tipo": "escola",
-    "distrito_id": 66
-  },
-  {
-    "id": 210,
-    "nome": "EMEF Santana",
-    "tipo": "escola",
-    "distrito_id": 67
-  },
-  {
-    "id": 211,
-    "nome": "EMEF Santo Amaro",
-    "tipo": "escola",
-    "distrito_id": 68
-  },
-  {
-    "id": 212,
-    "nome": "EMEF São Domingos",
-    "tipo": "escola",
-    "distrito_id": 69
-  },
-  {
-    "id": 213,
-    "nome": "EMEF São Lucas",
-    "tipo": "escola",
-    "distrito_id": 70
-  },
-  {
-    "id": 214,
-    "nome": "EMEF São Mateus 1",
-    "tipo": "escola",
-    "distrito_id": 71
-  },
-  {
-    "id": 215,
-    "nome": "EMEF São Mateus 2",
-    "tipo": "escola",
-    "distrito_id": 71
-  },
-  {
-    "id": 216,
-    "nome": "EMEF São Miguel Paulista",
-    "tipo": "escola",
-    "distrito_id": 72
-  },
-  {
-    "id": 217,
-    "nome": "EMEF São Rafael",
-    "tipo": "escola",
-    "distrito_id": 73
-  },
-  {
-    "id": 218,
-    "nome": "EMEF Santa Cecília",
-    "tipo": "escola",
-    "distrito_id": 74
-  },
-  {
-    "id": 219,
-    "nome": "EMEF Sapopemba 1",
-    "tipo": "escola",
-    "distrito_id": 75
-  },
-  {
-    "id": 220,
-    "nome": "EMEF Sapopemba 2",
-    "tipo": "escola",
-    "distrito_id": 75
-  },
-  {
-    "id": 221,
-    "nome": "EMEF Saúde",
-    "tipo": "escola",
-    "distrito_id": 76
-  },
-  {
-    "id": 222,
-    "nome": "EMEF Sé",
-    "tipo": "escola",
-    "distrito_id": 77
-  },
-  {
-    "id": 223,
-    "nome": "EMEF Socorro",
-    "tipo": "escola",
-    "distrito_id": 78
-  },
-  {
-    "id": 224,
-    "nome": "EMEF Tatuapé",
-    "tipo": "escola",
-    "distrito_id": 79
-  },
-  {
-    "id": 225,
-    "nome": "EMEF Tremembé 1",
-    "tipo": "escola",
-    "distrito_id": 80
-  },
-  {
-    "id": 226,
-    "nome": "EMEF Tremembé 2",
-    "tipo": "escola",
-    "distrito_id": 80
-  },
-  {
-    "id": 227,
-    "nome": "EMEF Tucuruvi",
-    "tipo": "escola",
-    "distrito_id": 81
-  },
-  {
-    "id": 228,
-    "nome": "EMEF Vila Andrade",
-    "tipo": "escola",
-    "distrito_id": 82
-  },
-  {
-    "id": 229,
-    "nome": "EMEF Vila Curuçá",
-    "tipo": "escola",
-    "distrito_id": 83
-  },
-  {
-    "id": 230,
-    "nome": "EMEF Vila Formosa",
-    "tipo": "escola",
-    "distrito_id": 84
-  },
-  {
-    "id": 231,
-    "nome": "EMEF Vila Guilherme",
-    "tipo": "escola",
-    "distrito_id": 85
-  },
-  {
-    "id": 232,
-    "nome": "EMEF Vila Jacuí",
-    "tipo": "escola",
-    "distrito_id": 86
-  },
-  {
-    "id": 233,
-    "nome": "EMEF Vila Leopoldina",
-    "tipo": "escola",
-    "distrito_id": 87
-  },
-  {
-    "id": 234,
-    "nome": "EMEF Vila Maria",
-    "tipo": "escola",
-    "distrito_id": 88
-  },
-  {
-    "id": 235,
-    "nome": "EMEF Vila Mariana",
-    "tipo": "escola",
-    "distrito_id": 89
-  },
-  {
-    "id": 236,
-    "nome": "EMEF Vila Matilde",
-    "tipo": "escola",
-    "distrito_id": 90
-  },
-  {
-    "id": 237,
-    "nome": "EMEF Vila Medeiros",
-    "tipo": "escola",
-    "distrito_id": 91
-  },
-  {
-    "id": 238,
-    "nome": "EMEF Vila Prudente",
-    "tipo": "escola",
-    "distrito_id": 92
-  },
-  {
-    "id": 239,
-    "nome": "EMEF Vila Sônia",
-    "tipo": "escola",
-    "distrito_id": 93
-  },
-  {
-    "id": 240,
-    "nome": "EMEF Pirituba 1",
-    "tipo": "escola",
-    "distrito_id": 94
-  },
-  {
-    "id": 241,
-    "nome": "EMEF Pirituba 2",
-    "tipo": "escola",
-    "distrito_id": 94
-  },
-  {
-    "id": 242,
-    "nome": "EMEF Barra Funda",
-    "tipo": "escola",
-    "distrito_id": 95
-  },
-  {
-    "id": 243,
-    "nome": "CRAS Brasilândia",
-    "tipo": "cras",
-    "distrito_id": 9
-  },
-  {
-    "id": 244,
-    "nome": "CRAS Cachoeirinha",
-    "tipo": "cras",
-    "distrito_id": 12
-  },
-  {
-    "id": 245,
-    "nome": "CRAS Capão Redondo",
-    "tipo": "cras",
-    "distrito_id": 18
-  },
-  {
-    "id": 246,
-    "nome": "CRAS Cidade Ademar",
-    "tipo": "cras",
-    "distrito_id": 21
-  },
-  {
-    "id": 247,
-    "nome": "CRAS Cidade Tiradentes",
-    "tipo": "cras",
-    "distrito_id": 24
-  },
-  {
-    "id": 248,
-    "nome": "CRAS Grajaú",
-    "tipo": "cras",
-    "distrito_id": 29
-  },
-  {
-    "id": 249,
-    "nome": "CRAS Guaianases",
-    "tipo": "cras",
-    "distrito_id": 30
-  },
-  {
-    "id": 250,
-    "nome": "CRAS Iguatemi",
-    "tipo": "cras",
-    "distrito_id": 31
-  },
-  {
-    "id": 251,
-    "nome": "CRAS Itaim Paulista",
-    "tipo": "cras",
-    "distrito_id": 34
-  },
-  {
-    "id": 252,
-    "nome": "CRAS Jardim Ângela",
-    "tipo": "cras",
-    "distrito_id": 40
-  },
-  {
-    "id": 253,
-    "nome": "CRAS Jardim Helena",
-    "tipo": "cras",
-    "distrito_id": 41
-  },
-  {
-    "id": 254,
-    "nome": "CRAS Jardim São Luís",
-    "tipo": "cras",
-    "distrito_id": 43
-  },
-  {
-    "id": 255,
-    "nome": "CRAS Lajeado",
-    "tipo": "cras",
-    "distrito_id": 45
-  },
-  {
-    "id": 256,
-    "nome": "CRAS Parelheiros",
-    "tipo": "cras",
-    "distrito_id": 54
-  },
-  {
-    "id": 257,
-    "nome": "CRAS Pedreira",
-    "tipo": "cras",
-    "distrito_id": 57
-  },
-  {
-    "id": 258,
-    "nome": "CRAS Sapopemba",
-    "tipo": "cras",
-    "distrito_id": 75
-  },
-  {
-    "id": 259,
-    "nome": "CRAS São Mateus",
-    "tipo": "cras",
-    "distrito_id": 71
-  },
-  {
-    "id": 260,
-    "nome": "CRAS São Rafael",
-    "tipo": "cras",
-    "distrito_id": 73
-  },
-  {
-    "id": 261,
-    "nome": "CRAS Vila Curuçá",
-    "tipo": "cras",
-    "distrito_id": 83
-  },
-  {
-    "id": 262,
-    "nome": "CRAS Vila Jacuí",
-    "tipo": "cras",
-    "distrito_id": 86
-  },
-  {
-    "id": 263,
-    "nome": "CRAS Campo Limpo",
-    "tipo": "cras",
-    "distrito_id": 16
-  },
-  {
-    "id": 264,
-    "nome": "CRAS Cidade Dutra",
-    "tipo": "cras",
-    "distrito_id": 22
-  },
-  {
-    "id": 265,
-    "nome": "CRAS Sacomã",
-    "tipo": "cras",
-    "distrito_id": 66
-  },
-  {
-    "id": 266,
-    "nome": "CRAS Tremembé",
-    "tipo": "cras",
-    "distrito_id": 80
-  },
-  {
-    "id": 267,
-    "nome": "CRAS Vila Medeiros",
-    "tipo": "cras",
-    "distrito_id": 91
   }
 ]

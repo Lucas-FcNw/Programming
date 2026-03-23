@@ -2,15 +2,16 @@
 SPGraph - Script de Geração de Dados
 =====================================
 Gera os arquivos JSON com informações dos distritos administrativos
-de São Paulo, adjacências geográficas e serviços públicos.
-
-"""
-Script para gerar arquivos JSON com dados dos distritos de São Paulo,
-from pathlib import Path
+de São Paulo, adjacências geográficas e serviços de saúde.
 
 Uso:
     python gerar_dados.py
 """
+
+import json
+import math
+import random
+from pathlib import Path
 
 random.seed(42)
 
@@ -129,15 +130,13 @@ DISTRITOS = DISTRITOS[:95]
 
 
 # ============================================================================
-# Serviços públicos por distrito
+# Serviços de saúde por distrito
 # ============================================================================
 
-# Distritos com hospitais (20 hospitais - concentrados no centro e oeste)
-HOSPITAIS = {
+# Distritos com hospitais SUS
+HOSPITAIS_SUS = {
     25: "Hospital das Clínicas",
     89: "Hospital São Paulo",
-    7: "Hospital Sírio-Libanês",
-    53: "Hospital Albert Einstein",
     32: "Hospital do Servidor Público Estadual",
     72: "Hospital Municipal Tide Setúbal",
     58: "Hospital Municipal Carmino Caricchio",
@@ -152,22 +151,32 @@ HOSPITAIS = {
     77: "Santa Casa de São Paulo",
     88: "Hospital Municipal Vereador José Storopoli",
     36: "Hospital Municipal Dr. Arthur Ribeiro de Saboya",
-    33: "Hospital São Luiz Itaim",
     67: "Hospital do Mandaqui",
+}
+
+# Distritos com UPA (distribuição simplificada)
+UPAS = {
+    9: "UPA Brasilândia",
+    16: "UPA Campo Limpo",
+    18: "UPA Capão Redondo",
+    21: "UPA Cidade Ademar",
+    24: "UPA Cidade Tiradentes",
+    29: "UPA Grajaú",
+    30: "UPA Guaianases",
+    34: "UPA Itaim Paulista",
+    35: "UPA Itaquera",
+    40: "UPA Jardim Ângela",
+    43: "UPA Jardim São Luís",
+    54: "UPA Parelheiros",
+    66: "UPA Sacomã",
+    71: "UPA São Mateus",
+    75: "UPA Sapopemba",
+    80: "UPA Tremembé",
+    94: "UPA Pirituba",
 }
 
 # Distritos SEM UBS (mais isolados / carentes de atenção primária)
 SEM_UBS = {50, 3, 24, 45, 54}  # Marsilac, Anhanguera, Cidade Tiradentes, Lajeado, Parelheiros
-
-# Distritos com CRAS (áreas vulneráveis)
-COM_CRAS = [
-    9, 12, 18, 21, 24, 29, 30, 31, 34, 40, 41,
-    43, 45, 54, 57, 75, 71, 73, 83, 86, 16, 22,
-    66, 80, 91
-]
-
-# Distritos SEM escola (poucos / muito pequenos)
-SEM_ESCOLA = {50, 3}  # Marsilac, Anhanguera
 
 
 def haversine(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
@@ -257,23 +266,31 @@ def gerar_adjacencias(distritos: list, limiar_km: float = 5.5) -> list:
 
 def gerar_servicos(distritos: list) -> list:
     """
-    Distribui serviços públicos (UBS, hospital, escola, CRAS) pelos distritos.
+    Distribui serviços de saúde (UBS, UPA e hospitais SUS) pelos distritos.
 
     A distribuição reflete desigualdades reais:
     - Hospitais: concentrados em áreas centrais e oeste
     - UBS: ampla distribuição, mas ausentes em áreas periféricas extremas
-    - Escolas: distribuição muito ampla
-    - CRAS: focados em áreas vulneráveis (periferia)
     """
     servicos = []
     id_counter = 1
 
-    # --- Hospitais ---
-    for distrito_id, nome_hospital in HOSPITAIS.items():
+    # --- Hospitais SUS ---
+    for distrito_id, nome_hospital in HOSPITAIS_SUS.items():
         servicos.append({
             "id": id_counter,
             "nome": nome_hospital,
-            "tipo": "hospital",
+            "tipo": "hospital_sus",
+            "distrito_id": distrito_id
+        })
+        id_counter += 1
+
+    # --- UPA ---
+    for distrito_id, nome_upa in UPAS.items():
+        servicos.append({
+            "id": id_counter,
+            "nome": nome_upa,
+            "tipo": "upa",
             "distrito_id": distrito_id
         })
         id_counter += 1
@@ -297,37 +314,6 @@ def gerar_servicos(distritos: list) -> list:
                     "distrito_id": d["id"]
                 })
                 id_counter += 1
-
-    # --- Escolas ---
-    for d in distritos:
-        if d["id"] not in SEM_ESCOLA:
-            n_escolas = 1
-            if d["populacao"] > 150000:
-                n_escolas = 2
-            elif d["populacao"] > 250000:
-                n_escolas = 3
-
-            for k in range(n_escolas):
-                sufixo = f" {k + 1}" if n_escolas > 1 else ""
-                servicos.append({
-                    "id": id_counter,
-                    "nome": f"EMEF {d['nome']}{sufixo}",
-                    "tipo": "escola",
-                    "distrito_id": d["id"]
-                })
-                id_counter += 1
-
-    # --- CRAS ---
-    for distrito_id in COM_CRAS:
-        d = next((x for x in distritos if x["id"] == distrito_id), None)
-        if d:
-            servicos.append({
-                "id": id_counter,
-                "nome": f"CRAS {d['nome']}",
-                "tipo": "cras",
-                "distrito_id": distrito_id
-            })
-            id_counter += 1
 
     return servicos
 
@@ -375,10 +361,9 @@ def main():
     print(f"   Distritos:    {len(DISTRITOS)}")
     print(f"   Adjacências:  {len(adjacencias)}")
     print(f"   Serviços:     {len(servicos)}")
-    print(f"   Hospitais:    {contagem.get('hospital', 0)}")
+    print(f"   Hospitais SUS:{contagem.get('hospital_sus', 0)}")
+    print(f"   UPA:          {contagem.get('upa', 0)}")
     print(f"   UBS:          {contagem.get('ubs', 0)}")
-    print(f"   Escolas:      {contagem.get('escola', 0)}")
-    print(f"   CRAS:         {contagem.get('cras', 0)}")
     print(f"{'=' * 60}")
 
 

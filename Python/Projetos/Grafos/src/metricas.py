@@ -39,7 +39,7 @@ class MetricasAcessibilidade:
         Calcula a distância de cada distrito ao serviço mais próximo.
 
         Args:
-            tipo_servico: Tipo de serviço ('hospital' ou 'ubs').
+            tipo_servico: Tipo de serviço ('ubs', 'upa' ou 'hospital_sus').
 
         Returns:
             Dicionário {distrito_id: distância_km}.
@@ -59,7 +59,7 @@ class MetricasAcessibilidade:
 
         Args:
             distrito_id: ID do distrito.
-            tipo_servico: Tipo de serviço.
+            tipo_servico: Tipo de serviço ('ubs', 'upa' ou 'hospital_sus').
 
         Returns:
             Score de 0 a 100.

@@ -20,8 +20,8 @@ import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
 
-# Adicionar o diretório do projeto ao path
-sys.path.insert(0, str(Path(__file__).parent))
+# Adicionar a raiz do projeto ao path (para permitir import src.*)
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from src.grafo import GrafoSP
 from src.metricas import MetricasAcessibilidade
@@ -79,7 +79,8 @@ CORES_ZONA = {
 }
 
 NOMES_SERVICO = {
-    "hospital": "🏥 Hospital",
+    "hospital_sus": "🏥 Hospital (SUS)",
+    "upa": "🚑 UPA",
     "ubs": "🏨 UBS",
 }
 
@@ -90,7 +91,7 @@ NOMES_SERVICO = {
 @st.cache_resource
 def carregar_grafo():
     """Carrega e constrói o grafo (executado apenas uma vez)."""
-    data_dir = Path(__file__).parent / "data"
+    data_dir = Path(__file__).resolve().parent.parent / "data"
     return GrafoSP(data_dir=data_dir)
 
 
@@ -104,7 +105,7 @@ def carregar_metricas(_grafo):
 # Verificar se os dados existem
 # ============================================================================
 
-data_dir = Path(__file__).parent / "data"
+data_dir = Path(__file__).resolve().parent.parent / "data"
 if not (data_dir / "distritos.json").exists():
     st.error("⚠️ Arquivos de dados não encontrados!")
     st.info(
@@ -128,23 +129,34 @@ st.sidebar.markdown("---")
 # Seleção de distrito
 nomes = grafo.get_nomes_ordenados()
 opcoes_distrito = {nome: did for did, nome in nomes}
+
+if "distrito_id" not in st.session_state:
+    st.session_state["distrito_id"] = (
+        opcoes_distrito.get("Sé", next(iter(opcoes_distrito.values())))
+    )
+
+nomes_lista = list(opcoes_distrito.keys())
+nome_atual = grafo.get_nome(st.session_state["distrito_id"])
+index_atual = nomes_lista.index(nome_atual) if nome_atual in nomes_lista else 0
+
 distrito_selecionado_nome = st.sidebar.selectbox(
     "📍 Selecione o Distrito",
-    options=list(opcoes_distrito.keys()),
-    index=list(opcoes_distrito.keys()).index("Sé") if "Sé" in opcoes_distrito else 0,
+    options=nomes_lista,
+    index=index_atual,
 )
 distrito_id = opcoes_distrito[distrito_selecionado_nome]
+st.session_state["distrito_id"] = distrito_id
 
 # Seleção de tipo de serviço
 tipos_disponiveis = set(grafo.get_tipos_servico())
-tipos_servico = [t for t in ["ubs", "hospital"] if t in tipos_disponiveis]
+tipos_servico = [t for t in ["ubs", "upa", "hospital_sus"] if t in tipos_disponiveis]
 if not tipos_servico:
     tipos_servico = sorted(tipos_disponiveis)
 
 tipo_servico = st.sidebar.selectbox(
     "🏥 Tipo de Serviço",
     options=tipos_servico,
-    format_func=lambda x: NOMES_SERVICO.get(x, x),
+    format_func=lambda x: NOMES_SERVICO.get(x, str(x)),
 )
 
 # Estatísticas do grafo na sidebar
@@ -164,7 +176,7 @@ st.sidebar.metric("Conexo", "✅ Sim" if stats["eh_conexo"] else "❌ Não")
 st.markdown('<div class="main-header">SPGraph — Saúde Territorial em São Paulo</div>', unsafe_allow_html=True)
 st.markdown(
     '<div class="sub-header">'
-    'Análise de desigualdades no acesso a UBS e hospitais por distrito · ODS 10 — Redução das Desigualdades'
+    'Análise de desigualdades no acesso a UBS, UPA e hospitais SUS por distrito · ODS 10 — Redução das Desigualdades'
     '</div>',
     unsafe_allow_html=True
 )
@@ -187,73 +199,83 @@ with tab1:
     col_grafo, col_info = st.columns([3, 1])
 
     with col_grafo:
-        fig, ax = plt.subplots(figsize=(14, 11))
+        # Mapa interativo com base cartográfica
+        fig_map = go.Figure()
 
-        pos = grafo.get_posicoes()
+        # Arestas (linhas)
+        for u, v, data in grafo.G.edges(data=True):
+            lon_u, lat_u = grafo.distritos[u]["lon"], grafo.distritos[u]["lat"]
+            lon_v, lat_v = grafo.distritos[v]["lon"], grafo.distritos[v]["lat"]
+            fig_map.add_trace(go.Scattermap(
+                lon=[lon_u, lon_v],
+                lat=[lat_u, lat_v],
+                mode="lines",
+                line=dict(width=1, color="rgba(120,120,120,0.45)"),
+                hoverinfo="skip",
+                showlegend=False,
+            ))
 
-        # Cores dos nós por zona
-        node_colors = [
-            CORES_ZONA.get(grafo.distritos[n]["zona"], "#999")
-            for n in grafo.G.nodes()
-        ]
-
-        # Tamanho dos nós por população (normalizado)
+        # Nós (distritos)
         pops = [grafo.distritos[n]["populacao"] for n in grafo.G.nodes()]
         max_pop = max(pops) if pops else 1
-        node_sizes = [max(80, (p / max_pop) * 500) for p in pops]
 
-        # Desenhar arestas
-        nx.draw_networkx_edges(
-            grafo.G, pos, ax=ax,
-            edge_color="#cccccc", alpha=0.4, width=0.8
-        )
-
-        # Desenhar nós
-        nx.draw_networkx_nodes(
-            grafo.G, pos, ax=ax,
-            node_color=node_colors, node_size=node_sizes,
-            alpha=0.85, edgecolors="#333", linewidths=0.5
-        )
-
-        # Destacar distrito selecionado
-        nx.draw_networkx_nodes(
-            grafo.G, pos, ax=ax,
-            nodelist=[distrito_id],
-            node_color="gold", node_size=400,
-            edgecolors="#000", linewidths=2.5
-        )
-
-        # Labels apenas para distritos grandes ou selecionado
-        labels = {}
+        lons, lats, nomes_nos, cores_nos, tamanhos, custom = [], [], [], [], [], []
         for n in grafo.G.nodes():
-            if n == distrito_id or grafo.distritos[n]["populacao"] > 200000:
-                labels[n] = grafo.distritos[n]["nome"]
+            dno = grafo.distritos[n]
+            lons.append(dno["lon"])
+            lats.append(dno["lat"])
+            nomes_nos.append(dno["nome"])
+            cores_nos.append("gold" if n == distrito_id else CORES_ZONA.get(dno["zona"], "#999"))
+            tamanhos.append(max(8, (dno["populacao"] / max_pop) * 24))
+            custom.append([n, dno["nome"]])
 
-        nx.draw_networkx_labels(
-            grafo.G, pos, labels, ax=ax,
-            font_size=7, font_weight="bold",
-            font_color="#222"
+        fig_map.add_trace(go.Scattermap(
+            lon=lons,
+            lat=lats,
+            mode="markers",
+            marker=dict(size=tamanhos, color=cores_nos, opacity=0.9),
+            text=nomes_nos,
+            customdata=custom,
+            hovertemplate="<b>%{text}</b><br>ID: %{customdata[0]}<extra></extra>",
+            name="Distritos",
+        ))
+
+        fig_map.update_layout(
+            map=dict(
+                style="open-street-map",
+                center=dict(lat=-23.55, lon=-46.63),
+                zoom=10,
+            ),
+            margin=dict(l=0, r=0, t=40, b=0),
+            title=f"Mapa Interativo dos Distritos — {distrito_selecionado_nome} selecionado",
+            legend=dict(orientation="h", yanchor="bottom", y=0.01, xanchor="left", x=0.01),
+            height=650,
         )
 
-        # Legenda
-        patches = [
-            mpatches.Patch(color=cor, label=zona)
-            for zona, cor in CORES_ZONA.items()
-        ]
-        patches.append(mpatches.Patch(color="gold", label="Selecionado"))
-        ax.legend(handles=patches, loc="lower left", fontsize=9,
-                  framealpha=0.9, title="Zonas")
-
-        ax.set_title(
-            f"Grafo dos Distritos — {distrito_selecionado_nome} selecionado",
-            fontsize=14, fontweight="bold", pad=15
+        evento = st.plotly_chart(
+            fig_map,
+            use_container_width=True,
+            key="mapa_interativo_sp",
+            on_select="rerun",
+            selection_mode="points",
         )
-        ax.set_xlabel("Longitude", fontsize=10)
-        ax.set_ylabel("Latitude", fontsize=10)
-        ax.grid(True, alpha=0.2)
 
-        st.pyplot(fig)
-        plt.close(fig)
+        # Clique no mapa atualiza distrito selecionado
+        pontos = []
+        if evento is not None:
+            if isinstance(evento, dict):
+                pontos = evento.get("selection", {}).get("points", [])
+            elif hasattr(evento, "selection") and hasattr(evento.selection, "points"):
+                pontos = evento.selection.points
+
+        if pontos:
+            p = pontos[-1]
+            customdata = p.get("customdata") if isinstance(p, dict) else getattr(p, "customdata", None)
+            if customdata and len(customdata) >= 1:
+                novo_id = int(customdata[0])
+                if novo_id != st.session_state.get("distrito_id"):
+                    st.session_state["distrito_id"] = novo_id
+                    st.rerun()
 
     with col_info:
         st.markdown("### 📋 Distrito Selecionado")
@@ -270,10 +292,13 @@ with tab1:
         st.markdown("---")
         st.markdown("### 🏛️ Serviços Locais")
         servicos_local = grafo.contar_servicos_distrito(distrito_id)
+        qtd_tipo = int(servicos_local.get(tipo_servico, 0))
+        st.markdown(f"**Selecionado ({NOMES_SERVICO.get(tipo_servico, tipo_servico)}):** {qtd_tipo}")
+
         if servicos_local:
-            for tipo, qtd in servicos_local.items():
-                emoji = NOMES_SERVICO.get(tipo, tipo).split()[0]
-                st.markdown(f"{emoji} {tipo.upper()}: **{qtd}**")
+            st.markdown("**Todos os serviços no distrito:**")
+            for tipo, qtd in sorted(servicos_local.items()):
+                st.markdown(f"- {NOMES_SERVICO.get(tipo, tipo)}: **{qtd}**")
         else:
             st.warning("Nenhum serviço neste distrito")
 
@@ -560,14 +585,14 @@ with tab4:
         ### 🎯 Objetivo
 
         Desenvolver um sistema funcional que utilize **modelagem por grafos**
-        para analisar e visualizar desigualdades no acesso a **UBS e hospitais**
+        para analisar e visualizar desigualdades no acesso a **UBS, UPA e hospitais SUS**
         nos distritos da cidade de São Paulo.
 
         ### 🌍 ODS 10 — Redução das Desigualdades
 
         A desigualdade urbana se manifesta no acesso desigual a serviços de saúde.
         Distritos periféricos tendem a apresentar menor cobertura relativa
-        de UBS e hospitais quando comparados a regiões centrais.
+        de UBS, UPA e hospitais SUS quando comparados a regiões centrais.
 
         O projeto busca identificar padrões de cobertura territorial, destacar
         regiões com menor acesso e fornecer uma visualização comparativa
@@ -593,7 +618,8 @@ with tab4:
 
         ### 🏛️ Serviços Analisados
 
-        - 🏥 **Hospitais** — Rede hospitalar municipal
+        - 🏥 **Hospitais (SUS)** — Rede hospitalar pública
+        - 🚑 **UPA** — Unidades de Pronto Atendimento
         - 🏨 **UBS** — Unidades Básicas de Saúde
         """)
 

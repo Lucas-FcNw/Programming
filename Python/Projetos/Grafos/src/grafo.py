@@ -61,7 +61,25 @@ class GrafoSP:
 
         # Serviços
         with open(self.data_dir / "servicos.json", "r", encoding="utf-8") as f:
-            self.servicos = json.load(f)
+            servicos_brutos = json.load(f)
+
+        # Normalização e filtro de tipos permitidos
+        # Regra do projeto: apenas UBS, UPA e Hospital SUS
+        tipos_permitidos = {"ubs", "upa", "hospital_sus"}
+        self.servicos = []
+        for s in servicos_brutos:
+            tipo = str(s.get("tipo", "")).strip().lower()
+
+            # Compatibilidade com datasets legados
+            if tipo == "hospital":
+                tipo = "hospital_sus"
+
+            if tipo not in tipos_permitidos:
+                continue
+
+            s_norm = dict(s)
+            s_norm["tipo"] = tipo
+            self.servicos.append(s_norm)
 
         # Indexar serviços por distrito
         self.servicos_por_distrito = {}
