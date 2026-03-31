@@ -1,872 +1,3348 @@
 [
   {
     "id": 1,
-    "nome": "Hospital das Clínicas",
+    "nome": "CARMEN PRUDENTE -  HOSPITAL CIDADE TIRADENTES",
     "tipo": "hospital_sus",
-    "distrito_id": 25
+    "distrito_id": 24,
+    "leitos": 223
   },
   {
     "id": 2,
-    "nome": "Hospital São Paulo",
+    "nome": "CASA DA CRIANCA BETINHO LAR ESPIRITA P/ EXCEPCIONAIS",
     "tipo": "hospital_sus",
-    "distrito_id": 89
+    "distrito_id": 19,
+    "leitos": 89
   },
   {
     "id": 3,
-    "nome": "Hospital do Servidor Público Estadual",
+    "nome": "CASA DE DAVID - HOSP",
     "tipo": "hospital_sus",
-    "distrito_id": 32
+    "distrito_id": 37,
+    "leitos": 265
   },
   {
     "id": 4,
-    "nome": "Hospital Municipal Tide Setúbal",
+    "nome": "CASA DE SAUDE  DE SAO JOAO DE DEUS",
     "tipo": "hospital_sus",
-    "distrito_id": 72
+    "distrito_id": 69,
+    "leitos": 90
   },
   {
     "id": 5,
-    "nome": "Hospital Municipal Carmino Caricchio",
+    "nome": "CENTRO DE ATENCAO INTEGRADA SAUDE MENTAL- CAISM",
     "tipo": "hospital_sus",
-    "distrito_id": 58
+    "distrito_id": 89,
+    "leitos": 233
   },
   {
     "id": 6,
-    "nome": "Hospital Santa Marcelina",
+    "nome": "CENTRO OFTALMOLOGICO TADEU CVINTAL S/C LTDA",
     "tipo": "hospital_sus",
-    "distrito_id": 35
+    "distrito_id": 32,
+    "leitos": 30
   },
   {
     "id": 7,
-    "nome": "Hospital Municipal Dr. Fernando M. P. da Rocha",
+    "nome": "CENTRO REFERENCIA DST/AIDS",
     "tipo": "hospital_sus",
-    "distrito_id": 16
+    "distrito_id": 89,
+    "leitos": 50
   },
   {
     "id": 8,
-    "nome": "Hospital Municipal Dr. José Soares Hungria",
+    "nome": "DO RIM E HIPERTENSAO (FUND OSWALDO RAMOS - HOSP",
     "tipo": "hospital_sus",
-    "distrito_id": 94
+    "distrito_id": 89,
+    "leitos": 146
   },
   {
     "id": 9,
-    "nome": "Hospital Municipal M'Boi Mirim",
+    "nome": "DOM PEDRO II -HOSP GERIATRICO",
     "tipo": "hospital_sus",
-    "distrito_id": 40
+    "distrito_id": 37,
+    "leitos": 0
   },
   {
     "id": 10,
-    "nome": "Hospital Municipal Dr. Alípio Corrêa Netto",
+    "nome": "FUNDACAO ADIB JATENE-HOSP DANTE PAZZANESE",
     "tipo": "hospital_sus",
-    "distrito_id": 27
+    "distrito_id": 51,
+    "leitos": 309
   },
   {
     "id": 11,
-    "nome": "Hospital Geral de Pedreira",
+    "nome": "HELIOPOLIS-HOSP (UNIDD GESTAO ASSISTENCIAL)",
     "tipo": "hospital_sus",
-    "distrito_id": 57
+    "distrito_id": 66,
+    "leitos": 364
   },
   {
     "id": 12,
-    "nome": "Hospital Geral de Guaianases",
+    "nome": "INST BRAS CONTROLE DE CANCER(IBCC)-HOSP/AMB H",
     "tipo": "hospital_sus",
-    "distrito_id": 30
+    "distrito_id": 52,
+    "leitos": 104
   },
   {
     "id": 13,
-    "nome": "Hospital Geral de São Mateus",
+    "nome": "INST CEMA DE OFTALMOLOGIA E OTORRINOLARINGOLOGIA",
     "tipo": "hospital_sus",
-    "distrito_id": 71
+    "distrito_id": 52,
+    "leitos": 31
   },
   {
     "id": 14,
-    "nome": "Santa Casa de São Paulo",
+    "nome": "INSTITUTO DE ONCOLOGIA PEDIATRICA (GRAACC) -HOSP",
     "tipo": "hospital_sus",
-    "distrito_id": 77
+    "distrito_id": 89,
+    "leitos": 45
   },
   {
     "id": 15,
-    "nome": "Hospital Municipal Vereador José Storopoli",
+    "nome": "JOAO EVANGELISTA-HOSP",
     "tipo": "hospital_sus",
-    "distrito_id": 88
+    "distrito_id": 81,
+    "leitos": 0
   },
   {
     "id": 16,
-    "nome": "Hospital Municipal Dr. Arthur Ribeiro de Saboya",
+    "nome": "JOSE STOROPOLLI - HOSP",
     "tipo": "hospital_sus",
-    "distrito_id": 36
+    "distrito_id": 88,
+    "leitos": 201
   },
   {
     "id": 17,
-    "nome": "Hospital do Mandaqui",
+    "nome": "M' BOI MIRIM - HOSP",
     "tipo": "hospital_sus",
-    "distrito_id": 67
+    "distrito_id": 40,
+    "leitos": 224
   },
   {
     "id": 18,
-    "nome": "UPA Brasilândia",
-    "tipo": "upa",
-    "distrito_id": 9
+    "nome": "NIPO BRASILEIRO SAO PAULO-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 88,
+    "leitos": 2
   },
   {
     "id": 19,
-    "nome": "UPA Campo Limpo",
-    "tipo": "upa",
-    "distrito_id": 16
+    "nome": "S LUIZ GONZAGA-HOSP UNIV PESQ",
+    "tipo": "hospital_sus",
+    "distrito_id": 37,
+    "leitos": 148
   },
   {
     "id": 20,
-    "nome": "UPA Capão Redondo",
-    "tipo": "upa",
-    "distrito_id": 18
+    "nome": "SANTO ANTONIO - HOSPITAL",
+    "tipo": "hospital_sus",
+    "distrito_id": 58,
+    "leitos": 203
   },
   {
     "id": 21,
-    "nome": "UPA Cidade Ademar",
-    "tipo": "upa",
-    "distrito_id": 21
+    "nome": "SEPACO - HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 89,
+    "leitos": 2
   },
   {
     "id": 22,
-    "nome": "UPA Cidade Tiradentes",
-    "tipo": "upa",
-    "distrito_id": 24
+    "nome": "SISTEMA PENITENCI-RIO SAO PAULO - COMPLEXO HOSPITALAR",
+    "tipo": "hospital_sus",
+    "distrito_id": 67,
+    "leitos": 251
   },
   {
     "id": 23,
-    "nome": "UPA Grajaú",
-    "tipo": "upa",
-    "distrito_id": 29
+    "nome": "AGUA FUNDA (DAVI CAPRISTANO DA COSTA FILHO)-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 36,
+    "leitos": 153
   },
   {
     "id": 24,
-    "nome": "UPA Guaianases",
-    "tipo": "upa",
-    "distrito_id": 30
+    "nome": "AMPARO MATERNAL-HOSP/ AMB HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 76,
+    "leitos": 82
   },
   {
     "id": 25,
-    "nome": "UPA Itaim Paulista",
-    "tipo": "upa",
-    "distrito_id": 34
+    "nome": "ASSOC CRUZ VERDE-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 89,
+    "leitos": 204
   },
   {
     "id": 26,
-    "nome": "UPA Itaquera",
-    "tipo": "upa",
-    "distrito_id": 35
+    "nome": "ASSOC DE ASSIS A CRIANCA DEFEITUOSA - AACD",
+    "tipo": "hospital_sus",
+    "distrito_id": 51,
+    "leitos": 22
   },
   {
     "id": 27,
-    "nome": "UPA Jardim Ângela",
-    "tipo": "upa",
-    "distrito_id": 40
+    "nome": "CASA DE SAUDE N SRA DE FATIMA-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 69,
+    "leitos": 140
   },
   {
     "id": 28,
-    "nome": "UPA Jardim São Luís",
-    "tipo": "upa",
-    "distrito_id": 43
+    "nome": "CENTRO DE ATENCAO INTEGRADA SAUDE MENTAL P.PINEL - HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 94,
+    "leitos": 136
   },
   {
     "id": 29,
-    "nome": "UPA Parelheiros",
-    "tipo": "upa",
-    "distrito_id": 54
+    "nome": "MARIO DE MORAES ALTENFELDER SILVA,DR,ESC-HOSP MAT",
+    "tipo": "hospital_sus",
+    "distrito_id": 12,
+    "leitos": 176
   },
   {
     "id": 30,
-    "nome": "UPA Sacomã",
-    "tipo": "upa",
-    "distrito_id": 66
+    "nome": "AEPS DO SAPOPEMBA-HOSP GERAL",
+    "tipo": "hospital_sus",
+    "distrito_id": 75,
+    "leitos": 199
   },
   {
     "id": 31,
-    "nome": "UPA São Mateus",
-    "tipo": "upa",
-    "distrito_id": 71
+    "nome": "ALEXANDRE ZAIO,DR-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 90,
+    "leitos": 42
   },
   {
     "id": 32,
-    "nome": "UPA Sapopemba",
-    "tipo": "upa",
-    "distrito_id": 75
+    "nome": "ALIPIO CORREA NETO,DR-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 27,
+    "leitos": 280
   },
   {
     "id": 33,
-    "nome": "UPA Tremembé",
-    "tipo": "upa",
-    "distrito_id": 80
+    "nome": "ALVARO DE SOUZA,DR(CACHOIRINHA)-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 12,
+    "leitos": 183
   },
   {
     "id": 34,
-    "nome": "UPA Pirituba",
-    "tipo": "upa",
-    "distrito_id": 94
+    "nome": "ANTONIO DE ALVARENGA-HOSP/ MAT",
+    "tipo": "hospital_sus",
+    "distrito_id": 32,
+    "leitos": 28
   },
   {
     "id": 35,
-    "nome": "UBS Água Rasa",
-    "tipo": "ubs",
-    "distrito_id": 1
+    "nome": "ARTHUR RIBEIRO DE SABOYA,DR-HOSP JABAQUARA",
+    "tipo": "hospital_sus",
+    "distrito_id": 36,
+    "leitos": 210
   },
   {
     "id": 36,
-    "nome": "UBS Alto de Pinheiros",
-    "tipo": "ubs",
-    "distrito_id": 2
+    "nome": "BENEDICTO MONTE NEGRO,DR-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 75,
+    "leitos": 50
   },
   {
     "id": 37,
-    "nome": "UBS Aricanduva",
-    "tipo": "ubs",
-    "distrito_id": 4
+    "nome": "CANDIDO FONTOURA-HOSP INFANTIL/ PS ESPEC",
+    "tipo": "hospital_sus",
+    "distrito_id": 6,
+    "leitos": 104
   },
   {
     "id": 38,
-    "nome": "UBS Artur Alvim",
-    "tipo": "ubs",
-    "distrito_id": 5
+    "nome": "CARMINO CARICCHIO,DR-HOSP TATUAPE",
+    "tipo": "hospital_sus",
+    "distrito_id": 79,
+    "leitos": 374
   },
   {
     "id": 39,
-    "nome": "UBS Belém",
-    "tipo": "ubs",
-    "distrito_id": 6
+    "nome": "CASA DE SAUDE N SRA CAMINHO-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 43,
+    "leitos": 96
   },
   {
     "id": 40,
-    "nome": "UBS Bela Vista 1",
-    "tipo": "ubs",
-    "distrito_id": 7
+    "nome": "EURYCLIDES DE JESUS ZERBINI - HOSP DE TRANSPLANTE",
+    "tipo": "hospital_sus",
+    "distrito_id": 89,
+    "leitos": 168
   },
   {
     "id": 41,
-    "nome": "UBS Bela Vista 2",
-    "tipo": "ubs",
-    "distrito_id": 7
+    "nome": "FERNANDO MAURO P DA ROCHA-HOSP CAMPO LIMPO",
+    "tipo": "hospital_sus",
+    "distrito_id": 43,
+    "leitos": 289
   },
   {
     "id": 42,
-    "nome": "UBS Bom Retiro 1",
-    "tipo": "ubs",
-    "distrito_id": 8
+    "nome": "GERAL DE GRAJAU - HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 29,
+    "leitos": 240
   },
   {
     "id": 43,
-    "nome": "UBS Bom Retiro 2",
-    "tipo": "ubs",
-    "distrito_id": 8
+    "nome": "GERAL DE GUAIANAZES-HOSP JESUS T COSTA",
+    "tipo": "hospital_sus",
+    "distrito_id": 30,
+    "leitos": 263
   },
   {
     "id": 44,
-    "nome": "UBS Brasilândia 1",
-    "tipo": "ubs",
-    "distrito_id": 9
+    "nome": "GERAL DE PEDREIRA-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 15,
+    "leitos": 213
   },
   {
     "id": 45,
-    "nome": "UBS Brasilândia 2",
-    "tipo": "ubs",
-    "distrito_id": 9
+    "nome": "GERAL DE S MATHEUS DR MANOEL BIFULCO-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 71,
+    "leitos": 265
   },
   {
     "id": 46,
-    "nome": "UBS Brás",
-    "tipo": "ubs",
-    "distrito_id": 10
+    "nome": "GERAL ITAIM PAULISTA-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 34,
+    "leitos": 307
   },
   {
     "id": 47,
-    "nome": "UBS Butantã",
-    "tipo": "ubs",
-    "distrito_id": 11
+    "nome": "IGNACIO PROENCA DE GOUVEA,DR-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 52,
+    "leitos": 90
   },
   {
     "id": 48,
-    "nome": "UBS Cachoeirinha",
-    "tipo": "ubs",
-    "distrito_id": 12
+    "nome": "INTERLAGOS-HOSP/ MATERN",
+    "tipo": "hospital_sus",
+    "distrito_id": 22,
+    "leitos": 141
   },
   {
     "id": 49,
-    "nome": "UBS Cambuci 1",
-    "tipo": "ubs",
-    "distrito_id": 13
+    "nome": "IPIRANGA-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 32,
+    "leitos": 235
   },
   {
     "id": 50,
-    "nome": "UBS Cambuci 2",
-    "tipo": "ubs",
-    "distrito_id": 13
+    "nome": "JOSE SOARES HUNGRIA,DR-HOSP PIRITUBA",
+    "tipo": "hospital_sus",
+    "distrito_id": 94,
+    "leitos": 103
   },
   {
     "id": 51,
-    "nome": "UBS Campo Belo",
-    "tipo": "ubs",
-    "distrito_id": 14
+    "nome": "LEONOR MENDES DE BARROS-MATER/ AMB HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 6,
+    "leitos": 131
   },
   {
     "id": 52,
-    "nome": "UBS Campo Grande",
-    "tipo": "ubs",
-    "distrito_id": 15
+    "nome": "MANDAQUI-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 67,
+    "leitos": 462
   },
   {
     "id": 53,
-    "nome": "UBS Campo Limpo 1",
-    "tipo": "ubs",
-    "distrito_id": 16
+    "nome": "MONUMENTO-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 32,
+    "leitos": 50
   },
   {
     "id": 54,
-    "nome": "UBS Campo Limpo 2",
-    "tipo": "ubs",
-    "distrito_id": 16
+    "nome": "REGIONAL SUL-HOSP/ AMB HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 68,
+    "leitos": 252
   },
   {
     "id": 55,
-    "nome": "UBS Cangaíba",
-    "tipo": "ubs",
-    "distrito_id": 17
+    "nome": "S PAULO-HOSP UNIFESP",
+    "tipo": "hospital_sus",
+    "distrito_id": 89,
+    "leitos": 753
   },
   {
     "id": 56,
-    "nome": "UBS Capão Redondo 1",
-    "tipo": "ubs",
-    "distrito_id": 18
+    "nome": "SANTA MARCELINA-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 56,
+    "leitos": 612
   },
   {
     "id": 57,
-    "nome": "UBS Capão Redondo 2",
-    "tipo": "ubs",
-    "distrito_id": 18
+    "nome": "SAO CAMILO SANTANA - HOSP E MATERN",
+    "tipo": "hospital_sus",
+    "distrito_id": 67,
+    "leitos": 0
   },
   {
     "id": 58,
-    "nome": "UBS Carrão",
-    "tipo": "ubs",
-    "distrito_id": 19
+    "nome": "SERVIDOR PUBLICO ESTADUAL-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 51,
+    "leitos": 64
   },
   {
     "id": 59,
-    "nome": "UBS Casa Verde",
-    "tipo": "ubs",
-    "distrito_id": 20
+    "nome": "STA CASA DE SANTO AMARO-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 68,
+    "leitos": 132
   },
   {
     "id": 60,
-    "nome": "UBS Cidade Ademar 1",
-    "tipo": "ubs",
-    "distrito_id": 21
+    "nome": "STA CRUZ-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 89,
+    "leitos": 4
   },
   {
     "id": 61,
-    "nome": "UBS Cidade Ademar 2",
-    "tipo": "ubs",
-    "distrito_id": 21
+    "nome": "V ALPINA-HOSPITAL (SECONCI)",
+    "tipo": "hospital_sus",
+    "distrito_id": 92,
+    "leitos": 202
   },
   {
     "id": 62,
-    "nome": "UBS Cidade Dutra",
-    "tipo": "ubs",
-    "distrito_id": 22
+    "nome": "V PENTEADO DR JOSE PANGELLA-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 28,
+    "leitos": 208
   },
   {
     "id": 63,
-    "nome": "UBS Cidade Líder",
-    "tipo": "ubs",
-    "distrito_id": 23
+    "nome": "WALDOMIRO DE PAULA,PROF-HOSP",
+    "tipo": "hospital_sus",
+    "distrito_id": 35,
+    "leitos": 185
   },
   {
     "id": 64,
-    "nome": "UBS Consolação 1",
+    "nome": "BELENZINHO MARCUS WOLOSKER-CONS RUA ATIVIDADE/UBS",
     "tipo": "ubs",
-    "distrito_id": 25
+    "distrito_id": 6,
+    "leitos": 0
   },
   {
     "id": 65,
-    "nome": "UBS Consolação 2",
+    "nome": "BELENZINHO MARCUS WOLOSKER-CONS RUA EQUIPE/UBS",
     "tipo": "ubs",
-    "distrito_id": 25
+    "distrito_id": 6,
+    "leitos": 0
   },
   {
     "id": 66,
-    "nome": "UBS Cursino",
+    "nome": "JD TIETE I - ESF/UBS",
     "tipo": "ubs",
-    "distrito_id": 26
+    "distrito_id": 71,
+    "leitos": 0
   },
   {
     "id": 67,
-    "nome": "UBS Ermelino Matarazzo",
+    "nome": "JOAQUIM ANTONIO EIRADO-CONS RUA ATIV/UBS",
     "tipo": "ubs",
-    "distrito_id": 27
+    "distrito_id": 67,
+    "leitos": 0
   },
   {
     "id": 68,
-    "nome": "UBS Freguesia do Ó",
+    "nome": "MANOEL SALDIVA NETO -CONS RUA ATIVIDADE/UBS",
     "tipo": "ubs",
-    "distrito_id": 28
+    "distrito_id": 10,
+    "leitos": 0
   },
   {
     "id": 69,
-    "nome": "UBS Grajaú 1",
+    "nome": "V BERTIOGA - PROF.DOMINGOS DELASCIO - UBS (RUA _ATIVIDADE)",
     "tipo": "ubs",
-    "distrito_id": 29
+    "distrito_id": 1,
+    "leitos": 0
   },
   {
     "id": 70,
-    "nome": "UBS Grajaú 2",
+    "nome": "V SANTO ESTEVAO-CONS RUA ATIV/UBS",
     "tipo": "ubs",
-    "distrito_id": 29
+    "distrito_id": 79,
+    "leitos": 0
   },
   {
     "id": 71,
-    "nome": "UBS Guaianases",
-    "tipo": "ubs",
-    "distrito_id": 30
+    "nome": "UPA CAMPO LIMPO",
+    "tipo": "upa",
+    "distrito_id": 43,
+    "leitos": 0
   },
   {
     "id": 72,
-    "nome": "UBS Iguatemi",
-    "tipo": "ubs",
-    "distrito_id": 31
+    "nome": "UPA VILA SANTA CATARINA",
+    "tipo": "upa",
+    "distrito_id": 36,
+    "leitos": 0
   },
   {
     "id": 73,
-    "nome": "UBS Ipiranga",
+    "nome": "A E CARVALHO-UBS",
     "tipo": "ubs",
-    "distrito_id": 32
+    "distrito_id": 5,
+    "leitos": 0
   },
   {
     "id": 74,
-    "nome": "UBS Itaim Bibi",
+    "nome": "ADELAIDE LOPES,DONA-UBS V. CAROLINA",
     "tipo": "ubs",
-    "distrito_id": 33
+    "distrito_id": 48,
+    "leitos": 0
   },
   {
     "id": 75,
-    "nome": "UBS Itaim Paulista 1",
+    "nome": "AGUA FUNDA-UBS",
     "tipo": "ubs",
-    "distrito_id": 34
+    "distrito_id": 26,
+    "leitos": 0
   },
   {
     "id": 76,
-    "nome": "UBS Itaim Paulista 2",
+    "nome": "AGUA RASA-UBS",
     "tipo": "ubs",
-    "distrito_id": 34
+    "distrito_id": 1,
+    "leitos": 0
   },
   {
     "id": 77,
-    "nome": "UBS Itaquera 1",
+    "nome": "AGUIA DE HAIA - UBS",
     "tipo": "ubs",
-    "distrito_id": 35
+    "distrito_id": 35,
+    "leitos": 0
   },
   {
     "id": 78,
-    "nome": "UBS Itaquera 2",
+    "nome": "ALCINA PIMENTEL PIZA-UBS",
     "tipo": "ubs",
-    "distrito_id": 35
+    "distrito_id": 29,
+    "leitos": 0
   },
   {
     "id": 79,
-    "nome": "UBS Jabaquara 1",
+    "nome": "ALMIRANTE DELAMARE - UBS",
     "tipo": "ubs",
-    "distrito_id": 36
+    "distrito_id": 32,
+    "leitos": 0
   },
   {
     "id": 80,
-    "nome": "UBS Jabaquara 2",
+    "nome": "ALTO DO UMUARAMA-UBS",
     "tipo": "ubs",
-    "distrito_id": 36
+    "distrito_id": 16,
+    "leitos": 0
   },
   {
     "id": 81,
-    "nome": "UBS Jaçanã",
+    "nome": "ALTO RIVIEIRA -UBS",
     "tipo": "ubs",
-    "distrito_id": 37
+    "distrito_id": 40,
+    "leitos": 0
   },
   {
     "id": 82,
-    "nome": "UBS Jaguara",
+    "nome": "AMERICANOPOLIS-UBS",
     "tipo": "ubs",
-    "distrito_id": 38
+    "distrito_id": 36,
+    "leitos": 0
   },
   {
     "id": 83,
-    "nome": "UBS Jaguaré",
+    "nome": "ANHANGUERA I -UBS",
     "tipo": "ubs",
-    "distrito_id": 39
+    "distrito_id": 69,
+    "leitos": 0
   },
   {
     "id": 84,
-    "nome": "UBS Jardim Ângela 1",
+    "nome": "ANTONIO B DE OLIVEIRA - UBS VILA PREL",
     "tipo": "ubs",
-    "distrito_id": 40
+    "distrito_id": 43,
+    "leitos": 0
   },
   {
     "id": 85,
-    "nome": "UBS Jardim Ângela 2",
+    "nome": "ANTONIO P FERREIRA VILA LOBOS,DR-UBS",
     "tipo": "ubs",
-    "distrito_id": 40
+    "distrito_id": 5,
+    "leitos": 0
   },
   {
     "id": 86,
-    "nome": "UBS Jardim Helena",
+    "nome": "ATUALPA GIRAO RABELO,DR-UBS",
     "tipo": "ubs",
-    "distrito_id": 41
+    "distrito_id": 34,
+    "leitos": 0
   },
   {
     "id": 87,
-    "nome": "UBS Jardim Paulista",
+    "nome": "AUGUSTO L A GALVAO,DR- UBS",
     "tipo": "ubs",
-    "distrito_id": 42
+    "distrito_id": 9,
+    "leitos": 0
   },
   {
     "id": 88,
-    "nome": "UBS Jardim São Luís 1",
+    "nome": "BARRAGEM - UBS",
     "tipo": "ubs",
-    "distrito_id": 43
+    "distrito_id": 54,
+    "leitos": 0
   },
   {
     "id": 89,
-    "nome": "UBS Jardim São Luís 2",
+    "nome": "BARRO BRANCO-UBS",
     "tipo": "ubs",
-    "distrito_id": 43
+    "distrito_id": 24,
+    "leitos": 0
   },
   {
     "id": 90,
-    "nome": "UBS José Bonifácio",
+    "nome": "BELENZINHO MARCUS WOLOSKER-UBS",
     "tipo": "ubs",
-    "distrito_id": 44
+    "distrito_id": 6,
+    "leitos": 0
   },
   {
     "id": 91,
-    "nome": "UBS Lapa",
+    "nome": "BRASILANDIA-UBS",
     "tipo": "ubs",
-    "distrito_id": 46
+    "distrito_id": 9,
+    "leitos": 0
   },
   {
     "id": 92,
-    "nome": "UBS Liberdade 1",
+    "nome": "BRASILIA - M'BOI UBS",
     "tipo": "ubs",
-    "distrito_id": 47
+    "distrito_id": 43,
+    "leitos": 0
   },
   {
     "id": 93,
-    "nome": "UBS Liberdade 2",
+    "nome": "BURGO PAULISTA-UBS",
     "tipo": "ubs",
-    "distrito_id": 47
+    "distrito_id": 62,
+    "leitos": 0
   },
   {
     "id": 94,
-    "nome": "UBS Limão",
+    "nome": "CAMPO GRANDE - UBS",
     "tipo": "ubs",
-    "distrito_id": 48
+    "distrito_id": 15,
+    "leitos": 0
   },
   {
     "id": 95,
-    "nome": "UBS Mandaqui",
+    "nome": "CAMPO LIMPO-UBS",
     "tipo": "ubs",
-    "distrito_id": 49
+    "distrito_id": 16,
+    "leitos": 0
   },
   {
     "id": 96,
-    "nome": "UBS Moema",
+    "nome": "CAMPO LIMPO-UBS FRANCISCO S. SOBRINHO",
     "tipo": "ubs",
-    "distrito_id": 51
+    "distrito_id": 16,
+    "leitos": 0
   },
   {
     "id": 97,
-    "nome": "UBS Mooca",
+    "nome": "CANGAIBA-UBS DR. CARLOS GENTILE MELO",
     "tipo": "ubs",
-    "distrito_id": 52
+    "distrito_id": 17,
+    "leitos": 0
   },
   {
     "id": 98,
-    "nome": "UBS Morumbi",
+    "nome": "CARANDIRU-UBS",
     "tipo": "ubs",
-    "distrito_id": 53
+    "distrito_id": 85,
+    "leitos": 0
   },
   {
     "id": 99,
-    "nome": "UBS Pari 1",
+    "nome": "CARLOS GENTILE DE MELO-UBS",
     "tipo": "ubs",
-    "distrito_id": 55
+    "distrito_id": 24,
+    "leitos": 0
   },
   {
     "id": 100,
-    "nome": "UBS Pari 2",
+    "nome": "CARLOS OLIVALDO DE S LOPES MUNIZ,DR-UBS PONTE RASA",
     "tipo": "ubs",
-    "distrito_id": 55
+    "distrito_id": 62,
+    "leitos": 0
   },
   {
     "id": 101,
-    "nome": "UBS Parque do Carmo",
+    "nome": "CASA VERDE ALTA-UBS",
     "tipo": "ubs",
-    "distrito_id": 56
+    "distrito_id": 20,
+    "leitos": 0
   },
   {
     "id": 102,
-    "nome": "UBS Pedreira",
+    "nome": "CASA VERDE-UBS",
     "tipo": "ubs",
-    "distrito_id": 57
+    "distrito_id": 20,
+    "leitos": 0
   },
   {
     "id": 103,
-    "nome": "UBS Penha",
+    "nome": "CASTRO ALVES-UBS",
     "tipo": "ubs",
-    "distrito_id": 58
+    "distrito_id": 24,
+    "leitos": 0
   },
   {
     "id": 104,
-    "nome": "UBS Perdizes",
+    "nome": "CDHU PALANQUE - UBS",
     "tipo": "ubs",
-    "distrito_id": 59
+    "distrito_id": 31,
+    "leitos": 0
   },
   {
     "id": 105,
-    "nome": "UBS Perus",
+    "nome": "CELSO AUGUSTO DANIEL,PREF-UBS",
     "tipo": "ubs",
-    "distrito_id": 60
+    "distrito_id": 30,
+    "leitos": 0
   },
   {
     "id": 106,
-    "nome": "UBS Pinheiros",
+    "nome": "CHACARA CRUZEIRO DO SUL - UBS",
     "tipo": "ubs",
-    "distrito_id": 61
+    "distrito_id": 17,
+    "leitos": 0
   },
   {
     "id": 107,
-    "nome": "UBS Ponte Rasa",
+    "nome": "CHACARA DO CONDE - UBS",
     "tipo": "ubs",
-    "distrito_id": 62
+    "distrito_id": 29,
+    "leitos": 0
   },
   {
     "id": 108,
-    "nome": "UBS Raposo Tavares",
+    "nome": "CHACARA DO SOL - UBS",
     "tipo": "ubs",
-    "distrito_id": 63
+    "distrito_id": 29,
+    "leitos": 0
   },
   {
     "id": 109,
-    "nome": "UBS República 1",
+    "nome": "CHACARA INGLESA-UBS",
     "tipo": "ubs",
-    "distrito_id": 64
+    "distrito_id": 94,
+    "leitos": 0
   },
   {
     "id": 110,
-    "nome": "UBS República 2",
+    "nome": "CHACARA SANTANA-UBS",
     "tipo": "ubs",
-    "distrito_id": 64
+    "distrito_id": 43,
+    "leitos": 0
   },
   {
     "id": 111,
-    "nome": "UBS Rio Pequeno",
+    "nome": "CHACARA SANTO AMARO - UBS",
     "tipo": "ubs",
-    "distrito_id": 65
+    "distrito_id": 29,
+    "leitos": 0
   },
   {
     "id": 112,
-    "nome": "UBS Sacomã 1",
+    "nome": "CHACARA STA MARIA-UBS",
     "tipo": "ubs",
-    "distrito_id": 66
+    "distrito_id": 40,
+    "leitos": 0
   },
   {
     "id": 113,
-    "nome": "UBS Sacomã 2",
+    "nome": "CHACARA STO ANTONIO-UBS",
     "tipo": "ubs",
-    "distrito_id": 66
+    "distrito_id": 68,
+    "leitos": 0
   },
   {
     "id": 114,
-    "nome": "UBS Santana",
+    "nome": "CHORA MENINO-UBS",
     "tipo": "ubs",
-    "distrito_id": 67
+    "distrito_id": 67,
+    "leitos": 0
   },
   {
     "id": 115,
-    "nome": "UBS Santo Amaro",
+    "nome": "CIDADE IPAVA - UBS",
     "tipo": "ubs",
-    "distrito_id": 68
+    "distrito_id": 40,
+    "leitos": 0
   },
   {
     "id": 116,
-    "nome": "UBS São Domingos",
+    "nome": "CIDADE JULIA-UBS",
     "tipo": "ubs",
-    "distrito_id": 69
+    "distrito_id": 21,
+    "leitos": 0
   },
   {
     "id": 117,
-    "nome": "UBS São Lucas",
+    "nome": "CIDADE KEMEL-UBS",
     "tipo": "ubs",
-    "distrito_id": 70
+    "distrito_id": 34,
+    "leitos": 0
   },
   {
     "id": 118,
-    "nome": "UBS São Mateus",
+    "nome": "CIDADE LIDER I-UBS",
     "tipo": "ubs",
-    "distrito_id": 71
+    "distrito_id": 23,
+    "leitos": 0
   },
   {
     "id": 119,
-    "nome": "UBS São Miguel Paulista",
+    "nome": "CIDADE PATRIARCA-UBS",
     "tipo": "ubs",
-    "distrito_id": 72
+    "distrito_id": 90,
+    "leitos": 0
   },
   {
     "id": 120,
-    "nome": "UBS São Rafael",
+    "nome": "CIDADE PEDRO JOSE NUNES-UBS",
     "tipo": "ubs",
-    "distrito_id": 73
+    "distrito_id": 86,
+    "leitos": 0
   },
   {
     "id": 121,
-    "nome": "UBS Santa Cecília 1",
+    "nome": "CIDADE SATELITE SANTA BARBARA-UBS",
     "tipo": "ubs",
-    "distrito_id": 74
+    "distrito_id": 71,
+    "leitos": 0
   },
   {
     "id": 122,
-    "nome": "UBS Santa Cecília 2",
+    "nome": "CIDADE TIRADENTES I - UBS",
     "tipo": "ubs",
-    "distrito_id": 74
+    "distrito_id": 24,
+    "leitos": 0
   },
   {
     "id": 123,
-    "nome": "UBS Sapopemba 1",
+    "nome": "CIDADE VARGAS-UBS",
     "tipo": "ubs",
-    "distrito_id": 75
+    "distrito_id": 36,
+    "leitos": 0
   },
   {
     "id": 124,
-    "nome": "UBS Sapopemba 2",
+    "nome": "COLONIA - UBS",
     "tipo": "ubs",
-    "distrito_id": 75
+    "distrito_id": 54,
+    "leitos": 0
   },
   {
     "id": 125,
-    "nome": "UBS Saúde",
+    "nome": "CONJ IPESP JOSE TOLEDO PIZA - UBS",
     "tipo": "ubs",
-    "distrito_id": 76
+    "distrito_id": 81,
+    "leitos": 0
   },
   {
     "id": 126,
-    "nome": "UBS Sé 1",
+    "nome": "COSTA MELLO-UBS",
     "tipo": "ubs",
-    "distrito_id": 77
+    "distrito_id": 62,
+    "leitos": 0
   },
   {
     "id": 127,
-    "nome": "UBS Sé 2",
+    "nome": "CRUZ DAS ALMAS-UBS",
     "tipo": "ubs",
-    "distrito_id": 77
+    "distrito_id": 28,
+    "leitos": 0
   },
   {
     "id": 128,
-    "nome": "UBS Socorro",
+    "nome": "CUPECE-UBS DR. WALDOMIRO PREGNOLATO",
     "tipo": "ubs",
-    "distrito_id": 78
+    "distrito_id": 36,
+    "leitos": 0
   },
   {
     "id": 129,
-    "nome": "UBS Tatuapé",
+    "nome": "DOM ANGELICO-UBS",
     "tipo": "ubs",
-    "distrito_id": 79
+    "distrito_id": 24,
+    "leitos": 0
   },
   {
     "id": 130,
-    "nome": "UBS Tremembé",
+    "nome": "DOM JOAO NERY-UBS",
     "tipo": "ubs",
-    "distrito_id": 80
+    "distrito_id": 83,
+    "leitos": 0
   },
   {
     "id": 131,
-    "nome": "UBS Tucuruvi",
+    "nome": "DOMINGOS DELASCIO - UBS TRAD",
     "tipo": "ubs",
-    "distrito_id": 81
+    "distrito_id": 1,
+    "leitos": 0
   },
   {
     "id": 132,
-    "nome": "UBS Vila Andrade",
+    "nome": "DOMINGOS M CILO,DR V AURORA-UBS",
     "tipo": "ubs",
-    "distrito_id": 82
+    "distrito_id": 49,
+    "leitos": 0
   },
   {
     "id": 133,
-    "nome": "UBS Vila Curuçá",
+    "nome": "DOMINGOS MANTELLI - UBS",
     "tipo": "ubs",
-    "distrito_id": 83
+    "distrito_id": 94,
+    "leitos": 0
   },
   {
     "id": 134,
-    "nome": "UBS Vila Formosa",
+    "nome": "EDUARDO R RESCHILIAN,DR-UBS",
     "tipo": "ubs",
-    "distrito_id": 84
+    "distrito_id": 66,
+    "leitos": 0
   },
   {
     "id": 135,
-    "nome": "UBS Vila Guilherme",
+    "nome": "EMILIO SANTIAGO DE OLIVEIRA,DR-UBS V. ESPERANCA",
     "tipo": "ubs",
-    "distrito_id": 85
+    "distrito_id": 58,
+    "leitos": 0
   },
   {
     "id": 136,
-    "nome": "UBS Vila Jacuí",
+    "nome": "ERMELINO MATARAZZO-UBS",
     "tipo": "ubs",
-    "distrito_id": 86
+    "distrito_id": 27,
+    "leitos": 0
   },
   {
     "id": 137,
-    "nome": "UBS Vila Leopoldina",
+    "nome": "FAZENDA DA JUTA II-UBS",
     "tipo": "ubs",
-    "distrito_id": 87
+    "distrito_id": 75,
+    "leitos": 0
   },
   {
     "id": 138,
-    "nome": "UBS Vila Maria",
+    "nome": "FAZENDA DA JUTA I-UBS",
     "tipo": "ubs",
-    "distrito_id": 88
+    "distrito_id": 75,
+    "leitos": 0
   },
   {
     "id": 139,
-    "nome": "UBS Vila Mariana",
+    "nome": "FAZENDA DO CARMO - UBS",
     "tipo": "ubs",
-    "distrito_id": 89
+    "distrito_id": 24,
+    "leitos": 0
   },
   {
     "id": 140,
-    "nome": "UBS Vila Matilde",
+    "nome": "FERROVIARIOS-UBS",
     "tipo": "ubs",
-    "distrito_id": 90
+    "distrito_id": 24,
+    "leitos": 0
   },
   {
     "id": 141,
-    "nome": "UBS Vila Medeiros",
+    "nome": "FRANCISCO A CESARONI(JD S PEDRO)-UBS",
     "tipo": "ubs",
-    "distrito_id": 91
+    "distrito_id": 44,
+    "leitos": 0
   },
   {
     "id": 142,
-    "nome": "UBS Vila Prudente",
+    "nome": "GAIVOTAS-UBS",
     "tipo": "ubs",
-    "distrito_id": 92
+    "distrito_id": 29,
+    "leitos": 0
   },
   {
     "id": 143,
-    "nome": "UBS Vila Sônia",
+    "nome": "GERALDO S FERREIRA,DR-UBS",
     "tipo": "ubs",
-    "distrito_id": 93
+    "distrito_id": 36,
+    "leitos": 0
   },
   {
     "id": 144,
-    "nome": "UBS Pirituba",
+    "nome": "GLEBA DO PESSEGO-UBS VICENTE FIUZA DA COSTA",
     "tipo": "ubs",
-    "distrito_id": 94
+    "distrito_id": 56,
+    "leitos": 0
   },
   {
     "id": 145,
-    "nome": "UBS Barra Funda",
+    "nome": "GRAFICOS-UBS",
     "tipo": "ubs",
-    "distrito_id": 95
+    "distrito_id": 24,
+    "leitos": 0
+  },
+  {
+    "id": 146,
+    "nome": "GUAIANAZES I -UBS",
+    "tipo": "ubs",
+    "distrito_id": 45,
+    "leitos": 0
+  },
+  {
+    "id": 147,
+    "nome": "GUAIANAZES II-UBS",
+    "tipo": "ubs",
+    "distrito_id": 30,
+    "leitos": 0
+  },
+  {
+    "id": 148,
+    "nome": "GUARANI/ CANAA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 36,
+    "leitos": 0
+  },
+  {
+    "id": 149,
+    "nome": "HELIO MOREIRA SALLES-UBS JD DOS EUCALIPTOS",
+    "tipo": "ubs",
+    "distrito_id": 75,
+    "leitos": 0
+  },
+  {
+    "id": 150,
+    "nome": "HERMENEGILDO MORBIN JR,DR- JD INDEPENDENCIA UBS",
+    "tipo": "ubs",
+    "distrito_id": 70,
+    "leitos": 0
+  },
+  {
+    "id": 151,
+    "nome": "HERMINIO MOREIRA,DR-UBS V. ALPINA",
+    "tipo": "ubs",
+    "distrito_id": 92,
+    "leitos": 0
+  },
+  {
+    "id": 152,
+    "nome": "HORIZONTE AZUL-UBS",
+    "tipo": "ubs",
+    "distrito_id": 40,
+    "leitos": 0
+  },
+  {
+    "id": 153,
+    "nome": "HORTO FLORESTAL-UBS",
+    "tipo": "ubs",
+    "distrito_id": 49,
+    "leitos": 0
+  },
+  {
+    "id": 154,
+    "nome": "HUMBERTO CERRUTI-UBS PQ. BOTURUSSU",
+    "tipo": "ubs",
+    "distrito_id": 27,
+    "leitos": 0
+  },
+  {
+    "id": 155,
+    "nome": "HUMBERTO GASTAO BODRA-UBS JD. ELBA",
+    "tipo": "ubs",
+    "distrito_id": 75,
+    "leitos": 0
+  },
+  {
+    "id": 156,
+    "nome": "IGUACU-UBS",
+    "tipo": "ubs",
+    "distrito_id": 75,
+    "leitos": 0
+  },
+  {
+    "id": 157,
+    "nome": "ILZA WELTMAN HUTZLER DRA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 12,
+    "leitos": 0
+  },
+  {
+    "id": 158,
+    "nome": "INACIO DE MONTEIRO- UBS",
+    "tipo": "ubs",
+    "distrito_id": 24,
+    "leitos": 0
+  },
+  {
+    "id": 159,
+    "nome": "ITAIM PAULISTA-UBS DR. JULIO DE GOUVEIA",
+    "tipo": "ubs",
+    "distrito_id": 34,
+    "leitos": 0
+  },
+  {
+    "id": 160,
+    "nome": "ITAQUERA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 35,
+    "leitos": 0
+  },
+  {
+    "id": 161,
+    "nome": "JACANA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 37,
+    "leitos": 0
+  },
+  {
+    "id": 162,
+    "nome": "JARAGUA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 83,
+    "leitos": 0
+  },
+  {
+    "id": 163,
+    "nome": "JARDIM HELGA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 16,
+    "leitos": 0
+  },
+  {
+    "id": 164,
+    "nome": "JARDIM MAGDALENA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 18,
+    "leitos": 0
+  },
+  {
+    "id": 165,
+    "nome": "JARDIM MARACA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 18,
+    "leitos": 0
+  },
+  {
+    "id": 166,
+    "nome": "JD  CAICARA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 40,
+    "leitos": 0
+  },
+  {
+    "id": 167,
+    "nome": "JD  MITSUTANI-UBS",
+    "tipo": "ubs",
+    "distrito_id": 16,
+    "leitos": 0
+  },
+  {
+    "id": 168,
+    "nome": "JD  PARANAPANEMA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 40,
+    "leitos": 0
+  },
+  {
+    "id": 169,
+    "nome": "JD ALFREDO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 43,
+    "leitos": 0
+  },
+  {
+    "id": 170,
+    "nome": "JD APUANA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 80,
+    "leitos": 0
+  },
+  {
+    "id": 171,
+    "nome": "JD APURA -UBS",
+    "tipo": "ubs",
+    "distrito_id": 57,
+    "leitos": 0
+  },
+  {
+    "id": 172,
+    "nome": "JD ARACATI-UBS",
+    "tipo": "ubs",
+    "distrito_id": 40,
+    "leitos": 0
+  },
+  {
+    "id": 173,
+    "nome": "JD AURORA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 45,
+    "leitos": 0
+  },
+  {
+    "id": 174,
+    "nome": "JD BANDEIRANTES-UBS",
+    "tipo": "ubs",
+    "distrito_id": 45,
+    "leitos": 0
+  },
+  {
+    "id": 175,
+    "nome": "JD BRASIL - UBS",
+    "tipo": "ubs",
+    "distrito_id": 91,
+    "leitos": 0
+  },
+  {
+    "id": 176,
+    "nome": "JD BRASILIA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 23,
+    "leitos": 0
+  },
+  {
+    "id": 177,
+    "nome": "JD CAMARGO NOVO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 34,
+    "leitos": 0
+  },
+  {
+    "id": 178,
+    "nome": "JD CAMPINAS-UBS",
+    "tipo": "ubs",
+    "distrito_id": 54,
+    "leitos": 0
+  },
+  {
+    "id": 179,
+    "nome": "JD CAMPOS - UBS",
+    "tipo": "ubs",
+    "distrito_id": 83,
+    "leitos": 0
+  },
+  {
+    "id": 180,
+    "nome": "JD CAPELA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 40,
+    "leitos": 0
+  },
+  {
+    "id": 181,
+    "nome": "JD CARRAOZINHO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 73,
+    "leitos": 0
+  },
+  {
+    "id": 182,
+    "nome": "JD CASTRO ALVES-UBS",
+    "tipo": "ubs",
+    "distrito_id": 29,
+    "leitos": 0
+  },
+  {
+    "id": 183,
+    "nome": "JD CELESTE - UBS",
+    "tipo": "ubs",
+    "distrito_id": 43,
+    "leitos": 0
+  },
+  {
+    "id": 184,
+    "nome": "JD CID PIRITUBA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 94,
+    "leitos": 0
+  },
+  {
+    "id": 185,
+    "nome": "JD CLIPPER-UBS",
+    "tipo": "ubs",
+    "distrito_id": 22,
+    "leitos": 0
+  },
+  {
+    "id": 186,
+    "nome": "JD COIMBRA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 40,
+    "leitos": 0
+  },
+  {
+    "id": 187,
+    "nome": "JD COLONIAL-UBS",
+    "tipo": "ubs",
+    "distrito_id": 71,
+    "leitos": 0
+  },
+  {
+    "id": 188,
+    "nome": "JD COLORADO(DR JOSE PIRES) - UBS",
+    "tipo": "ubs",
+    "distrito_id": 73,
+    "leitos": 0
+  },
+  {
+    "id": 189,
+    "nome": "JD COMERCIAL-UBS",
+    "tipo": "ubs",
+    "distrito_id": 18,
+    "leitos": 0
+  },
+  {
+    "id": 190,
+    "nome": "JD CONQUISTA III-UBS",
+    "tipo": "ubs",
+    "distrito_id": 31,
+    "leitos": 0
+  },
+  {
+    "id": 191,
+    "nome": "JD CONQUISTA I-UBS",
+    "tipo": "ubs",
+    "distrito_id": 73,
+    "leitos": 0
+  },
+  {
+    "id": 192,
+    "nome": "JD COPA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 56,
+    "leitos": 0
+  },
+  {
+    "id": 193,
+    "nome": "JD DA CONQUISTA II - UBS",
+    "tipo": "ubs",
+    "distrito_id": 31,
+    "leitos": 0
+  },
+  {
+    "id": 194,
+    "nome": "JD DA SAUDE (NEUSA ROSALIA MORALES)-UBS",
+    "tipo": "ubs",
+    "distrito_id": 26,
+    "leitos": 0
+  },
+  {
+    "id": 195,
+    "nome": "JD DAS CAMELIAS-UBS",
+    "tipo": "ubs",
+    "distrito_id": 86,
+    "leitos": 0
+  },
+  {
+    "id": 196,
+    "nome": "JD DAS FONTES - UBS",
+    "tipo": "ubs",
+    "distrito_id": 54,
+    "leitos": 0
+  },
+  {
+    "id": 197,
+    "nome": "JD DAS LARANJEIRAS-UBS",
+    "tipo": "ubs",
+    "distrito_id": 31,
+    "leitos": 0
+  },
+  {
+    "id": 198,
+    "nome": "JD DAS OLIVEIRAS-UBS",
+    "tipo": "ubs",
+    "distrito_id": 34,
+    "leitos": 0
+  },
+  {
+    "id": 199,
+    "nome": "JD DAS PALMAS - UBS",
+    "tipo": "ubs",
+    "distrito_id": 16,
+    "leitos": 0
+  },
+  {
+    "id": 200,
+    "nome": "JD DAS PEDRAS - UBS",
+    "tipo": "ubs",
+    "distrito_id": 80,
+    "leitos": 0
+  },
+  {
+    "id": 201,
+    "nome": "JD ELEDY - UBS",
+    "tipo": "ubs",
+    "distrito_id": 18,
+    "leitos": 0
+  },
+  {
+    "id": 202,
+    "nome": "JD ELIANE-UBS",
+    "tipo": "ubs",
+    "distrito_id": 29,
+    "leitos": 0
+  },
+  {
+    "id": 203,
+    "nome": "JD EMBURA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 50,
+    "leitos": 0
+  },
+  {
+    "id": 204,
+    "nome": "JD ETELVINA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 45,
+    "leitos": 0
+  },
+  {
+    "id": 205,
+    "nome": "JD FANGANIELO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 45,
+    "leitos": 0
+  },
+  {
+    "id": 206,
+    "nome": "JD FLOR DE MAIO - UBS",
+    "tipo": "ubs",
+    "distrito_id": 80,
+    "leitos": 0
+  },
+  {
+    "id": 207,
+    "nome": "JD FONTALIS-UBS",
+    "tipo": "ubs",
+    "distrito_id": 80,
+    "leitos": 0
+  },
+  {
+    "id": 208,
+    "nome": "JD GERMANIA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 18,
+    "leitos": 0
+  },
+  {
+    "id": 209,
+    "nome": "JD GRIMALDI - UBS",
+    "tipo": "ubs",
+    "distrito_id": 75,
+    "leitos": 0
+  },
+  {
+    "id": 210,
+    "nome": "JD GUAIRACA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 70,
+    "leitos": 0
+  },
+  {
+    "id": 211,
+    "nome": "JD GUANABARA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 28,
+    "leitos": 0
+  },
+  {
+    "id": 212,
+    "nome": "JD GUARANI-UBS",
+    "tipo": "ubs",
+    "distrito_id": 9,
+    "leitos": 0
+  },
+  {
+    "id": 213,
+    "nome": "JD GUARUJA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 40,
+    "leitos": 0
+  },
+  {
+    "id": 214,
+    "nome": "JD HELIAN-UBS",
+    "tipo": "ubs",
+    "distrito_id": 56,
+    "leitos": 0
+  },
+  {
+    "id": 215,
+    "nome": "JD HERCULANO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 40,
+    "leitos": 0
+  },
+  {
+    "id": 216,
+    "nome": "JD ICARAI (BRASILANDIA)-UBS",
+    "tipo": "ubs",
+    "distrito_id": 9,
+    "leitos": 0
+  },
+  {
+    "id": 217,
+    "nome": "JD ICARAI I (QUINTANA)-UBS",
+    "tipo": "ubs",
+    "distrito_id": 22,
+    "leitos": 0
+  },
+  {
+    "id": 218,
+    "nome": "JD INDAIA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 34,
+    "leitos": 0
+  },
+  {
+    "id": 219,
+    "nome": "JD IPORA -UBS",
+    "tipo": "ubs",
+    "distrito_id": 54,
+    "leitos": 0
+  },
+  {
+    "id": 220,
+    "nome": "JD ITAPEMA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 23,
+    "leitos": 0
+  },
+  {
+    "id": 221,
+    "nome": "JD IV CENTENARIO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 71,
+    "leitos": 0
+  },
+  {
+    "id": 222,
+    "nome": "JD IVA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 4,
+    "leitos": 0
+  },
+  {
+    "id": 223,
+    "nome": "JD JAPAO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 88,
+    "leitos": 0
+  },
+  {
+    "id": 224,
+    "nome": "JD JOAMAR-UBS",
+    "tipo": "ubs",
+    "distrito_id": 80,
+    "leitos": 0
+  },
+  {
+    "id": 225,
+    "nome": "JD KAGOHARA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 40,
+    "leitos": 0
+  },
+  {
+    "id": 226,
+    "nome": "JD KERALUX-UBS",
+    "tipo": "ubs",
+    "distrito_id": 27,
+    "leitos": 0
+  },
+  {
+    "id": 227,
+    "nome": "JD LADEIRA ROSA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 9,
+    "leitos": 0
+  },
+  {
+    "id": 228,
+    "nome": "JD LIDIA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 18,
+    "leitos": 0
+  },
+  {
+    "id": 229,
+    "nome": "JD LOURDES - UBS",
+    "tipo": "ubs",
+    "distrito_id": 36,
+    "leitos": 0
+  },
+  {
+    "id": 230,
+    "nome": "JD MACEDONIA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 18,
+    "leitos": 0
+  },
+  {
+    "id": 231,
+    "nome": "JD MAIA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 41,
+    "leitos": 0
+  },
+  {
+    "id": 232,
+    "nome": "JD MARCELO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 18,
+    "leitos": 0
+  },
+  {
+    "id": 233,
+    "nome": "JD MARILIA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 23,
+    "leitos": 0
+  },
+  {
+    "id": 234,
+    "nome": "JD MIRIAM-UBS MANOEL S. OLIVEIRA",
+    "tipo": "ubs",
+    "distrito_id": 21,
+    "leitos": 0
+  },
+  {
+    "id": 235,
+    "nome": "JD MIRNA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 29,
+    "leitos": 0
+  },
+  {
+    "id": 236,
+    "nome": "JD NAKAMURA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 40,
+    "leitos": 0
+  },
+  {
+    "id": 237,
+    "nome": "JD NELIA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 34,
+    "leitos": 0
+  },
+  {
+    "id": 238,
+    "nome": "JD NITEROI-UBS",
+    "tipo": "ubs",
+    "distrito_id": 21,
+    "leitos": 0
+  },
+  {
+    "id": 239,
+    "nome": "JD NORDESTE-UBS",
+    "tipo": "ubs",
+    "distrito_id": 5,
+    "leitos": 0
+  },
+  {
+    "id": 240,
+    "nome": "JD NOVO HORIZONTE - UBS",
+    "tipo": "ubs",
+    "distrito_id": 29,
+    "leitos": 0
+  },
+  {
+    "id": 241,
+    "nome": "JD OLINDA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 16,
+    "leitos": 0
+  },
+  {
+    "id": 242,
+    "nome": "JD PARAGUACU-UBS GONCALO F. ALVES",
+    "tipo": "ubs",
+    "distrito_id": 71,
+    "leitos": 0
+  },
+  {
+    "id": 243,
+    "nome": "JD PAULISTANO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 9,
+    "leitos": 0
+  },
+  {
+    "id": 244,
+    "nome": "JD PENHA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 62,
+    "leitos": 0
+  },
+  {
+    "id": 245,
+    "nome": "JD PERI-UBS",
+    "tipo": "ubs",
+    "distrito_id": 12,
+    "leitos": 0
+  },
+  {
+    "id": 246,
+    "nome": "JD PLANALTO-UBS IACAPE",
+    "tipo": "ubs",
+    "distrito_id": 75,
+    "leitos": 0
+  },
+  {
+    "id": 247,
+    "nome": "JD REPUBLICA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 22,
+    "leitos": 0
+  },
+  {
+    "id": 248,
+    "nome": "JD ROBRU-UBS",
+    "tipo": "ubs",
+    "distrito_id": 83,
+    "leitos": 0
+  },
+  {
+    "id": 249,
+    "nome": "JD ROBRU-UBS (GUAIANASES)",
+    "tipo": "ubs",
+    "distrito_id": 45,
+    "leitos": 0
+  },
+  {
+    "id": 250,
+    "nome": "JD ROSELLI-UBS",
+    "tipo": "ubs",
+    "distrito_id": 31,
+    "leitos": 0
+  },
+  {
+    "id": 251,
+    "nome": "JD ROSINHA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 3,
+    "leitos": 0
+  },
+  {
+    "id": 252,
+    "nome": "JD S BENTO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 18,
+    "leitos": 0
+  },
+  {
+    "id": 253,
+    "nome": "JD S CARLOS - UBS",
+    "tipo": "ubs",
+    "distrito_id": 30,
+    "leitos": 0
+  },
+  {
+    "id": 254,
+    "nome": "JD S FRANCISCO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 17,
+    "leitos": 0
+  },
+  {
+    "id": 255,
+    "nome": "JD S NICOLAU-UBS",
+    "tipo": "ubs",
+    "distrito_id": 5,
+    "leitos": 0
+  },
+  {
+    "id": 256,
+    "nome": "JD S NORBERTO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 54,
+    "leitos": 0
+  },
+  {
+    "id": 257,
+    "nome": "JD SANTA FE - UBS",
+    "tipo": "ubs",
+    "distrito_id": 54,
+    "leitos": 0
+  },
+  {
+    "id": 258,
+    "nome": "JD SAO CARLOS-CID ADEMAR-UBS",
+    "tipo": "ubs",
+    "distrito_id": 21,
+    "leitos": 0
+  },
+  {
+    "id": 259,
+    "nome": "JD SAPOPEMBA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 75,
+    "leitos": 0
+  },
+  {
+    "id": 260,
+    "nome": "JD SECKLER-UBS",
+    "tipo": "ubs",
+    "distrito_id": 66,
+    "leitos": 0
+  },
+  {
+    "id": 261,
+    "nome": "JD SELMA - UBS (CIDADE ADEMAR)",
+    "tipo": "ubs",
+    "distrito_id": 57,
+    "leitos": 0
+  },
+  {
+    "id": 262,
+    "nome": "JD SILVEIRA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 54,
+    "leitos": 0
+  },
+  {
+    "id": 263,
+    "nome": "JD SILVIA TELES-UBS",
+    "tipo": "ubs",
+    "distrito_id": 83,
+    "leitos": 0
+  },
+  {
+    "id": 264,
+    "nome": "JD SINHA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 75,
+    "leitos": 0
+  },
+  {
+    "id": 265,
+    "nome": "JD SOARES-UBS",
+    "tipo": "ubs",
+    "distrito_id": 30,
+    "leitos": 0
+  },
+  {
+    "id": 266,
+    "nome": "JD SOUZA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 43,
+    "leitos": 0
+  },
+  {
+    "id": 267,
+    "nome": "JD STA MARGARIDA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 40,
+    "leitos": 0
+  },
+  {
+    "id": 268,
+    "nome": "JD STA MARIA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 23,
+    "leitos": 0
+  },
+  {
+    "id": 269,
+    "nome": "JD STA TEREZINHA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 23,
+    "leitos": 0
+  },
+  {
+    "id": 270,
+    "nome": "JD STO ANDRE-UBS",
+    "tipo": "ubs",
+    "distrito_id": 73,
+    "leitos": 0
+  },
+  {
+    "id": 271,
+    "nome": "JD THOMAS-UBS",
+    "tipo": "ubs",
+    "distrito_id": 43,
+    "leitos": 0
+  },
+  {
+    "id": 272,
+    "nome": "JD TIETE I - UBS",
+    "tipo": "ubs",
+    "distrito_id": 71,
+    "leitos": 0
+  },
+  {
+    "id": 273,
+    "nome": "JD TIETE II - UBS",
+    "tipo": "ubs",
+    "distrito_id": 71,
+    "leitos": 0
+  },
+  {
+    "id": 274,
+    "nome": "JD TRES CORACOES-UBS",
+    "tipo": "ubs",
+    "distrito_id": 29,
+    "leitos": 0
+  },
+  {
+    "id": 275,
+    "nome": "JD TRES MARIAS-UBS DR. MAURICIO Z.",
+    "tipo": "ubs",
+    "distrito_id": 62,
+    "leitos": 0
+  },
+  {
+    "id": 276,
+    "nome": "JD UMUARAMA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 21,
+    "leitos": 0
+  },
+  {
+    "id": 277,
+    "nome": "JD VALQUIRIA- UBS",
+    "tipo": "ubs",
+    "distrito_id": 18,
+    "leitos": 0
+  },
+  {
+    "id": 278,
+    "nome": "JD VERA CRUZ-UBS",
+    "tipo": "ubs",
+    "distrito_id": 40,
+    "leitos": 0
+  },
+  {
+    "id": 279,
+    "nome": "JD VISTA ALEGRE-UBS",
+    "tipo": "ubs",
+    "distrito_id": 9,
+    "leitos": 0
+  },
+  {
+    "id": 280,
+    "nome": "JD VITORIA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 27,
+    "leitos": 0
+  },
+  {
+    "id": 281,
+    "nome": "JOAQUIM ANTONIO EIRADO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 67,
+    "leitos": 0
+  },
+  {
+    "id": 282,
+    "nome": "JOAQUIM ROSSINI,DR-UBS",
+    "tipo": "ubs",
+    "distrito_id": 32,
+    "leitos": 0
+  },
+  {
+    "id": 283,
+    "nome": "JORDANOPOLIS-UBS",
+    "tipo": "ubs",
+    "distrito_id": 22,
+    "leitos": 0
+  },
+  {
+    "id": 284,
+    "nome": "JOSE ANCHIETA,PE-UBS",
+    "tipo": "ubs",
+    "distrito_id": 5,
+    "leitos": 0
+  },
+  {
+    "id": 285,
+    "nome": "JOSE BONIFACIO II-UBS",
+    "tipo": "ubs",
+    "distrito_id": 44,
+    "leitos": 0
+  },
+  {
+    "id": 286,
+    "nome": "JOSE BONIFACIO I-UBS",
+    "tipo": "ubs",
+    "distrito_id": 44,
+    "leitos": 0
+  },
+  {
+    "id": 287,
+    "nome": "JOSE DE TOLEDO PIZA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 37,
+    "leitos": 0
+  },
+  {
+    "id": 288,
+    "nome": "JOSE PIRES,DR(ENG GOULART)-UBS",
+    "tipo": "ubs",
+    "distrito_id": 17,
+    "leitos": 0
+  },
+  {
+    "id": 289,
+    "nome": "LARANJEIRAS - UBS",
+    "tipo": "ubs",
+    "distrito_id": 57,
+    "leitos": 0
+  },
+  {
+    "id": 290,
+    "nome": "LAUSANE PAULISTA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 49,
+    "leitos": 0
+  },
+  {
+    "id": 291,
+    "nome": "LUAR DO SERTAO - UBS",
+    "tipo": "ubs",
+    "distrito_id": 18,
+    "leitos": 0
+  },
+  {
+    "id": 292,
+    "nome": "LUCIANO BERGAMINI, DOM-UBS",
+    "tipo": "ubs",
+    "distrito_id": 50,
+    "leitos": 0
+  },
+  {
+    "id": 293,
+    "nome": "LUCY UDAKIRI,DRA (JOSE BONIFACIO III) - UBS",
+    "tipo": "ubs",
+    "distrito_id": 44,
+    "leitos": 0
+  },
+  {
+    "id": 294,
+    "nome": "LUIZ AUGUSTO DE CAMPOS,DR-UBS (V RAMOS)",
+    "tipo": "ubs",
+    "distrito_id": 35,
+    "leitos": 0
+  },
+  {
+    "id": 295,
+    "nome": "LUIZ E MAZZONI-UBS",
+    "tipo": "ubs",
+    "distrito_id": 66,
+    "leitos": 0
+  },
+  {
+    "id": 296,
+    "nome": "MANOEL SALDIVA NETO -UBS",
+    "tipo": "ubs",
+    "distrito_id": 10,
+    "leitos": 0
+  },
+  {
+    "id": 297,
+    "nome": "MANUEL DA NOBREGA,PE-UBS",
+    "tipo": "ubs",
+    "distrito_id": 5,
+    "leitos": 0
+  },
+  {
+    "id": 298,
+    "nome": "MAR PAULISTA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 57,
+    "leitos": 0
+  },
+  {
+    "id": 299,
+    "nome": "MARIA CECILIA F DONNANGELO,PROFA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 9,
+    "leitos": 0
+  },
+  {
+    "id": 300,
+    "nome": "MARIQUINHA SCIACIA,D -UBS",
+    "tipo": "ubs",
+    "distrito_id": 80,
+    "leitos": 0
+  },
+  {
+    "id": 301,
+    "nome": "MARSILAC - UBS",
+    "tipo": "ubs",
+    "distrito_id": 54,
+    "leitos": 0
+  },
+  {
+    "id": 302,
+    "nome": "MASSAGISTA MARIO AMERICO - UBS",
+    "tipo": "ubs",
+    "distrito_id": 20,
+    "leitos": 0
+  },
+  {
+    "id": 303,
+    "nome": "MASSAKI UDIHARA (JD AEROPORTO)-UBS",
+    "tipo": "ubs",
+    "distrito_id": 14,
+    "leitos": 0
+  },
+  {
+    "id": 304,
+    "nome": "MATA VIRGEM-UBS",
+    "tipo": "ubs",
+    "distrito_id": 57,
+    "leitos": 0
+  },
+  {
+    "id": 305,
+    "nome": "MATHEUS SANTAMARIA,DR (JD POPULAR) - UBS",
+    "tipo": "ubs",
+    "distrito_id": 62,
+    "leitos": 0
+  },
+  {
+    "id": 306,
+    "nome": "MAX PERLMAN (V OLIMPIA)-UBS",
+    "tipo": "ubs",
+    "distrito_id": 51,
+    "leitos": 0
+  },
+  {
+    "id": 307,
+    "nome": "MILTON SANTOS, PROF- UBS",
+    "tipo": "ubs",
+    "distrito_id": 76,
+    "leitos": 0
+  },
+  {
+    "id": 308,
+    "nome": "MOINHO VELHO II-UBS",
+    "tipo": "ubs",
+    "distrito_id": 66,
+    "leitos": 0
+  },
+  {
+    "id": 309,
+    "nome": "MOINHO VELHO I-UBS",
+    "tipo": "ubs",
+    "distrito_id": 94,
+    "leitos": 0
+  },
+  {
+    "id": 310,
+    "nome": "MOOCA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 1,
+    "leitos": 0
+  },
+  {
+    "id": 311,
+    "nome": "MOOCA I-UBS",
+    "tipo": "ubs",
+    "distrito_id": 52,
+    "leitos": 0
+  },
+  {
+    "id": 312,
+    "nome": "MORADA DO SOL-UBS",
+    "tipo": "ubs",
+    "distrito_id": 3,
+    "leitos": 0
+  },
+  {
+    "id": 313,
+    "nome": "MORRO DOCE-UBS",
+    "tipo": "ubs",
+    "distrito_id": 3,
+    "leitos": 0
+  },
+  {
+    "id": 314,
+    "nome": "N SRA DO CARMO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 56,
+    "leitos": 0
+  },
+  {
+    "id": 315,
+    "nome": "NOVA AMERICA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 54,
+    "leitos": 0
+  },
+  {
+    "id": 316,
+    "nome": "NOVA ESPERANCA - UBS (PAULISTANO II)",
+    "tipo": "ubs",
+    "distrito_id": 9,
+    "leitos": 0
+  },
+  {
+    "id": 317,
+    "nome": "NOVE DE JULHO -UBS",
+    "tipo": "ubs",
+    "distrito_id": 71,
+    "leitos": 0
+  },
+  {
+    "id": 318,
+    "nome": "NOVO CAMINHO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 43,
+    "leitos": 0
+  },
+  {
+    "id": 319,
+    "nome": "NOVO JARDIM I-UBS",
+    "tipo": "ubs",
+    "distrito_id": 43,
+    "leitos": 0
+  },
+  {
+    "id": 320,
+    "nome": "NUCLEO DE GESTAO ASSISTENCIAL NGA 08 BELEM-PAM",
+    "tipo": "ubs",
+    "distrito_id": 6,
+    "leitos": 0
+  },
+  {
+    "id": 321,
+    "nome": "NUCLEO DE GESTAO ASSISTENCIAL NGA 39 SANTA CRUZ-PAM",
+    "tipo": "ubs",
+    "distrito_id": 89,
+    "leitos": 0
+  },
+  {
+    "id": 322,
+    "nome": "ORA ROSEN,DRA (PQ S RAFAEL) - UBS",
+    "tipo": "ubs",
+    "distrito_id": 73,
+    "leitos": 0
+  },
+  {
+    "id": 323,
+    "nome": "OSWALDO MARASCA JUNIOR,DR-UBS",
+    "tipo": "ubs",
+    "distrito_id": 32,
+    "leitos": 0
+  },
+  {
+    "id": 324,
+    "nome": "PARADA XV DE NOVEMBRO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 35,
+    "leitos": 0
+  },
+  {
+    "id": 325,
+    "nome": "PARAISOPOLIS - UBS",
+    "tipo": "ubs",
+    "distrito_id": 82,
+    "leitos": 0
+  },
+  {
+    "id": 326,
+    "nome": "PARAISOPOLIS II - UBS",
+    "tipo": "ubs",
+    "distrito_id": 82,
+    "leitos": 0
+  },
+  {
+    "id": 327,
+    "nome": "PARAISOPOLIS-UBS",
+    "tipo": "ubs",
+    "distrito_id": 82,
+    "leitos": 0
+  },
+  {
+    "id": 328,
+    "nome": "PARELHEIROS-UBS",
+    "tipo": "ubs",
+    "distrito_id": 54,
+    "leitos": 0
+  },
+  {
+    "id": 329,
+    "nome": "PARQUE MARIA HELENA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 18,
+    "leitos": 0
+  },
+  {
+    "id": 330,
+    "nome": "PASTORAL-UBS",
+    "tipo": "ubs",
+    "distrito_id": 75,
+    "leitos": 0
+  },
+  {
+    "id": 331,
+    "nome": "PEDRO DE SOUZA CAMPOS,DR-UBS MANGABEIRA",
+    "tipo": "ubs",
+    "distrito_id": 27,
+    "leitos": 0
+  },
+  {
+    "id": 332,
+    "nome": "PERUS-UBS",
+    "tipo": "ubs",
+    "distrito_id": 60,
+    "leitos": 0
+  },
+  {
+    "id": 333,
+    "nome": "PQ ANHANGUERA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 3,
+    "leitos": 0
+  },
+  {
+    "id": 334,
+    "nome": "PQ ARARIBA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 16,
+    "leitos": 0
+  },
+  {
+    "id": 335,
+    "nome": "PQ ARTUR ALVIM - UBS",
+    "tipo": "ubs",
+    "distrito_id": 5,
+    "leitos": 0
+  },
+  {
+    "id": 336,
+    "nome": "PQ BRISTOL-UBS",
+    "tipo": "ubs",
+    "distrito_id": 66,
+    "leitos": 0
+  },
+  {
+    "id": 337,
+    "nome": "PQ DA BOA ESPERANCA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 31,
+    "leitos": 0
+  },
+  {
+    "id": 338,
+    "nome": "PQ DO ENGENHO II-UBS",
+    "tipo": "ubs",
+    "distrito_id": 18,
+    "leitos": 0
+  },
+  {
+    "id": 339,
+    "nome": "PQ DO LAGO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 40,
+    "leitos": 0
+  },
+  {
+    "id": 340,
+    "nome": "PQ EDU CHAVES-UBS",
+    "tipo": "ubs",
+    "distrito_id": 37,
+    "leitos": 0
+  },
+  {
+    "id": 341,
+    "nome": "PQ FERNANDA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 18,
+    "leitos": 0
+  },
+  {
+    "id": 342,
+    "nome": "PQ FIGUEIRA GRANDE-UBS",
+    "tipo": "ubs",
+    "distrito_id": 43,
+    "leitos": 0
+  },
+  {
+    "id": 343,
+    "nome": "PQ IMPERIAL-UBS",
+    "tipo": "ubs",
+    "distrito_id": 76,
+    "leitos": 0
+  },
+  {
+    "id": 344,
+    "nome": "PQ MARIA DOMITILA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 69,
+    "leitos": 0
+  },
+  {
+    "id": 345,
+    "nome": "PQ NOVO MUNDO II-UBS",
+    "tipo": "ubs",
+    "distrito_id": 88,
+    "leitos": 0
+  },
+  {
+    "id": 346,
+    "nome": "PQ NOVO MUNDO I-UBS",
+    "tipo": "ubs",
+    "distrito_id": 88,
+    "leitos": 0
+  },
+  {
+    "id": 347,
+    "nome": "PQ NOVO STO AMARO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 40,
+    "leitos": 0
+  },
+  {
+    "id": 348,
+    "nome": "PQ PAULISTANO - UBS",
+    "tipo": "ubs",
+    "distrito_id": 41,
+    "leitos": 0
+  },
+  {
+    "id": 349,
+    "nome": "PQ PERUCHE-UBS",
+    "tipo": "ubs",
+    "distrito_id": 20,
+    "leitos": 0
+  },
+  {
+    "id": 350,
+    "nome": "PQ REGINA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 16,
+    "leitos": 0
+  },
+  {
+    "id": 351,
+    "nome": "PQ RES COCAIA INDEPENDENTE-UBS",
+    "tipo": "ubs",
+    "distrito_id": 29,
+    "leitos": 0
+  },
+  {
+    "id": 352,
+    "nome": "PQ S LUCAS-UBS",
+    "tipo": "ubs",
+    "distrito_id": 70,
+    "leitos": 0
+  },
+  {
+    "id": 353,
+    "nome": "PQ STA RITA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 83,
+    "leitos": 0
+  },
+  {
+    "id": 354,
+    "nome": "PQ STO ANTONIO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 43,
+    "leitos": 0
+  },
+  {
+    "id": 355,
+    "nome": "PRESTES MAIA,PREF-UBS",
+    "tipo": "ubs",
+    "distrito_id": 24,
+    "leitos": 0
+  },
+  {
+    "id": 356,
+    "nome": "PRIMEIRO DE OUTUBRO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 45,
+    "leitos": 0
+  },
+  {
+    "id": 357,
+    "nome": "PROFETA JEREMIAS-UBS",
+    "tipo": "ubs",
+    "distrito_id": 24,
+    "leitos": 0
+  },
+  {
+    "id": 358,
+    "nome": "RECANTO CAMPO BELO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 54,
+    "leitos": 0
+  },
+  {
+    "id": 359,
+    "nome": "RECANTO DOS HUMILDES-UBS",
+    "tipo": "ubs",
+    "distrito_id": 60,
+    "leitos": 0
+  },
+  {
+    "id": 360,
+    "nome": "RECANTO VERDE SOL-UBS",
+    "tipo": "ubs",
+    "distrito_id": 31,
+    "leitos": 0
+  },
+  {
+    "id": 361,
+    "nome": "REUNIDAS I -UBS",
+    "tipo": "ubs",
+    "distrito_id": 70,
+    "leitos": 0
+  },
+  {
+    "id": 362,
+    "nome": "REUNIDAS II-UBS",
+    "tipo": "ubs",
+    "distrito_id": 75,
+    "leitos": 0
+  },
+  {
+    "id": 363,
+    "nome": "RIO CLARO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 73,
+    "leitos": 0
+  },
+  {
+    "id": 364,
+    "nome": "S MATEUS I - UBS",
+    "tipo": "ubs",
+    "distrito_id": 71,
+    "leitos": 0
+  },
+  {
+    "id": 365,
+    "nome": "S SAVERIO( AURELIO MELLONE)-UBS",
+    "tipo": "ubs",
+    "distrito_id": 66,
+    "leitos": 0
+  },
+  {
+    "id": 366,
+    "nome": "S VICENTE DE PAULA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 32,
+    "leitos": 0
+  },
+  {
+    "id": 367,
+    "nome": "SACOMA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 66,
+    "leitos": 0
+  },
+  {
+    "id": 368,
+    "nome": "SANTA MADALENA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 75,
+    "leitos": 0
+  },
+  {
+    "id": 369,
+    "nome": "SANTO AMARO-UBS SERGIO V BRAGA",
+    "tipo": "ubs",
+    "distrito_id": 68,
+    "leitos": 0
+  },
+  {
+    "id": 370,
+    "nome": "SANTO ELIAS- UBS",
+    "tipo": "ubs",
+    "distrito_id": 69,
+    "leitos": 0
+  },
+  {
+    "id": 371,
+    "nome": "SAO FRANCISCO - UBS",
+    "tipo": "ubs",
+    "distrito_id": 73,
+    "leitos": 0
+  },
+  {
+    "id": 372,
+    "nome": "SAPOPEMBA - UBS MASCARENHAS DE MORAIS",
+    "tipo": "ubs",
+    "distrito_id": 75,
+    "leitos": 0
+  },
+  {
+    "id": 373,
+    "nome": "SERGIO CHADDAD,DR-UBS",
+    "tipo": "ubs",
+    "distrito_id": 22,
+    "leitos": 0
+  },
+  {
+    "id": 374,
+    "nome": "SIGMUND FREUD,DR-UBS II INDIANAPOLIS",
+    "tipo": "ubs",
+    "distrito_id": 51,
+    "leitos": 0
+  },
+  {
+    "id": 375,
+    "nome": "SILMARYA REJANE MARCOLINO DE SOUZA -UBS",
+    "tipo": "ubs",
+    "distrito_id": 9,
+    "leitos": 0
+  },
+  {
+    "id": 376,
+    "nome": "SITIO DA CASA PINTADA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 86,
+    "leitos": 0
+  },
+  {
+    "id": 377,
+    "nome": "STA INES-UBS",
+    "tipo": "ubs",
+    "distrito_id": 86,
+    "leitos": 0
+  },
+  {
+    "id": 378,
+    "nome": "STA LUCIA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 40,
+    "leitos": 0
+  },
+  {
+    "id": 379,
+    "nome": "STA LUZIA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 45,
+    "leitos": 0
+  },
+  {
+    "id": 380,
+    "nome": "STO ESTEVAO-UBS CARMOSINA",
+    "tipo": "ubs",
+    "distrito_id": 56,
+    "leitos": 0
+  },
+  {
+    "id": 381,
+    "nome": "TEOTONIO VILELA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 75,
+    "leitos": 0
+  },
+  {
+    "id": 382,
+    "nome": "THERSIO VENTURA, DR-UBS",
+    "tipo": "ubs",
+    "distrito_id": 86,
+    "leitos": 0
+  },
+  {
+    "id": 383,
+    "nome": "TRINDADE,ENG-UBS",
+    "tipo": "ubs",
+    "distrito_id": 58,
+    "leitos": 0
+  },
+  {
+    "id": 384,
+    "nome": "UBS INTEGRAL JARDIM MIRIAM II",
+    "tipo": "ubs",
+    "distrito_id": 21,
+    "leitos": 0
+  },
+  {
+    "id": 385,
+    "nome": "UBS JARDIM HELENA",
+    "tipo": "ubs",
+    "distrito_id": 41,
+    "leitos": 0
+  },
+  {
+    "id": 386,
+    "nome": "UBS JARDIM JULIETA",
+    "tipo": "ubs",
+    "distrito_id": 91,
+    "leitos": 0
+  },
+  {
+    "id": 387,
+    "nome": "UBS JARDIM NOVO PANTANAL - PEDREIRA",
+    "tipo": "ubs",
+    "distrito_id": 57,
+    "leitos": 0
+  },
+  {
+    "id": 388,
+    "nome": "UBS JARDIM ROMANO",
+    "tipo": "ubs",
+    "distrito_id": 41,
+    "leitos": 0
+  },
+  {
+    "id": 389,
+    "nome": "UBS PARQUE DOROTEIA",
+    "tipo": "ubs",
+    "distrito_id": 57,
+    "leitos": 0
+  },
+  {
+    "id": 390,
+    "nome": "UBS SAO JORGE - CIDADE ADEMAR",
+    "tipo": "ubs",
+    "distrito_id": 21,
+    "leitos": 0
+  },
+  {
+    "id": 391,
+    "nome": "UNIAO VILA NOVA I-UBS",
+    "tipo": "ubs",
+    "distrito_id": 86,
+    "leitos": 0
+  },
+  {
+    "id": 392,
+    "nome": "UNIAO VILA NOVA-UBS ADAO MANOEL DA SILVA",
+    "tipo": "ubs",
+    "distrito_id": 86,
+    "leitos": 0
+  },
+  {
+    "id": 393,
+    "nome": "V ALBERTINA  DR. OSVALDO MARCAL-UBS",
+    "tipo": "ubs",
+    "distrito_id": 80,
+    "leitos": 0
+  },
+  {
+    "id": 394,
+    "nome": "V ANTONIETA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 4,
+    "leitos": 0
+  },
+  {
+    "id": 395,
+    "nome": "V APARECIDA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 57,
+    "leitos": 0
+  },
+  {
+    "id": 396,
+    "nome": "V ARICANDUVA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 90,
+    "leitos": 0
+  },
+  {
+    "id": 397,
+    "nome": "V ARRIETE-UBS DECIO P. PEDROSO",
+    "tipo": "ubs",
+    "distrito_id": 15,
+    "leitos": 0
+  },
+  {
+    "id": 398,
+    "nome": "V BARBOSA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 48,
+    "leitos": 0
+  },
+  {
+    "id": 399,
+    "nome": "V CALIFORNIA-UBS ZELIVAL BRUSCAGIN",
+    "tipo": "ubs",
+    "distrito_id": 92,
+    "leitos": 0
+  },
+  {
+    "id": 400,
+    "nome": "V CALU - UBS",
+    "tipo": "ubs",
+    "distrito_id": 40,
+    "leitos": 0
+  },
+  {
+    "id": 401,
+    "nome": "V CAMPESTRE - UBS",
+    "tipo": "ubs",
+    "distrito_id": 36,
+    "leitos": 0
+  },
+  {
+    "id": 402,
+    "nome": "V CARMOSINA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 35,
+    "leitos": 0
+  },
+  {
+    "id": 403,
+    "nome": "V CHABILANDIA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 45,
+    "leitos": 0
+  },
+  {
+    "id": 404,
+    "nome": "V CISPER-UBS",
+    "tipo": "ubs",
+    "distrito_id": 27,
+    "leitos": 0
+  },
+  {
+    "id": 405,
+    "nome": "V CLARA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 21,
+    "leitos": 0
+  },
+  {
+    "id": 406,
+    "nome": "V CONSTANCIA-UBS VICENTE O. GUIDA",
+    "tipo": "ubs",
+    "distrito_id": 21,
+    "leitos": 0
+  },
+  {
+    "id": 407,
+    "nome": "V COSMOPOLITA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 30,
+    "leitos": 0
+  },
+  {
+    "id": 408,
+    "nome": "V CURUCA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 83,
+    "leitos": 0
+  },
+  {
+    "id": 409,
+    "nome": "V DAS BELEZAS - UBS DR. ALBERTO AMBROSIO",
+    "tipo": "ubs",
+    "distrito_id": 43,
+    "leitos": 0
+  },
+  {
+    "id": 410,
+    "nome": "V DAS MERCES-UBS",
+    "tipo": "ubs",
+    "distrito_id": 66,
+    "leitos": 0
+  },
+  {
+    "id": 411,
+    "nome": "V DIONISIA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 12,
+    "leitos": 0
+  },
+  {
+    "id": 412,
+    "nome": "V EDE-UBS III",
+    "tipo": "ubs",
+    "distrito_id": 91,
+    "leitos": 0
+  },
+  {
+    "id": 413,
+    "nome": "V ESPANHOLA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 12,
+    "leitos": 0
+  },
+  {
+    "id": 414,
+    "nome": "V ESPERANCA-UBS CASSIO BITTENCOURT FILHO",
+    "tipo": "ubs",
+    "distrito_id": 58,
+    "leitos": 0
+  },
+  {
+    "id": 415,
+    "nome": "V FORMOSA - UBS (ANTONIO SILVEIRA E OLIVEIRA)",
+    "tipo": "ubs",
+    "distrito_id": 84,
+    "leitos": 0
+  },
+  {
+    "id": 416,
+    "nome": "V FORMOSA I -UBS COMENDADOR JOSE GONCALEZ",
+    "tipo": "ubs",
+    "distrito_id": 84,
+    "leitos": 0
+  },
+  {
+    "id": 417,
+    "nome": "V FORMOSA II -UBS",
+    "tipo": "ubs",
+    "distrito_id": 84,
+    "leitos": 0
+  },
+  {
+    "id": 418,
+    "nome": "V GRANADA-UBS ALFREDO F. PAULINO",
+    "tipo": "ubs",
+    "distrito_id": 58,
+    "leitos": 0
+  },
+  {
+    "id": 419,
+    "nome": "V GUACURI-UBS",
+    "tipo": "ubs",
+    "distrito_id": 57,
+    "leitos": 0
+  },
+  {
+    "id": 420,
+    "nome": "V GUARANI - UBS",
+    "tipo": "ubs",
+    "distrito_id": 84,
+    "leitos": 0
+  },
+  {
+    "id": 421,
+    "nome": "V GUILHERME- UBS",
+    "tipo": "ubs",
+    "distrito_id": 85,
+    "leitos": 0
+  },
+  {
+    "id": 422,
+    "nome": "V GUILHERMINA-UBS AMERICO RASPA NETO",
+    "tipo": "ubs",
+    "distrito_id": 90,
+    "leitos": 0
+  },
+  {
+    "id": 423,
+    "nome": "V GUMERCINDO-UBS PROF. JANDIRA MANSUR",
+    "tipo": "ubs",
+    "distrito_id": 26,
+    "leitos": 0
+  },
+  {
+    "id": 424,
+    "nome": "V HELOISA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 70,
+    "leitos": 0
+  },
+  {
+    "id": 425,
+    "nome": "V IMPERIO - UBS",
+    "tipo": "ubs",
+    "distrito_id": 21,
+    "leitos": 0
+  },
+  {
+    "id": 426,
+    "nome": "V IMPERIO II -UBS GILDA TERA TAHIRA",
+    "tipo": "ubs",
+    "distrito_id": 21,
+    "leitos": 0
+  },
+  {
+    "id": 427,
+    "nome": "V IZOLINA MAZZEI-UBS",
+    "tipo": "ubs",
+    "distrito_id": 85,
+    "leitos": 0
+  },
+  {
+    "id": 428,
+    "nome": "V JACUI-UBS",
+    "tipo": "ubs",
+    "distrito_id": 86,
+    "leitos": 0
+  },
+  {
+    "id": 429,
+    "nome": "V JOANIZA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 21,
+    "leitos": 0
+  },
+  {
+    "id": 430,
+    "nome": "V LEONOR-UBS",
+    "tipo": "ubs",
+    "distrito_id": 85,
+    "leitos": 0
+  },
+  {
+    "id": 431,
+    "nome": "V MAGGI-UBS",
+    "tipo": "ubs",
+    "distrito_id": 94,
+    "leitos": 0
+  },
+  {
+    "id": 432,
+    "nome": "V MANGALOT-UBS",
+    "tipo": "ubs",
+    "distrito_id": 69,
+    "leitos": 0
+  },
+  {
+    "id": 433,
+    "nome": "V MARIA-UBS PAULO GNECCO",
+    "tipo": "ubs",
+    "distrito_id": 88,
+    "leitos": 0
+  },
+  {
+    "id": 434,
+    "nome": "V MATILDE-UBS RUBENS DO VAL",
+    "tipo": "ubs",
+    "distrito_id": 90,
+    "leitos": 0
+  },
+  {
+    "id": 435,
+    "nome": "V MEDEIROS-UBS",
+    "tipo": "ubs",
+    "distrito_id": 91,
+    "leitos": 0
+  },
+  {
+    "id": 436,
+    "nome": "V MISSIONARIA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 21,
+    "leitos": 0
+  },
+  {
+    "id": 437,
+    "nome": "V MORAES-UBS JOAO BOTELHO VIEIRA",
+    "tipo": "ubs",
+    "distrito_id": 26,
+    "leitos": 0
+  },
+  {
+    "id": 438,
+    "nome": "V N SRA APARECIDA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 35,
+    "leitos": 0
+  },
+  {
+    "id": 439,
+    "nome": "V NIVI-UBS",
+    "tipo": "ubs",
+    "distrito_id": 81,
+    "leitos": 0
+  },
+  {
+    "id": 440,
+    "nome": "V NOVA CURUCA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 83,
+    "leitos": 0
+  },
+  {
+    "id": 441,
+    "nome": "V NOVA GALVAO (SONIA R CAMPANELLI)-UBS",
+    "tipo": "ubs",
+    "distrito_id": 37,
+    "leitos": 0
+  },
+  {
+    "id": 442,
+    "nome": "V NOVA MANCHESTER (ARLINDO GENNARI,DR)-UBS",
+    "tipo": "ubs",
+    "distrito_id": 19,
+    "leitos": 0
+  },
+  {
+    "id": 443,
+    "nome": "V NOVA YORK-UBS",
+    "tipo": "ubs",
+    "distrito_id": 4,
+    "leitos": 0
+  },
+  {
+    "id": 444,
+    "nome": "V ORATORIO \"TITO P.MASCELANI\" -UBS",
+    "tipo": "ubs",
+    "distrito_id": 1,
+    "leitos": 0
+  },
+  {
+    "id": 445,
+    "nome": "V PALMEIRAS(V BANCARIA)-UBS",
+    "tipo": "ubs",
+    "distrito_id": 28,
+    "leitos": 0
+  },
+  {
+    "id": 446,
+    "nome": "V PENTEADO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 9,
+    "leitos": 0
+  },
+  {
+    "id": 447,
+    "nome": "V PEREIRA BARRETO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 94,
+    "leitos": 0
+  },
+  {
+    "id": 448,
+    "nome": "V PIRITUBA -UBS",
+    "tipo": "ubs",
+    "distrito_id": 94,
+    "leitos": 0
+  },
+  {
+    "id": 449,
+    "nome": "V PROGRESSO-UBS (JD MONTE ALEGRE)",
+    "tipo": "ubs",
+    "distrito_id": 28,
+    "leitos": 0
+  },
+  {
+    "id": 450,
+    "nome": "V PRUDENTE-UBS",
+    "tipo": "ubs",
+    "distrito_id": 92,
+    "leitos": 0
+  },
+  {
+    "id": 451,
+    "nome": "V RAMOS-UBS FREGUESIA DO O",
+    "tipo": "ubs",
+    "distrito_id": 28,
+    "leitos": 0
+  },
+  {
+    "id": 452,
+    "nome": "V REGINA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 35,
+    "leitos": 0
+  },
+  {
+    "id": 453,
+    "nome": "V RENATO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 75,
+    "leitos": 0
+  },
+  {
+    "id": 454,
+    "nome": "V SABRINA-UBS CARLOS AUGUSTO AUTRAN",
+    "tipo": "ubs",
+    "distrito_id": 91,
+    "leitos": 0
+  },
+  {
+    "id": 455,
+    "nome": "V SANTANA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 35,
+    "leitos": 0
+  },
+  {
+    "id": 456,
+    "nome": "V SANTO ESTEVAO-UBS",
+    "tipo": "ubs",
+    "distrito_id": 79,
+    "leitos": 0
+  },
+  {
+    "id": 457,
+    "nome": "V STA CATARINA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 36,
+    "leitos": 0
+  },
+  {
+    "id": 458,
+    "nome": "V STA MARIA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 48,
+    "leitos": 0
+  },
+  {
+    "id": 459,
+    "nome": "V TEREZINHA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 9,
+    "leitos": 0
+  },
+  {
+    "id": 460,
+    "nome": "V ZATT- UBS",
+    "tipo": "ubs",
+    "distrito_id": 94,
+    "leitos": 0
+  },
+  {
+    "id": 461,
+    "nome": "VARGEM GRANDE-UBS",
+    "tipo": "ubs",
+    "distrito_id": 54,
+    "leitos": 0
+  },
+  {
+    "id": 462,
+    "nome": "VARGINHA-UBS",
+    "tipo": "ubs",
+    "distrito_id": 29,
+    "leitos": 0
+  },
+  {
+    "id": 463,
+    "nome": "VELEIROS-UBS",
+    "tipo": "ubs",
+    "distrito_id": 78,
+    "leitos": 0
+  },
+  {
+    "id": 464,
+    "nome": "VERA POTY-UBS",
+    "tipo": "ubs",
+    "distrito_id": 54,
+    "leitos": 0
+  },
+  {
+    "id": 465,
+    "nome": "VILA  ARAPUA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 66,
+    "leitos": 0
+  },
+  {
+    "id": 466,
+    "nome": "VILA CAIUBA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 60,
+    "leitos": 0
+  },
+  {
+    "id": 467,
+    "nome": "VILA CARIOCA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 32,
+    "leitos": 0
+  },
+  {
+    "id": 468,
+    "nome": "VILA CARR´?¢O - UBS DR. ADHEMAR MONTEIRO PACHECO",
+    "tipo": "ubs",
+    "distrito_id": 19,
+    "leitos": 0
+  },
+  {
+    "id": 469,
+    "nome": "VILA DIONISIA II - UBS",
+    "tipo": "ubs",
+    "distrito_id": 12,
+    "leitos": 0
+  },
+  {
+    "id": 470,
+    "nome": "VILA MARCELO - UBS",
+    "tipo": "ubs",
+    "distrito_id": 54,
+    "leitos": 0
+  },
+  {
+    "id": 471,
+    "nome": "VILA NATAL - UBS",
+    "tipo": "ubs",
+    "distrito_id": 29,
+    "leitos": 0
+  },
+  {
+    "id": 472,
+    "nome": "VILA ROSCHEL - UBS",
+    "tipo": "ubs",
+    "distrito_id": 54,
+    "leitos": 0
+  },
+  {
+    "id": 473,
+    "nome": "VILA SILVIA - UBS",
+    "tipo": "ubs",
+    "distrito_id": 17,
+    "leitos": 0
+  },
+  {
+    "id": 474,
+    "nome": "VILA TALARICO - UBS INTEGRAL JARDIM MARINGA",
+    "tipo": "ubs",
+    "distrito_id": 90,
+    "leitos": 0
+  },
+  {
+    "id": 475,
+    "nome": "VITORIO R BOCCALETTI,DR-UBS (V PRAIA)",
+    "tipo": "ubs",
+    "distrito_id": 82,
+    "leitos": 0
+  },
+  {
+    "id": 476,
+    "nome": "WALTER ELIAS,DR- CASA VERDE BAIXA UBS",
+    "tipo": "ubs",
+    "distrito_id": 20,
+    "leitos": 0
+  },
+  {
+    "id": 477,
+    "nome": "WAMBERTO DIAS COSTA -UBS",
+    "tipo": "ubs",
+    "distrito_id": 81,
+    "leitos": 0
+  },
+  {
+    "id": 478,
+    "nome": "ZUMBI DOS PALMARES-UBS",
+    "tipo": "ubs",
+    "distrito_id": 43,
+    "leitos": 0
   }
 ]
