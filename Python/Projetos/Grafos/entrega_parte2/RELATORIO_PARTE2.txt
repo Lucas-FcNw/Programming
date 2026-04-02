@@ -43,9 +43,18 @@ A modelagem foi preparada no formato padrão solicitado no arquivo grafo.txt.
 Arquivo principal da modelagem:
 - grafo.txt
 
+Modelagem adicional em Mermaid (para documentação textual da estrutura do grafo):
+- modelagem_mermaid.md (grafo completo)
+- modelagem_mermaid_resumo.md (subgrafo para visualização rápida)
+- gerar_mermaid.py (script que converte grafo.txt para Mermaid)
+
 Para visualização na ferramenta (Graph Online ou Gephi):
 - importar os vértices e arestas a partir de grafo.txt.
 - gerar imagem do grafo para inclusão no relatório final entregue no AVA.
+
+Para visualização em Mermaid:
+- abrir modelagem_mermaid_resumo.md em um visualizador compatível com Mermaid.
+- usar modelagem_mermaid.md como evidência de modelagem completa.
 
 Observação:
 Como esta versão foi consolidada em formato TXT, os artefatos textuais de execução e modelagem foram priorizados. A captura de tela da modelagem deve ser anexada no documento final da entrega acadêmica.
