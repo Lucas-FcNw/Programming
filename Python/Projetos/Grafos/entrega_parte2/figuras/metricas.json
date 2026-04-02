@@ -1,0 +1,64 @@
+{
+  "tipo": 3,
+  "orientado": false,
+  "num_vertices": 71,
+  "num_arestas": 215,
+  "grau_medio": 6.06,
+  "grau_maximo": 11,
+  "grau_minimo": 1,
+  "densidade": 0.0865,
+  "conexo": true,
+  "num_componentes": 1,
+  "top_10_graus": [
+    {
+      "id": 6,
+      "rotulo": "Belém",
+      "grau": 11
+    },
+    {
+      "id": 52,
+      "rotulo": "Mooca",
+      "grau": 11
+    },
+    {
+      "id": 58,
+      "rotulo": "Penha",
+      "grau": 11
+    },
+    {
+      "id": 79,
+      "rotulo": "Tatuapé",
+      "grau": 11
+    },
+    {
+      "id": 1,
+      "rotulo": "Água Rasa",
+      "grau": 10
+    },
+    {
+      "id": 19,
+      "rotulo": "Carrão",
+      "grau": 10
+    },
+    {
+      "id": 49,
+      "rotulo": "Mandaqui",
+      "grau": 10
+    },
+    {
+      "id": 84,
+      "rotulo": "Vila Formosa",
+      "grau": 10
+    },
+    {
+      "id": 85,
+      "rotulo": "Vila Guilherme",
+      "grau": 10
+    },
+    {
+      "id": 88,
+      "rotulo": "Vila Maria",
+      "grau": 10
+    }
+  ]
+}
