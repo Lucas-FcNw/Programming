@@ -1,0 +1,44 @@
+Roteiro de prints para o relatório (2 por opção)
+
+Opção a:
+- print da leitura com sucesso de grafo.txt
+- print da tentativa de leitura de arquivo inexistente
+
+Opção b:
+- print da gravação em grafo.txt
+- print da gravação em arquivo alternativo
+
+Opção c:
+- print de inserção de vértice novo
+- print de tentativa de inserção de ID já existente
+
+Opção d:
+- print de inserção de aresta válida
+- print de inserção de aresta com vértice inexistente
+
+Opção e:
+- print de remoção de vértice existente
+- print de remoção de vértice inexistente
+
+Opção f:
+- print de remoção de aresta existente
+- print de remoção de aresta inexistente
+
+Opção g:
+- print mostrando conteúdo de grafo.txt
+- print com arquivo inexistente
+
+Opção h:
+- print da lista de adjacência após leitura
+- print da estrutura vazia sem leitura
+
+Opção i:
+- print de conexidade para grafo não orientado
+- print da categoria/reduzido para grafo orientado
+
+Opção j:
+- print de encerramento imediato
+- print de encerramento após operações
+
+Observação:
+As saídas dessas execuções já estão registradas em evidencias/testes_menu.txt.

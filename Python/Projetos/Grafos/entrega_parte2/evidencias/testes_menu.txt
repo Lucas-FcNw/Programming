@@ -1,0 +1,1478 @@
+=== TESTE a1: leitura válida de grafo.txt ===
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: Leitura concluída com sucesso.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.
+
+=== TESTE a2: leitura inválida (arquivo inexistente) ===
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: Erro na leitura: [Errno 2] No such file or directory: 'nao_existe.txt'
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.
+
+=== TESTE b1: gravação padrão grafo.txt ===
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: Leitura concluída com sucesso.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: Gravação concluída com sucesso.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.
+
+=== TESTE b2: gravação em arquivo alternativo ===
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: Leitura concluída com sucesso.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: Gravação concluída com sucesso.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.
+
+=== TESTE c1: inserir vértice novo ===
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: Leitura concluída com sucesso.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: ID do vértice: Rótulo/apelido do vértice: Peso do vértice: Vértice inserido.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: 
+Tipo: 3 (não orientado)
+Vértices: 72 | Arestas: 215
+-
+[1] Água Rasa (peso=82564.0) -> 6(w=3.59), 10(w=5.19), 19(w=3.38), 32(w=3.78), 52(w=2.59), 66(w=4.89), 70(w=2.96), 79(w=3.9), 84(w=2.78), 92(w=1.67)
+[3] Anhanguera (peso=84719.0) -> 60(w=4.23)
+[4] Aricanduva (peso=85868.0) -> 5(w=3.78), 19(w=4.12), 23(w=4.11), 27(w=5.4), 35(w=5.36), 58(w=4.95), 62(w=5.23), 84(w=4.11), 90(w=2.45)
+[5] Artur Alvim (peso=100462.0) -> 4(w=3.78), 23(w=2.96), 27(w=2.96), 35(w=2.11), 44(w=4.62), 56(w=4.95), 62(w=4.14), 72(w=5.4), 90(w=4.08)
+[6] Belém (peso=49213.0) -> 1(w=3.59), 10(w=2.46), 19(w=4.03), 52(w=2.45), 58(w=5.38), 79(w=1.63), 84(w=4.47), 85(w=3.28), 88(w=3.9), 91(w=5.4), 92(w=5.18)
+[9] Brasilândia (peso=281977.0) -> 12(w=3.77), 28(w=3.49), 49(w=5.01), 80(w=5.33), 94(w=4.94)
+[10] Brás (peso=33045.0) -> 1(w=5.19), 6(w=2.46), 20(w=4.97), 52(w=2.83), 67(w=4.02), 79(w=3.99), 85(w=2.66), 88(w=4.3)
+[12] Cachoeirinha (peso=146387.0) -> 9(w=3.77), 20(w=2.83), 28(w=3.61), 48(w=3.17), 49(w=2.18), 67(w=3.54), 80(w=4.33), 81(w=4.62)
+[14] Campo Belo (peso=63744.0) -> 26(w=5.12), 36(w=2.78), 51(w=2.28), 68(w=3.34), 76(w=3.93), 89(w=4.52)
+[15] Campo Grande (peso=106722.0) -> 22(w=4.88), 43(w=5.21), 68(w=3.78), 78(w=4.62)
+[16] Campo Limpo (peso=228893.0) -> 18(w=2.96), 43(w=2.26), 82(w=3.77)
+[17] Cangaíba (peso=138107.0) -> 27(w=3.61), 58(w=2.26), 62(w=1.77), 90(w=3.37)
+[18] Capão Redondo (peso=296378.0) -> 16(w=2.96), 40(w=3.49), 43(w=2.78)
+[19] Carrão (peso=84925.0) -> 1(w=3.38), 4(w=4.12), 6(w=4.03), 52(w=5.02), 58(w=3.49), 70(w=5.23), 79(w=2.88), 84(w=1.11), 90(w=3.48), 92(w=4.65)
+[20] Casa Verde (peso=86004.0) -> 10(w=4.97), 12(w=2.83), 28(w=4.65), 48(w=2.04), 49(w=3.87), 67(w=2.31), 81(w=5.27), 85(w=4.62)
+[21] Cidade Ademar (peso=285677.0) -> 22(w=3.78), 57(w=2.83), 68(w=4.88), 78(w=2.11)
+[22] Cidade Dutra (peso=203131.0) -> 15(w=4.88), 21(w=3.78), 29(w=5.65), 57(w=2.61), 78(w=2.96)
+[23] Cidade Líder (peso=135247.0) -> 4(w=4.11), 5(w=2.96), 30(w=5.13), 35(w=2.45), 44(w=4.88), 56(w=2.32)
+[24] Cidade Tiradentes (peso=235630.0) -> 30(w=3.17), 45(w=1.22), 56(w=4.72)
+[26] Cursino (peso=113728.0) -> 14(w=5.12), 32(w=2.96), 36(w=3.04), 51(w=4.88), 66(w=2.11), 76(w=1.44), 89(w=3.45), 92(w=5.27)
+[27] Ermelino Matarazzo (peso=118715.0) -> 4(w=5.4), 5(w=2.96), 17(w=3.61), 35(w=4.53), 58(w=5.22), 62(w=1.85), 72(w=4.41), 86(w=4.21), 90(w=4.13)
+[28] Freguesia do Ó (peso=140083.0) -> 9(w=3.49), 12(w=3.61), 20(w=4.65), 48(w=3.02), 94(w=3.11)
+[29] Grajaú (peso=390096.0) -> 22(w=5.65), 50(w=9.4)
+[30] Guaianases (peso=109730.0) -> 23(w=5.13), 24(w=3.17), 35(w=4.41), 44(w=3.17), 45(w=2.63), 56(w=3.48)
+[31] Iguatemi (peso=149739.0) -> 71(w=2.96), 73(w=3.06)
+[32] Ipiranga (peso=112222.0) -> 1(w=3.78), 26(w=2.96), 52(w=3.41), 66(w=2.45), 70(w=4.11), 76(w=3.23), 89(w=3.06), 92(w=3.11)
+[34] Itaim Paulista (peso=234912.0) -> 41(w=3.74), 72(w=5.13), 83(w=1.89)
+[35] Itaquera (peso=211555.0) -> 4(w=5.36), 5(w=2.11), 23(w=2.45), 27(w=4.53), 30(w=4.41), 44(w=2.78), 56(w=3.49), 72(w=5.11)
+[36] Jabaquara (peso=229346.0) -> 14(w=2.78), 26(w=3.04), 51(w=3.91), 66(w=5.1), 68(w=3.38), 76(w=2.54), 78(w=5.11), 89(w=4.48)
+[37] Jaçanã (peso=96054.0) -> 49(w=4.73), 80(w=3.75), 81(w=2.72), 88(w=4.79), 91(w=3.55)
+[40] Jardim Ângela (peso=338265.0) -> 18(w=3.49)
+[41] Jardim Helena (peso=135605.0) -> 34(w=3.74), 72(w=2.26), 83(w=3.02), 86(w=2.32)
+[43] Jardim São Luís (peso=293660.0) -> 15(w=5.21), 16(w=2.26), 18(w=2.78), 82(w=4.56)
+[44] José Bonifácio (peso=136560.0) -> 5(w=4.62), 23(w=4.88), 30(w=3.17), 35(w=2.78), 56(w=4.7), 72(w=4.18), 83(w=3.91), 86(w=4.89)
+[45] Lajeado (peso=174539.0) -> 24(w=1.22), 30(w=2.63), 56(w=5.1)
+[48] Limão (peso=79657.0) -> 12(w=3.17), 20(w=2.04), 28(w=3.02), 49(w=5.04), 67(w=4.32)
+[49] Mandaqui (peso=109228.0) -> 9(w=5.01), 12(w=2.18), 20(w=3.87), 37(w=4.73), 48(w=5.04), 67(w=3.09), 80(w=2.66), 81(w=2.56), 85(w=5.13), 88(w=5.48)
+[50] Marsilac (peso=8426.0) -> 29(w=9.4), 54(w=6.34)
+[51] Moema (peso=89382.0) -> 14(w=2.28), 26(w=4.88), 36(w=3.91), 76(w=3.44), 89(w=2.78)
+[52] Mooca (peso=80330.0) -> 1(w=2.59), 6(w=2.45), 10(w=2.83), 19(w=5.02), 32(w=3.41), 70(w=5.14), 79(w=3.77), 84(w=4.89), 85(w=5.05), 89(w=5.03), 92(w=3.64)
+[54] Parelheiros (peso=153598.0) -> 50(w=6.34)
+[56] Parque do Carmo (peso=71749.0) -> 5(w=4.95), 23(w=2.32), 24(w=4.72), 30(w=3.48), 35(w=3.49), 44(w=4.7), 45(w=5.1)
+[57] Pedreira (peso=160976.0) -> 21(w=2.83), 22(w=2.61), 78(w=3.67)
+[58] Penha (peso=129100.0) -> 4(w=4.95), 6(w=5.38), 17(w=2.26), 19(w=3.49), 27(w=5.22), 62(w=3.53), 79(w=3.76), 84(w=4.56), 88(w=5.36), 90(w=2.63), 91(w=5.13)
+[60] Perus (peso=89310.0) -> 3(w=4.23), 69(w=7.78)
+[62] Ponte Rasa (peso=89774.0) -> 4(w=5.23), 5(w=4.14), 17(w=1.77), 27(w=1.85), 58(w=3.53), 90(w=3.24)
+[66] Sacomã (peso=263621.0) -> 1(w=4.89), 26(w=2.11), 32(w=2.45), 36(w=5.1), 70(w=3.48), 76(w=3.36), 89(w=4.64), 92(w=3.45)
+[67] Santana (peso=113253.0) -> 10(w=4.02), 12(w=3.54), 20(w=2.31), 48(w=4.32), 49(w=3.09), 81(w=3.33), 85(w=2.6), 88(w=3.87), 91(w=5.1)
+[68] Santo Amaro (peso=74447.0) -> 14(w=3.34), 15(w=3.78), 21(w=4.88), 36(w=3.38), 78(w=3.17)
+[69] São Domingos (peso=86403.0) -> 60(w=7.78), 94(w=3.11)
+[70] São Lucas (peso=142948.0) -> 1(w=2.96), 19(w=5.23), 32(w=4.11), 52(w=5.14), 66(w=3.48), 75(w=5.21), 84(w=4.18), 92(w=1.51)
+[71] São Mateus (peso=155387.0) -> 31(w=2.96), 73(w=3.45), 75(w=3.74)
+[72] São Miguel Paulista (peso=97373.0) -> 5(w=5.4), 27(w=4.41), 34(w=5.13), 35(w=5.11), 41(w=2.26), 44(w=4.18), 83(w=3.61), 86(w=0.75)
+[73] São Rafael (peso=159683.0) -> 31(w=3.06), 71(w=3.45), 75(w=4.18)
+[75] Sapopemba (peso=289759.0) -> 70(w=5.21), 71(w=3.74), 73(w=4.18)
+[76] Saúde (peso=134147.0) -> 14(w=3.93), 26(w=1.44), 32(w=3.23), 36(w=2.54), 51(w=3.44), 66(w=3.36), 89(w=2.34)
+[78] Socorro (peso=36033.0) -> 15(w=4.62), 21(w=2.11), 22(w=2.96), 36(w=5.11), 57(w=3.67), 68(w=3.17)
+[79] Tatuapé (peso=96045.0) -> 1(w=3.9), 6(w=1.63), 10(w=3.99), 19(w=2.88), 52(w=3.77), 58(w=3.76), 84(w=3.64), 85(w=3.95), 88(w=3.76), 90(w=5.4), 91(w=4.83)
+[80] Tremembé (peso=223553.0) -> 9(w=5.33), 12(w=4.33), 37(w=3.75), 49(w=2.66), 81(w=3.33)
+[81] Tucuruvi (peso=96358.0) -> 12(w=4.62), 20(w=5.27), 37(w=2.72), 49(w=2.56), 67(w=3.33), 80(w=3.33), 85(w=3.93), 88(w=3.45), 91(w=3.34)
+[82] Vila Andrade (peso=163508.0) -> 16(w=3.77), 43(w=4.56)
+[83] Vila Curuçá (peso=153500.0) -> 34(w=1.89), 41(w=3.02), 44(w=3.91), 72(w=3.61), 86(w=4.23)
+[84] Vila Formosa (peso=94100.0) -> 1(w=2.78), 4(w=4.11), 6(w=4.47), 19(w=1.11), 52(w=4.89), 58(w=4.56), 70(w=4.18), 79(w=3.64), 90(w=4.13), 92(w=3.77)
+[85] Vila Guilherme (peso=57079.0) -> 6(w=3.28), 10(w=2.66), 20(w=4.62), 49(w=5.13), 52(w=5.05), 67(w=2.6), 79(w=3.95), 81(w=3.93), 88(w=1.89), 91(w=3.61)
+[86] Vila Jacuí (peso=145836.0) -> 27(w=4.21), 41(w=2.32), 44(w=4.89), 72(w=0.75), 83(w=4.23)
+[88] Vila Maria (peso=114025.0) -> 6(w=3.9), 10(w=4.3), 37(w=4.79), 49(w=5.48), 58(w=5.36), 67(w=3.87), 79(w=3.76), 81(w=3.45), 85(w=1.89), 91(w=1.77)
+[89] Vila Mariana (peso=132226.0) -> 14(w=4.52), 26(w=3.45), 32(w=3.06), 36(w=4.48), 51(w=2.78), 52(w=5.03), 66(w=4.64), 76(w=2.34)
+[90] Vila Matilde (peso=105575.0) -> 4(w=2.45), 5(w=4.08), 17(w=3.37), 19(w=3.48), 27(w=4.13), 58(w=2.63), 62(w=3.24), 79(w=5.4), 84(w=4.13)
+[91] Vila Medeiros (peso=123456.0) -> 6(w=5.4), 37(w=3.55), 58(w=5.13), 67(w=5.1), 79(w=4.83), 81(w=3.34), 85(w=3.61), 88(w=1.77)
+[92] Vila Prudente (peso=104686.0) -> 1(w=1.67), 6(w=5.18), 19(w=4.65), 26(w=5.27), 32(w=3.11), 52(w=3.64), 66(w=3.45), 70(w=1.51), 84(w=3.77)
+[94] Pirituba (peso=171232.0) -> 9(w=4.94), 28(w=3.11), 69(w=3.11)
+[999] VERTICE_TESTE (peso=123.0) -> ∅
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.
+
+=== TESTE c2: inserir vértice duplicado ===
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: Leitura concluída com sucesso.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: ID do vértice: Rótulo/apelido do vértice: Peso do vértice: ID já existente.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.
+
+=== TESTE d1: inserir aresta válida ===
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: Leitura concluída com sucesso.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: ID do vértice: Rótulo/apelido do vértice: Peso do vértice: Vértice inserido.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Vértice origem: Vértice destino: Peso da aresta: Aresta inserida.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: 
+Tipo: 3 (não orientado)
+Vértices: 72 | Arestas: 216
+-
+[1] Água Rasa (peso=82564.0) -> 6(w=3.59), 10(w=5.19), 19(w=3.38), 32(w=3.78), 52(w=2.59), 66(w=4.89), 70(w=2.96), 79(w=3.9), 84(w=2.78), 92(w=1.67), 999(w=2.5)
+[3] Anhanguera (peso=84719.0) -> 60(w=4.23)
+[4] Aricanduva (peso=85868.0) -> 5(w=3.78), 19(w=4.12), 23(w=4.11), 27(w=5.4), 35(w=5.36), 58(w=4.95), 62(w=5.23), 84(w=4.11), 90(w=2.45)
+[5] Artur Alvim (peso=100462.0) -> 4(w=3.78), 23(w=2.96), 27(w=2.96), 35(w=2.11), 44(w=4.62), 56(w=4.95), 62(w=4.14), 72(w=5.4), 90(w=4.08)
+[6] Belém (peso=49213.0) -> 1(w=3.59), 10(w=2.46), 19(w=4.03), 52(w=2.45), 58(w=5.38), 79(w=1.63), 84(w=4.47), 85(w=3.28), 88(w=3.9), 91(w=5.4), 92(w=5.18)
+[9] Brasilândia (peso=281977.0) -> 12(w=3.77), 28(w=3.49), 49(w=5.01), 80(w=5.33), 94(w=4.94)
+[10] Brás (peso=33045.0) -> 1(w=5.19), 6(w=2.46), 20(w=4.97), 52(w=2.83), 67(w=4.02), 79(w=3.99), 85(w=2.66), 88(w=4.3)
+[12] Cachoeirinha (peso=146387.0) -> 9(w=3.77), 20(w=2.83), 28(w=3.61), 48(w=3.17), 49(w=2.18), 67(w=3.54), 80(w=4.33), 81(w=4.62)
+[14] Campo Belo (peso=63744.0) -> 26(w=5.12), 36(w=2.78), 51(w=2.28), 68(w=3.34), 76(w=3.93), 89(w=4.52)
+[15] Campo Grande (peso=106722.0) -> 22(w=4.88), 43(w=5.21), 68(w=3.78), 78(w=4.62)
+[16] Campo Limpo (peso=228893.0) -> 18(w=2.96), 43(w=2.26), 82(w=3.77)
+[17] Cangaíba (peso=138107.0) -> 27(w=3.61), 58(w=2.26), 62(w=1.77), 90(w=3.37)
+[18] Capão Redondo (peso=296378.0) -> 16(w=2.96), 40(w=3.49), 43(w=2.78)
+[19] Carrão (peso=84925.0) -> 1(w=3.38), 4(w=4.12), 6(w=4.03), 52(w=5.02), 58(w=3.49), 70(w=5.23), 79(w=2.88), 84(w=1.11), 90(w=3.48), 92(w=4.65)
+[20] Casa Verde (peso=86004.0) -> 10(w=4.97), 12(w=2.83), 28(w=4.65), 48(w=2.04), 49(w=3.87), 67(w=2.31), 81(w=5.27), 85(w=4.62)
+[21] Cidade Ademar (peso=285677.0) -> 22(w=3.78), 57(w=2.83), 68(w=4.88), 78(w=2.11)
+[22] Cidade Dutra (peso=203131.0) -> 15(w=4.88), 21(w=3.78), 29(w=5.65), 57(w=2.61), 78(w=2.96)
+[23] Cidade Líder (peso=135247.0) -> 4(w=4.11), 5(w=2.96), 30(w=5.13), 35(w=2.45), 44(w=4.88), 56(w=2.32)
+[24] Cidade Tiradentes (peso=235630.0) -> 30(w=3.17), 45(w=1.22), 56(w=4.72)
+[26] Cursino (peso=113728.0) -> 14(w=5.12), 32(w=2.96), 36(w=3.04), 51(w=4.88), 66(w=2.11), 76(w=1.44), 89(w=3.45), 92(w=5.27)
+[27] Ermelino Matarazzo (peso=118715.0) -> 4(w=5.4), 5(w=2.96), 17(w=3.61), 35(w=4.53), 58(w=5.22), 62(w=1.85), 72(w=4.41), 86(w=4.21), 90(w=4.13)
+[28] Freguesia do Ó (peso=140083.0) -> 9(w=3.49), 12(w=3.61), 20(w=4.65), 48(w=3.02), 94(w=3.11)
+[29] Grajaú (peso=390096.0) -> 22(w=5.65), 50(w=9.4)
+[30] Guaianases (peso=109730.0) -> 23(w=5.13), 24(w=3.17), 35(w=4.41), 44(w=3.17), 45(w=2.63), 56(w=3.48)
+[31] Iguatemi (peso=149739.0) -> 71(w=2.96), 73(w=3.06)
+[32] Ipiranga (peso=112222.0) -> 1(w=3.78), 26(w=2.96), 52(w=3.41), 66(w=2.45), 70(w=4.11), 76(w=3.23), 89(w=3.06), 92(w=3.11)
+[34] Itaim Paulista (peso=234912.0) -> 41(w=3.74), 72(w=5.13), 83(w=1.89)
+[35] Itaquera (peso=211555.0) -> 4(w=5.36), 5(w=2.11), 23(w=2.45), 27(w=4.53), 30(w=4.41), 44(w=2.78), 56(w=3.49), 72(w=5.11)
+[36] Jabaquara (peso=229346.0) -> 14(w=2.78), 26(w=3.04), 51(w=3.91), 66(w=5.1), 68(w=3.38), 76(w=2.54), 78(w=5.11), 89(w=4.48)
+[37] Jaçanã (peso=96054.0) -> 49(w=4.73), 80(w=3.75), 81(w=2.72), 88(w=4.79), 91(w=3.55)
+[40] Jardim Ângela (peso=338265.0) -> 18(w=3.49)
+[41] Jardim Helena (peso=135605.0) -> 34(w=3.74), 72(w=2.26), 83(w=3.02), 86(w=2.32)
+[43] Jardim São Luís (peso=293660.0) -> 15(w=5.21), 16(w=2.26), 18(w=2.78), 82(w=4.56)
+[44] José Bonifácio (peso=136560.0) -> 5(w=4.62), 23(w=4.88), 30(w=3.17), 35(w=2.78), 56(w=4.7), 72(w=4.18), 83(w=3.91), 86(w=4.89)
+[45] Lajeado (peso=174539.0) -> 24(w=1.22), 30(w=2.63), 56(w=5.1)
+[48] Limão (peso=79657.0) -> 12(w=3.17), 20(w=2.04), 28(w=3.02), 49(w=5.04), 67(w=4.32)
+[49] Mandaqui (peso=109228.0) -> 9(w=5.01), 12(w=2.18), 20(w=3.87), 37(w=4.73), 48(w=5.04), 67(w=3.09), 80(w=2.66), 81(w=2.56), 85(w=5.13), 88(w=5.48)
+[50] Marsilac (peso=8426.0) -> 29(w=9.4), 54(w=6.34)
+[51] Moema (peso=89382.0) -> 14(w=2.28), 26(w=4.88), 36(w=3.91), 76(w=3.44), 89(w=2.78)
+[52] Mooca (peso=80330.0) -> 1(w=2.59), 6(w=2.45), 10(w=2.83), 19(w=5.02), 32(w=3.41), 70(w=5.14), 79(w=3.77), 84(w=4.89), 85(w=5.05), 89(w=5.03), 92(w=3.64)
+[54] Parelheiros (peso=153598.0) -> 50(w=6.34)
+[56] Parque do Carmo (peso=71749.0) -> 5(w=4.95), 23(w=2.32), 24(w=4.72), 30(w=3.48), 35(w=3.49), 44(w=4.7), 45(w=5.1)
+[57] Pedreira (peso=160976.0) -> 21(w=2.83), 22(w=2.61), 78(w=3.67)
+[58] Penha (peso=129100.0) -> 4(w=4.95), 6(w=5.38), 17(w=2.26), 19(w=3.49), 27(w=5.22), 62(w=3.53), 79(w=3.76), 84(w=4.56), 88(w=5.36), 90(w=2.63), 91(w=5.13)
+[60] Perus (peso=89310.0) -> 3(w=4.23), 69(w=7.78)
+[62] Ponte Rasa (peso=89774.0) -> 4(w=5.23), 5(w=4.14), 17(w=1.77), 27(w=1.85), 58(w=3.53), 90(w=3.24)
+[66] Sacomã (peso=263621.0) -> 1(w=4.89), 26(w=2.11), 32(w=2.45), 36(w=5.1), 70(w=3.48), 76(w=3.36), 89(w=4.64), 92(w=3.45)
+[67] Santana (peso=113253.0) -> 10(w=4.02), 12(w=3.54), 20(w=2.31), 48(w=4.32), 49(w=3.09), 81(w=3.33), 85(w=2.6), 88(w=3.87), 91(w=5.1)
+[68] Santo Amaro (peso=74447.0) -> 14(w=3.34), 15(w=3.78), 21(w=4.88), 36(w=3.38), 78(w=3.17)
+[69] São Domingos (peso=86403.0) -> 60(w=7.78), 94(w=3.11)
+[70] São Lucas (peso=142948.0) -> 1(w=2.96), 19(w=5.23), 32(w=4.11), 52(w=5.14), 66(w=3.48), 75(w=5.21), 84(w=4.18), 92(w=1.51)
+[71] São Mateus (peso=155387.0) -> 31(w=2.96), 73(w=3.45), 75(w=3.74)
+[72] São Miguel Paulista (peso=97373.0) -> 5(w=5.4), 27(w=4.41), 34(w=5.13), 35(w=5.11), 41(w=2.26), 44(w=4.18), 83(w=3.61), 86(w=0.75)
+[73] São Rafael (peso=159683.0) -> 31(w=3.06), 71(w=3.45), 75(w=4.18)
+[75] Sapopemba (peso=289759.0) -> 70(w=5.21), 71(w=3.74), 73(w=4.18)
+[76] Saúde (peso=134147.0) -> 14(w=3.93), 26(w=1.44), 32(w=3.23), 36(w=2.54), 51(w=3.44), 66(w=3.36), 89(w=2.34)
+[78] Socorro (peso=36033.0) -> 15(w=4.62), 21(w=2.11), 22(w=2.96), 36(w=5.11), 57(w=3.67), 68(w=3.17)
+[79] Tatuapé (peso=96045.0) -> 1(w=3.9), 6(w=1.63), 10(w=3.99), 19(w=2.88), 52(w=3.77), 58(w=3.76), 84(w=3.64), 85(w=3.95), 88(w=3.76), 90(w=5.4), 91(w=4.83)
+[80] Tremembé (peso=223553.0) -> 9(w=5.33), 12(w=4.33), 37(w=3.75), 49(w=2.66), 81(w=3.33)
+[81] Tucuruvi (peso=96358.0) -> 12(w=4.62), 20(w=5.27), 37(w=2.72), 49(w=2.56), 67(w=3.33), 80(w=3.33), 85(w=3.93), 88(w=3.45), 91(w=3.34)
+[82] Vila Andrade (peso=163508.0) -> 16(w=3.77), 43(w=4.56)
+[83] Vila Curuçá (peso=153500.0) -> 34(w=1.89), 41(w=3.02), 44(w=3.91), 72(w=3.61), 86(w=4.23)
+[84] Vila Formosa (peso=94100.0) -> 1(w=2.78), 4(w=4.11), 6(w=4.47), 19(w=1.11), 52(w=4.89), 58(w=4.56), 70(w=4.18), 79(w=3.64), 90(w=4.13), 92(w=3.77)
+[85] Vila Guilherme (peso=57079.0) -> 6(w=3.28), 10(w=2.66), 20(w=4.62), 49(w=5.13), 52(w=5.05), 67(w=2.6), 79(w=3.95), 81(w=3.93), 88(w=1.89), 91(w=3.61)
+[86] Vila Jacuí (peso=145836.0) -> 27(w=4.21), 41(w=2.32), 44(w=4.89), 72(w=0.75), 83(w=4.23)
+[88] Vila Maria (peso=114025.0) -> 6(w=3.9), 10(w=4.3), 37(w=4.79), 49(w=5.48), 58(w=5.36), 67(w=3.87), 79(w=3.76), 81(w=3.45), 85(w=1.89), 91(w=1.77)
+[89] Vila Mariana (peso=132226.0) -> 14(w=4.52), 26(w=3.45), 32(w=3.06), 36(w=4.48), 51(w=2.78), 52(w=5.03), 66(w=4.64), 76(w=2.34)
+[90] Vila Matilde (peso=105575.0) -> 4(w=2.45), 5(w=4.08), 17(w=3.37), 19(w=3.48), 27(w=4.13), 58(w=2.63), 62(w=3.24), 79(w=5.4), 84(w=4.13)
+[91] Vila Medeiros (peso=123456.0) -> 6(w=5.4), 37(w=3.55), 58(w=5.13), 67(w=5.1), 79(w=4.83), 81(w=3.34), 85(w=3.61), 88(w=1.77)
+[92] Vila Prudente (peso=104686.0) -> 1(w=1.67), 6(w=5.18), 19(w=4.65), 26(w=5.27), 32(w=3.11), 52(w=3.64), 66(w=3.45), 70(w=1.51), 84(w=3.77)
+[94] Pirituba (peso=171232.0) -> 9(w=4.94), 28(w=3.11), 69(w=3.11)
+[999] VTX (peso=1.0) -> 1(w=2.5)
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.
+
+=== TESTE d2: inserir aresta com vértice inexistente ===
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: Leitura concluída com sucesso.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Vértice origem: Vértice destino: Peso da aresta: Falha: vértices inexistentes.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.
+
+=== TESTE e1: remover vértice existente (inserido no teste) ===
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: Leitura concluída com sucesso.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: ID do vértice: Rótulo/apelido do vértice: Peso do vértice: Vértice inserido.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: ID do vértice a remover: Vértice removido.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.
+
+=== TESTE e2: remover vértice inexistente ===
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: Leitura concluída com sucesso.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: ID do vértice a remover: Vértice não encontrado.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.
+
+=== TESTE f1: remover aresta existente ===
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: Leitura concluída com sucesso.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Vértice origem da aresta: Vértice destino da aresta: Aresta removida.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.
+
+=== TESTE f2: remover aresta inexistente ===
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: Leitura concluída com sucesso.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Vértice origem da aresta: Vértice destino da aresta: Aresta não encontrada.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.
+
+=== TESTE g1: mostrar conteúdo de arquivo existente ===
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: 
+--- Conteúdo do arquivo ---
+3
+71
+1 "Água Rasa" 82564.00
+3 "Anhanguera" 84719.00
+4 "Aricanduva" 85868.00
+5 "Artur Alvim" 100462.00
+6 "Belém" 49213.00
+9 "Brasilândia" 281977.00
+10 "Brás" 33045.00
+12 "Cachoeirinha" 146387.00
+14 "Campo Belo" 63744.00
+15 "Campo Grande" 106722.00
+16 "Campo Limpo" 228893.00
+17 "Cangaíba" 138107.00
+18 "Capão Redondo" 296378.00
+19 "Carrão" 84925.00
+20 "Casa Verde" 86004.00
+21 "Cidade Ademar" 285677.00
+22 "Cidade Dutra" 203131.00
+23 "Cidade Líder" 135247.00
+24 "Cidade Tiradentes" 235630.00
+26 "Cursino" 113728.00
+27 "Ermelino Matarazzo" 118715.00
+28 "Freguesia do Ó" 140083.00
+29 "Grajaú" 390096.00
+30 "Guaianases" 109730.00
+31 "Iguatemi" 149739.00
+32 "Ipiranga" 112222.00
+34 "Itaim Paulista" 234912.00
+35 "Itaquera" 211555.00
+36 "Jabaquara" 229346.00
+37 "Jaçanã" 96054.00
+40 "Jardim Ângela" 338265.00
+41 "Jardim Helena" 135605.00
+43 "Jardim São Luís" 293660.00
+44 "José Bonifácio" 136560.00
+45 "Lajeado" 174539.00
+48 "Limão" 79657.00
+49 "Mandaqui" 109228.00
+50 "Marsilac" 8426.00
+51 "Moema" 89382.00
+52 "Mooca" 80330.00
+54 "Parelheiros" 153598.00
+56 "Parque do Carmo" 71749.00
+57 "Pedreira" 160976.00
+58 "Penha" 129100.00
+60 "Perus" 89310.00
+62 "Ponte Rasa" 89774.00
+66 "Sacomã" 263621.00
+67 "Santana" 113253.00
+68 "Santo Amaro" 74447.00
+69 "São Domingos" 86403.00
+70 "São Lucas" 142948.00
+71 "São Mateus" 155387.00
+72 "São Miguel Paulista" 97373.00
+73 "São Rafael" 159683.00
+75 "Sapopemba" 289759.00
+76 "Saúde" 134147.00
+78 "Socorro" 36033.00
+79 "Tatuapé" 96045.00
+80 "Tremembé" 223553.00
+81 "Tucuruvi" 96358.00
+82 "Vila Andrade" 163508.00
+83 "Vila Curuçá" 153500.00
+84 "Vila Formosa" 94100.00
+85 "Vila Guilherme" 57079.00
+86 "Vila Jacuí" 145836.00
+88 "Vila Maria" 114025.00
+89 "Vila Mariana" 132226.00
+90 "Vila Matilde" 105575.00
+91 "Vila Medeiros" 123456.00
+92 "Vila Prudente" 104686.00
+94 "Pirituba" 171232.00
+215
+1 6 3.59
+1 10 5.19
+1 19 3.38
+1 32 3.78
+1 52 2.59
+1 66 4.89
+1 70 2.96
+1 79 3.90
+1 84 2.78
+1 92 1.67
+3 60 4.23
+4 5 3.78
+4 19 4.12
+4 23 4.11
+4 27 5.40
+4 35 5.36
+4 58 4.95
+4 62 5.23
+4 84 4.11
+4 90 2.45
+5 23 2.96
+5 27 2.96
+5 35 2.11
+5 44 4.62
+5 56 4.95
+5 62 4.14
+5 72 5.40
+5 90 4.08
+6 10 2.46
+6 19 4.03
+6 52 2.45
+6 58 5.38
+6 79 1.63
+6 84 4.47
+6 85 3.28
+6 88 3.90
+6 91 5.40
+6 92 5.18
+9 12 3.77
+9 28 3.49
+9 49 5.01
+9 80 5.33
+9 94 4.94
+10 20 4.97
+10 52 2.83
+10 67 4.02
+10 79 3.99
+10 85 2.66
+10 88 4.30
+12 20 2.83
+12 28 3.61
+12 48 3.17
+12 49 2.18
+12 67 3.54
+12 80 4.33
+12 81 4.62
+14 26 5.12
+14 36 2.78
+14 51 2.28
+14 68 3.34
+14 76 3.93
+14 89 4.52
+15 22 4.88
+15 43 5.21
+15 68 3.78
+15 78 4.62
+16 18 2.96
+16 43 2.26
+16 82 3.77
+17 27 3.61
+17 58 2.26
+17 62 1.77
+17 90 3.37
+18 40 3.49
+18 43 2.78
+19 52 5.02
+19 58 3.49
+19 70 5.23
+19 79 2.88
+19 84 1.11
+19 90 3.48
+19 92 4.65
+20 28 4.65
+20 48 2.04
+20 49 3.87
+20 67 2.31
+20 81 5.27
+20 85 4.62
+21 22 3.78
+21 57 2.83
+21 68 4.88
+21 78 2.11
+22 29 5.65
+22 57 2.61
+22 78 2.96
+23 30 5.13
+23 35 2.45
+23 44 4.88
+23 56 2.32
+24 30 3.17
+24 45 1.22
+24 56 4.72
+26 32 2.96
+26 36 3.04
+26 51 4.88
+26 66 2.11
+26 76 1.44
+26 89 3.45
+26 92 5.27
+27 35 4.53
+27 58 5.22
+27 62 1.85
+27 72 4.41
+27 86 4.21
+27 90 4.13
+28 48 3.02
+28 94 3.11
+29 50 9.40
+30 35 4.41
+30 44 3.17
+30 45 2.63
+30 56 3.48
+31 71 2.96
+31 73 3.06
+32 52 3.41
+32 66 2.45
+32 70 4.11
+32 76 3.23
+32 89 3.06
+32 92 3.11
+34 41 3.74
+34 72 5.13
+34 83 1.89
+35 44 2.78
+35 56 3.49
+35 72 5.11
+36 51 3.91
+36 66 5.10
+36 68 3.38
+36 76 2.54
+36 78 5.11
+36 89 4.48
+37 49 4.73
+37 80 3.75
+37 81 2.72
+37 88 4.79
+37 91 3.55
+41 72 2.26
+41 83 3.02
+41 86 2.32
+43 82 4.56
+44 56 4.70
+44 72 4.18
+44 83 3.91
+44 86 4.89
+45 56 5.10
+48 49 5.04
+48 67 4.32
+49 67 3.09
+49 80 2.66
+49 81 2.56
+49 85 5.13
+49 88 5.48
+50 54 6.34
+51 76 3.44
+51 89 2.78
+52 70 5.14
+52 79 3.77
+52 84 4.89
+52 85 5.05
+52 89 5.03
+52 92 3.64
+57 78 3.67
+58 62 3.53
+58 79 3.76
+58 84 4.56
+58 88 5.36
+58 90 2.63
+58 91 5.13
+60 69 7.78
+62 90 3.24
+66 70 3.48
+66 76 3.36
+66 89 4.64
+66 92 3.45
+67 81 3.33
+67 85 2.60
+67 88 3.87
+67 91 5.10
+68 78 3.17
+69 94 3.11
+70 75 5.21
+70 84 4.18
+70 92 1.51
+71 73 3.45
+71 75 3.74
+72 83 3.61
+72 86 0.75
+73 75 4.18
+76 89 2.34
+79 84 3.64
+79 85 3.95
+79 88 3.76
+79 90 5.40
+79 91 4.83
+80 81 3.33
+81 85 3.93
+81 88 3.45
+81 91 3.34
+83 86 4.23
+84 90 4.13
+84 92 3.77
+85 88 1.89
+85 91 3.61
+88 91 1.77
+
+--- fim ---
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.
+
+=== TESTE g2: mostrar conteúdo de arquivo inexistente ===
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: Arquivo não encontrado.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.
+
+=== TESTE h1: mostrar grafo após leitura ===
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: Leitura concluída com sucesso.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: 
+Tipo: 3 (não orientado)
+Vértices: 71 | Arestas: 215
+-
+[1] Água Rasa (peso=82564.0) -> 6(w=3.59), 10(w=5.19), 19(w=3.38), 32(w=3.78), 52(w=2.59), 66(w=4.89), 70(w=2.96), 79(w=3.9), 84(w=2.78), 92(w=1.67)
+[3] Anhanguera (peso=84719.0) -> 60(w=4.23)
+[4] Aricanduva (peso=85868.0) -> 5(w=3.78), 19(w=4.12), 23(w=4.11), 27(w=5.4), 35(w=5.36), 58(w=4.95), 62(w=5.23), 84(w=4.11), 90(w=2.45)
+[5] Artur Alvim (peso=100462.0) -> 4(w=3.78), 23(w=2.96), 27(w=2.96), 35(w=2.11), 44(w=4.62), 56(w=4.95), 62(w=4.14), 72(w=5.4), 90(w=4.08)
+[6] Belém (peso=49213.0) -> 1(w=3.59), 10(w=2.46), 19(w=4.03), 52(w=2.45), 58(w=5.38), 79(w=1.63), 84(w=4.47), 85(w=3.28), 88(w=3.9), 91(w=5.4), 92(w=5.18)
+[9] Brasilândia (peso=281977.0) -> 12(w=3.77), 28(w=3.49), 49(w=5.01), 80(w=5.33), 94(w=4.94)
+[10] Brás (peso=33045.0) -> 1(w=5.19), 6(w=2.46), 20(w=4.97), 52(w=2.83), 67(w=4.02), 79(w=3.99), 85(w=2.66), 88(w=4.3)
+[12] Cachoeirinha (peso=146387.0) -> 9(w=3.77), 20(w=2.83), 28(w=3.61), 48(w=3.17), 49(w=2.18), 67(w=3.54), 80(w=4.33), 81(w=4.62)
+[14] Campo Belo (peso=63744.0) -> 26(w=5.12), 36(w=2.78), 51(w=2.28), 68(w=3.34), 76(w=3.93), 89(w=4.52)
+[15] Campo Grande (peso=106722.0) -> 22(w=4.88), 43(w=5.21), 68(w=3.78), 78(w=4.62)
+[16] Campo Limpo (peso=228893.0) -> 18(w=2.96), 43(w=2.26), 82(w=3.77)
+[17] Cangaíba (peso=138107.0) -> 27(w=3.61), 58(w=2.26), 62(w=1.77), 90(w=3.37)
+[18] Capão Redondo (peso=296378.0) -> 16(w=2.96), 40(w=3.49), 43(w=2.78)
+[19] Carrão (peso=84925.0) -> 1(w=3.38), 4(w=4.12), 6(w=4.03), 52(w=5.02), 58(w=3.49), 70(w=5.23), 79(w=2.88), 84(w=1.11), 90(w=3.48), 92(w=4.65)
+[20] Casa Verde (peso=86004.0) -> 10(w=4.97), 12(w=2.83), 28(w=4.65), 48(w=2.04), 49(w=3.87), 67(w=2.31), 81(w=5.27), 85(w=4.62)
+[21] Cidade Ademar (peso=285677.0) -> 22(w=3.78), 57(w=2.83), 68(w=4.88), 78(w=2.11)
+[22] Cidade Dutra (peso=203131.0) -> 15(w=4.88), 21(w=3.78), 29(w=5.65), 57(w=2.61), 78(w=2.96)
+[23] Cidade Líder (peso=135247.0) -> 4(w=4.11), 5(w=2.96), 30(w=5.13), 35(w=2.45), 44(w=4.88), 56(w=2.32)
+[24] Cidade Tiradentes (peso=235630.0) -> 30(w=3.17), 45(w=1.22), 56(w=4.72)
+[26] Cursino (peso=113728.0) -> 14(w=5.12), 32(w=2.96), 36(w=3.04), 51(w=4.88), 66(w=2.11), 76(w=1.44), 89(w=3.45), 92(w=5.27)
+[27] Ermelino Matarazzo (peso=118715.0) -> 4(w=5.4), 5(w=2.96), 17(w=3.61), 35(w=4.53), 58(w=5.22), 62(w=1.85), 72(w=4.41), 86(w=4.21), 90(w=4.13)
+[28] Freguesia do Ó (peso=140083.0) -> 9(w=3.49), 12(w=3.61), 20(w=4.65), 48(w=3.02), 94(w=3.11)
+[29] Grajaú (peso=390096.0) -> 22(w=5.65), 50(w=9.4)
+[30] Guaianases (peso=109730.0) -> 23(w=5.13), 24(w=3.17), 35(w=4.41), 44(w=3.17), 45(w=2.63), 56(w=3.48)
+[31] Iguatemi (peso=149739.0) -> 71(w=2.96), 73(w=3.06)
+[32] Ipiranga (peso=112222.0) -> 1(w=3.78), 26(w=2.96), 52(w=3.41), 66(w=2.45), 70(w=4.11), 76(w=3.23), 89(w=3.06), 92(w=3.11)
+[34] Itaim Paulista (peso=234912.0) -> 41(w=3.74), 72(w=5.13), 83(w=1.89)
+[35] Itaquera (peso=211555.0) -> 4(w=5.36), 5(w=2.11), 23(w=2.45), 27(w=4.53), 30(w=4.41), 44(w=2.78), 56(w=3.49), 72(w=5.11)
+[36] Jabaquara (peso=229346.0) -> 14(w=2.78), 26(w=3.04), 51(w=3.91), 66(w=5.1), 68(w=3.38), 76(w=2.54), 78(w=5.11), 89(w=4.48)
+[37] Jaçanã (peso=96054.0) -> 49(w=4.73), 80(w=3.75), 81(w=2.72), 88(w=4.79), 91(w=3.55)
+[40] Jardim Ângela (peso=338265.0) -> 18(w=3.49)
+[41] Jardim Helena (peso=135605.0) -> 34(w=3.74), 72(w=2.26), 83(w=3.02), 86(w=2.32)
+[43] Jardim São Luís (peso=293660.0) -> 15(w=5.21), 16(w=2.26), 18(w=2.78), 82(w=4.56)
+[44] José Bonifácio (peso=136560.0) -> 5(w=4.62), 23(w=4.88), 30(w=3.17), 35(w=2.78), 56(w=4.7), 72(w=4.18), 83(w=3.91), 86(w=4.89)
+[45] Lajeado (peso=174539.0) -> 24(w=1.22), 30(w=2.63), 56(w=5.1)
+[48] Limão (peso=79657.0) -> 12(w=3.17), 20(w=2.04), 28(w=3.02), 49(w=5.04), 67(w=4.32)
+[49] Mandaqui (peso=109228.0) -> 9(w=5.01), 12(w=2.18), 20(w=3.87), 37(w=4.73), 48(w=5.04), 67(w=3.09), 80(w=2.66), 81(w=2.56), 85(w=5.13), 88(w=5.48)
+[50] Marsilac (peso=8426.0) -> 29(w=9.4), 54(w=6.34)
+[51] Moema (peso=89382.0) -> 14(w=2.28), 26(w=4.88), 36(w=3.91), 76(w=3.44), 89(w=2.78)
+[52] Mooca (peso=80330.0) -> 1(w=2.59), 6(w=2.45), 10(w=2.83), 19(w=5.02), 32(w=3.41), 70(w=5.14), 79(w=3.77), 84(w=4.89), 85(w=5.05), 89(w=5.03), 92(w=3.64)
+[54] Parelheiros (peso=153598.0) -> 50(w=6.34)
+[56] Parque do Carmo (peso=71749.0) -> 5(w=4.95), 23(w=2.32), 24(w=4.72), 30(w=3.48), 35(w=3.49), 44(w=4.7), 45(w=5.1)
+[57] Pedreira (peso=160976.0) -> 21(w=2.83), 22(w=2.61), 78(w=3.67)
+[58] Penha (peso=129100.0) -> 4(w=4.95), 6(w=5.38), 17(w=2.26), 19(w=3.49), 27(w=5.22), 62(w=3.53), 79(w=3.76), 84(w=4.56), 88(w=5.36), 90(w=2.63), 91(w=5.13)
+[60] Perus (peso=89310.0) -> 3(w=4.23), 69(w=7.78)
+[62] Ponte Rasa (peso=89774.0) -> 4(w=5.23), 5(w=4.14), 17(w=1.77), 27(w=1.85), 58(w=3.53), 90(w=3.24)
+[66] Sacomã (peso=263621.0) -> 1(w=4.89), 26(w=2.11), 32(w=2.45), 36(w=5.1), 70(w=3.48), 76(w=3.36), 89(w=4.64), 92(w=3.45)
+[67] Santana (peso=113253.0) -> 10(w=4.02), 12(w=3.54), 20(w=2.31), 48(w=4.32), 49(w=3.09), 81(w=3.33), 85(w=2.6), 88(w=3.87), 91(w=5.1)
+[68] Santo Amaro (peso=74447.0) -> 14(w=3.34), 15(w=3.78), 21(w=4.88), 36(w=3.38), 78(w=3.17)
+[69] São Domingos (peso=86403.0) -> 60(w=7.78), 94(w=3.11)
+[70] São Lucas (peso=142948.0) -> 1(w=2.96), 19(w=5.23), 32(w=4.11), 52(w=5.14), 66(w=3.48), 75(w=5.21), 84(w=4.18), 92(w=1.51)
+[71] São Mateus (peso=155387.0) -> 31(w=2.96), 73(w=3.45), 75(w=3.74)
+[72] São Miguel Paulista (peso=97373.0) -> 5(w=5.4), 27(w=4.41), 34(w=5.13), 35(w=5.11), 41(w=2.26), 44(w=4.18), 83(w=3.61), 86(w=0.75)
+[73] São Rafael (peso=159683.0) -> 31(w=3.06), 71(w=3.45), 75(w=4.18)
+[75] Sapopemba (peso=289759.0) -> 70(w=5.21), 71(w=3.74), 73(w=4.18)
+[76] Saúde (peso=134147.0) -> 14(w=3.93), 26(w=1.44), 32(w=3.23), 36(w=2.54), 51(w=3.44), 66(w=3.36), 89(w=2.34)
+[78] Socorro (peso=36033.0) -> 15(w=4.62), 21(w=2.11), 22(w=2.96), 36(w=5.11), 57(w=3.67), 68(w=3.17)
+[79] Tatuapé (peso=96045.0) -> 1(w=3.9), 6(w=1.63), 10(w=3.99), 19(w=2.88), 52(w=3.77), 58(w=3.76), 84(w=3.64), 85(w=3.95), 88(w=3.76), 90(w=5.4), 91(w=4.83)
+[80] Tremembé (peso=223553.0) -> 9(w=5.33), 12(w=4.33), 37(w=3.75), 49(w=2.66), 81(w=3.33)
+[81] Tucuruvi (peso=96358.0) -> 12(w=4.62), 20(w=5.27), 37(w=2.72), 49(w=2.56), 67(w=3.33), 80(w=3.33), 85(w=3.93), 88(w=3.45), 91(w=3.34)
+[82] Vila Andrade (peso=163508.0) -> 16(w=3.77), 43(w=4.56)
+[83] Vila Curuçá (peso=153500.0) -> 34(w=1.89), 41(w=3.02), 44(w=3.91), 72(w=3.61), 86(w=4.23)
+[84] Vila Formosa (peso=94100.0) -> 1(w=2.78), 4(w=4.11), 6(w=4.47), 19(w=1.11), 52(w=4.89), 58(w=4.56), 70(w=4.18), 79(w=3.64), 90(w=4.13), 92(w=3.77)
+[85] Vila Guilherme (peso=57079.0) -> 6(w=3.28), 10(w=2.66), 20(w=4.62), 49(w=5.13), 52(w=5.05), 67(w=2.6), 79(w=3.95), 81(w=3.93), 88(w=1.89), 91(w=3.61)
+[86] Vila Jacuí (peso=145836.0) -> 27(w=4.21), 41(w=2.32), 44(w=4.89), 72(w=0.75), 83(w=4.23)
+[88] Vila Maria (peso=114025.0) -> 6(w=3.9), 10(w=4.3), 37(w=4.79), 49(w=5.48), 58(w=5.36), 67(w=3.87), 79(w=3.76), 81(w=3.45), 85(w=1.89), 91(w=1.77)
+[89] Vila Mariana (peso=132226.0) -> 14(w=4.52), 26(w=3.45), 32(w=3.06), 36(w=4.48), 51(w=2.78), 52(w=5.03), 66(w=4.64), 76(w=2.34)
+[90] Vila Matilde (peso=105575.0) -> 4(w=2.45), 5(w=4.08), 17(w=3.37), 19(w=3.48), 27(w=4.13), 58(w=2.63), 62(w=3.24), 79(w=5.4), 84(w=4.13)
+[91] Vila Medeiros (peso=123456.0) -> 6(w=5.4), 37(w=3.55), 58(w=5.13), 67(w=5.1), 79(w=4.83), 81(w=3.34), 85(w=3.61), 88(w=1.77)
+[92] Vila Prudente (peso=104686.0) -> 1(w=1.67), 6(w=5.18), 19(w=4.65), 26(w=5.27), 32(w=3.11), 52(w=3.64), 66(w=3.45), 70(w=1.51), 84(w=3.77)
+[94] Pirituba (peso=171232.0) -> 9(w=4.94), 28(w=3.11), 69(w=3.11)
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.
+
+=== TESTE h2: mostrar grafo vazio (sem leitura) ===
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: 
+Tipo: 2 (não orientado)
+Vértices: 0 | Arestas: 0
+-
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.
+
+=== TESTE i1: conexidade em grafo não orientado (tipo 3) ===
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: Leitura concluída com sucesso.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: 
+Grafo não orientado: CONEXO.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.
+
+=== TESTE j1: encerramento imediato ===
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.
+
+=== TESTE j2: encerramento após operações ===
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: Leitura concluída com sucesso.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: 
+Tipo: 3 (não orientado)
+Vértices: 71 | Arestas: 215
+-
+[1] Água Rasa (peso=82564.0) -> 6(w=3.59), 10(w=5.19), 19(w=3.38), 32(w=3.78), 52(w=2.59), 66(w=4.89), 70(w=2.96), 79(w=3.9), 84(w=2.78), 92(w=1.67)
+[3] Anhanguera (peso=84719.0) -> 60(w=4.23)
+[4] Aricanduva (peso=85868.0) -> 5(w=3.78), 19(w=4.12), 23(w=4.11), 27(w=5.4), 35(w=5.36), 58(w=4.95), 62(w=5.23), 84(w=4.11), 90(w=2.45)
+[5] Artur Alvim (peso=100462.0) -> 4(w=3.78), 23(w=2.96), 27(w=2.96), 35(w=2.11), 44(w=4.62), 56(w=4.95), 62(w=4.14), 72(w=5.4), 90(w=4.08)
+[6] Belém (peso=49213.0) -> 1(w=3.59), 10(w=2.46), 19(w=4.03), 52(w=2.45), 58(w=5.38), 79(w=1.63), 84(w=4.47), 85(w=3.28), 88(w=3.9), 91(w=5.4), 92(w=5.18)
+[9] Brasilândia (peso=281977.0) -> 12(w=3.77), 28(w=3.49), 49(w=5.01), 80(w=5.33), 94(w=4.94)
+[10] Brás (peso=33045.0) -> 1(w=5.19), 6(w=2.46), 20(w=4.97), 52(w=2.83), 67(w=4.02), 79(w=3.99), 85(w=2.66), 88(w=4.3)
+[12] Cachoeirinha (peso=146387.0) -> 9(w=3.77), 20(w=2.83), 28(w=3.61), 48(w=3.17), 49(w=2.18), 67(w=3.54), 80(w=4.33), 81(w=4.62)
+[14] Campo Belo (peso=63744.0) -> 26(w=5.12), 36(w=2.78), 51(w=2.28), 68(w=3.34), 76(w=3.93), 89(w=4.52)
+[15] Campo Grande (peso=106722.0) -> 22(w=4.88), 43(w=5.21), 68(w=3.78), 78(w=4.62)
+[16] Campo Limpo (peso=228893.0) -> 18(w=2.96), 43(w=2.26), 82(w=3.77)
+[17] Cangaíba (peso=138107.0) -> 27(w=3.61), 58(w=2.26), 62(w=1.77), 90(w=3.37)
+[18] Capão Redondo (peso=296378.0) -> 16(w=2.96), 40(w=3.49), 43(w=2.78)
+[19] Carrão (peso=84925.0) -> 1(w=3.38), 4(w=4.12), 6(w=4.03), 52(w=5.02), 58(w=3.49), 70(w=5.23), 79(w=2.88), 84(w=1.11), 90(w=3.48), 92(w=4.65)
+[20] Casa Verde (peso=86004.0) -> 10(w=4.97), 12(w=2.83), 28(w=4.65), 48(w=2.04), 49(w=3.87), 67(w=2.31), 81(w=5.27), 85(w=4.62)
+[21] Cidade Ademar (peso=285677.0) -> 22(w=3.78), 57(w=2.83), 68(w=4.88), 78(w=2.11)
+[22] Cidade Dutra (peso=203131.0) -> 15(w=4.88), 21(w=3.78), 29(w=5.65), 57(w=2.61), 78(w=2.96)
+[23] Cidade Líder (peso=135247.0) -> 4(w=4.11), 5(w=2.96), 30(w=5.13), 35(w=2.45), 44(w=4.88), 56(w=2.32)
+[24] Cidade Tiradentes (peso=235630.0) -> 30(w=3.17), 45(w=1.22), 56(w=4.72)
+[26] Cursino (peso=113728.0) -> 14(w=5.12), 32(w=2.96), 36(w=3.04), 51(w=4.88), 66(w=2.11), 76(w=1.44), 89(w=3.45), 92(w=5.27)
+[27] Ermelino Matarazzo (peso=118715.0) -> 4(w=5.4), 5(w=2.96), 17(w=3.61), 35(w=4.53), 58(w=5.22), 62(w=1.85), 72(w=4.41), 86(w=4.21), 90(w=4.13)
+[28] Freguesia do Ó (peso=140083.0) -> 9(w=3.49), 12(w=3.61), 20(w=4.65), 48(w=3.02), 94(w=3.11)
+[29] Grajaú (peso=390096.0) -> 22(w=5.65), 50(w=9.4)
+[30] Guaianases (peso=109730.0) -> 23(w=5.13), 24(w=3.17), 35(w=4.41), 44(w=3.17), 45(w=2.63), 56(w=3.48)
+[31] Iguatemi (peso=149739.0) -> 71(w=2.96), 73(w=3.06)
+[32] Ipiranga (peso=112222.0) -> 1(w=3.78), 26(w=2.96), 52(w=3.41), 66(w=2.45), 70(w=4.11), 76(w=3.23), 89(w=3.06), 92(w=3.11)
+[34] Itaim Paulista (peso=234912.0) -> 41(w=3.74), 72(w=5.13), 83(w=1.89)
+[35] Itaquera (peso=211555.0) -> 4(w=5.36), 5(w=2.11), 23(w=2.45), 27(w=4.53), 30(w=4.41), 44(w=2.78), 56(w=3.49), 72(w=5.11)
+[36] Jabaquara (peso=229346.0) -> 14(w=2.78), 26(w=3.04), 51(w=3.91), 66(w=5.1), 68(w=3.38), 76(w=2.54), 78(w=5.11), 89(w=4.48)
+[37] Jaçanã (peso=96054.0) -> 49(w=4.73), 80(w=3.75), 81(w=2.72), 88(w=4.79), 91(w=3.55)
+[40] Jardim Ângela (peso=338265.0) -> 18(w=3.49)
+[41] Jardim Helena (peso=135605.0) -> 34(w=3.74), 72(w=2.26), 83(w=3.02), 86(w=2.32)
+[43] Jardim São Luís (peso=293660.0) -> 15(w=5.21), 16(w=2.26), 18(w=2.78), 82(w=4.56)
+[44] José Bonifácio (peso=136560.0) -> 5(w=4.62), 23(w=4.88), 30(w=3.17), 35(w=2.78), 56(w=4.7), 72(w=4.18), 83(w=3.91), 86(w=4.89)
+[45] Lajeado (peso=174539.0) -> 24(w=1.22), 30(w=2.63), 56(w=5.1)
+[48] Limão (peso=79657.0) -> 12(w=3.17), 20(w=2.04), 28(w=3.02), 49(w=5.04), 67(w=4.32)
+[49] Mandaqui (peso=109228.0) -> 9(w=5.01), 12(w=2.18), 20(w=3.87), 37(w=4.73), 48(w=5.04), 67(w=3.09), 80(w=2.66), 81(w=2.56), 85(w=5.13), 88(w=5.48)
+[50] Marsilac (peso=8426.0) -> 29(w=9.4), 54(w=6.34)
+[51] Moema (peso=89382.0) -> 14(w=2.28), 26(w=4.88), 36(w=3.91), 76(w=3.44), 89(w=2.78)
+[52] Mooca (peso=80330.0) -> 1(w=2.59), 6(w=2.45), 10(w=2.83), 19(w=5.02), 32(w=3.41), 70(w=5.14), 79(w=3.77), 84(w=4.89), 85(w=5.05), 89(w=5.03), 92(w=3.64)
+[54] Parelheiros (peso=153598.0) -> 50(w=6.34)
+[56] Parque do Carmo (peso=71749.0) -> 5(w=4.95), 23(w=2.32), 24(w=4.72), 30(w=3.48), 35(w=3.49), 44(w=4.7), 45(w=5.1)
+[57] Pedreira (peso=160976.0) -> 21(w=2.83), 22(w=2.61), 78(w=3.67)
+[58] Penha (peso=129100.0) -> 4(w=4.95), 6(w=5.38), 17(w=2.26), 19(w=3.49), 27(w=5.22), 62(w=3.53), 79(w=3.76), 84(w=4.56), 88(w=5.36), 90(w=2.63), 91(w=5.13)
+[60] Perus (peso=89310.0) -> 3(w=4.23), 69(w=7.78)
+[62] Ponte Rasa (peso=89774.0) -> 4(w=5.23), 5(w=4.14), 17(w=1.77), 27(w=1.85), 58(w=3.53), 90(w=3.24)
+[66] Sacomã (peso=263621.0) -> 1(w=4.89), 26(w=2.11), 32(w=2.45), 36(w=5.1), 70(w=3.48), 76(w=3.36), 89(w=4.64), 92(w=3.45)
+[67] Santana (peso=113253.0) -> 10(w=4.02), 12(w=3.54), 20(w=2.31), 48(w=4.32), 49(w=3.09), 81(w=3.33), 85(w=2.6), 88(w=3.87), 91(w=5.1)
+[68] Santo Amaro (peso=74447.0) -> 14(w=3.34), 15(w=3.78), 21(w=4.88), 36(w=3.38), 78(w=3.17)
+[69] São Domingos (peso=86403.0) -> 60(w=7.78), 94(w=3.11)
+[70] São Lucas (peso=142948.0) -> 1(w=2.96), 19(w=5.23), 32(w=4.11), 52(w=5.14), 66(w=3.48), 75(w=5.21), 84(w=4.18), 92(w=1.51)
+[71] São Mateus (peso=155387.0) -> 31(w=2.96), 73(w=3.45), 75(w=3.74)
+[72] São Miguel Paulista (peso=97373.0) -> 5(w=5.4), 27(w=4.41), 34(w=5.13), 35(w=5.11), 41(w=2.26), 44(w=4.18), 83(w=3.61), 86(w=0.75)
+[73] São Rafael (peso=159683.0) -> 31(w=3.06), 71(w=3.45), 75(w=4.18)
+[75] Sapopemba (peso=289759.0) -> 70(w=5.21), 71(w=3.74), 73(w=4.18)
+[76] Saúde (peso=134147.0) -> 14(w=3.93), 26(w=1.44), 32(w=3.23), 36(w=2.54), 51(w=3.44), 66(w=3.36), 89(w=2.34)
+[78] Socorro (peso=36033.0) -> 15(w=4.62), 21(w=2.11), 22(w=2.96), 36(w=5.11), 57(w=3.67), 68(w=3.17)
+[79] Tatuapé (peso=96045.0) -> 1(w=3.9), 6(w=1.63), 10(w=3.99), 19(w=2.88), 52(w=3.77), 58(w=3.76), 84(w=3.64), 85(w=3.95), 88(w=3.76), 90(w=5.4), 91(w=4.83)
+[80] Tremembé (peso=223553.0) -> 9(w=5.33), 12(w=4.33), 37(w=3.75), 49(w=2.66), 81(w=3.33)
+[81] Tucuruvi (peso=96358.0) -> 12(w=4.62), 20(w=5.27), 37(w=2.72), 49(w=2.56), 67(w=3.33), 80(w=3.33), 85(w=3.93), 88(w=3.45), 91(w=3.34)
+[82] Vila Andrade (peso=163508.0) -> 16(w=3.77), 43(w=4.56)
+[83] Vila Curuçá (peso=153500.0) -> 34(w=1.89), 41(w=3.02), 44(w=3.91), 72(w=3.61), 86(w=4.23)
+[84] Vila Formosa (peso=94100.0) -> 1(w=2.78), 4(w=4.11), 6(w=4.47), 19(w=1.11), 52(w=4.89), 58(w=4.56), 70(w=4.18), 79(w=3.64), 90(w=4.13), 92(w=3.77)
+[85] Vila Guilherme (peso=57079.0) -> 6(w=3.28), 10(w=2.66), 20(w=4.62), 49(w=5.13), 52(w=5.05), 67(w=2.6), 79(w=3.95), 81(w=3.93), 88(w=1.89), 91(w=3.61)
+[86] Vila Jacuí (peso=145836.0) -> 27(w=4.21), 41(w=2.32), 44(w=4.89), 72(w=0.75), 83(w=4.23)
+[88] Vila Maria (peso=114025.0) -> 6(w=3.9), 10(w=4.3), 37(w=4.79), 49(w=5.48), 58(w=5.36), 67(w=3.87), 79(w=3.76), 81(w=3.45), 85(w=1.89), 91(w=1.77)
+[89] Vila Mariana (peso=132226.0) -> 14(w=4.52), 26(w=3.45), 32(w=3.06), 36(w=4.48), 51(w=2.78), 52(w=5.03), 66(w=4.64), 76(w=2.34)
+[90] Vila Matilde (peso=105575.0) -> 4(w=2.45), 5(w=4.08), 17(w=3.37), 19(w=3.48), 27(w=4.13), 58(w=2.63), 62(w=3.24), 79(w=5.4), 84(w=4.13)
+[91] Vila Medeiros (peso=123456.0) -> 6(w=5.4), 37(w=3.55), 58(w=5.13), 67(w=5.1), 79(w=4.83), 81(w=3.34), 85(w=3.61), 88(w=1.77)
+[92] Vila Prudente (peso=104686.0) -> 1(w=1.67), 6(w=5.18), 19(w=4.65), 26(w=5.27), 32(w=3.11), 52(w=3.64), 66(w=3.45), 70(w=1.51), 84(w=3.77)
+[94] Pirituba (peso=171232.0) -> 9(w=4.94), 28(w=3.11), 69(w=3.11)
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.
+=== TESTE i2: conexidade em grafo direcionado (categoria e reduzido) ===
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: Leitura concluída com sucesso.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: 
+Grafo orientado: categoria C0 (desconexo).
+Componentes fortemente conexas (FCONEX): 2
+Grafo reduzido (componentes como nós):
+  C1 -> []
+  C2 -> []
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.

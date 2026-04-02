@@ -1,0 +1,49 @@
+
+======================================================================
+SPGraph - Projeto de Teoria dos Grafos (Parte 2)
+Menu de Operações no arquivo grafo.txt
+======================================================================
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Arquivo [grafo.txt]: Leitura concluída com sucesso.
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: 
+Grafo orientado: categoria C0 (desconexo).
+Componentes fortemente conexas (FCONEX): 2
+Grafo reduzido (componentes como nós):
+  C1 -> []
+  C2 -> []
+
+Escolha uma opção:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade e reduzido
+j) Encerrar aplicação
+Opção: Aplicação encerrada.

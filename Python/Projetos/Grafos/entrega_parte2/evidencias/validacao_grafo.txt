@@ -1,0 +1,8 @@
+Validação de requisitos mínimos do grafo
+
+Tipo: 3
+Vértices: 71
+Arestas: 215
+
+Requisito de vértices (>= 70): ATENDIDO
+Requisito de arestas (>= 180): ATENDIDO

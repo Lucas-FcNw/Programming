@@ -9,6 +9,15 @@ Integrantes:
 - Lendy Naiara Carpio Pacheco — RA 10428525
 - Anna Luiza Stella Santos — RA 10417401
 
+Síntese do arquivo:
+- Implementação de grafo por lista de adjacência.
+- Leitura/gravação no formato grafo.txt da disciplina.
+- Menu textual com opções a-j exigidas no enunciado.
+
+Histórico de alterações:
+- 2026-03-31 - GitHub Copilot - Implementação inicial do menu completo (a-j).
+- 2026-04-01 - GitHub Copilot - Ajustes finais para entrega Parte 2 e documentação.
+
 """
 
 from __future__ import annotations

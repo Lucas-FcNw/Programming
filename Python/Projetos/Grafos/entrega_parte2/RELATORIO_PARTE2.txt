@@ -1,0 +1,122 @@
+UNIVERSIDADE PRESBITERIANA MACKENZIE
+Faculdade de Computação e Informática
+Disciplina: Teoria dos Grafos – Turma 6G
+Prof. Dr. Ivan Carlos Alcântara de Oliveira
+
+RELATÓRIO COMPLETO – PROJETO PARTE 2
+
+1) DADOS DO GRUPO
+- Lucas Fernandes de Camargo — RA 10419400
+- Lendy Naiara Carpio Pacheco — RA 10428525
+- Anna Luiza Stella Santos — RA 10417401
+
+2) TÍTULO PROVISÓRIO DA APLICAÇÃO
+SPGraph — Análise de Acesso Territorial a Serviços de Saúde em São Paulo
+
+3) INTRODUÇÃO
+Este projeto modela o acesso territorial a serviços públicos de saúde no município de São Paulo por meio de Teoria dos Grafos. A proposta busca representar distritos como vértices e conexões de adjacência geográfica como arestas ponderadas por distância. A aplicação permite ler, gravar e manipular o grafo em arquivo texto no formato exigido pela disciplina, além de apresentar a estrutura do grafo e sua análise de conexidade.
+
+4) DEFINIÇÃO DO PROBLEMA REAL E DESCRIÇÃO DETALHADA
+Problema real selecionado:
+Desigualdade de acesso a serviços de saúde entre distritos de São Paulo.
+
+Elementos do problema:
+- Objetos: distritos administrativos.
+- Relação entre objetos: adjacência geográfica entre distritos.
+- Peso de vértice: população do distrito.
+- Peso de aresta: distância aproximada (km) entre distritos adjacentes.
+
+Estudo de caso com dados reais:
+- Base de saúde: deinfosacadsau2014.csv (unidades de saúde, tipos, leitos).
+- Base demográfica: evolucao_msp_pop_sexo_idade.csv (população por distrito).
+
+Recorte aplicado para viabilidade do trabalho do grupo:
+- Zonas mantidas: Leste, Norte e Sul.
+- Resultado final do grafo modelado:
+  - 71 vértices
+  - 215 arestas
+  (atende os mínimos de 70 vértices e 180 arestas)
+
+5) MODELAGEM NO GRAPH ONLINE / GEOPHI
+A modelagem foi preparada no formato padrão solicitado no arquivo grafo.txt.
+
+Arquivo principal da modelagem:
+- grafo.txt
+
+Para visualização na ferramenta (Graph Online ou Gephi):
+- importar os vértices e arestas a partir de grafo.txt.
+- gerar imagem do grafo para inclusão no relatório final entregue no AVA.
+
+Observação:
+Como esta versão foi consolidada em formato TXT, os artefatos textuais de execução e modelagem foram priorizados. A captura de tela da modelagem deve ser anexada no documento final da entrega acadêmica.
+
+6) OBJETIVOS ODS CONTEMPLADOS E JUSTIFICATIVA
+ODS 3 — Saúde e Bem-Estar
+- O projeto trata diretamente de acesso a serviços de saúde, comparando territórios com maior e menor conectividade e proximidade.
+
+ODS 10 — Redução das Desigualdades
+- O grafo permite observar diferenças territoriais no acesso, destacando áreas mais periféricas e com menor capilaridade de serviços.
+
+ODS 11 — Cidades e Comunidades Sustentáveis
+- A análise territorial auxilia decisões de planejamento urbano e priorização de infraestrutura de serviços essenciais.
+
+7) ARQUIVO GRAFO.TXT (FORMATO EXIGIDO)
+Tipo do grafo utilizado:
+- Tipo 3: grafo não orientado com peso nos vértices e nas arestas.
+
+Resumo do arquivo:
+- Número de vértices (n): 71
+- Número de arestas (m): 215
+
+8) DESENVOLVIMENTO DA APLICAÇÃO COM MENU (a-j)
+Arquivo fonte:
+- projeto_grafo_menu.py
+
+Itens implementados conforme enunciado:
+a) Ler dados do arquivo grafo.txt
+b) Gravar dados no arquivo grafo.txt
+c) Inserir vértice
+d) Inserir aresta
+e) Remover vértice
+f) Remover aresta
+g) Mostrar conteúdo do arquivo
+h) Mostrar grafo (lista de adjacência)
+i) Apresentar conexidade do grafo e reduzido (para grafo orientado)
+j) Encerrar a aplicação
+
+9) TESTES DA EXECUÇÃO (2 TESTES POR OPÇÃO)
+Arquivo consolidado de evidências textuais:
+- evidencias/testes_menu.txt
+
+Cobertura de testes no arquivo:
+- a1 e a2
+- b1 e b2
+- c1 e c2
+- d1 e d2
+- e1 e e2
+- f1 e f2
+- g1 e g2
+- h1 e h2
+- i1 e i2
+- j1 e j2
+
+Resultado geral dos testes:
+- Fluxo do menu executa corretamente.
+- Leitura/gravação do grafo.txt em formato exigido está funcional.
+- Inserção/remoção de vértices e arestas está funcional.
+- Conexidade não orientada e análise de categoria/reduzido em orientado estão funcionais.
+
+10) OBSERVAÇÕES DE IMPLEMENTAÇÃO E LEGIBILIDADE
+- Código organizado em classe principal de lista de adjacência.
+- Comentários internos de apoio adicionados.
+- Cabeçalho do arquivo com integrantes, síntese e histórico de alterações incluído.
+
+11) APÊNDICE – LINK DO PROJETO NO GITHUB
+Repositório público:
+- https://github.com/Lucas-FcNw/Programming
+
+Caminho da entrega dentro do repositório:
+- Python/Projetos/Grafos/entrega_parte2
+
+12) CONCLUSÃO
+A entrega Parte 2 foi implementada com foco estrito no enunciado da disciplina: modelagem por grafo com mínimos atendidos, arquivo grafo.txt no padrão solicitado, e aplicação em Python com menu completo a-j. A solução utiliza dados reais e mantém base técnica adequada para continuidade no segundo bimestre e possível expansão futura.
