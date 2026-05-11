@@ -16,6 +16,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
 ARQ_DISTRITOS = DATA_DIR / "distritos.json"
+ARQ_UBS_VERTICES = DATA_DIR / "ubs_vertices.json"
 ARQ_ARESTAS = DATA_DIR / "adjacencias.json"
 ARQ_SAIDA = BASE_DIR / "grafo.txt"
 
@@ -23,7 +24,8 @@ TIPO_GRAFO = 3
 
 
 def main() -> None:
-    with open(ARQ_DISTRITOS, "r", encoding="utf-8") as f:
+    vertices_path = ARQ_UBS_VERTICES if ARQ_UBS_VERTICES.exists() else ARQ_DISTRITOS
+    with open(vertices_path, "r", encoding="utf-8") as f:
         distritos = json.load(f)
 
     with open(ARQ_ARESTAS, "r", encoding="utf-8") as f:

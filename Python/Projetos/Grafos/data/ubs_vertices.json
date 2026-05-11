@@ -1,0 +1,641 @@
+[
+  {
+    "id": 1,
+    "nome": "UBS BUTANTÃ",
+    "zona": "Leste",
+    "lat": -23.57,
+    "lon": -46.575,
+    "populacao": 82564,
+    "subprefeitura": "ARICANDUVA/FORMOSA/CARRÃO"
+  },
+  {
+    "id": 3,
+    "nome": "UBS CAXINGUI - NANCI ABRANCHES",
+    "zona": "Norte",
+    "lat": -23.42,
+    "lon": -46.79,
+    "populacao": 84719,
+    "subprefeitura": "ARICANDUVA/FORMOSA/CARRÃO"
+  },
+  {
+    "id": 4,
+    "nome": "UBS JARDIM BOA VISTA",
+    "zona": "Leste",
+    "lat": -23.555,
+    "lon": -46.51,
+    "populacao": 85868,
+    "subprefeitura": "ARICANDUVA/FORMOSA/CARRÃO"
+  },
+  {
+    "id": 5,
+    "nome": "UBS JARDIM D'ABRIL",
+    "zona": "Leste",
+    "lat": -23.535,
+    "lon": -46.48,
+    "populacao": 100462,
+    "subprefeitura": "ARICANDUVA/FORMOSA/CARRÃO"
+  },
+  {
+    "id": 6,
+    "nome": "UBS JARDIM JAQUELINE",
+    "zona": "Leste",
+    "lat": -23.54,
+    "lon": -46.588,
+    "populacao": 49213,
+    "subprefeitura": "ARICANDUVA/FORMOSA/CARRÃO"
+  },
+  {
+    "id": 9,
+    "nome": "UBS JARDIM SÃO JORGE",
+    "zona": "Norte",
+    "lat": -23.46,
+    "lon": -46.68,
+    "populacao": 281977,
+    "subprefeitura": "ARICANDUVA/FORMOSA/CARRÃO"
+  },
+  {
+    "id": 10,
+    "nome": "UBS JOSÉ MARCÍLIO MALTA CARDOSO",
+    "zona": "Leste",
+    "lat": -23.538,
+    "lon": -46.612,
+    "populacao": 33045,
+    "subprefeitura": "ARICANDUVA/FORMOSA/CARRÃO"
+  },
+  {
+    "id": 12,
+    "nome": "UBS PAULO VI",
+    "zona": "Norte",
+    "lat": -23.485,
+    "lon": -46.655,
+    "populacao": 146387,
+    "subprefeitura": "ARICANDUVA/FORMOSA/CARRÃO"
+  },
+  {
+    "id": 14,
+    "nome": "UBS REAL PARQUE  - DR. PAULO MANGABEIRA ALBERNAZ FILHO",
+    "zona": "Sul",
+    "lat": -23.62,
+    "lon": -46.665,
+    "populacao": 63744,
+    "subprefeitura": "ARICANDUVA/FORMOSA/CARRÃO"
+  },
+  {
+    "id": 15,
+    "nome": "UBS RIO PEQUENO - DR. PAULO DE BARROS FRANÇA",
+    "zona": "Sul",
+    "lat": -23.67,
+    "lon": -46.695,
+    "populacao": 106722,
+    "subprefeitura": "ARICANDUVA/FORMOSA/CARRÃO"
+  },
+  {
+    "id": 16,
+    "nome": "UBS VILA BORGES",
+    "zona": "Sul",
+    "lat": -23.645,
+    "lon": -46.76,
+    "populacao": 228893,
+    "subprefeitura": "ARICANDUVA/FORMOSA/CARRÃO"
+  },
+  {
+    "id": 17,
+    "nome": "UBS VILA DALVA - ENG. GUILHERME HENRIQUE PINTO COELHO",
+    "zona": "Leste",
+    "lat": -23.505,
+    "lon": -46.525,
+    "populacao": 138107,
+    "subprefeitura": "ARICANDUVA/FORMOSA/CARRÃO"
+  },
+  {
+    "id": 18,
+    "nome": "UBS VILA SONIA",
+    "zona": "Sul",
+    "lat": -23.67,
+    "lon": -46.77,
+    "populacao": 296378,
+    "subprefeitura": "ARICANDUVA/FORMOSA/CARRÃO"
+  },
+  {
+    "id": 19,
+    "nome": "UBS ALTO DO UMUARAMA",
+    "zona": "Leste",
+    "lat": -23.55,
+    "lon": -46.55,
+    "populacao": 84925,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 20,
+    "nome": "UBS CAMPO LIMPO",
+    "zona": "Norte",
+    "lat": -23.51,
+    "lon": -46.65,
+    "populacao": 86004,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 21,
+    "nome": "UBS CAMPO LIMPO - DR. FRANCISCO SCALAMANDRE SOBRINHO",
+    "zona": "Sul",
+    "lat": -23.68,
+    "lon": -46.63,
+    "populacao": 285677,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 22,
+    "nome": "UBS JARDIM COMERCIAL",
+    "zona": "Sul",
+    "lat": -23.7,
+    "lon": -46.66,
+    "populacao": 203131,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 23,
+    "nome": "UBS JARDIM GERMANIA",
+    "zona": "Leste",
+    "lat": -23.56,
+    "lon": -46.47,
+    "populacao": 135247,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 24,
+    "nome": "UBS JARDIM HELGA",
+    "zona": "Leste",
+    "lat": -23.58,
+    "lon": -46.405,
+    "populacao": 235630,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 26,
+    "nome": "UBS JARDIM LÍDIA",
+    "zona": "Sul",
+    "lat": -23.615,
+    "lon": -46.615,
+    "populacao": 113728,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 27,
+    "nome": "UBS JARDIM MACEDÔNIA",
+    "zona": "Leste",
+    "lat": -23.51,
+    "lon": -46.49,
+    "populacao": 118715,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 28,
+    "nome": "UBS JARDIM MAGDALENA",
+    "zona": "Norte",
+    "lat": -23.49,
+    "lon": -46.69,
+    "populacao": 140083,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 29,
+    "nome": "UBS JARDIM MARACA",
+    "zona": "Sul",
+    "lat": -23.75,
+    "lon": -46.67,
+    "populacao": 390096,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 30,
+    "nome": "UBS JARDIM MARCELO",
+    "zona": "Leste",
+    "lat": -23.555,
+    "lon": -46.42,
+    "populacao": 109730,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 31,
+    "nome": "UBS JARDIM MITSUTANI",
+    "zona": "Leste",
+    "lat": -23.64,
+    "lon": -46.47,
+    "populacao": 149739,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 32,
+    "nome": "UBS JARDIM OLINDA",
+    "zona": "Sul",
+    "lat": -23.59,
+    "lon": -46.605,
+    "populacao": 112222,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 34,
+    "nome": "UBS JARDIM SÃO BENTO",
+    "zona": "Leste",
+    "lat": -23.49,
+    "lon": -46.4,
+    "populacao": 234912,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 35,
+    "nome": "UBS JARDIM UMARIZAL",
+    "zona": "Leste",
+    "lat": -23.54,
+    "lon": -46.46,
+    "populacao": 211555,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 36,
+    "nome": "UBS LUAR DO SERTÃO",
+    "zona": "Sul",
+    "lat": -23.63,
+    "lon": -46.64,
+    "populacao": 229346,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 37,
+    "nome": "UBS PARAISOPOLIS",
+    "zona": "Norte",
+    "lat": -23.462,
+    "lon": -46.592,
+    "populacao": 96054,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 40,
+    "nome": "UBS PARAISOPOLIS II",
+    "zona": "Sul",
+    "lat": -23.7,
+    "lon": -46.78,
+    "populacao": 338265,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 41,
+    "nome": "UBS PARQUE ARARIBA",
+    "zona": "Leste",
+    "lat": -23.48,
+    "lon": -46.435,
+    "populacao": 135605,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 43,
+    "nome": "UBS PARQUE DO ENGENHO II",
+    "zona": "Sul",
+    "lat": -23.66,
+    "lon": -46.745,
+    "populacao": 293660,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 44,
+    "nome": "UBS PARQUE FERNANDA",
+    "zona": "Leste",
+    "lat": -23.53,
+    "lon": -46.435,
+    "populacao": 136560,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 45,
+    "nome": "UBS PARQUE MARIA HELENA",
+    "zona": "Leste",
+    "lat": -23.57,
+    "lon": -46.4,
+    "populacao": 174539,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 48,
+    "nome": "UBS PARQUE REGINA",
+    "zona": "Norte",
+    "lat": -23.51,
+    "lon": -46.67,
+    "populacao": 79657,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 49,
+    "nome": "UBS VILA PRAIA - DR. VITORIO ROLANDO BOCCALETTI",
+    "zona": "Norte",
+    "lat": -23.478,
+    "lon": -46.635,
+    "populacao": 109228,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 50,
+    "nome": "UBS VILA PREL - PROF. ANTONIO BERNARDES DE OLIVEIRA",
+    "zona": "Sul",
+    "lat": -23.83,
+    "lon": -46.7,
+    "populacao": 8426,
+    "subprefeitura": "CAMPO LIMPO"
+  },
+  {
+    "id": 51,
+    "nome": "UBS ALCINA PIMENTEL PIZA",
+    "zona": "Sul",
+    "lat": -23.6,
+    "lon": -46.66,
+    "populacao": 89382,
+    "subprefeitura": "CAPELA DO SOCORRO"
+  },
+  {
+    "id": 52,
+    "nome": "UBS CHÁCARA DO CONDE",
+    "zona": "Leste",
+    "lat": -23.56,
+    "lon": -46.598,
+    "populacao": 80330,
+    "subprefeitura": "CAPELA DO SOCORRO"
+  },
+  {
+    "id": 54,
+    "nome": "UBS CHÁCARA DO SOL",
+    "zona": "Sul",
+    "lat": -23.78,
+    "lon": -46.73,
+    "populacao": 153598,
+    "subprefeitura": "CAPELA DO SOCORRO"
+  },
+  {
+    "id": 56,
+    "nome": "UBS CHÁCARA SANTO AMARO",
+    "zona": "Leste",
+    "lat": -23.57,
+    "lon": -46.45,
+    "populacao": 71749,
+    "subprefeitura": "CAPELA DO SOCORRO"
+  },
+  {
+    "id": 57,
+    "nome": "UBS DR. SÉRGIO CHADDAD",
+    "zona": "Sul",
+    "lat": -23.705,
+    "lon": -46.635,
+    "populacao": 160976,
+    "subprefeitura": "CAPELA DO SOCORRO"
+  },
+  {
+    "id": 58,
+    "nome": "UBS GAIVOTAS",
+    "zona": "Leste",
+    "lat": -23.52,
+    "lon": -46.54,
+    "populacao": 129100,
+    "subprefeitura": "CAPELA DO SOCORRO"
+  },
+  {
+    "id": 60,
+    "nome": "UBS JARDIM CASTRO ALVES",
+    "zona": "Norte",
+    "lat": -23.41,
+    "lon": -46.75,
+    "populacao": 89310,
+    "subprefeitura": "CAPELA DO SOCORRO"
+  },
+  {
+    "id": 62,
+    "nome": "UBS JARDIM ELIANE",
+    "zona": "Leste",
+    "lat": -23.508,
+    "lon": -46.508,
+    "populacao": 89774,
+    "subprefeitura": "CAPELA DO SOCORRO"
+  },
+  {
+    "id": 66,
+    "nome": "UBS JARDIM ICARAÍ - QUINTANA",
+    "zona": "Sul",
+    "lat": -23.61,
+    "lon": -46.595,
+    "populacao": 263621,
+    "subprefeitura": "CAPELA DO SOCORRO"
+  },
+  {
+    "id": 67,
+    "nome": "UBS JARDIM MIRNA",
+    "zona": "Norte",
+    "lat": -23.505,
+    "lon": -46.628,
+    "populacao": 113253,
+    "subprefeitura": "CAPELA DO SOCORRO"
+  },
+  {
+    "id": 68,
+    "nome": "UBS JARDIM REPÚBLICA",
+    "zona": "Sul",
+    "lat": -23.65,
+    "lon": -46.665,
+    "populacao": 74447,
+    "subprefeitura": "CAPELA DO SOCORRO"
+  },
+  {
+    "id": 69,
+    "nome": "UBS JARDIM TRÊS CORAÇÕES",
+    "zona": "Norte",
+    "lat": -23.48,
+    "lon": -46.75,
+    "populacao": 86403,
+    "subprefeitura": "CAPELA DO SOCORRO"
+  },
+  {
+    "id": 70,
+    "nome": "UBS JORDANÓPOLIS",
+    "zona": "Leste",
+    "lat": -23.595,
+    "lon": -46.565,
+    "populacao": 142948,
+    "subprefeitura": "CAPELA DO SOCORRO"
+  },
+  {
+    "id": 71,
+    "nome": "UBS PARQUE RESIDENCIAL COCAIA INDEPENDENTE",
+    "zona": "Leste",
+    "lat": -23.615,
+    "lon": -46.48,
+    "populacao": 155387,
+    "subprefeitura": "CAPELA DO SOCORRO"
+  },
+  {
+    "id": 72,
+    "nome": "UBS VARGINHA",
+    "zona": "Leste",
+    "lat": -23.495,
+    "lon": -46.45,
+    "populacao": 97373,
+    "subprefeitura": "CAPELA DO SOCORRO"
+  },
+  {
+    "id": 73,
+    "nome": "UBS VELEIROS",
+    "zona": "Leste",
+    "lat": -23.64,
+    "lon": -46.5,
+    "populacao": 159683,
+    "subprefeitura": "CAPELA DO SOCORRO"
+  },
+  {
+    "id": 75,
+    "nome": "UBS CASA VERDE",
+    "zona": "Leste",
+    "lat": -23.605,
+    "lon": -46.515,
+    "populacao": 289759,
+    "subprefeitura": "CASA VERDE/CACHOEIRINHA"
+  },
+  {
+    "id": 76,
+    "nome": "UBS CASA VERDE ALTA",
+    "zona": "Sul",
+    "lat": -23.61,
+    "lon": -46.628,
+    "populacao": 134147,
+    "subprefeitura": "CASA VERDE/CACHOEIRINHA"
+  },
+  {
+    "id": 78,
+    "nome": "UBS DR. WALTER ELIAS (CASA VERDE BAIXA)",
+    "zona": "Sul",
+    "lat": -23.675,
+    "lon": -46.65,
+    "populacao": 36033,
+    "subprefeitura": "CASA VERDE/CACHOEIRINHA"
+  },
+  {
+    "id": 79,
+    "nome": "UBS DONA ADELAIDE LOPES",
+    "zona": "Leste",
+    "lat": -23.535,
+    "lon": -46.573,
+    "populacao": 96045,
+    "subprefeitura": "CASA VERDE/CACHOEIRINHA"
+  },
+  {
+    "id": 80,
+    "nome": "UBS DRA. ILZA WELTMAN HUTZLER",
+    "zona": "Norte",
+    "lat": -23.455,
+    "lon": -46.628,
+    "populacao": 223553,
+    "subprefeitura": "CASA VERDE/CACHOEIRINHA"
+  },
+  {
+    "id": 81,
+    "nome": "UBS JARDIM PERI",
+    "zona": "Norte",
+    "lat": -23.48,
+    "lon": -46.61,
+    "populacao": 96358,
+    "subprefeitura": "CASA VERDE/CACHOEIRINHA"
+  },
+  {
+    "id": 82,
+    "nome": "UBS PARQUE PERUCHE",
+    "zona": "Sul",
+    "lat": -23.62,
+    "lon": -46.735,
+    "populacao": 163508,
+    "subprefeitura": "CASA VERDE/CACHOEIRINHA"
+  },
+  {
+    "id": 83,
+    "nome": "UBS SÍTIO DO MANDAQUI – MASSAGISTA MÁRIO AMÉRICO",
+    "zona": "Leste",
+    "lat": -23.5,
+    "lon": -46.415,
+    "populacao": 153500,
+    "subprefeitura": "CASA VERDE/CACHOEIRINHA"
+  },
+  {
+    "id": 84,
+    "nome": "UBS VILA BARBOSA",
+    "zona": "Leste",
+    "lat": -23.56,
+    "lon": -46.55,
+    "populacao": 94100,
+    "subprefeitura": "CASA VERDE/CACHOEIRINHA"
+  },
+  {
+    "id": 85,
+    "nome": "UBS VILA DIONISIA",
+    "zona": "Norte",
+    "lat": -23.515,
+    "lon": -46.605,
+    "populacao": 57079,
+    "subprefeitura": "CASA VERDE/CACHOEIRINHA"
+  },
+  {
+    "id": 86,
+    "nome": "UBS VILA ESPANHOLA",
+    "zona": "Leste",
+    "lat": -23.49,
+    "lon": -46.455,
+    "populacao": 145836,
+    "subprefeitura": "CASA VERDE/CACHOEIRINHA"
+  },
+  {
+    "id": 88,
+    "nome": "UBS VILA SANTA MARIA",
+    "zona": "Norte",
+    "lat": -23.505,
+    "lon": -46.59,
+    "populacao": 114025,
+    "subprefeitura": "CASA VERDE/CACHOEIRINHA"
+  },
+  {
+    "id": 89,
+    "nome": "UBS CIDADE JULIA",
+    "zona": "Sul",
+    "lat": -23.59,
+    "lon": -46.635,
+    "populacao": 132226,
+    "subprefeitura": "CIDADE ADEMAR"
+  },
+  {
+    "id": 90,
+    "nome": "UBS JARDIM APURÁ",
+    "zona": "Leste",
+    "lat": -23.535,
+    "lon": -46.52,
+    "populacao": 105575,
+    "subprefeitura": "CIDADE ADEMAR"
+  },
+  {
+    "id": 91,
+    "nome": "UBS JARDIM MIRIAM - MANOEL SOARES DE OLIVEIRA",
+    "zona": "Norte",
+    "lat": -23.492,
+    "lon": -46.58,
+    "populacao": 123456,
+    "subprefeitura": "CIDADE ADEMAR"
+  },
+  {
+    "id": 92,
+    "nome": "UBS JARDIM NITERÓI",
+    "zona": "Leste",
+    "lat": -23.585,
+    "lon": -46.575,
+    "populacao": 104686,
+    "subprefeitura": "CIDADE ADEMAR"
+  },
+  {
+    "id": 94,
+    "nome": "UBS JARDIM SÃO CARLOS - CIDADE ADEMAR",
+    "zona": "Norte",
+    "lat": -23.485,
+    "lon": -46.72,
+    "populacao": 171232,
+    "subprefeitura": "CIDADE ADEMAR"
+  }
+]

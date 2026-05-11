@@ -16,14 +16,14 @@ Desenvolvimento de um sistema interativo que modela a cidade de São Paulo como 
 
 # Objetivo Geral
 
-Desenvolver um sistema funcional que utilize modelagem por grafos para analisar e visualizar desigualdades no acesso a serviços públicos nos distritos da cidade de São Paulo.
+Desenvolver um sistema funcional que utilize modelagem por grafos para analisar e visualizar desigualdades no acesso a serviços públicos a partir das UBSs da cidade de São Paulo.
 
 ---
 
 # Objetivos Específicos
 
-- Modelar os distritos como **vértices** de um grafo.
-- Modelar conexões geográficas entre distritos como **arestas ponderadas**.
+- Modelar as UBSs como **vértices** de um grafo.
+- Modelar conexões geográficas (base distrital) como **arestas ponderadas**.
 - Implementar algoritmos clássicos de grafos, como **Dijkstra** e **BFS**.
 - Calcular métricas de acessibilidade.
 - Desenvolver uma interface interativa com foco em usabilidade.
@@ -43,8 +43,8 @@ O projeto busca identificar padrões de acessibilidade, destacar regiões mais i
 
 ## Estrutura do Grafo
 
-- **Vértices:** distritos administrativos da cidade de São Paulo (96 distritos).
-- **Arestas:** conexões entre distritos geograficamente vizinhos.
+- **Vértices:** UBSs da cidade de São Paulo.
+- **Arestas:** conexões geográficas baseadas na adjacência entre distritos (proxy).
 - **Peso das arestas:** distância estimada entre os centros geográficos dos distritos.
 
 Essa modelagem atende ao requisito mínimo de aproximadamente **70 vértices e 180 arestas**.
@@ -57,9 +57,9 @@ Essa modelagem atende ao requisito mínimo de aproximadamente **70 vértices e 1
 
 ## Algoritmos Utilizados
 
-- **Dijkstra:** cálculo do menor caminho entre um distrito e o serviço mais próximo.
+- **Dijkstra:** cálculo do menor caminho entre uma UBS e o serviço mais próximo.
 - **BFS:** análise de conectividade e alcance.
-- **Grau do vértice:** identificação de distritos mais conectados.
+- **Grau do vértice:** identificação de UBSs mais conectadas.
 - **Medidas simples de centralidade.**
 
 ---
@@ -68,7 +68,7 @@ Essa modelagem atende ao requisito mínimo de aproximadamente **70 vértices e 1
 
 O usuário poderá:
 
-- Selecionar um distrito.
+- Selecionar uma UBS.
 - Escolher o tipo de serviço (UBS, UPA ou hospital SUS).
 
 Visualizar:
@@ -77,7 +77,7 @@ Visualizar:
 - Caminho mínimo.
 - Ranking de acessibilidade.
 - Comparação com a média da cidade.
-- Identificação de distritos relativamente isolados.
+- Identificação de UBSs relativamente isoladas.
 
 ---
 

@@ -15,6 +15,7 @@ from __future__ import annotations
 import json
 import unicodedata
 from pathlib import Path
+import re
 
 import pandas as pd
 
@@ -25,6 +26,8 @@ ARQ_DISTRITOS = DATA_DIR / "distritos.json"
 ARQ_ADJ = DATA_DIR / "adjacencias.json"
 ARQ_SERVICOS_CSV = DATA_DIR / "deinfosacadsau2014.csv"
 ARQ_POP_CSV = DATA_DIR / "evolucao_msp_pop_sexo_idade.csv"
+ARQ_UBS_MD = DATA_DIR / "Unid_Munic_Saude_Subp.md"
+ARQ_UBS_VERTICES = DATA_DIR / "ubs_vertices.json"
 
 ZONAS_MANTIDAS = {"Leste", "Norte", "Sul"}
 
@@ -197,6 +200,83 @@ def salvar_json(caminho: Path, payload: list[dict]) -> None:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
 
+def extrair_ubs_por_subprefeitura(caminho_md: Path) -> list[dict]:
+    if not caminho_md.exists():
+        raise FileNotFoundError(
+            f"Arquivo de UBS não encontrado: {caminho_md}. "
+            "Salve o MD em data/ antes de gerar os dados."
+        )
+
+    linhas = caminho_md.read_text(encoding="utf-8", errors="ignore").splitlines()
+    ubs: list[dict] = []
+    vistos: set[str] = set()
+    subprefeitura_atual = "N/D"
+
+    for ln in linhas:
+        raw = ln.strip()
+        if not raw:
+            continue
+
+        if raw.upper().startswith("## SUBPREFEITURAS"):
+            continue
+
+        if raw.upper().startswith("## SUBPREFEITURA"):
+            texto = raw.lstrip("#").strip()
+            texto = re.sub(r"^SUBPREFEITURA\s+DE\s+", "", texto, flags=re.I)
+            texto = re.sub(r"^SUBPREFEITURA\s+DA\s+", "", texto, flags=re.I)
+            texto = re.sub(r"^SUBPREFEITURA\s+DO\s+", "", texto, flags=re.I)
+            subprefeitura_atual = texto.strip()
+            continue
+
+        match_ubs = re.match(r"^(##\s*)?UBS\s+(.+)$", raw, flags=re.I)
+        if not match_ubs:
+            continue
+
+        nome_ubs = match_ubs.group(2).strip()
+        if not nome_ubs:
+            continue
+
+        if "UNIDADE BASICA DE SAUDE" in normalizar_texto(nome_ubs):
+            continue
+
+        chave = normalizar_texto(nome_ubs)
+        if chave in vistos:
+            continue
+        vistos.add(chave)
+
+        ubs.append({
+            "nome": f"UBS {nome_ubs}",
+            "subprefeitura": subprefeitura_atual,
+        })
+
+    return ubs
+
+
+def gerar_vertices_ubs(distritos_base: list[dict]) -> list[dict]:
+    ubs_lista = extrair_ubs_por_subprefeitura(ARQ_UBS_MD)
+    distritos_ordenados = sorted(distritos_base, key=lambda d: int(d["id"]))
+
+    if len(ubs_lista) < len(distritos_ordenados):
+        raise ValueError(
+            "Quantidade de UBSs insuficiente para mapear todos os vértices. "
+            f"UBSs encontradas: {len(ubs_lista)} | Vértices: {len(distritos_ordenados)}"
+        )
+
+    ubs_selecionadas = ubs_lista[:len(distritos_ordenados)]
+    vertices = []
+    for d, u in zip(distritos_ordenados, ubs_selecionadas):
+        vertices.append({
+            "id": int(d["id"]),
+            "nome": u["nome"],
+            "zona": d["zona"],
+            "lat": float(d["lat"]),
+            "lon": float(d["lon"]),
+            "populacao": int(d["populacao"]),
+            "subprefeitura": u["subprefeitura"],
+        })
+    return vertices
+
+
 def main() -> None:
     print("=" * 60)
     print("SPGraph - Geração de dados reais com recorte por zonas")
@@ -218,6 +298,9 @@ def main() -> None:
     salvar_json(ARQ_ADJ, adjacencias)
     salvar_json(DATA_DIR / "servicos.json", servicos)
 
+    vertices_ubs = gerar_vertices_ubs(distritos)
+    salvar_json(ARQ_UBS_VERTICES, vertices_ubs)
+
     contagem: dict[str, int] = {}
     for s in servicos:
         contagem[s["tipo"]] = contagem.get(s["tipo"], 0) + 1
@@ -226,6 +309,7 @@ def main() -> None:
     print(f"   - {ARQ_DISTRITOS}")
     print(f"   - {ARQ_ADJ}")
     print(f"   - {DATA_DIR / 'servicos.json'}")
+    print(f"   - {ARQ_UBS_VERTICES}")
 
     print(f"\n{'=' * 60}")
     print("📊 Resumo do recorte")
@@ -236,6 +320,7 @@ def main() -> None:
     print(f"   Hospital SUS: {contagem.get('hospital_sus', 0)}")
     print(f"   UPA:          {contagem.get('upa', 0)}")
     print(f"   UBS:          {contagem.get('ubs', 0)}")
+    print(f"   UBSs (vértices): {len(vertices_ubs)}")
     print(f"{'=' * 60}")
 
 

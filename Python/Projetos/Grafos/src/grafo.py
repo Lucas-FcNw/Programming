@@ -2,7 +2,7 @@
 SPGraph - Módulo de Grafo
 ==========================
 Classe principal para construção e manipulação do grafo
-dos distritos de São Paulo usando NetworkX.
+das UBSs de São Paulo usando NetworkX.
 
 Implementa:
 - Construção do grafo a partir de dados JSON
@@ -21,10 +21,10 @@ import networkx as nx
 
 class GrafoSP:
     """
-    Grafo dos distritos administrativos de São Paulo.
+    Grafo das UBSs de São Paulo.
 
-    Modela os distritos como vértices e suas adjacências geográficas
-    como arestas ponderadas pela distância em km.
+    Modela as UBSs como vértices e utiliza adjacências geográficas
+    (base distrital) como arestas ponderadas pela distância em km.
     """
 
     def __init__(self, data_dir: str | Path = "data"):
@@ -50,8 +50,11 @@ class GrafoSP:
 
     def _carregar_dados(self):
         """Carrega os dados dos arquivos JSON."""
-        # Distritos
-        with open(self.data_dir / "distritos.json", "r", encoding="utf-8") as f:
+        vertices_path = self.data_dir / "ubs_vertices.json"
+        if not vertices_path.exists():
+            vertices_path = self.data_dir / "distritos.json"
+
+        with open(vertices_path, "r", encoding="utf-8") as f:
             lista_distritos = json.load(f)
         self.distritos = {d["id"]: d for d in lista_distritos}
 
@@ -99,7 +102,7 @@ class GrafoSP:
 
     def _construir_grafo(self):
         """Constrói o grafo NetworkX a partir dos dados carregados."""
-        # Adicionar vértices (distritos)
+        # Adicionar vértices (UBSs)
         for did, d in self.distritos.items():
             self.G.add_node(
                 did,
