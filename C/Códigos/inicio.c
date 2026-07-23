@@ -18,8 +18,8 @@ int main(void)
     // Declaração de variáveis dos tipos fundamentais em C:
     char caractere = 'A';                // Tipo caractere (1 byte)
     int inteiro = 42;                    // Tipo número inteiro (geralmente 4 bytes)
-    float decimal_simples = 3.14f;       // Tipo ponto flutuante de precisão simples (~6-7 dígitos)
-    double decimal_duplo = 3.1415926535; // Tipo ponto flutuante de precisão dupla (~15-17 dígitos)
+    float decimal_simples = 3.14f;       // Tipo ponto flutuante de precisão simples
+    double decimal_duplo = 3.1415926535; // Tipo ponto flutuante de precisão dupla (Mais para casos científicos)
 
     // Exibindo os valores no terminal
     printf("Caractere (char): %c\n", caractere);
