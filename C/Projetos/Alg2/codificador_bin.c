@@ -1,74 +1,169 @@
+/**
+ * @file codificador_bin.c
+ * @brief Codificador de Imagens Binárias usando Decomposição em Quadtree (PBM P1).
+ *
+ * Este programa realiza a compressão espacial de imagens binárias no formato
+ * PBM (Portable Bitmap - P1) ou inseridas manualmente, utilizando uma estrutura
+ * recursiva baseada em Quadtree (decomposição em quatro quadrantes).
+ *
+ * Simbologia do Código Gerado:
+ * - 'B': Região uniforme de cor branca (valor 0).
+ * - 'P': Região uniforme de cor preta (valor 1).
+ * - 'X': Região não-uniforme (dividida recursivamente em 4 subquadrantes).
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
+#include <ctype.h>
 
 #define MAX_LINE_SIZE 1024
-#define PBM_CODE_SIZE 3  // Tamanho do código PBM (P1)
+#define PBM_CODE_SIZE 3
 
+/**
+ * @brief Estrutura para representação de imagem binária.
+ */
 typedef struct {
-    int width;
-    int height;
-    int *pixels;
+    int width;   /**< Largura em pixels */
+    int height;  /**< Altura em pixels */
+    int *pixels; /**< Matriz de pixels em representação unidimensional */
 } Image;
 
-// Função para verificar se um arquivo é um arquivo PBM válido
-bool is_pbm_file(FILE *image_file)
-{
-    char magic_number[PBM_CODE_SIZE];
-    fscanf(image_file, "%2s", magic_number);
+/**
+ * @brief Buffer dinâmico de string para acúmulo eficiente e seguro do código gerado.
+ */
+typedef struct {
+    char *data;
+    size_t length;
+    size_t capacity;
+} StringBuffer;
+
+/**
+ * @brief Inicializa o buffer dinâmico de string.
+ */
+static StringBuffer *sb_create(void) {
+    StringBuffer *sb = (StringBuffer *)malloc(sizeof(StringBuffer));
+    if (!sb) {
+        perror("Erro ao alocar StringBuffer");
+        exit(EXIT_FAILURE);
+    }
+    sb->capacity = 64;
+    sb->length = 0;
+    sb->data = (char *)malloc(sb->capacity);
+    if (!sb->data) {
+        perror("Erro ao alocar data do StringBuffer");
+        free(sb);
+        exit(EXIT_FAILURE);
+    }
+    sb->data[0] = '\0';
+    return sb;
+}
+
+/**
+ * @brief Adiciona um caractere ao buffer dinâmico.
+ */
+static void sb_append_char(StringBuffer *sb, char ch) {
+    if (sb->length + 2 > sb->capacity) {
+        sb->capacity *= 2;
+        char *new_data = (char *)realloc(sb->data, sb->capacity);
+        if (!new_data) {
+            perror("Erro ao realocar StringBuffer");
+            free(sb->data);
+            free(sb);
+            exit(EXIT_FAILURE);
+        }
+        sb->data = new_data;
+    }
+    sb->data[sb->length++] = ch;
+    sb->data[sb->length] = '\0';
+}
+
+/**
+ * @brief Libera a memória alocada pelo buffer de string.
+ */
+static void sb_free(StringBuffer *sb) {
+    if (sb) {
+        free(sb->data);
+        free(sb);
+    }
+}
+
+/**
+ * @brief Libera a memória alocada pela imagem.
+ */
+static void free_image(Image *img) {
+    if (img && img->pixels) {
+        free(img->pixels);
+        img->pixels = NULL;
+    }
+}
+
+/**
+ * @brief Verifica se o arquivo aberto é um PBM válido (número mágico P1).
+ */
+bool is_pbm_file(FILE *image_file) {
+    char magic_number[PBM_CODE_SIZE] = {0};
+    if (fscanf(image_file, "%2s", magic_number) != 1) {
+        return false;
+    }
     return strcmp(magic_number, "P1") == 0;
 }
 
-// Função para ler uma imagem binária de um arquivo PBM
-Image read_binary_image(const char path[])
-{
+/**
+ * @brief Lê uma imagem binária PBM no formato P1 a partir do caminho especificado.
+ */
+Image read_binary_image(const char path[]) {
     FILE *image_file = fopen(path, "r");
-
-    if (image_file == NULL)
-    {
-        perror("Erro ao abrir o arquivo");
+    if (image_file == NULL) {
+        perror("Erro ao abrir o arquivo PBM");
         exit(EXIT_FAILURE);
     }
 
-    Image img;
-    img.width = 0;
-    img.height = 0;
-    img.pixels = NULL;
+    Image img = {0, 0, NULL};
 
-    if (!is_pbm_file(image_file))
-    {
-        fprintf(stderr, "Formato PBM inválido\n");
+    if (!is_pbm_file(image_file)) {
+        fprintf(stderr, "Erro: O arquivo '%s' não está no formato PBM P1 válido.\n", path);
+        fclose(image_file);
         exit(EXIT_FAILURE);
     }
 
-    // Ignorar comentários
-    int break_char;
-    while ((break_char = fgetc(image_file)) == '#' || isspace(break_char))
-    {
-        if (break_char == '#')
-        {
-            fscanf(image_file, "%*[^\n]"); // Pular a linha de comentário
+    // Ignorar comentários e espaços em branco
+    int ch;
+    while ((ch = fgetc(image_file)) != EOF) {
+        if (ch == '#') {
+            // Descarta o comentário até o fim da linha
+            while ((ch = fgetc(image_file)) != EOF && ch != '\n');
+        } else if (!isspace(ch)) {
+            ungetc(ch, image_file);
+            break;
         }
     }
-    ungetc(break_char, image_file); // Devolver o caractere que encerrou o loop
 
-    // Ler largura e altura do arquivo
-    if (fscanf(image_file, "%d %d", &img.width, &img.height) != 2)
-    {
-        fprintf(stderr, "Erro ao ler largura e altura.\n");
+    // Lê largura e altura
+    if (fscanf(image_file, "%d %d", &img.width, &img.height) != 2 || img.width <= 0 || img.height <= 0) {
+        fprintf(stderr, "Erro ao ler as dimensões da imagem (largura x altura).\n");
+        fclose(image_file);
         exit(EXIT_FAILURE);
     }
 
     img.pixels = (int *)malloc(img.width * img.height * sizeof(int));
+    if (!img.pixels) {
+        perror("Erro ao alocar memória para os pixels");
+        fclose(image_file);
+        exit(EXIT_FAILURE);
+    }
 
-    // Ler os pixels
-    for (int i = 0; i < img.height; ++i)
-    {
-        for (int j = 0; j < img.width; ++j)
-        {
+    // Lê a matriz de pixels
+    for (int i = 0; i < img.height; ++i) {
+        for (int j = 0; j < img.width; ++j) {
             int pixel;
-            fscanf(image_file, "%d", &pixel);
+            if (fscanf(image_file, "%d", &pixel) != 1) {
+                fprintf(stderr, "Erro na leitura do pixel na posição (%d, %d).\n", i, j);
+                free_image(&img);
+                fclose(image_file);
+                exit(EXIT_FAILURE);
+            }
             img.pixels[i * img.width + j] = pixel;
         }
     }
@@ -77,162 +172,144 @@ Image read_binary_image(const char path[])
     return img;
 }
 
-// Função para verificar se uma parte da imagem é uniforme
-bool is_uniform(Image image, int start_row, int end_row, int start_col, int end_col)
-{
-    bool uniform = true;
+/**
+ * @brief Verifica se a região da imagem definida por [start_row, end_row] x [start_col, end_col] é uniforme.
+ */
+bool is_uniform(Image image, int start_row, int end_row, int start_col, int end_col) {
     int first_pixel = image.pixels[start_row * image.width + start_col];
 
-    for (int i = start_row; i <= end_row; ++i)
-    {
-        for (int j = start_col; j <= end_col; ++j)
-        {
-            if (image.pixels[i * image.width + j] != first_pixel)
-            {
-                uniform = false;
-                break;
+    for (int i = start_row; i <= end_row; ++i) {
+        for (int j = start_col; j <= end_col; ++j) {
+            if (image.pixels[i * image.width + j] != first_pixel) {
+                return false;
             }
         }
-
-        if (!uniform)
-        {
-            break;
-        }
     }
-
-    return uniform;
+    return true;
 }
 
-// Função recursiva para codificar a imagem
-void encode(Image image, int start_row, int end_row, int start_col, int end_col, char *code)
-{
-    if (start_row > end_row || start_col > end_col)
-    {
-        return; // Caso base: subimagem inválida
+/**
+ * @brief Codifica recursivamente a região da imagem via Quadtree.
+ */
+void encode(Image image, int start_row, int end_row, int start_col, int end_col, StringBuffer *sb) {
+    if (start_row > end_row || start_col > end_col) {
+        return; // Subimagem inválida / caso base
     }
 
-    // Se for uniforme, adicionar o código correspondente
-    if (is_uniform(image, start_row, end_row, start_col, end_col))
-    {
+    if (is_uniform(image, start_row, end_row, start_col, end_col)) {
         int first_pixel = image.pixels[start_row * image.width + start_col];
-        // Realloc só se necessário e garantir espaço suficiente
-        size_t len = strlen(code);
-        code = realloc(code, len + 2);
-        sprintf(code + len, "%c", (first_pixel == 0) ? 'B' : 'P');
-    }
-    else
-    {
-        // Se não for uniforme, adicionar 'X' e dividir a imagem em 4 quadrantes
-        size_t len = strlen(code);
-        code = realloc(code, len + 2);
-        sprintf(code + len, "X");
+        // 0 = Branco ('B'), 1 = Preto ('P')
+        sb_append_char(sb, (first_pixel == 0) ? 'B' : 'P');
+    } else {
+        // Região mista: acrescenta 'X' e divide nos 4 quadrantes
+        sb_append_char(sb, 'X');
 
-        int mid_row = (start_row + end_row) / 2;
-        int mid_col = (start_col + end_col) / 2;
+        int mid_row = start_row + (end_row - start_row) / 2;
+        int mid_col = start_col + (end_col - start_col) / 2;
 
-        // Chamar a função recursivamente para cada quadrante
-        encode(image, start_row, mid_row, start_col, mid_col, code);     // 1º quadrante
-        encode(image, start_row, mid_row, mid_col + 1, end_col, code);   // 2º quadrante
-        encode(image, mid_row + 1, end_row, start_col, mid_col, code);   // 3º quadrante
-        encode(image, mid_row + 1, end_row, mid_col + 1, end_col, code); // 4º quadrante
+        // Quadrante Superior Esquerdo (NO)
+        encode(image, start_row, mid_row, start_col, mid_col, sb);
+        // Quadrante Superior Direito (NE)
+        encode(image, start_row, mid_row, mid_col + 1, end_col, sb);
+        // Quadrante Inferior Esquerdo (SO)
+        encode(image, mid_row + 1, end_row, start_col, mid_col, sb);
+        // Quadrante Inferior Direito (SE)
+        encode(image, mid_row + 1, end_row, mid_col + 1, end_col, sb);
     }
 }
 
-// Função para exibir o manual de ajuda
-void help()
-{
-    puts("Uso: ImageEncoder [-? | -m | -f ARQ]");
-    puts("Codifica imagens binárias dadas em arquivos PBM ou por dados informados manualmente.");
-    puts("Argumentos:");
-    puts("-?, --help  : apresenta essa orientação na tela.");
-    puts("-m, --manual: ativa o modo de entrada manual, em que o usuário fornece todos os dados da imagem informando-os através do teclado.");
-    puts("-f, --file: considera a imagem representada no arquivo PBM (Portable bitmap).");
+/**
+ * @brief Exibe as instruções e o manual de ajuda do programa.
+ */
+void help(void) {
+    puts("==========================================================================");
+    puts("                   ImageEncoder - Codificador PBM                         ");
+    puts("==========================================================================");
+    puts("Uso: ./codificador_bin [-? | --help] [-m | --manual] [-f | --file ARQUIVO]");
+    puts("Codifica imagens binárias dadas em arquivos PBM (P1) ou informadas manualmente.");
+    puts("\nOpções:");
+    puts("  -?, --help    : Exibe este manual de instruções.");
+    puts("  -m, --manual  : Ativa o modo de entrada manual pelo teclado.");
+    puts("  -f, --file ARQ: Processa e codifica a imagem contida no arquivo PBM especificado.");
+    puts("==========================================================================");
 }
 
-// Função para leitura manual da imagem
-void manual()
-{
-    Image img;
-    img.width = 0;
-    img.height = 0;
-    img.pixels = NULL;
+/**
+ * @brief Realiza a leitura dos dados da imagem diretamente da entrada padrão.
+ */
+void manual(void) {
+    Image img = {0, 0, NULL};
 
     printf("Insira as dimensões da imagem (largura altura): ");
-    scanf("%d %d", &img.width, &img.height);
+    if (scanf("%d %d", &img.width, &img.height) != 2 || img.width <= 0 || img.height <= 0) {
+        fprintf(stderr, "Dimensões inválidas.\n");
+        return;
+    }
 
     img.pixels = (int *)malloc(img.width * img.height * sizeof(int));
+    if (!img.pixels) {
+        perror("Erro ao alocar memória");
+        return;
+    }
 
-    printf("Insira os pixels da imagem (0 para branco, 1 para preto):\n");
-    for (int i = 0; i < img.height; ++i)
-    {
+    printf("Insira os pixels da imagem (0 para branco, 1 para preto, linha por linha):\n");
+    for (int i = 0; i < img.height; ++i) {
         char line[MAX_LINE_SIZE];
-        scanf(" %[^\n]", line); // Adicionando um espaço antes de %[^\n] para consumir o \n no buffer
+        if (scanf(" %[^\n]", line) != 1) {
+            fprintf(stderr, "Erro ao ler a linha %d.\n", i);
+            free_image(&img);
+            return;
+        }
 
-        char *token = strtok(line, " ");
+        char *token = strtok(line, " \t");
         int j = 0;
 
-        while (token != NULL && j < img.width)
-        {
+        while (token != NULL && j < img.width) {
             img.pixels[i * img.width + j] = atoi(token);
-
-            token = strtok(NULL, " ");
+            token = strtok(NULL, " \t");
             j++;
         }
     }
 
-    // Codificação da imagem
-    char *code = (char *)malloc(1);  // Começando com um tamanho de 1 byte (para o '\0')
-    code[0] = '\0';
+    StringBuffer *sb = sb_create();
+    encode(img, 0, img.height - 1, 0, img.width - 1, sb);
 
-    encode(img, 0, img.height - 1, 0, img.width - 1, code);
+    printf("\n>>> Código gerado (Quadtree): %s\n\n", sb->data);
 
-    printf("Código gerado: %s\n", code);
-
-    // Liberação de memória
-    free(code);
-    free(img.pixels);
+    sb_free(sb);
+    free_image(&img);
 }
 
-// Função para processar os argumentos de linha de comando
-int main(int argc, char const *argv[])
-{
-    if (argc == 2)
-    {
-        if (strcmp(argv[1], "-?") == 0 || strcmp(argv[1], "--help") == 0)
-        {
+int main(int argc, char const *argv[]) {
+    if (argc == 2) {
+        if (strcmp(argv[1], "-?") == 0 || strcmp(argv[1], "--help") == 0) {
             help();
             return 0;
         }
 
-        if (strcmp(argv[1], "-m") == 0 || strcmp(argv[1], "--manual") == 0)
-        {
+        if (strcmp(argv[1], "-m") == 0 || strcmp(argv[1], "--manual") == 0) {
             manual();
             return 0;
         }
     }
 
-    if (argc == 3)
-    {
-        if (strcmp(argv[1], "-f") == 0 || strcmp(argv[1], "--file") == 0)
-        {
+    if (argc == 3) {
+        if (strcmp(argv[1], "-f") == 0 || strcmp(argv[1], "--file") == 0) {
             Image img = read_binary_image(argv[2]);
 
-            // Codificação da imagem
-            char *code = (char *)malloc(1);  // Começando com um tamanho de 1 byte
-            code[0] = '\0';
+            StringBuffer *sb = sb_create();
+            encode(img, 0, img.height - 1, 0, img.width - 1, sb);
 
-            encode(img, 0, img.height - 1, 0, img.width - 1, code);
+            printf("\n>>> Código gerado (Quadtree): %s\n\n", sb->data);
 
-            printf("Código gerado: %s\n", code);
-
-            // Liberação de memória
-            free(code);
-            free(img.pixels);
+            sb_free(sb);
+            free_image(&img);
             return 0;
         }
     }
 
-    // Caso não tenha argumentos ou argumentos inválidos
+    // Caso nenhum argumento ou argumento inválido seja passado
     help();
     return 0;
 }
+

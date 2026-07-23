@@ -1,8 +1,10 @@
-# 📚 MANUAL COMPLETO DE PYTHON - DO BÁSICO AO AVANÇADO
+# 🐍 Python do Zero - Guia de Estudos
 
 ## 🎯 Atalhos Úteis do VS Code
 
 ```
+Ctrl + Enter          → Executar programa
+Ctrl + Alt + F        → Formatar código
 Ctrl + L              → Selecionar linha inteira
 Shift + Alt + ↓       → Clonar linha para baixo
 Shift + Alt + ↑       → Clonar linha para cima
@@ -17,31 +19,74 @@ Ctrl + /              → Comentar/descomentar linha
 
 ---
 
-## 📑 ÍNDICE DO MANUAL
+## 📑 ÍNDICE DOS CAPÍTULOS
 
-1. [Conceitos Básicos](#1-conceitos-básicos)
-2. [Estruturas de Dados](#2-estruturas-de-dados)
-3. [Estruturas de Controle](#3-estruturas-de-controle)
-4. [Funções](#4-funções)
-5. [Programação Orientada a Objetos](#5-programação-orientada-a-objetos-poo)
-6. [Manipulação de Arquivos](#6-manipulação-de-arquivos)
-7. [Tratamento de Exceções](#7-tratamento-de-exceções)
-8. [Módulos e Pacotes](#8-módulos-e-pacotes)
-9. [Compreensões Avançadas](#9-compreensões-avançadas)
-10. [Geradores e Iteradores](#10-geradores-e-iteradores)
-11. [Expressões Regulares](#11-expressões-regulares-regex)
-12. [Programação Funcional](#12-programação-funcional)
-13. [Context Managers](#13-context-managers)
-14. [Multithreading e Multiprocessing](#14-multithreading-e-multiprocessing)
-15. [Tópicos Avançados](#15-tópicos-avançados)
-16. [Boas Práticas](#16-boas-práticas-e-padrões)
-17. [Análise e Ciência de Dados](#17-análise-e-ciência-de-dados)
+1. [Capítulo 1: O Shebang e Execução de Scripts no Linux](#capítulo-1-o-shebang-e-execução-de-scripts-no-linux)
+2. [Capítulo 2: Conceitos Básicos](#capítulo-2-conceitos-básicos)
+3. [Capítulo 3: Estruturas de Dados](#capítulo-3-estruturas-de-dados)
+4. [Capítulo 4: Estruturas de Controle](#capítulo-4-estruturas-de-controle)
+5. [Capítulo 5: Funções](#capítulo-5-funções)
+6. [Capítulo 6: Programação Orientada a Objetos](#capítulo-6-programação-orientada-a-objetos)
+7. [Capítulo 7: Manipulação de Arquivos](#capítulo-7-manipulação-de-arquivos)
+8. [Capítulo 8: Tratamento de Exceções](#capítulo-8-tratamento-de-exceções)
+9. [Capítulo 9: Módulos e Pacotes](#capítulo-9-módulos-e-pacotes)
+10. [Capítulo 10: Compreensões Avançadas](#capítulo-10-compreensões-avançadas)
+11. [Capítulo 11: Geradores e Iteradores](#capítulo-11-geradores-e-iteradores)
+12. [Capítulo 12: Expressões Regulares](#capítulo-12-expressões-regulares)
+13. [Capítulo 13: Programação Funcional](#capítulo-13-programação-funcional)
+14. [Capítulo 14: Context Managers](#capítulo-14-context-managers)
+15. [Capítulo 15: Multithreading e Multiprocessing](#capítulo-15-multithreading-e-multiprocessing)
+16. [Capítulo 16: Tópicos Avançados](#capítulo-16-tópicos-avançados)
+17. [Capítulo 17: Boas Práticas e Padrões](#capítulo-17-boas-práticas-e-padrões)
+18. [Capítulo 18: Análise e Ciência de Dados](#capítulo-18-análise-e-ciência-de-dados)
 
 ---
 
-## 1. CONCEITOS BÁSICOS
+## Capítulo 1: O Shebang e Execução de Scripts no Linux
 
-### 1.1 Variáveis e Tipos de Dados
+Quando criamos arquivos de script em Python dentro do ecossistema Linux, podemos configurar o sistema para executar o código diretamente pelo terminal, sem a necessidade de digitar python3 antes do nome do arquivo.
+
+### 1. O que é o Shebang (`#!`)?
+
+O Shebang é a primeira linha absoluta de um código. Ela indica ao kernel do Linux qual interpretador deve ser chamado para ler as linhas de texto a seguir.
+
+- **Sintaxe correta e universal:**
+
+```python
+#!/usr/bin/env python3
+print("Olá, mundo!")
+```
+
+- **Por que usamos `/usr/bin/env python3`?**
+  Em vez de colocar o caminho fixo do Python (que pode mudar entre distribuições), o comando `env` pesquisa nas variáveis de ambiente do seu sistema onde o executável do Python 3 está ativo.
+
+### 2. Como dar Permissão de Execução no Terminal
+
+Mesmo com o Shebang correto, o Linux bloqueia a execução direta de novos arquivos por segurança. Para liberar o arquivo, usamos o utilitário chmod no terminal da pasta:
+
+```bash
+chmod +x meu_script.py
+```
+
+_(A flag `+x` significa "adicionar permissão de execução")_
+
+### 3. Como Rodar o Arquivo Liberado
+
+Após dar a permissão, você pode disparar o script usando o caminho relativo do diretório atual:
+
+```bash
+./meu_script.py
+```
+
+---
+
+_Nota: Em arquivos que servem apenas como módulos ou bibliotecas secundárias, que serão importados por outros arquivos, o uso do Shebang não é necessário._
+
+---
+
+## Capítulo 2: Conceitos Básicos
+
+### 2.1 Variáveis e Tipos de Dados
 
 As variáveis em Python **não precisam de declaração de tipo** - a tipagem é dinâmica!
 
@@ -61,14 +106,14 @@ print(type(idade))           # <class 'int'>
 #### Strings Multilinha
 
 ```python
-texto_multi = """ print 
-multi 
+texto_multi = """ print
+multi
 linha """
 # Permite quebras de linha sem usar \n
 print(texto_multi)
 ```
 
-### 1.2 Operadores
+### 2.2 Operadores
 
 #### Operadores Aritméticos
 
@@ -101,7 +146,7 @@ ou_logico = True or False    # True
 negacao = not True           # False
 ```
 
-### 1.3 Strings
+### 2.3 Strings
 
 #### Concatenação
 
@@ -164,9 +209,9 @@ palavra[::-1]                # 'nohtyP' (inverte a string)
 
 ---
 
-## 2. ESTRUTURAS DE DADOS
+## Capítulo 3: Estruturas de Dados
 
-### 2.1 Listas
+### 3.1 Listas
 
 Listas são **mutáveis** e ordenadas - podem ser alteradas!
 
@@ -202,7 +247,7 @@ pares = [x for x in range(20) if x % 2 == 0]
 # [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
 ```
 
-### 2.2 Tuplas
+### 3.2 Tuplas
 
 Tuplas são **imutáveis** - não podem ser alteradas após criação!
 
@@ -219,7 +264,7 @@ contagem = cores.count("vermelho")   # Conta ocorrências
 indice = cores.index("verde")        # Retorna índice
 ```
 
-### 2.3 Dicionários
+### 3.3 Dicionários
 
 Dicionários armazenam dados como **chave-valor**.
 
@@ -268,7 +313,7 @@ invertido = {v: k for k, v in original.items()}
 # {1: 'a', 2: 'b', 3: 'c'}
 ```
 
-### 2.4 Conjuntos (Sets)
+### 3.4 Conjuntos (Sets)
 
 Conjuntos **não permitem duplicatas** e **não são ordenados**.
 
@@ -293,9 +338,9 @@ diferenca_simetrica = a ^ b          # {1, 2, 5, 6}
 
 ---
 
-## 3. ESTRUTURAS DE CONTROLE
+## Capítulo 4: Estruturas de Controle
 
-### 3.1 Condicionais (if, elif, else)
+### 4.1 Condicionais (if, elif, else)
 
 **O `if` é um avaliador** - se a condição for verdadeira, executa o bloco.
 
@@ -313,7 +358,7 @@ else:
 status = "Adulto" if idade >= 18 else "Criança"
 ```
 
-### 3.2 Loops (for, while)
+### 4.2 Loops (for, while)
 
 #### Loop for
 
@@ -370,9 +415,9 @@ else:
 
 ---
 
-## 4. FUNÇÕES
+## Capítulo 5: Funções
 
-### 4.1 Definição Básica
+### 5.1 Definição Básica
 
 ```python
 def saudacao():
@@ -382,7 +427,7 @@ def saudacao():
 saudacao()
 ```
 
-### 4.2 Funções com Parâmetros
+### 5.2 Funções com Parâmetros
 
 ```python
 def saudar_pessoa(nome, idade):
@@ -400,9 +445,9 @@ perfil2 = criar_perfil("João", 25)                 # Sobrescreve idade
 perfil3 = criar_perfil("Pedro", cidade="RJ")       # Sobrescreve cidade
 ```
 
-### 4.3 *args e **kwargs
+### 5.3 \*args e \*\*kwargs
 
-#### *args - Argumentos Posicionais Ilimitados
+#### 5.3.1 \*args - Argumentos Posicionais Ilimitados
 
 ```python
 def somar(*numeros):
@@ -415,7 +460,7 @@ def somar(*numeros):
 resultado = somar(1, 2, 3, 4, 5)  # 15
 ```
 
-#### **kwargs - Argumentos Nomeados Ilimitados
+#### 5.3.2 \*\*kwargs - Argumentos Nomeados Ilimitados
 
 ```python
 def exibir_info(**info):
@@ -426,7 +471,7 @@ def exibir_info(**info):
 exibir_info(nome="João", idade=30, cidade="SP")
 ```
 
-### 4.4 Funções Lambda
+### 5.4 Funções Lambda
 
 Funções anônimas de uma linha:
 
@@ -450,7 +495,7 @@ produto = reduce(lambda x, y: x * y, numeros)
 # 120 (1 * 2 * 3 * 4 * 5)
 ```
 
-### 4.5 Decoradores
+### 5.5 Decoradores
 
 Funções que modificam outras funções:
 
@@ -491,35 +536,35 @@ saudar()  # Imprime "Olá!" 3 vezes
 
 ---
 
-## 5. PROGRAMAÇÃO ORIENTADA A OBJETOS (POO)
+## Capítulo 6: Programação Orientada a Objetos
 
-### 5.1 Classes e Objetos
+### 6.1 Classes e Objetos
 
 ```python
 class Pessoa:
     """Classe básica representando uma pessoa"""
-    
+
     # Atributo de classe (compartilhado)
     especie = "Homo sapiens"
-    
+
     def __init__(self, nome, idade):
         """Construtor - inicializa a instância"""
         self.nome = nome              # Atributo de instância
         self.idade = idade
-    
+
     def apresentar(self):
         """Método de instância"""
         return f"Olá, {self.nome}! Tenho {self.idade} anos"
-    
+
     def fazer_aniversario(self):
         """Método que modifica atributo"""
         self.idade += 1
-    
+
     @classmethod
     def criar_anonimo(cls):
         """Método de classe"""
         return cls("Anônimo", 0)
-    
+
     @staticmethod
     def eh_maior_idade(idade):
         """Método estático - não acessa instância ou classe"""
@@ -534,16 +579,16 @@ pessoa_anonima = Pessoa.criar_anonimo()
 print(Pessoa.eh_maior_idade(20))      # True
 ```
 
-### 5.2 Herança
+### 6.2 Herança
 
 ```python
 class Estudante(Pessoa):
     """Classe que herda de Pessoa"""
-    
+
     def __init__(self, nome, idade, matricula):
         super().__init__(nome, idade)     # Chama construtor da classe pai
         self.matricula = matricula
-    
+
     def apresentar(self):
         """Sobrescrita de método (override)"""
         return f"{super().apresentar()} e sou estudante (matrícula: {self.matricula})"
@@ -552,29 +597,29 @@ estudante = Estudante("Pedro", 20, "2024001")
 print(estudante.apresentar())
 ```
 
-### 5.3 Encapsulamento
+### 6.3 Encapsulamento
 
 Controlar acesso aos atributos:
 
 ```python
 class ContaBancaria:
     """Demonstra encapsulamento com atributos privados"""
-    
+
     def __init__(self, titular, saldo_inicial=0):
         self.titular = titular
         self.__saldo = saldo_inicial     # Privado (convenção com __)
-    
+
     def depositar(self, valor):
         if valor > 0:
             self.__saldo += valor
             return True
         return False
-    
+
     @property
     def saldo(self):
         """Getter - acesso controlado ao saldo"""
         return self.__saldo
-    
+
     @saldo.setter
     def saldo(self, valor):
         """Setter - validação ao definir saldo"""
@@ -586,7 +631,7 @@ conta.depositar(500)
 print(conta.saldo)                       # 1500
 ```
 
-### 5.4 Polimorfismo
+### 6.4 Polimorfismo
 
 Mesma interface, comportamentos diferentes:
 
@@ -609,32 +654,32 @@ for animal in animais:
     print(animal.fazer_som())
 ```
 
-### 5.5 Métodos Especiais (Dunder Methods)
+### 6.5 Métodos Especiais (Dunder Methods)
 
 ```python
 class Ponto:
     """Demonstra uso de métodos especiais"""
-    
+
     def __init__(self, x, y):
         self.x = x
         self.y = y
-    
+
     def __str__(self):
         """Representação legível para humanos"""
         return f"Ponto({self.x}, {self.y})"
-    
+
     def __repr__(self):
         """Representação para desenvolvedores"""
         return f"Ponto(x={self.x}, y={self.y})"
-    
+
     def __add__(self, outro):
         """Sobrecarga do operador +"""
         return Ponto(self.x + outro.x, self.y + outro.y)
-    
+
     def __eq__(self, outro):
         """Sobrecarga do operador =="""
         return self.x == outro.x and self.y == outro.y
-    
+
     def __len__(self):
         """Retorna comprimento (distância da origem)"""
         return int((self.x**2 + self.y**2)**0.5)
@@ -648,9 +693,9 @@ print(p1 == p2)                         # False
 
 ---
 
-## 6. MANIPULAÇÃO DE ARQUIVOS
+## Capítulo 7: Manipulação de Arquivos
 
-### 6.1 Leitura de Arquivos
+### 7.1 Leitura de Arquivos
 
 ```python
 # Modo 'r' - leitura (padrão)
@@ -677,7 +722,7 @@ with open('arquivo.txt', 'r', encoding='utf-8') as arquivo:
         print(linha.strip())
 ```
 
-### 6.2 Escrita em Arquivos
+### 7.2 Escrita em Arquivos
 
 ```python
 # Modo 'w' - escrita (sobrescreve)
@@ -695,7 +740,7 @@ with open('saida.txt', 'w', encoding='utf-8') as arquivo:
     arquivo.writelines(linhas)
 ```
 
-### 6.3 Trabalhando com JSON
+### 7.3 Trabalhando com JSON
 
 ```python
 import json
@@ -719,7 +764,7 @@ json_string = json.dumps(dados, indent=2)
 dados_de_string = json.loads(json_string)
 ```
 
-### 6.4 Trabalhando com CSV
+### 7.4 Trabalhando com CSV
 
 ```python
 import csv
@@ -747,9 +792,9 @@ with open('dados.csv', 'w', newline='', encoding='utf-8') as arquivo:
 
 ---
 
-## 7. TRATAMENTO DE EXCEÇÕES
+## Capítulo 8: Tratamento de Exceções
 
-### 7.1 Try-Except Básico
+### 8.1 Try-Except Básico
 
 ```python
 try:
@@ -764,7 +809,7 @@ except Exception as e:
     print(f"Erro inesperado: {e}")
 ```
 
-### 7.2 Try-Except-Else-Finally
+### 8.2 Try-Except-Else-Finally
 
 ```python
 try:
@@ -782,7 +827,7 @@ finally:
         arquivo.close()
 ```
 
-### 7.3 Levantando Exceções
+### 8.3 Levantando Exceções
 
 ```python
 def calcular_raiz_quadrada(numero):
@@ -796,7 +841,7 @@ except ValueError as e:
     print(f"Erro: {e}")
 ```
 
-### 7.4 Exceções Personalizadas
+### 8.4 Exceções Personalizadas
 
 ```python
 class SaldoInsuficienteError(Exception):
@@ -819,9 +864,9 @@ except SaldoInsuficienteError as e:
 
 ---
 
-## 8. MÓDULOS E PACOTES
+## Capítulo 9: Módulos e Pacotes
 
-### 8.1 Importando Módulos
+### 9.1 Importando Módulos
 
 ```python
 # Importar módulo completo
@@ -842,9 +887,9 @@ from math import sqrt as raiz
 print(raiz(25))
 ```
 
-### 8.2 Módulos Úteis da Biblioteca Padrão
+### 9.2 Módulos Úteis da Biblioteca Padrão
 
-#### datetime - Datas e Horas
+#### 9.2.1 datetime - Datas e Horas
 
 ```python
 from datetime import datetime, date, time, timedelta
@@ -858,7 +903,7 @@ amanha = hoje + timedelta(days=1)
 print(agora.strftime("%d/%m/%Y %H:%M:%S"))
 ```
 
-#### random - Números Aleatórios
+#### 9.2.2 random - Números Aleatórios
 
 ```python
 import random
@@ -871,7 +916,7 @@ numeros = [1, 2, 3, 4, 5]
 random.shuffle(numeros)
 ```
 
-#### os - Sistema Operacional
+#### 9.2.3 os - Sistema Operacional
 
 ```python
 import os
@@ -883,7 +928,7 @@ caminho = os.path.join('pasta', 'arquivo.txt')
 existe = os.path.exists('arquivo.txt')
 ```
 
-#### collections - Estruturas de Dados
+#### 9.2.4 collections - Estruturas de Dados
 
 ```python
 from collections import Counter, defaultdict, namedtuple
@@ -905,9 +950,9 @@ print(p.x, p.y)
 
 ---
 
-## 9. COMPREENSÕES AVANÇADAS
+## Capítulo 10: Compreensões Avançadas
 
-### 9.1 List Comprehension
+### 10.1 List Comprehension
 
 ```python
 # Sintaxe: [expressão for item in iterável if condição]
@@ -931,7 +976,7 @@ resultado = [x if x % 2 == 0 else -x for x in range(10)]
 # [0, -1, 2, -3, 4, -5, 6, -7, 8, -9]
 ```
 
-### 9.2 Dictionary Comprehension
+### 10.2 Dictionary Comprehension
 
 ```python
 quadrados_dict = {x: x**2 for x in range(6)}
@@ -946,14 +991,14 @@ invertido = {v: k for k, v in original.items()}
 pares_dict = {x: x**2 for x in range(10) if x % 2 == 0}
 ```
 
-### 9.3 Set Comprehension
+### 10.3 Set Comprehension
 
 ```python
 quadrados_set = {x**2 for x in range(-5, 6)}
 # {0, 1, 4, 9, 16, 25} - sem duplicatas
 ```
 
-### 9.4 Generator Expression
+### 10.4 Generator Expression
 
 ```python
 # Similar a list comprehension, mas usa () e é lazy (avalia sob demanda)
@@ -968,9 +1013,9 @@ soma = sum(x**2 for x in range(100))
 
 ---
 
-## 10. GERADORES E ITERADORES
+## Capítulo 11: Geradores e Iteradores
 
-### 10.1 Funções Geradoras
+### 11.1 Funções Geradoras
 
 ```python
 def contador(maximo):
@@ -995,17 +1040,17 @@ for fib in fibonacci(10):
     print(fib, end=' ')              # 0 1 1 2 3 5 8 13 21 34
 ```
 
-### 10.2 Iteradores Personalizados
+### 11.2 Iteradores Personalizados
 
 ```python
 class ContagemRegressiva:
     """Iterador customizado"""
     def __init__(self, inicio):
         self.inicio = inicio
-    
+
     def __iter__(self):
         return self
-    
+
     def __next__(self):
         if self.inicio <= 0:
             raise StopIteration
@@ -1016,7 +1061,7 @@ for num in ContagemRegressiva(5):
     print(num)                       # 5, 4, 3, 2, 1
 ```
 
-### 10.3 itertools - Ferramentas de Iteração
+### 11.3 itertools - Ferramentas de Iteração
 
 ```python
 import itertools
@@ -1048,9 +1093,9 @@ for chave, grupo in itertools.groupby(dados):
 
 ---
 
-## 11. EXPRESSÕES REGULARES (REGEX)
+## Capítulo 12: Expressões Regulares
 
-### 11.1 Funções Básicas
+### 12.1 Funções Básicas
 
 ```python
 import re
@@ -1078,23 +1123,23 @@ match = re.match(r'Python', texto)
 match = re.fullmatch(r'Python', 'Python')
 ```
 
-### 11.2 Padrões Comuns
+### 12.2 Padrões Comuns
 
-| Padrão | Significado |
-|--------|-------------|
-| `.` | Qualquer caractere (exceto \n) |
-| `^` | Início da string |
-| `$` | Fim da string |
-| `*` | 0 ou mais repetições |
-| `+` | 1 ou mais repetições |
-| `?` | 0 ou 1 repetição |
-| `{n}` | Exatamente n repetições |
-| `{n,}` | n ou mais repetições |
-| `{n,m}` | Entre n e m repetições |
-| `[]` | Conjunto de caracteres |
-| `\|` | OU |
-| `()` | Grupo de captura |
-| `\` | Escape |
+| Padrão  | Significado                    |
+| ------- | ------------------------------ |
+| `.`     | Qualquer caractere (exceto \n) |
+| `^`     | Início da string               |
+| `$`     | Fim da string                  |
+| `*`     | 0 ou mais repetições           |
+| `+`     | 1 ou mais repetições           |
+| `?`     | 0 ou 1 repetição               |
+| `{n}`   | Exatamente n repetições        |
+| `{n,}`  | n ou mais repetições           |
+| `{n,m}` | Entre n e m repetições         |
+| `[]`    | Conjunto de caracteres         |
+| `\|`    | OU                             |
+| `()`    | Grupo de captura               |
+| `\`     | Escape                         |
 
 ```python
 # Exemplos práticos
@@ -1108,7 +1153,7 @@ if re.match(email_pattern, email):
     print("Email válido!")
 ```
 
-### 11.3 Grupos e Substituição
+### 12.3 Grupos e Substituição
 
 ```python
 # Grupos de captura
@@ -1136,7 +1181,7 @@ partes = re.split(r'[,;]', "maçã,banana;laranja")
 # ['maçã', 'banana', 'laranja']
 ```
 
-### 11.4 Flags
+### 12.4 Flags
 
 ```python
 texto_multi = """Primeira linha
@@ -1155,9 +1200,9 @@ conteudo = re.search(r'Primeira.*Terceira', texto_multi, re.S)
 
 ---
 
-## 12. PROGRAMAÇÃO FUNCIONAL
+## Capítulo 13: Programação Funcional
 
-### 12.1 Map, Filter, Reduce
+### 13.1 Map, Filter, Reduce
 
 ```python
 # map - aplica função a cada elemento
@@ -1176,7 +1221,7 @@ produto = reduce(lambda x, y: x * y, numeros)
 # 120 (1 * 2 * 3 * 4 * 5)
 ```
 
-### 12.2 Funções de Alta Ordem
+### 13.2 Funções de Alta Ordem
 
 ```python
 def aplicar_operacao(funcao, lista):
@@ -1202,18 +1247,18 @@ print(dobro(5))                      # 10
 print(triplo(5))                     # 15
 ```
 
-### 12.3 Closures
+### 13.3 Closures
 
 ```python
 def contador():
     """Closure - função interna acessa variável externa"""
     count = 0
-    
+
     def incrementar():
         nonlocal count
         count += 1
         return count
-    
+
     return incrementar
 
 meu_contador = contador()
@@ -1222,7 +1267,7 @@ print(meu_contador())                # 2
 print(meu_contador())                # 3
 ```
 
-### 12.4 Partial Functions
+### 13.4 Partial Functions
 
 ```python
 from functools import partial
@@ -1240,9 +1285,9 @@ print(cubo(5))                       # 125
 
 ---
 
-## 13. CONTEXT MANAGERS
+## Capítulo 14: Context Managers
 
-### 13.1 Usando with
+### 14.1 Usando with
 
 ```python
 # Garante fechamento automático do arquivo
@@ -1251,22 +1296,22 @@ with open('arquivo.txt', 'r') as f:
 # Arquivo fechado automaticamente
 ```
 
-### 13.2 Context Managers com Classes
+### 14.2 Context Managers com Classes
 
 ```python
 class GerenciadorArquivo:
     """Context manager customizado"""
-    
+
     def __init__(self, nome_arquivo, modo):
         self.nome_arquivo = nome_arquivo
         self.modo = modo
         self.arquivo = None
-    
+
     def __enter__(self):
         """Executado ao entrar no bloco with"""
         self.arquivo = open(self.nome_arquivo, self.modo)
         return self.arquivo
-    
+
     def __exit__(self, exc_type, exc_val, exc_tb):
         """Executado ao sair do bloco with"""
         if self.arquivo:
@@ -1277,7 +1322,7 @@ with GerenciadorArquivo('teste.txt', 'w') as f:
     f.write('Testando context manager')
 ```
 
-### 13.3 Context Managers com Decoradores
+### 14.3 Context Managers com Decoradores
 
 ```python
 from contextlib import contextmanager
@@ -1296,9 +1341,9 @@ with gerenciador_simples() as recurso:
 
 ---
 
-## 14. MULTITHREADING E MULTIPROCESSING
+## Capítulo 15: Multithreading e Multiprocessing
 
-### 14.1 Threading
+### 15.1 Threading
 
 ```python
 import threading
@@ -1328,7 +1373,7 @@ class MinhaThread(threading.Thread):
     def __init__(self, nome):
         super().__init__()
         self.nome = nome
-    
+
     def run(self):
         print(f"{self.nome} executando")
         time.sleep(1)
@@ -1349,7 +1394,7 @@ def incrementar():
             contador += 1
 ```
 
-### 14.2 Multiprocessing
+### 15.2 Multiprocessing
 
 ```python
 from multiprocessing import Process, Pool
@@ -1368,10 +1413,10 @@ if __name__ == '__main__':
         p = Process(target=worker, args=(i,))
         processos.append(p)
         p.start()
-    
+
     for p in processos:
         p.join()
-    
+
     # Pool de processos
     with Pool(processes=4) as pool:
         resultados = pool.map(worker, range(10))
@@ -1380,9 +1425,9 @@ if __name__ == '__main__':
 
 ---
 
-## 15. TÓPICOS AVANÇADOS
+## Capítulo 16: Tópicos Avançados
 
-### 15.1 Type Hints
+### 16.1 Type Hints
 
 ```python
 def saudacao(nome: str, idade: int) -> str:
@@ -1402,7 +1447,7 @@ def buscar_usuario(id: int) -> Optional[str]:
     return "João" if id == 1 else None
 ```
 
-### 15.2 Dataclasses
+### 16.2 Dataclasses
 
 ```python
 from dataclasses import dataclass, field
@@ -1415,7 +1460,7 @@ class Pessoa:
     idade: int
     email: str = "não informado"
     hobbies: List[str] = field(default_factory=list)
-    
+
     def __post_init__(self):
         if self.idade < 0:
             raise ValueError("Idade não pode ser negativa")
@@ -1423,7 +1468,7 @@ class Pessoa:
 pessoa = Pessoa("João", 30, hobbies=["leitura", "programação"])
 ```
 
-### 15.3 Enums
+### 16.3 Enums
 
 ```python
 from enum import Enum, auto
@@ -1444,25 +1489,25 @@ print(status.name)                   # PENDENTE
 print(status.value)                  # 1
 ```
 
-### 15.4 Properties
+### 16.4 Properties
 
 ```python
 class Circulo:
     def __init__(self, raio):
         self._raio = raio
-    
+
     @property
     def raio(self):
         """Getter"""
         return self._raio
-    
+
     @raio.setter
     def raio(self, valor):
         """Setter com validação"""
         if valor < 0:
             raise ValueError("Raio não pode ser negativo")
         self._raio = valor
-    
+
     @property
     def area(self):
         """Propriedade calculada"""
@@ -1473,13 +1518,13 @@ c = Circulo(5)
 print(c.area)
 ```
 
-### 15.5 Metaclasses
+### 16.5 Metaclasses
 
 ```python
 class SingletonMeta(type):
     """Metaclasse para padrão Singleton"""
     _instances = {}
-    
+
     def __call__(cls, *args, **kwargs):
         if cls not in cls._instances:
             cls._instances[cls] = super().__call__(*args, **kwargs)
@@ -1494,24 +1539,24 @@ s2 = Singleton(20)
 print(s1 is s2)                      # True - mesma instância
 ```
 
-### 15.6 Descriptors
+### 16.6 Descriptors
 
 ```python
 class Validador:
     """Descriptor para validação de atributos"""
-    
+
     def __init__(self, minimo=None, maximo=None):
         self.minimo = minimo
         self.maximo = maximo
-    
+
     def __set_name__(self, owner, name):
         self.nome = name
-    
+
     def __get__(self, obj, objtype=None):
         if obj is None:
             return self
         return obj.__dict__.get(self.nome)
-    
+
     def __set__(self, obj, valor):
         if self.minimo is not None and valor < self.minimo:
             raise ValueError(f"{self.nome} deve ser >= {self.minimo}")
@@ -1522,7 +1567,7 @@ class Validador:
 class Pessoa:
     idade = Validador(minimo=0, maximo=150)
     altura = Validador(minimo=0, maximo=3)
-    
+
     def __init__(self, idade, altura):
         self.idade = idade
         self.altura = altura
@@ -1532,9 +1577,9 @@ p = Pessoa(25, 1.75)
 
 ---
 
-## 16. BOAS PRÁTICAS E PADRÕES
+## Capítulo 17: Boas Práticas e Padrões
 
-### 16.1 PEP 8 - Guia de Estilo
+### 17.1 PEP 8 - Guia de Estilo
 
 - ✅ Use **4 espaços** para indentação (não tabs)
 - ✅ Linhas com **máximo 79 caracteres**
@@ -1545,23 +1590,23 @@ p = Pessoa(25, 1.75)
 - ✅ `PascalCase` para classes
 - ✅ `UPPER_CASE` para constantes
 
-### 16.2 Docstrings
+### 17.2 Docstrings
 
 ```python
 def calcular_area_retangulo(largura, altura):
     """
     Calcula a área de um retângulo.
-    
+
     Args:
         largura (float): Largura do retângulo em metros.
         altura (float): Altura do retângulo em metros.
-    
+
     Returns:
         float: A área do retângulo em metros quadrados.
-    
+
     Raises:
         ValueError: Se dimensões forem negativas.
-    
+
     Examples:
         >>> calcular_area_retangulo(5, 3)
         15.0
@@ -1571,7 +1616,7 @@ def calcular_area_retangulo(largura, altura):
     return largura * altura
 ```
 
-### 16.3 List vs Generator
+### 17.3 List vs Generator
 
 ```python
 # Use list quando precisar iterar múltiplas vezes
@@ -1581,7 +1626,7 @@ quadrados_lista = [x**2 for x in range(1000)]
 quadrados_gen = (x**2 for x in range(1000000))
 ```
 
-### 16.4 Enumerate e Zip
+### 17.4 Enumerate e Zip
 
 ```python
 # RUIM - usar range(len())
@@ -1600,7 +1645,7 @@ for nome, idade in zip(nomes, idades):
     print(f"{nome}: {idade}")
 ```
 
-### 16.5 Context Managers para Recursos
+### 17.5 Context Managers para Recursos
 
 ```python
 # BOM - usar 'with' para garantir fechamento
@@ -1615,11 +1660,11 @@ f.close()
 
 ---
 
-## 17. ANÁLISE E CIÊNCIA DE DADOS
+## Capítulo 18: Análise e Ciência de Dados
 
 > **Nota:** Requires `numpy`, `pandas`, `matplotlib`, `scikit-learn`
 
-### 17.1 NumPy - Computação Numérica
+### 18.1 NumPy - Computação Numérica
 
 ```python
 import numpy as np
@@ -1651,7 +1696,7 @@ matriz = array_original.reshape(2, 3)
 achatado = matriz.flatten()
 ```
 
-### 17.2 Pandas - Manipulação de Dados
+### 18.2 Pandas - Manipulação de Dados
 
 ```python
 import pandas as pd
@@ -1688,7 +1733,7 @@ df_csv = pd.read_csv('dados.csv')
 df.to_csv('saida.csv', index=False)
 ```
 
-### 17.3 Matplotlib - Visualização
+### 18.3 Matplotlib - Visualização
 
 ```python
 import matplotlib.pyplot as plt
