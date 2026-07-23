@@ -1,6 +1,6 @@
 
-#include <stdio.h>   // Biblioteca padrão para funções de entrada e saída (printf, scanf, etc.)
-#include <stdlib.h>  // Biblioteca para gerenciamento de memória e utilitários do sistema
+#include <stdio.h>  // Biblioteca padrão para funções de entrada e saída (printf, scanf, etc.)
+#include <stdlib.h> // Biblioteca para gerenciamento de memória e utilitários do sistema
 
 /**
  * @file inicio.c
@@ -8,16 +8,17 @@
  *        saída de texto e declaração correta de tipos de dados primitivos.
  */
 
-int main(void) {
+int main(void)
+{
     // Exibição de mensagem inicial
     printf("Hello, World!\n\n");
 
     printf("=== Exemplo de Declaração de Variáveis em C ===\n");
 
     // Declaração de variáveis dos tipos fundamentais em C:
-    char caractere = 'A';           // Tipo caractere (1 byte)
-    int inteiro = 42;               // Tipo número inteiro (geralmente 4 bytes)
-    float decimal_simples = 3.14f;   // Tipo ponto flutuante de precisão simples (~6-7 dígitos)
+    char caractere = 'A';                // Tipo caractere (1 byte)
+    int inteiro = 42;                    // Tipo número inteiro (geralmente 4 bytes)
+    float decimal_simples = 3.14f;       // Tipo ponto flutuante de precisão simples (~6-7 dígitos)
     double decimal_duplo = 3.1415926535; // Tipo ponto flutuante de precisão dupla (~15-17 dígitos)
 
     // Exibindo os valores no terminal
@@ -33,4 +34,3 @@ int main(void) {
 
     return 0;
 }
-
