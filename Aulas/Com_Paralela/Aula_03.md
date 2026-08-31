@@ -1,4 +1,4 @@
-# Aula 03 -- Professor Jean: teoria e Mario: lab
+# Aula 03 -- Professor Jean: teoria e Mario(n veio)
 
 ---
 
