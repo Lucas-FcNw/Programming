@@ -315,3 +315,73 @@ class GrafoSP:
         for s in self.servicos_por_distrito.get(distrito_id, []):
             contagem[s["tipo"]] = contagem.get(s["tipo"], 0) + 1
         return contagem
+
+    # ================================================================
+    # Operações Estruturais (para Análise de Vulnerabilidade)
+    # ================================================================
+
+    def copiar_sem_nos(self, ids_remover: set[int]) -> "GrafoSP":
+        """
+        Retorna uma cópia do grafo com os nós especificados removidos.
+        Utilizado na simulação de falha (fechamento de UBSs/distritos).
+
+        Args:
+            ids_remover: Conjunto de IDs de distritos a remover.
+
+        Returns:
+            Nova instância de GrafoSP sem os nós especificados.
+        """
+        copia = GrafoSP.__new__(GrafoSP)
+        copia.data_dir = self.data_dir
+        copia.G = self.G.copy()
+        copia.distritos = {
+            did: d for did, d in self.distritos.items()
+            if did not in ids_remover
+        }
+        copia.servicos = [
+            s for s in self.servicos
+            if s["distrito_id"] not in ids_remover
+        ]
+
+        # Remover nós do grafo NetworkX
+        for nid in ids_remover:
+            if nid in copia.G:
+                copia.G.remove_node(nid)
+
+        # Reconstruir índices
+        copia.servicos_por_distrito = {}
+        for s in copia.servicos:
+            did = s["distrito_id"]
+            if did not in copia.servicos_por_distrito:
+                copia.servicos_por_distrito[did] = []
+            copia.servicos_por_distrito[did].append(s)
+
+        copia.servicos_por_tipo = {}
+        for s in copia.servicos:
+            tipo = s["tipo"]
+            if tipo not in copia.servicos_por_tipo:
+                copia.servicos_por_tipo[tipo] = []
+            copia.servicos_por_tipo[tipo].append(s)
+
+        copia.adjacencias = [
+            a for a in self.adjacencias
+            if a["distrito1_id"] not in ids_remover
+            and a["distrito2_id"] not in ids_remover
+        ]
+
+        return copia
+
+    def componentes_conexas(self) -> list[set[int]]:
+        """
+        Retorna a lista de componentes conexas do grafo.
+        Cada componente é um set de IDs de distritos.
+        """
+        return [set(comp) for comp in nx.connected_components(self.G)]
+
+    def distritos_com_servico(self, tipo_servico: str) -> set[int]:
+        """Retorna o conjunto de IDs de distritos que possuem o serviço."""
+        return {
+            s["distrito_id"]
+            for s in self.servicos_por_tipo.get(tipo_servico, [])
+        }
+
