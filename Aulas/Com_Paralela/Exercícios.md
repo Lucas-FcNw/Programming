@@ -17,6 +17,16 @@ Esta lista de exercícios foi elaborada com base no conteúdo das Aulas 01 a 04 
 
 Explique, com suas próprias palavras, o que foi o fenômeno conhecido como “O Fim do Almoço Grátis” na indústria de software. Quais foram os três “muros” (barreiras físicas) que levaram a esse ponto de inflexão e como a indústria de hardware respondeu a esse desafio?
 
+> O fim do “almoço grátis” refere-se à mudança em que, no passado,
+> aumentar a velocidade do processador era suficiente para melhorar o
+> desempenho em geral. Porém, chegamos a um ponto em que estamos muito
+> próximos do teto dessa solução.
+>
+> A partir disso, começaram a buscar o uso de mais núcleos e threads,
+> permitindo dividir o trabalho em várias partes e executá-las em paralelo,
+> causando ganho de performance. Porém, esse ganho também possui um limite.
+
+
 ## Questão 2 (Raciocínio)
 
 Um colega seu, de outro curso, afirma: “Meu computador tem um processador de 8 núcleos, então ele é 8 vezes mais rápido que um computador antigo de 1 núcleo”. Você, como estudante de Computação Paralela, sabe que essa afirmação é simplista e geralmente incorreta. Elabore uma resposta para seu colega explicando por que um programa serial tradicional não se beneficia do hardware multicore e qual é a principal mudança de paradigma necessária para extrair desempenho de processadores modernos. Use a “Analogia da Cozinha Paralela”para ilustrar sua explicação.
