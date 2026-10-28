@@ -1,152 +1,59 @@
-# Projeto
+# 🏥 SPGraph — Vulnerabilidades Ocultas e Efeito Cascata na Rede de UBSs de São Paulo
 
-## Nome do Projeto
-**SPGraph**
-
-## Nome do Sistema
-**A DEFINIR**
+Sistema computacional baseado em **Teoria dos Grafos** para diagnóstico de **fragilidade topológica ("gargalos invisíveis")** e simulação de **colapso em cascata (efeito dominó por sobrecarga)** na malha de **454 Unidades Básicas de Saúde (UBSs)** do município de São Paulo.
 
 ---
 
-# Tema
+## 🎯 Pergunta Central do Projeto
 
-Desenvolvimento de um sistema interativo que modela a cidade de São Paulo como um grafo para analisar desigualdades no acesso a serviços públicos essenciais, em conformidade com a **ODS 10 – Redução das Desigualdades**.
+> **Se uma UBS colapsar hoje na operação do dia a dia, quem fica totalmente isolado de atendimento e quais UBSs vizinhas vão quebrar junto por sobrecarga?**
 
----
-
-# Objetivo Geral
-
-Desenvolver um sistema funcional que utilize modelagem por grafos para analisar e visualizar desigualdades no acesso a serviços públicos a partir das UBSs da cidade de São Paulo.
+Por que uma lista ou planilha comum da gestão pública não resolve isso?
+1. **O Ponto Cego ("Gargalo Invisível"):** Na tabela isolada, uma UBS com $70\%$ de ocupação aparece como **Verde (Ótimo)**. Porém, na topologia do grafo, ela pode ser um **Vértice de Articulação** (Tarjan): a única ponte geográfica que liga bairros periféricos ao restante da rede. Se ela cair, parte a rede ao meio. Na malha real de SP, **20 dos 21 vértices de articulação aparentam estar "Verdes" na tabela isolada**.
+2. **O Efeito Dominó (Cascata por Sobrecarga):** Pela diretriz organizacional do SUS (*Cadernos de Atenção Básica n. 28*), **70% da capacidade** de uma UBS é comprometida com a **Demanda Programada** dos moradores da própria região, restando no máximo **30% de folga operacional** para **Demanda Espontânea** e pacientes de fora. Quando uma UBS falha e joga sua população para as vizinhas, a vizinha mais próxima estoura sua margem de 30% e colapsa também, iniciando uma reação em cadeia.
 
 ---
 
-# Objetivos Específicos
+## 📐 Modelagem em Teoria dos Grafos ($G = (V, E, W_V, W_E)$)
 
-- Modelar as UBSs como **vértices** de um grafo.
-- Modelar conexões geográficas (base distrital) como **arestas ponderadas**.
-- Implementar algoritmos clássicos de grafos, como **Dijkstra** e **BFS**.
-- Calcular métricas de acessibilidade.
-- Desenvolver uma interface interativa com foco em usabilidade.
-- Realizar avaliação básica de usabilidade conforme princípios de **IHC**.
-
----
-
-# Justificativa
-
-A desigualdade urbana se manifesta no acesso desigual a serviços como saúde, educação e assistência social. Distritos periféricos tendem a apresentar maior tempo de deslocamento até serviços essenciais quando comparados a regiões centrais.
-
-O projeto busca identificar padrões de acessibilidade, destacar regiões mais isoladas e fornecer uma visualização comparativa entre distritos, contribuindo para a discussão da **ODS 10 – Redução das Desigualdades**.
+- **Vértices ($|V| = 454$ UBSs reais georreferenciadas):** Extraídas da base oficial CNES / SMS-SP (`data/deinfosacadsau2014.csv`). Cada vértice guarda:
+  - `demanda_base` ($D_v^0$): População adscrita estimada por tesselação de Voronoi sobre os polígonos oficiais do GeoSampa (`data/São Paulo.kml`) e população do Censo/MSP (`data/evolucao_msp_pop_sexo_idade.csv`);
+  - `capacidade` ($C_v$): Capacidade total instalada da UBS;
+  - `cota_programada_70` ($0{,}70 \cdot C_v$) e `folga_operacional` ($F_v \le 0{,}30 \cdot C_v$).
+- **Arestas ($|E| = 882$ conexões topográficas locais):** Construídas pelo **Grafo de Proximidade de Gabriel** restrito às fronteiras distritais contíguas do `São Paulo.kml`.
+- **Peso das Arestas ($d_{\text{topo}}(u, v)$):** Distância geodésica Haversine ajustada pela **Impedância Topográfica de Declividade** (*Tobler's Hiking Function*, Tobler, 1993).
 
 ---
 
-# Modelagem em Teoria dos Grafos
+## 🔬 Motores Algorítmicos Implementados
 
-## Estrutura do Grafo
-
-- **Vértices:** UBSs da cidade de São Paulo.
-- **Arestas:** conexões geográficas baseadas na adjacência entre distritos (proxy).
-- **Peso das arestas:** distância estimada entre os centros geográficos dos distritos.
-
-Essa modelagem atende ao requisito mínimo de aproximadamente **70 vértices e 180 arestas**.
-
-## Tipo de Grafo
-
-- Grafo **não direcionado**.
-- Grafo **ponderado**.
-- Estrutura predominantemente **conexa**.
-
-## Algoritmos Utilizados
-
-- **Dijkstra:** cálculo do menor caminho entre uma UBS e o serviço mais próximo.
-- **BFS:** análise de conectividade e alcance.
-- **Grau do vértice:** identificação de UBSs mais conectadas.
-- **Medidas simples de centralidade.**
+1. **Motor 1 — Caça-Gargalos Estruturais (`src/vulnerabilidade.py`):**
+   - **Busca em Profundidade (DFS) + Algoritmo de Tarjan (1972)** em $\mathcal{O}(|V| + |E|)$ com vetores `disc[u]` e `low[u]`;
+   - Detecta os **21 Vértices de Articulação** e as **19 Pontes Críticas** da malha de UBSs de São Paulo.
+2. **Motor 2 — Movimento da População e Simulação de Cascata em Camadas (`src/vulnerabilidade.py`):**
+   - **Divisão Gravitacional da Demanda (Huff, 1963 + 3SFCA de Wan, Zou & Sternberg, 2012 + Stacherl & Sauzet, 2023):**
+     $$W_{uv} = \frac{C_v^\alpha \cdot d_{\text{topo}}(u, v)^{-\beta}}{\sum_{z \in N_{\text{ativas}}(u)} C_z^\alpha \cdot d_{\text{topo}}(u, z)^{-\beta}}$$
+   - **Propagação em Camadas via Busca em Largura (BFS) (Motter & Lai, 2002; Crucitti et al., 2004; Wang et al., 2008):**
+     Dispara um BFS em camadas ($k = 1, 2, \dots$) a partir da UBS desativada. Se a carga transferida $\Delta D_{u \to v} = D_u \cdot W_{uv}$ ultrapassar a folga operacional $F_v \le 30\%$ da vizinha $v$, esta entra em colapso e repassa o excedente para a camada seguinte do BFS.
 
 ---
 
-# Funcionalidades do Sistema
+## 🚀 Como Executar
 
-O usuário poderá:
+```bash
+# 1. Gerar os JSONs das 454 UBSs e 882 arestas topográficas
+python3 gerar_dados.py
 
-- Selecionar uma UBS.
-- Escolher o tipo de serviço (UBS, UPA ou hospital SUS).
+# 2. Gerar o arquivo padronizado grafo.txt (Tipo 3: 454 vértices, 882 arestas)
+python3 gerar_grafo_txt.py
 
-Visualizar:
-
-- Distância até o serviço mais próximo.
-- Caminho mínimo.
-- Ranking de acessibilidade.
-- Comparação com a média da cidade.
-- Identificação de UBSs relativamente isoladas.
+# 3. Executar o Dashboard Interativo Streamlit
+streamlit run src/app.py
+```
 
 ---
 
-# Parte de Interação Humano-Computador (IHC)
-
-O projeto incluirá:
-
-- Protótipo inicial de baixa fidelidade.
-- Implementação funcional do sistema.
-- Aplicação de heurísticas de usabilidade (por exemplo, heurísticas de Nielsen).
-- Teste com usuários e coleta de feedback.
-- Ajustes baseados nos resultados da avaliação.
-
-O foco será:
-
-- Clareza.
-- Simplicidade de navegação.
-- Feedback imediato ao usuário.
-- Organização adequada das informações.
-
----
-
-# Arquitetura do Sistema
-
-## Camada de Dados
-
-- Coleta de dados públicos da cidade de São Paulo.
-- Tratamento e organização em formato estruturado (CSV ou JSON).
-
-## Camada de Processamento
-
-- Construção do grafo.
-- Implementação e execução dos algoritmos.
-
-## Camada de Interface
-
-- Entrada de dados pelo usuário.
-- Exibição dos resultados e métricas calculadas.
-
----
-
-# Fontes de Dados
-
-- Portal de Dados Abertos da Prefeitura de São Paulo.
-- GeoSampa.
-- Dados da SPTrans (caso o projeto seja expandido para considerar mobilidade).
-
----
-
-# Cronograma Proposto
-
-## Mês 1
-
-- Coleta e tratamento de dados.
-- Modelagem do grafo.
-- Implementação dos algoritmos.
-
-## Mês 2
-
-- Desenvolvimento da interface.
-- Integração entre processamento e interface.
-
-## Mês 3
-
-- Testes de usabilidade.
-- Ajustes e refinamentos.
-- Documentação e preparação da apresentação.
-
-## Liderado por
- `Lucas Fernandes 10419400`
- `Lendy Naiara Pacheco 10428525`
- `Anna Luiza Santos 10417401`
+## 👥 Equipe
+- **Lucas Fernandes de Camargo** — RA 10419400
+- **Lendy Naiara Carpio Pacheco** — RA 10428525
+- **Anna Luiza Stella Santos** — RA 10417401

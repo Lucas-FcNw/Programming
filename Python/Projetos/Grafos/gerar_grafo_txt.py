@@ -37,7 +37,8 @@ def main() -> None:
     distritos_ordenados = sorted(distritos, key=lambda d: int(d["id"]))
     linhas.append(str(len(distritos_ordenados)))
     for d in distritos_ordenados:
-        linhas.append(f'{int(d["id"])} "{d["nome"]}" {float(d["populacao"]):.2f}')
+        nome_limpo = str(d["nome"]).replace('"', "'")
+        linhas.append(f'{int(d["id"])} "{nome_limpo}" {float(d["populacao"]):.2f}')
 
     arestas_ordenadas = sorted(
         arestas,

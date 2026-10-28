@@ -1,138 +1,120 @@
 """
-SPGraph - Módulo de Métricas de Cobertura Territorial
-======================================================
-Calcula métricas de cobertura territorial em saúde baseadas
-na estrutura de grafos dos distritos de São Paulo.
-
-Métricas disponíveis:
-- Score de cobertura por distrito
-- Ranking de cobertura
-- Média da cidade
-- Identificação de distritos com menor cobertura
+SPGraph - Módulo de Métricas de Cobertura, Capacidade e Pressão Operacional
+===========================================================================
+Calcula métricas de cobertura territorial, pressão de demanda sobre a regra
+70% Demanda Programada / 30% Demanda Espontânea (SUS) e comparativo entre
+a visão de Tabela Estática Isolada e a Topologia em Grafo.
 """
 
 from __future__ import annotations
 
-import pandas as pd
+try:
+    import pandas as pd
+except ImportError:
+    pd = None
+
 from src.grafo import GrafoSP
 
 
 class MetricasAcessibilidade:
     """
-    Calcula métricas de cobertura territorial para os distritos de São Paulo.
-
-    As métricas consideram a distância mínima de cada distrito até
-    o serviço de saúde mais próximo do tipo selecionado.
+    Calcula métricas operacionais e territoriais para as 454 UBSs de São Paulo.
     """
 
     def __init__(self, grafo: GrafoSP):
-        """
-        Inicializa com uma instância do grafo.
-
-        Args:
-            grafo: Instância de GrafoSP já construída.
-        """
         self.grafo = grafo
 
-    def distancia_servico_mais_proximo(self, tipo_servico: str) -> dict[int, float]:
+    def distancia_servico_mais_proximo(self, tipo_servico: str = "ubs") -> dict[int, float]:
         """
-        Calcula a distância de cada distrito ao serviço mais próximo.
-
-        Args:
-            tipo_servico: Tipo de serviço ('ubs', 'upa' ou 'hospital_sus').
-
-        Returns:
-            Dicionário {distrito_id: distância_km}.
+        Para cada UBS u, retorna a menor distância (km) até a UBS vizinha ativa
+        mais próxima (distância de socorro / 1º salto de transbordo).
         """
-        distancias = {}
-        for did in self.grafo.distritos:
-            _, dist, _ = self.grafo.servico_mais_proximo(did, tipo_servico)
-            distancias[did] = dist
+        distancias: dict[int, float] = {}
+        for uid in self.grafo.distritos:
+            vizinhos = list(self.grafo.G.neighbors(uid))
+            if vizinhos:
+                menor = min(float(self.grafo.G[uid][v].get("weight", 0.0)) for v in vizinhos)
+                distancias[uid] = round(menor, 2)
+            else:
+                distancias[uid] = float("inf")
         return distancias
 
-    def score_acessibilidade(self, distrito_id: int, tipo_servico: str) -> float:
+    def score_acessibilidade(self, distrito_id: int, tipo_servico: str = "ubs") -> float:
         """
-        Calcula o score de acessibilidade de um distrito (0 a 100).
-
-        Score 100 = serviço no próprio distrito.
-        Score diminui proporcionalmente com a distância.
-
-        Args:
-            distrito_id: ID do distrito.
-            tipo_servico: Tipo de serviço ('ubs', 'upa' ou 'hospital_sus').
-
-        Returns:
-            Score de 0 a 100.
+        Calcula o Índice de Saúde Operacional e Proximidade de Socorro (0 a 100),
+        combinando a folga operacional da regra 30% com a proximidade da UBS vizinha.
         """
-        _, distancia, _ = self.grafo.servico_mais_proximo(distrito_id, tipo_servico)
+        u = self.grafo.distritos.get(distrito_id, {})
+        cap = float(u.get("capacidade", 1))
+        folga = float(u.get("folga_operacional", 0))
+        folga_norm = min(1.0, (folga / (0.30 * cap))) if cap > 0 else 0.0
 
-        if distancia == 0:
-            return 100.0
-        if distancia == float("inf"):
+        vizinhos = list(self.grafo.G.neighbors(distrito_id))
+        if not vizinhos:
             return 0.0
+        dist_viz = min(float(self.grafo.G[distrito_id][v].get("weight", 20.0)) for v in vizinhos)
+        prox_norm = max(0.0, 1.0 - (dist_viz / 10.0))
 
-        # Score inversamente proporcional à distância
-        # Referência: 20 km = score 0
-        max_dist = 20.0
-        score = max(0, (1 - distancia / max_dist)) * 100
+        score = (0.60 * folga_norm + 0.40 * prox_norm) * 100.0
         return round(score, 1)
 
-    def ranking(self, tipo_servico: str) -> pd.DataFrame:
+    def ranking(self, tipo_servico: str = "ubs"):
         """
-        Gera ranking de distritos por cobertura territorial para um tipo de serviço.
-
-        Args:
-            tipo_servico: Tipo de serviço.
-
-        Returns:
-            DataFrame com colunas: posição, distrito, zona, distância, score.
+        Gera o ranking das UBSs contendo Capacidade, Demanda Base, Folga (<=30%),
+        Distância ao vizinho mais próximo e Score.
         """
-        dados = []
-        for did, d in self.grafo.distritos.items():
-            _, dist, _ = self.grafo.servico_mais_proximo(did, tipo_servico)
-            score = self.score_acessibilidade(did, tipo_servico)
+        dists_viz = self.distancia_servico_mais_proximo(tipo_servico)
+        dados: list[dict] = []
+        for uid, u in self.grafo.distritos.items():
+            dist = dists_viz.get(uid, float("inf"))
+            score = self.score_acessibilidade(uid, tipo_servico)
             dados.append({
-                "distrito_id": did,
-                "distrito": d["nome"],
-                "zona": d["zona"],
-                "populacao": d["populacao"],
+                "distrito_id": uid,
+                "distrito": u["nome"],
+                "distrito_adm": u.get("distrito", ""),
+                "zona": u["zona"],
+                "populacao": u.get("demanda_base", u.get("populacao", 0)),
+                "capacidade": u.get("capacidade", 0),
+                "folga_operacional": u.get("folga_operacional", 0),
+                "folga_percentual": u.get("folga_percentual", 0.0),
+                "status_tabela_isolada": u.get("status_tabela_isolada", ""),
                 "distancia_km": dist,
                 "score": score,
             })
 
-        df = pd.DataFrame(dados)
-        df = df.sort_values("distancia_km", ascending=True)
-        df["posicao"] = range(1, len(df) + 1)
-        df = df[["posicao", "distrito_id", "distrito", "zona",
-                  "populacao", "distancia_km", "score"]]
-        return df.reset_index(drop=True)
+        dados.sort(key=lambda x: (-x["score"], x["distancia_km"]))
+        for i, row in enumerate(dados, start=1):
+            row["posicao"] = i
 
-    def media_cidade(self, tipo_servico: str) -> dict:
-        """
-        Calcula a média de acessibilidade da cidade.
+        if pd is not None:
+            colunas = [
+                "posicao", "distrito_id", "distrito", "zona",
+                "populacao", "distancia_km", "score",
+                "capacidade", "folga_operacional", "folga_percentual",
+                "status_tabela_isolada", "distrito_adm",
+            ]
+            return pd.DataFrame(dados)[colunas]
+        return dados
 
-        Args:
-            tipo_servico: Tipo de serviço.
-
-        Returns:
-            Dicionário com média de distância, score médio, mediana.
-        """
-        distancias = self.distancia_servico_mais_proximo(tipo_servico)
-
-        # Filtrar infinitos
-        dists_finitas = [d for d in distancias.values() if d < float("inf")]
-
+    def media_cidade(self, tipo_servico: str = "ubs") -> dict:
+        dists = self.distancia_servico_mais_proximo(tipo_servico)
+        dists_finitas = sorted(d for d in dists.values() if d < float("inf"))
         if not dists_finitas:
-            return {"media_distancia": 0, "score_medio": 0, "mediana_distancia": 0}
+            return {
+                "media_distancia": 0.0,
+                "score_medio": 0.0,
+                "mediana_distancia": 0.0,
+                "melhor_distancia": 0.0,
+                "pior_distancia": 0.0,
+            }
 
-        dists_finitas.sort()
         n = len(dists_finitas)
-        mediana = dists_finitas[n // 2] if n % 2 == 1 else (
-            dists_finitas[n // 2 - 1] + dists_finitas[n // 2]) / 2
-
-        scores = [self.score_acessibilidade(did, tipo_servico)
-                  for did in distancias]
-
+        mediana = (
+            dists_finitas[n // 2]
+            if n % 2 == 1
+            else (dists_finitas[n // 2 - 1] + dists_finitas[n // 2]) / 2.0
+        )
+        scores = [self.score_acessibilidade(uid, tipo_servico) for uid in dists]
         return {
             "media_distancia": round(sum(dists_finitas) / n, 2),
             "score_medio": round(sum(scores) / len(scores), 1),
@@ -142,90 +124,27 @@ class MetricasAcessibilidade:
         }
 
     def distritos_isolados(
-        self, tipo_servico: str, percentil: float = 0.8
+        self, tipo_servico: str = "ubs", percentil: float = 0.8
     ) -> list[dict]:
-        """
-        Identifica distritos relativamente isolados (distância acima do percentil).
-
-        Args:
-            tipo_servico: Tipo de serviço.
-            percentil: Percentil de corte (0.8 = top 20% mais distantes).
-
-        Returns:
-            Lista de dicionários com informações dos distritos isolados.
-        """
-        distancias = self.distancia_servico_mais_proximo(tipo_servico)
-
-        # Filtrar infinitos
+        dists = self.distancia_servico_mais_proximo(tipo_servico)
         dists_finitas = sorted(
-            [(did, d) for did, d in distancias.items() if d < float("inf")],
+            [(uid, d) for uid, d in dists.items() if d < float("inf")],
             key=lambda x: x[1],
-            reverse=True
+            reverse=True,
         )
-
         if not dists_finitas:
             return []
 
-        # Corte pelo percentil
-        n_isolados = max(1, int(len(dists_finitas) * (1 - percentil)))
-        isolados = dists_finitas[:n_isolados]
-
-        resultado = []
-        for did, dist in isolados:
-            d = self.grafo.distritos[did]
-            score = self.score_acessibilidade(did, tipo_servico)
+        n_isolados = max(1, int(len(dists_finitas) * (1.0 - percentil)))
+        resultado: list[dict] = []
+        for uid, dist in dists_finitas[:n_isolados]:
+            u = self.grafo.distritos[uid]
             resultado.append({
-                "distrito_id": did,
-                "distrito": d["nome"],
-                "zona": d["zona"],
-                "populacao": d["populacao"],
+                "distrito_id": uid,
+                "distrito": u["nome"],
+                "zona": u["zona"],
+                "populacao": u.get("demanda_base", 0),
                 "distancia_km": round(dist, 2),
-                "score": score,
+                "score": self.score_acessibilidade(uid, tipo_servico),
             })
-
         return resultado
-
-    def comparar_com_media(self, distrito_id: int, tipo_servico: str) -> dict:
-        """
-        Compara a acessibilidade de um distrito com a média da cidade.
-
-        Args:
-            distrito_id: ID do distrito.
-            tipo_servico: Tipo de serviço.
-
-        Returns:
-            Dicionário com comparação detalhada.
-        """
-        _, dist_distrito, _ = self.grafo.servico_mais_proximo(
-            distrito_id, tipo_servico
-        )
-        score_distrito = self.score_acessibilidade(distrito_id, tipo_servico)
-        media = self.media_cidade(tipo_servico)
-
-        ranking_df = self.ranking(tipo_servico)
-        posicao = ranking_df[
-            ranking_df["distrito_id"] == distrito_id
-        ]["posicao"].values[0]
-
-        diff_dist = round(dist_distrito - media["media_distancia"], 2)
-        diff_score = round(score_distrito - media["score_medio"], 1)
-
-        if diff_dist < -0.5:
-            classificacao = "Acima da média"
-        elif diff_dist > 0.5:
-            classificacao = "Abaixo da média"
-        else:
-            classificacao = "Na média"
-
-        return {
-            "distrito": self.grafo.get_nome(distrito_id),
-            "distancia_km": round(dist_distrito, 2),
-            "score": score_distrito,
-            "posicao_ranking": posicao,
-            "total_distritos": len(self.grafo.distritos),
-            "media_distancia_cidade": media["media_distancia"],
-            "score_medio_cidade": media["score_medio"],
-            "diferenca_distancia": diff_dist,
-            "diferenca_score": diff_score,
-            "classificacao": classificacao,
-        }

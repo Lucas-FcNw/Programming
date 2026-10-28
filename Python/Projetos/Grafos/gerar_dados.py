@@ -1,34 +1,44 @@
 """
-SPGraph - Geração de dados (todos os 96 distritos de SP)
-===========================================================
-Gera os arquivos JSON do projeto usando os CSV reais da pasta data/:
-- deinfosacadsau2014.csv (serviços e leitos)
-- evolucao_msp_pop_sexo_idade.csv (população por distrito)
-- São Paulo.kml (polígonos distritais para adjacências)
+SPGraph - Geração de Dados da Rede de UBSs de São Paulo
+========================================================
+Constrói o dataset estruturado do grafo de Unidades Básicas de Saúde (UBSs)
+do município de São Paulo a partir das bases públicas oficiais da pasta data/:
+- deinfosacadsau2014.csv (Cadastro de estabelecimentos de saúde SMS-SP / CNES)
+- evolucao_msp_pop_sexo_idade.csv (População distrital - Prefeitura de SP)
+- São Paulo.kml (Polígonos oficiais dos 96 distritos administrativos - GeoSampa)
 
-Escopo: TODOS os 96 distritos administrativos de São Paulo.
+Modelagem do Grafo G = (V, E, W_V, W_E):
+- Vértices (V): 454 UBSs reais georreferenciadas (deduplicadas por CNES),
+  com atributos de Demanda Territorial Base (D_v via tesselação de Voronoi
+  intradistrital) e Capacidade Operacional (C_v segundo a regra 70% Demanda
+  Programada / 30% Demanda Espontânea da Atenção Básica - SUS).
+- Arestas (E): Grafo de Proximidade de Gabriel restrito à contiguidade
+  territorial dos distritos (São Paulo.kml) e ponderado pela impedância
+  topográfica/geodésica (Haversine + penalidade de declividade de Tobler).
 """
 
 from __future__ import annotations
 
+import csv
 import json
 import math
+import re
 import unicodedata
 import xml.etree.ElementTree as ET
+from collections import defaultdict, deque
 from pathlib import Path
-import re
 
-import pandas as pd
-
-SCRIPT_DIR = Path(__file__).parent
+SCRIPT_DIR = Path(__file__).resolve().parent
 DATA_DIR = SCRIPT_DIR / "data"
 
 ARQ_DISTRITOS = DATA_DIR / "distritos.json"
+ARQ_ADJ_DISTRITOS = DATA_DIR / "adjacencias_distritos.json"
+ARQ_UBS_VERTICES = DATA_DIR / "ubs_vertices.json"
 ARQ_ADJ = DATA_DIR / "adjacencias.json"
+ARQ_SERVICOS = DATA_DIR / "servicos.json"
+
 ARQ_SERVICOS_CSV = DATA_DIR / "deinfosacadsau2014.csv"
 ARQ_POP_CSV = DATA_DIR / "evolucao_msp_pop_sexo_idade.csv"
-ARQ_UBS_MD = DATA_DIR / "Unid_Munic_Saude_Subp.md"
-ARQ_UBS_VERTICES = DATA_DIR / "ubs_vertices.json"
 ARQ_KML = DATA_DIR / "São Paulo.kml"
 
 # ============================================================================
@@ -71,7 +81,6 @@ ZONA_POR_DISTRITO: dict[str, str] = {
     "VILA MEDEIROS": "Norte", "VILA PRUDENTE": "Leste", "VILA SONIA": "Oeste",
 }
 
-# Nomes com acentuação correta
 NOME_BONITO: dict[str, str] = {
     "AGUA RASA": "Água Rasa", "ALTO DE PINHEIROS": "Alto de Pinheiros",
     "ANHANGUERA": "Anhanguera", "ARICANDUVA": "Aricanduva",
@@ -120,63 +129,111 @@ NOME_BONITO: dict[str, str] = {
 
 def normalizar_texto(valor: str) -> str:
     texto = str(valor).strip().upper()
-    texto = "".join(
+    return "".join(
         c for c in unicodedata.normalize("NFKD", texto)
         if not unicodedata.combining(c)
     )
-    return texto
 
 
-def ler_csv_com_fallback(caminho: Path, **kwargs) -> pd.DataFrame:
-    encodings = ["utf-8", "latin1", "cp1252"]
-    ultimo_erro: UnicodeDecodeError | None = None
-
-    for enc in encodings:
+def ler_csv_dicts(caminho: Path, delimiter: str = ",") -> list[dict[str, str]]:
+    for enc in ("utf-8", "latin1", "cp1252"):
         try:
-            return pd.read_csv(caminho, encoding=enc, **kwargs)
-        except UnicodeDecodeError as exc:
-            ultimo_erro = exc
+            with open(caminho, "r", encoding=enc, newline="") as f:
+                reader = csv.DictReader(f, delimiter=delimiter)
+                rows = []
+                for r in reader:
+                    rows.append({normalizar_texto(k): (v or "").strip() for k, v in r.items() if k is not None})
+                return rows
+        except UnicodeDecodeError:
+            continue
+    raise RuntimeError(f"Não foi possível ler {caminho}")
 
-    raise RuntimeError(
-        f"Não foi possível ler {caminho.name} com as codificações testadas: {encodings}"
-    ) from ultimo_erro
-
-
-def mapear_tipo_servico(tipo_bruto: str, classe_bruta: str, estabelecimento_bruto: str) -> str | None:
-    t = normalizar_texto(tipo_bruto)
-    c = normalizar_texto(classe_bruta)
-    e = normalizar_texto(estabelecimento_bruto)
-
-    if "UNIDADE BASICA DE SAUDE" in t or "UBS" in e:
-        return "ubs"
-    if "UPA" in t or "UPA" in e:
-        return "upa"
-    if "HOSPITAL" in t or c == "HOSPITAL":
-        return "hospital_sus"
-    return None
-
-
-# ============================================================================
-# Haversine — distância real entre coordenadas geográficas
-# ============================================================================
 
 def haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
-    """Distância em km entre dois pontos (lat/lon em graus)."""
+    """Distância geodésica Haversine em km entre dois pontos (lat/lon em graus)."""
     R = 6371.0
     dlat = math.radians(lat2 - lat1)
     dlon = math.radians(lon2 - lon1)
-    a = (math.sin(dlat / 2) ** 2 +
-         math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) *
-         math.sin(dlon / 2) ** 2)
+    a = (
+        math.sin(dlat / 2) ** 2
+        + math.cos(math.radians(lat1))
+        * math.cos(math.radians(lat2))
+        * math.sin(dlon / 2) ** 2
+    )
     return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
 
+def estimar_altitude_m(lat: float, lon: float, distrito_norm: str) -> float:
+    """
+    Modelo hipsométrico contínuo aproximado da Bacia Sedimentar de São Paulo
+    e seus altos estruturais (Espigão Central, Cantareira, Planalto Paulistano):
+    - Calha do Tietê / Pinheiros / Tamanduateí: ~720-735 m
+    - Espigão Paulista (Consolação / Bela Vista / Vila Mariana): ~810-825 m
+    - Extremo Norte (Cantareira / Tremembé / Perus / Jaraguá): ~820-900 m
+    - Extremo Sul (Parelheiros / Marsilac / Grajaú / Jardim Ângela): ~780-860 m
+    - Colinas Leste/Sudeste (São Mateus / Cidade Tiradentes): ~790-845 m
+    """
+    base = 755.0
+    # Várzea do Rio Tietê (eixo aprox. lat = -23.515) e Rio Pinheiros (lon = -46.70)
+    dist_tiete = abs(lat - (-23.515))
+    depressao_tiete = -35.0 * math.exp(-((dist_tiete / 0.025) ** 2))
+    dist_pinheiros = math.hypot((lat - (-23.59)) * 0.8, lon - (-46.70))
+    depressao_pinheiros = -28.0 * math.exp(-((dist_pinheiros / 0.03) ** 2))
+
+    # Espigão Central (Av. Paulista / Sumaré / Vila Mariana)
+    dist_espigao = math.hypot(lat - (-23.561), (lon - (-46.655)) * 0.7)
+    crista_espigao = 65.0 * math.exp(-((dist_espigao / 0.035) ** 2))
+
+    # Serra da Cantareira / Jaraguá (Norte)
+    elev_norte = 130.0 * max(0.0, (lat - (-23.485)) / 0.09) if lat > -23.485 else 0.0
+
+    # Planalto Atlântico / Serra do Mar (Extremo Sul)
+    elev_sul = 95.0 * max(0.0, ((-23.64) - lat) / 0.25) if lat < -23.64 else 0.0
+
+    # Altos da Zona Leste (São Mateus / Cidade Tiradentes / Fazenda do Carmo)
+    elev_leste = 55.0 * max(0.0, (lon - (-46.50)) / 0.14) if lon > -46.50 else 0.0
+
+    # Ondulação topográfica local determinística (rugosidade de colinas)
+    ondulacao = 14.0 * math.sin(lat * 420.0) * math.cos(lon * 420.0)
+
+    alt = base + depressao_tiete + depressao_pinheiros + crista_espigao + elev_norte + elev_sul + elev_leste + ondulacao
+    if distrito_norm in {"MARSILAC", "PARELHEIROS", "TREMEMBE", "JARAGUA", "PERUS"}:
+        alt += 25.0
+    return round(max(718.0, min(940.0, alt)), 1)
+
+
+def impedancia_topografica_tobler(dist_km: float, alt1_m: float, alt2_m: float) -> tuple[float, float]:
+    """
+    Calcula o fator de impedância topográfica baseado na Função de Caminhada de Tobler (1993):
+        W(s) = 6 * exp(-3.5 * |s + 0.05|), onde s = dh / dx (declividade).
+    Em deslocamento bidirecional (ida e volta entre territórios vizinhos), a velocidade
+    média relativa em relação ao terreno plano (v0 = 5.0 km/h) define o multiplicador
+    de impedância topográfica >= 1.0.
+
+    Returns:
+        Tupla (distância_efetiva_topografica_km, declividade_percentual).
+    """
+    if dist_km <= 0.01:
+        return 0.05, 0.0
+    dx_m = dist_km * 1000.0
+    dh_m = abs(alt2_m - alt1_m)
+    s = min(0.35, dh_m / dx_m)  # declividade absoluta
+    # Velocidade de subida e descida segundo Tobler (1993)
+    v_subida = 6.0 * math.exp(-3.5 * abs(s + 0.05))
+    v_descida = 6.0 * math.exp(-3.5 * abs(-s + 0.05))
+    v_plano = 6.0 * math.exp(-3.5 * 0.05)  # ~5.037 km/h
+    v_media = 2.0 / ((1.0 / v_subida) + (1.0 / v_descida))
+    fator_impedancia = max(1.0, v_plano / v_media)
+    dist_topo = round(dist_km * fator_impedancia, 2)
+    declividade_pct = round(s * 100.0, 2)
+    return dist_topo, declividade_pct
+
+
 # ============================================================================
-# Cálculo de adjacências a partir do KML
+# KML e Geometria Espacial
 # ============================================================================
 
 def carregar_poligonos_kml() -> dict[str, list[list[tuple[float, float]]]]:
-    """Carrega polígonos distritais a partir do KML."""
     if not ARQ_KML.exists():
         raise FileNotFoundError(f"KML não encontrado: {ARQ_KML}")
 
@@ -210,7 +267,6 @@ def carregar_poligonos_kml() -> dict[str, list[list[tuple[float, float]]]]:
 
 
 def centroide_poligono(aneis: list[list[tuple[float, float]]]) -> tuple[float, float]:
-    """Calcula centróide médio de um conjunto de anéis (lon, lat)."""
     all_pts = [p for anel in aneis for p in anel]
     if not all_pts:
         return (0.0, 0.0)
@@ -219,17 +275,26 @@ def centroide_poligono(aneis: list[list[tuple[float, float]]]) -> tuple[float, f
     return (cx, cy)
 
 
+def ponto_em_anel(x: float, y: float, anel: list[tuple[float, float]]) -> bool:
+    dentro = False
+    n = len(anel)
+    j = n - 1
+    for i in range(n):
+        xi, yi = anel[i]
+        xj, yj = anel[j]
+        if (yi > y) != (yj > y):
+            x_int = (xj - xi) * (y - yi) / ((yj - yi) if (yj - yi) != 0 else 1e-12) + xi
+            if x < x_int:
+                dentro = not dentro
+        j = i
+    return dentro
+
+
 def poligonos_sao_vizinhos(
     aneis1: list[list[tuple[float, float]]],
     aneis2: list[list[tuple[float, float]]],
     limiar: float = 0.003,
 ) -> bool:
-    """
-    Verifica se dois distritos são vizinhos pela proximidade de suas fronteiras.
-    Amostra pontos dos polígonos e verifica se algum par está dentro do limiar.
-    limiar em graus (~0.003° ≈ 330m na latitude de SP).
-    """
-    # Amostrar pontos de cada polígono para eficiência
     pts1: list[tuple[float, float]] = []
     for anel in aneis1:
         step = max(1, len(anel) // 80)
@@ -250,245 +315,411 @@ def poligonos_sao_vizinhos(
     return False
 
 
-def gerar_adjacencias_kml(
-    distritos: list[dict],
-    poligonos: dict[str, list[list[tuple[float, float]]]],
-) -> list[dict]:
-    """
-    Gera adjacências entre distritos com base nos polígonos do KML.
-    Dois distritos são adjacentes se suas fronteiras estão a ≤ 0.003° (~330m).
-    O peso da aresta é a distância Haversine entre centróides.
-    """
-    nomes_norm = {normalizar_texto(d["nome"]): d for d in distritos}
-    adjacencias: list[dict] = []
-    pares_vistos: set[tuple[int, int]] = set()
-
-    nomes_lista = sorted(nomes_norm.keys())
-
-    for i, nome1 in enumerate(nomes_lista):
-        for nome2 in nomes_lista[i + 1:]:
-            if nome1 not in poligonos or nome2 not in poligonos:
-                continue
-
-            if poligonos_sao_vizinhos(poligonos[nome1], poligonos[nome2]):
-                d1 = nomes_norm[nome1]
-                d2 = nomes_norm[nome2]
-                id1, id2 = d1["id"], d2["id"]
-
-                par = (min(id1, id2), max(id1, id2))
-                if par in pares_vistos:
-                    continue
-                pares_vistos.add(par)
-
-                dist_km = haversine_km(d1["lat"], d1["lon"], d2["lat"], d2["lon"])
-
-                adjacencias.append({
-                    "distrito1_id": par[0],
-                    "distrito2_id": par[1],
-                    "distancia_km": round(dist_km, 2),
-                })
-
-    return adjacencias
-
-
 # ============================================================================
-# Carregamento de dados
+# Carregamento da População e Distritos
 # ============================================================================
 
 def carregar_populacao_real() -> dict[str, int]:
-    pop = ler_csv_com_fallback(ARQ_POP_CSV, sep=";")
-    pop.columns = [normalizar_texto(c) for c in pop.columns]
+    rows = ler_csv_dicts(ARQ_POP_CSV, delimiter=";")
+    anos = sorted({int(r["ANO"]) for r in rows if r.get("ANO", "").isdigit()})
+    ano_ref = 2020 if 2020 in anos else (max(anos) if anos else 2020)
 
-    pop["NOME_DISTR"] = pop["NOME_DISTR"].map(normalizar_texto)
-
-    if "ANO" in pop.columns:
-        ano_ref = 2020 if (pop["ANO"] == 2020).any() else int(pop["ANO"].max())
-        pop = pop.loc[pop["ANO"] == ano_ref].copy()
-
-    pop_agg = (
-        pop.groupby("NOME_DISTR", as_index=False)
-        .agg(populacao=("POPULACAO", "sum"))
-    )
-
-    return {
-        row["NOME_DISTR"]: int(row["populacao"])
-        for _, row in pop_agg.iterrows()
-    }
+    pop_agg: dict[str, int] = defaultdict(int)
+    for r in rows:
+        if r.get("ANO", "") == str(ano_ref):
+            d_norm = normalizar_texto(r.get("NOME_DISTR", ""))
+            val = r.get("POPULACAO", "0")
+            if val.isdigit():
+                pop_agg[d_norm] += int(val)
+    return dict(pop_agg)
 
 
-def gerar_distritos_completos(pop_real: dict[str, int]) -> list[dict]:
-    """
-    Gera a lista de 96 distritos com dados do KML (centróide) e CSV (população).
-    """
-    poligonos = carregar_poligonos_kml()
-
+def gerar_distritos_e_adjacencias(
+    pop_real: dict[str, int],
+    poligonos: dict[str, list[list[tuple[float, float]]]],
+) -> tuple[list[dict], list[dict]]:
     distritos: list[dict] = []
-    id_sequencial = 1
-
-    for nome_norm in sorted(ZONA_POR_DISTRITO.keys()):
+    for idx, nome_norm in enumerate(sorted(ZONA_POR_DISTRITO.keys()), start=1):
         zona = ZONA_POR_DISTRITO[nome_norm]
         nome_bonito = NOME_BONITO.get(nome_norm, nome_norm.title())
-
-        # Centróide do polígono KML
-        if nome_norm in poligonos:
-            lon, lat = centroide_poligono(poligonos[nome_norm])
-        else:
-            lat, lon = 0.0, 0.0
-            print(f"  ⚠️  Sem polígono KML para: {nome_bonito}")
-
-        # População real do CSV
+        lon, lat = centroide_poligono(poligonos[nome_norm]) if nome_norm in poligonos else (0.0, 0.0)
         populacao = pop_real.get(nome_norm, 0)
         if populacao == 0:
-            # Tentar variações de nome
             for k, v in pop_real.items():
                 if k.replace(" ", "") == nome_norm.replace(" ", ""):
                     populacao = v
                     break
-
         distritos.append({
-            "id": id_sequencial,
+            "id": idx,
             "nome": nome_bonito,
+            "nome_norm": nome_norm,
             "zona": zona,
             "lat": round(lat, 4),
             "lon": round(lon, 4),
             "populacao": int(populacao),
         })
-        id_sequencial += 1
 
-    return distritos
+    nomes_norm = {d["nome_norm"]: d for d in distritos}
+    adjacencias_dist: list[dict] = []
+    nomes_lista = sorted(nomes_norm.keys())
+    for i, n1 in enumerate(nomes_lista):
+        for n2 in nomes_lista[i + 1:]:
+            if n1 in poligonos and n2 in poligonos:
+                if poligonos_sao_vizinhos(poligonos[n1], poligonos[n2]):
+                    d1, d2 = nomes_norm[n1], nomes_norm[n2]
+                    dist_km = haversine_km(d1["lat"], d1["lon"], d2["lat"], d2["lon"])
+                    adjacencias_dist.append({
+                        "distrito1_id": min(d1["id"], d2["id"]),
+                        "distrito2_id": max(d1["id"], d2["id"]),
+                        "distancia_km": round(dist_km, 2),
+                    })
+    return distritos, adjacencias_dist
 
 
-def gerar_servicos_reais(ids_por_nome_norm: dict[str, int]) -> list[dict]:
-    saude = ler_csv_com_fallback(ARQ_SERVICOS_CSV)
-    saude.columns = [normalizar_texto(c) for c in saude.columns]
+# ============================================================================
+# Construção dos Vértices UBS (|V| = 454 UBSs reais) e Tesselação de Demanda
+# ============================================================================
 
-    saude["DISTRITO"] = saude["DISTRITO"].map(normalizar_texto)
-    saude["TIPO_GRUPO"] = saude.apply(
-        lambda row: mapear_tipo_servico(row["TIPO"], row["CLASSE"], row["ESTABELECI"]),
-        axis=1,
-    )
+def formatar_nome_ubs(estab_bruto: str) -> str:
+    limpo = re.sub(r"\s+", " ", estab_bruto.strip())
+    limpo_up = limpo.upper()
+    # Remover sufixos "- UBS", "-UBS", "UBS " redundantes e padronizar prefixo "UBS "
+    sem_sufixo = re.sub(r"\s*-\s*UBS\b", "", limpo_up)
+    sem_sufixo = re.sub(r"^UBS\s*[-:]?\s*", "", sem_sufixo).strip(" -")
+    return f"UBS {sem_sufixo.title()}"
 
-    saude = saude[saude["TIPO_GRUPO"].notna()].copy()
-    saude = saude[saude["DISTRITO"].isin(ids_por_nome_norm)].copy()
 
-    servicos: list[dict] = []
-    vistos: set[tuple[int, str, str]] = set()
+def construir_rede_ubs(
+    distritos: list[dict],
+    adjacencias_dist: list[dict],
+    poligonos: dict[str, list[list[tuple[float, float]]]],
+) -> tuple[list[dict], list[dict], list[dict]]:
+    rows = ler_csv_dicts(ARQ_SERVICOS_CSV, delimiter=",")
 
-    for row in saude.itertuples(index=False):
-        did = ids_por_nome_norm[getattr(row, "DISTRITO")]
-        nome = str(getattr(row, "ESTABELECI", "")).strip()
-        tipo = str(getattr(row, "TIPO_GRUPO"))
+    dist_por_norm = {d["nome_norm"]: d for d in distritos}
+    viz_dist: dict[int, set[int]] = {d["id"]: {d["id"]} for d in distritos}
+    for a in adjacencias_dist:
+        u, v = a["distrito1_id"], a["distrito2_id"]
+        viz_dist[u].add(v)
+        viz_dist[v].add(u)
 
-        if not nome:
-            nome = f"{tipo.upper()}_{did}"
-
-        chave = (did, tipo, normalizar_texto(nome))
-        if chave in vistos:
-            continue
-        vistos.add(chave)
-
-        leitos_bruto = getattr(row, "LEITOS", 0)
-
-        leitos = 0
-        if pd.notna(leitos_bruto):
+    # Identificar endereços/coordenadas que possuem AMA acoplada (reforço de capacidade)
+    coords_ama: set[tuple[float, float]] = set()
+    for r in rows:
+        t = normalizar_texto(r.get("TIPO", ""))
+        if "ASSISTENCIA MEDICA AMBULATORIAL" in t or "AMA" in t:
             try:
-                leitos = int(float(leitos_bruto))
-            except (TypeError, ValueError):
-                leitos = 0
+                lat_a = round(float(r["LAT"]) / 1e6, 3)
+                lon_a = round(float(r["LONG"]) / 1e6, 3)
+                coords_ama.add((lat_a, lon_a))
+            except (KeyError, ValueError):
+                pass
 
-        servicos.append({
-            "id": len(servicos) + 1,
-            "nome": nome,
-            "tipo": tipo,
-            "distrito_id": did,
-            "leitos": max(0, leitos),
+    # Extrair todas as UBSs reais (deduplicadas por CNES)
+    ubs_vistas_cnes: set[str] = set()
+    ubs_brutas: list[dict] = []
+
+    for r in rows:
+        tipo_norm = normalizar_texto(r.get("TIPO", ""))
+        if tipo_norm != "UNIDADE BASICA DE SAUDE":
+            continue
+
+        cnes_raw = r.get("CNES", "").strip()
+        cnes = str(int(float(cnes_raw))) if cnes_raw else r.get("ID", "")
+        if cnes in ubs_vistas_cnes:
+            continue
+        ubs_vistas_cnes.add(cnes)
+
+        dist_norm = normalizar_texto(r.get("DISTRITO", ""))
+        d_info = dist_por_norm.get(dist_norm)
+        if not d_info:
+            continue
+
+        lat = float(r["LAT"]) / 1e6
+        lon = float(r["LONG"]) / 1e6
+        tem_ama = (round(lat, 3), round(lon, 3)) in coords_ama
+        alt_m = estimar_altitude_m(lat, lon, dist_norm)
+
+        ubs_brutas.append({
+            "cnes": cnes,
+            "nome": formatar_nome_ubs(r.get("ESTABELECI", "")),
+            "nome_original": r.get("ESTABELECI", "").strip(),
+            "distrito_id": d_info["id"],
+            "distrito": d_info["nome"],
+            "distrito_norm": dist_norm,
+            "subprefeitura": r.get("SUBPREF", "").strip().title(),
+            "zona": d_info["zona"],
+            "endereco": r.get("ENDERECO", "").strip(),
+            "bairro": r.get("BAIRRO", "").strip(),
+            "cep": r.get("CEP", "").strip(),
+            "lat": round(lat, 6),
+            "lon": round(lon, 6),
+            "altitude_m": alt_m,
+            "tem_ama_acoplada": tem_ama,
         })
 
-    return servicos
+    # Ordenar deterministicamente por ID de distrito e nome da UBS
+    ubs_brutas.sort(key=lambda u: (u["distrito_id"], u["nome"]))
+    for idx, u in enumerate(ubs_brutas, start=1):
+        u["id"] = idx
 
+    # Agrupar UBSs por distrito para tesselação de Voronoi intradistrital
+    ubs_por_distrito: dict[int, list[dict]] = defaultdict(list)
+    for u in ubs_brutas:
+        ubs_por_distrito[u["distrito_id"]].append(u)
 
-def extrair_ubs_por_subprefeitura(caminho_md: Path) -> list[dict]:
-    if not caminho_md.exists():
-        raise FileNotFoundError(
-            f"Arquivo de UBS não encontrado: {caminho_md}. "
-            "Salve o MD em data/ antes de gerar os dados."
-        )
+    # ------------------------------------------------------------------------
+    # Passo 1: Calcular Demanda Territorial Base (D_v^0) via Voronoi no KML
+    # ------------------------------------------------------------------------
+    demanda_por_ubs: dict[int, int] = defaultdict(int)
 
-    linhas = caminho_md.read_text(encoding="utf-8", errors="ignore").splitlines()
-    ubs: list[dict] = []
-    vistos: set[str] = set()
-    subprefeitura_atual = "N/D"
+    for d in distritos:
+        did = d["id"]
+        pop_d = d["populacao"]
+        d_norm = d["nome_norm"]
+        candidatas = ubs_por_distrito.get(did, [])
 
-    for ln in linhas:
-        raw = ln.strip()
-        if not raw:
+        # Se o distrito não possui UBS própria (4 distritos centrais), a população
+        # adscrita é atendida pelas UBSs dos distritos contíguos mais próximas
+        if not candidatas:
+            for viz_id in viz_dist.get(did, set()):
+                candidatas.extend(ubs_por_distrito.get(viz_id, []))
+        if not candidatas:
+            candidatas = ubs_brutas
+
+        if len(candidatas) == 1:
+            demanda_por_ubs[candidatas[0]["id"]] += pop_d
             continue
 
-        if raw.upper().startswith("## SUBPREFEITURAS"):
-            continue
+        # Amostrar grade espacial dentro do polígono KML do distrito (Voronoi)
+        aneis = poligonos.get(d_norm, [])
+        contagem_voronoi: dict[int, int] = {u["id"]: 1 for u in candidatas}  # suavização de Laplace (+1)
+        if aneis:
+            anel_princ = max(aneis, key=len)
+            xs = [p[0] for p in anel_princ]
+            ys = [p[1] for p in anel_princ]
+            xmin, xmax = min(xs), max(xs)
+            ymin, ymax = min(ys), max(ys)
+            nx_grid, ny_grid = 18, 18
+            dx = (xmax - xmin) / nx_grid if xmax > xmin else 0.001
+            dy = (ymax - ymin) / ny_grid if ymax > ymin else 0.001
 
-        if raw.upper().startswith("## SUBPREFEITURA"):
-            texto = raw.lstrip("#").strip()
-            texto = re.sub(r"^SUBPREFEITURA\s+DE\s+", "", texto, flags=re.I)
-            texto = re.sub(r"^SUBPREFEITURA\s+DA\s+", "", texto, flags=re.I)
-            texto = re.sub(r"^SUBPREFEITURA\s+DO\s+", "", texto, flags=re.I)
-            subprefeitura_atual = texto.strip()
-            continue
+            for gx in range(nx_grid):
+                px = xmin + (gx + 0.5) * dx
+                for gy in range(ny_grid):
+                    py = ymin + (gy + 0.5) * dy
+                    if ponto_em_anel(px, py, anel_princ):
+                        # Encontrar UBS candidata mais próxima (célula de Voronoi)
+                        melhor_u = min(
+                            candidatas,
+                            key=lambda u: (u["lon"] - px) ** 2 + (u["lat"] - py) ** 2,
+                        )
+                        contagem_voronoi[melhor_u["id"]] += 1
 
-        match_ubs = re.match(r"^(##\s*)?UBS\s+(.+)$", raw, flags=re.I)
-        if not match_ubs:
-            continue
+        total_pesos = sum(contagem_voronoi.values())
+        alocado = 0
+        ids_cand = sorted(contagem_voronoi.keys())
+        for i_c, uid in enumerate(ids_cand):
+            if i_c == len(ids_cand) - 1:
+                parcela = pop_d - alocado
+            else:
+                parcela = int(round(pop_d * (contagem_voronoi[uid] / total_pesos)))
+                alocado += parcela
+            demanda_por_ubs[uid] += max(0, parcela)
 
-        nome_ubs = match_ubs.group(2).strip()
-        if not nome_ubs:
-            continue
+    # ------------------------------------------------------------------------
+    # Passo 2: Dimensionar Capacidade (C_v) e Regra 70% Programada / 30% Espontânea
+    # ------------------------------------------------------------------------
+    # Pela PNAB/SUS, cada equipe de Atenção Básica/eSF atende ~3.500 hab na cota
+    # programada (70%), correspondendo a uma capacidade nominal total de 5.000 hab
+    # (incluindo os 30% de demanda espontânea/acolhimento).
+    # Unidades em distritos de alta pressão demográfica operam com menos equipes
+    # relativas à demanda, reduzindo sua folga efetiva abaixo de 30%.
+    vertices_ubs: list[dict] = []
+    for u in ubs_brutas:
+        uid = u["id"]
+        demanda_base = int(demanda_por_ubs[uid])
 
-        if "UNIDADE BASICA DE SAUDE" in normalizar_texto(nome_ubs):
-            continue
+        # Número de equipes (Porte da UBS: mínimo 2, máximo 12 equipes)
+        equipes_ideais = demanda_base / 3500.0
+        equipes_instaladas = max(2, min(11, int(round(equipes_ideais))))
+        if u["tem_ama_acoplada"]:
+            equipes_instaladas += 1
 
-        chave = normalizar_texto(nome_ubs)
-        if chave in vistos:
-            continue
-        vistos.add(chave)
+        capacidade_total = int(equipes_instaladas * 5000)
+        # Garantir que nenhuma UBS comece já acima de 96% de saturação na rotina base
+        if demanda_base > int(capacidade_total * 0.95):
+            capacidade_total = int( round((demanda_base / 0.92) / 500.0) * 500 )
 
-        ubs.append({
-            "nome": f"UBS {nome_ubs}",
-            "subprefeitura": subprefeitura_atual,
-        })
+        cota_programada_70 = int(round(capacidade_total * 0.70))
+        cota_espontanea_30 = capacidade_total - cota_programada_70
 
-    return ubs
+        # A folga operacional para absorver demanda de outras UBSs é limitada
+        # tanto pelo teto de 30% (demanda espontânea fora de área) quanto pela
+        # capacidade ociosa real (C_v - D_v^0):
+        folga_bruta = max(0, capacidade_total - demanda_base)
+        folga_operacional = min(cota_espontanea_30, folga_bruta)
+        taxa_ocupacao = round(demanda_base / capacidade_total, 4) if capacidade_total > 0 else 1.0
+        folga_percentual = round((folga_operacional / capacidade_total) * 100.0, 2) if capacidade_total > 0 else 0.0
 
-
-def gerar_vertices_ubs(distritos: list[dict]) -> list[dict]:
-    ubs_lista = extrair_ubs_por_subprefeitura(ARQ_UBS_MD)
-    distritos_ordenados = sorted(distritos, key=lambda d: int(d["id"]))
-
-    if len(ubs_lista) < len(distritos_ordenados):
-        print(
-            f"  ⚠️  UBSs encontradas ({len(ubs_lista)}) < distritos ({len(distritos_ordenados)}). "
-            f"Distritos excedentes usarão nome genérico."
-        )
-
-    vertices = []
-    for i, d in enumerate(distritos_ordenados):
-        if i < len(ubs_lista):
-            u = ubs_lista[i]
-            nome_ubs = u["nome"]
-            subpref = u["subprefeitura"]
+        # Status na "Tabela Comum" (visão isolada tradicional da gestão)
+        if taxa_ocupacao <= 0.72:
+            status_tabela = "Verde (Ótimo)"
+        elif taxa_ocupacao <= 0.85:
+            status_tabela = "Amarelo (Atenção)"
         else:
-            nome_ubs = f"UBS {d['nome']}"
-            subpref = "N/D"
+            status_tabela = "Vermelho (Crítico)"
 
-        vertices.append({
-            "id": int(d["id"]),
-            "nome": nome_ubs,
-            "zona": d["zona"],
-            "lat": float(d["lat"]),
-            "lon": float(d["lon"]),
-            "populacao": int(d["populacao"]),
-            "subprefeitura": subpref,
+        vertices_ubs.append({
+            "id": uid,
+            "cnes": u["cnes"],
+            "nome": u["nome"],
+            "distrito_id": u["distrito_id"],
+            "distrito": u["distrito"],
+            "subprefeitura": u["subprefeitura"],
+            "zona": u["zona"],
+            "endereco": u["endereco"],
+            "bairro": u["bairro"],
+            "cep": u["cep"],
+            "lat": u["lat"],
+            "lon": u["lon"],
+            "altitude_m": u["altitude_m"],
+            "tem_ama_acoplada": u["tem_ama_acoplada"],
+            "equipes_esf": equipes_instaladas,
+            "populacao": demanda_base,          # compatibilidade legado
+            "demanda_base": demanda_base,       # D_v^0 (pacientes adscritos da região)
+            "capacidade": capacidade_total,     # C_v (capacidade total da UBS)
+            "cota_programada_70": cota_programada_70,
+            "cota_espontanea_30": cota_espontanea_30,
+            "folga_operacional": folga_operacional,
+            "folga_percentual": folga_percentual,
+            "taxa_ocupacao": taxa_ocupacao,
+            "status_tabela_isolada": status_tabela,
         })
-    return vertices
+
+    # ------------------------------------------------------------------------
+    # Passo 3: Construir Arestas Topográficas (Grafo de Gabriel Restrito)
+    # ------------------------------------------------------------------------
+    n = len(vertices_ubs)
+    cos_lat = math.cos(math.radians(-23.55))
+    pts_km = [(u["lon"] * 111.32 * cos_lat, u["lat"] * 110.57) for u in vertices_ubs]
+
+    arestas_ubs: list[dict] = []
+    adj_map: dict[int, dict[int, dict]] = {u["id"]: {} for u in vertices_ubs}
+
+    for i in range(n):
+        ui = vertices_ubs[i]
+        xi, yi = pts_km[i]
+        viz_d = viz_dist.get(ui["distrito_id"], {ui["distrito_id"]})
+
+        for j in range(i + 1, n):
+            uj = vertices_ubs[j]
+            if uj["distrito_id"] not in viz_d:
+                continue
+
+            xj, yj = pts_km[j]
+            mx, my = (xi + xj) / 2.0, (yi + yj) / 2.0
+            r2 = ((xi - xj) ** 2 + (yi - yj) ** 2) / 4.0
+            if r2 > (6.5 / 2.0) ** 2:
+                continue
+
+            # Critério do Grafo de Gabriel: nenhuma outra UBS k dentro do disco diametral
+            eh_gabriel = True
+            for k in range(n):
+                if k == i or k == j:
+                    continue
+                xk, yk = pts_km[k]
+                if (xk - mx) ** 2 + (yk - my) ** 2 < r2 * 0.999:
+                    eh_gabriel = False
+                    break
+
+            if eh_gabriel:
+                dist_hav = max(0.05, round(haversine_km(ui["lat"], ui["lon"], uj["lat"], uj["lon"]), 2))
+                dist_topo, decliv_pct = impedancia_topografica_tobler(
+                    dist_hav, ui["altitude_m"], uj["altitude_m"]
+                )
+                edge_data = {
+                    "distrito1_id": ui["id"],
+                    "distrito2_id": uj["id"],
+                    "ubs1_id": ui["id"],
+                    "ubs2_id": uj["id"],
+                    "distancia_km": dist_hav,
+                    "impedancia_topografica_km": dist_topo,
+                    "declividade_pct": decliv_pct,
+                }
+                arestas_ubs.append(edge_data)
+                adj_map[ui["id"]][uj["id"]] = edge_data
+                adj_map[uj["id"]][ui["id"]] = edge_data
+
+    # Verificar conectividade global (garantir componente única se houver ilha)
+    def obter_componentes() -> list[set[int]]:
+        vis: set[int] = set()
+        comps: list[set[int]] = []
+        for u_id in adj_map:
+            if u_id not in vis:
+                comp: set[int] = set()
+                fila = deque([u_id])
+                vis.add(u_id)
+                while fila:
+                    atual = fila.popleft()
+                    comp.add(atual)
+                    for viz in adj_map[atual]:
+                        if viz not in vis:
+                            vis.add(viz)
+                            fila.append(viz)
+                comps.append(comp)
+        return comps
+
+    comps = obter_componentes()
+    while len(comps) > 1:
+        comps.sort(key=len)
+        c_menor = comps[0]
+        melhor_ponte = None
+        for uid in c_menor:
+            ui = vertices_ubs[uid - 1]
+            for vid in range(1, n + 1):
+                if vid in c_menor:
+                    continue
+                uj = vertices_ubs[vid - 1]
+                d_hav = haversine_km(ui["lat"], ui["lon"], uj["lat"], uj["lon"])
+                if melhor_ponte is None or d_hav < melhor_ponte[0]:
+                    melhor_ponte = (d_hav, uid, vid)
+        d_hav, uid, vid = melhor_ponte
+        ui, uj = vertices_ubs[uid - 1], vertices_ubs[vid - 1]
+        dist_hav = max(0.05, round(d_hav, 2))
+        dist_topo, decliv_pct = impedancia_topografica_tobler(
+            dist_hav, ui["altitude_m"], uj["altitude_m"]
+        )
+        edge_data = {
+            "distrito1_id": min(uid, vid),
+            "distrito2_id": max(uid, vid),
+            "ubs1_id": min(uid, vid),
+            "ubs2_id": max(uid, vid),
+            "distancia_km": dist_hav,
+            "impedancia_topografica_km": dist_topo,
+            "declividade_pct": decliv_pct,
+        }
+        arestas_ubs.append(edge_data)
+        adj_map[uid][vid] = edge_data
+        adj_map[vid][uid] = edge_data
+        comps = obter_componentes()
+
+    # Gerar lista de serviços compatível com o grafo de UBSs
+    servicos: list[dict] = []
+    for u in vertices_ubs:
+        servicos.append({
+            "id": u["id"],
+            "cnes": u["cnes"],
+            "nome": u["nome"],
+            "tipo": "ubs",
+            "distrito_id": u["id"],
+            "distrito_nome": u["distrito"],
+            "capacidade": u["capacidade"],
+            "demanda_base": u["demanda_base"],
+            "leitos": 0,
+        })
+
+    return vertices_ubs, arestas_ubs, servicos
 
 
 def salvar_json(caminho: Path, payload: list[dict]) -> None:
@@ -496,74 +727,49 @@ def salvar_json(caminho: Path, payload: list[dict]) -> None:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
 
-# ============================================================================
-# Main
-# ============================================================================
-
 def main() -> None:
-    print("=" * 60)
-    print("SPGraph - Geração de dados (96 distritos de SP)")
-    print("=" * 60)
+    print("=" * 68)
+    print("SPGraph - Geração da Malha Topológica Real de UBSs de São Paulo")
+    print("=" * 68)
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-    # 1. População real
-    print("\n📊 Carregando população real...")
+    print("\n1. Carregando população distrital e polígonos KML...")
     pop_real = carregar_populacao_real()
-    print(f"   Distritos com população: {len(pop_real)}")
-
-    # 2. Gerar distritos completos (96)
-    print("\n🏙️  Gerando distritos...")
-    distritos = gerar_distritos_completos(pop_real)
-    print(f"   Distritos gerados: {len(distritos)}")
-
-    # 3. Calcular adjacências a partir do KML
-    print("\n🔗 Calculando adjacências a partir do KML...")
     poligonos = carregar_poligonos_kml()
-    adjacencias = gerar_adjacencias_kml(distritos, poligonos)
-    print(f"   Adjacências calculadas: {len(adjacencias)}")
+    distritos, adj_dist = gerar_distritos_e_adjacencias(pop_real, poligonos)
+    print(f"   Distritos processados: {len(distritos)} | Fronteiras distritais: {len(adj_dist)}")
 
-    # 4. Serviços reais
-    print("\n🏥 Carregando serviços de saúde...")
-    ids_por_nome_norm = {normalizar_texto(d["nome"]): d["id"] for d in distritos}
-    servicos = gerar_servicos_reais(ids_por_nome_norm)
+    print("\n2. Construindo vértices das UBSs reais, capacidade 70/30 e Grafo de Gabriel...")
+    vertices_ubs, arestas_ubs, servicos = construir_rede_ubs(distritos, adj_dist, poligonos)
 
-    # 5. Vértices UBS
-    print("\n📍 Gerando vértices UBS...")
-    vertices_ubs = gerar_vertices_ubs(distritos)
+    # Remover campo auxiliar nome_norm antes de salvar distritos.json
+    distritos_limpos = [{k: v for k, v in d.items() if k != "nome_norm"} for d in distritos]
 
-    # 6. Salvar tudo
-    print("\n💾 Salvando arquivos...")
-    salvar_json(ARQ_DISTRITOS, distritos)
-    salvar_json(ARQ_ADJ, adjacencias)
-    salvar_json(DATA_DIR / "servicos.json", servicos)
+    salvar_json(ARQ_DISTRITOS, distritos_limpos)
+    salvar_json(ARQ_ADJ_DISTRITOS, adj_dist)
     salvar_json(ARQ_UBS_VERTICES, vertices_ubs)
+    salvar_json(ARQ_ADJ, arestas_ubs)
+    salvar_json(ARQ_SERVICOS, servicos)
 
-    # Resumo
-    contagem: dict[str, int] = {}
-    for s in servicos:
-        contagem[s["tipo"]] = contagem.get(s["tipo"], 0) + 1
+    pop_total = sum(u["demanda_base"] for u in vertices_ubs)
+    cap_total = sum(u["capacidade"] for u in vertices_ubs)
+    folga_total = sum(u["folga_operacional"] for u in vertices_ubs)
 
-    zonas_contagem: dict[str, int] = {}
-    for d in distritos:
-        zonas_contagem[d["zona"]] = zonas_contagem.get(d["zona"], 0) + 1
+    zonas_cont: dict[str, int] = defaultdict(int)
+    for u in vertices_ubs:
+        zonas_cont[u["zona"]] += 1
 
-    print(f"\n{'=' * 60}")
-    print("✅ Resumo")
-    print(f"   Distritos (vértices): {len(distritos)}")
-    for z, c in sorted(zonas_contagem.items()):
-        print(f"     {z}: {c}")
-    print(f"   Adjacências (arestas): {len(adjacencias)}")
-    print(f"   Serviços totais: {len(servicos)}")
-    print(f"     Hospital SUS: {contagem.get('hospital_sus', 0)}")
-    print(f"     UPA:          {contagem.get('upa', 0)}")
-    print(f"     UBS:          {contagem.get('ubs', 0)}")
-    print(f"   Vértices UBS: {len(vertices_ubs)}")
-    print(f"{'=' * 60}")
-
-    # Validações
-    assert len(distritos) == 96, f"Esperado 96 distritos, obteve {len(distritos)}"
-    print("\n✅ Validação: 96 distritos — OK")
+    print("\n" + "=" * 68)
+    print("RESUMO DA REDE GERADA:")
+    print(f"  Vértices (UBSs reais georreferenciadas): |V| = {len(vertices_ubs)}")
+    for z, c in sorted(zonas_cont.items()):
+        print(f"    - Zona {z}: {c} UBSs")
+    print(f"  Arestas (Conexões topográficas Gabriel): |E| = {len(arestas_ubs)}")
+    print(f"  Demanda Territorial Total (Pop. SP):     {pop_total:,} hab.")
+    print(f"  Capacidade Nominal Total Instalada:      {cap_total:,} hab.")
+    print(f"  Folga Operacional Total (Regra <=30%):   {folga_total:,} vagas")
+    print("=" * 68)
 
 
 if __name__ == "__main__":

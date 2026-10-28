@@ -1,1247 +1,7940 @@
 [
   {
     "distrito1_id": 1,
+    "distrito2_id": 2,
+    "ubs1_id": 1,
+    "ubs2_id": 2,
+    "distancia_km": 1.91,
+    "impedancia_topografica_km": 1.91,
+    "declividade_pct": 0.25
+  },
+  {
+    "distrito1_id": 1,
+    "distrito2_id": 22,
+    "ubs1_id": 1,
+    "ubs2_id": 22,
+    "distancia_km": 2.11,
+    "impedancia_topografica_km": 2.11,
+    "declividade_pct": 0.34
+  },
+  {
+    "distrito1_id": 1,
+    "distrito2_id": 267,
+    "ubs1_id": 1,
+    "ubs2_id": 267,
+    "distancia_km": 1.85,
+    "impedancia_topografica_km": 1.85,
+    "declividade_pct": 0.04
+  },
+  {
+    "distrito1_id": 1,
+    "distrito2_id": 395,
+    "ubs1_id": 1,
+    "ubs2_id": 395,
+    "distancia_km": 2.0,
+    "impedancia_topografica_km": 2.0,
+    "declividade_pct": 0.31
+  },
+  {
+    "distrito1_id": 2,
+    "distrito2_id": 3,
+    "ubs1_id": 2,
+    "ubs2_id": 3,
+    "distancia_km": 1.72,
+    "impedancia_topografica_km": 1.72,
+    "declividade_pct": 0.1
+  },
+  {
+    "distrito1_id": 2,
+    "distrito2_id": 452,
+    "ubs1_id": 2,
+    "ubs2_id": 452,
+    "distancia_km": 1.49,
+    "impedancia_topografica_km": 1.49,
+    "declividade_pct": 0.07
+  },
+  {
+    "distrito1_id": 3,
+    "distrito2_id": 352,
+    "ubs1_id": 3,
+    "ubs2_id": 352,
+    "distancia_km": 1.63,
+    "impedancia_topografica_km": 1.63,
+    "declividade_pct": 0.45
+  },
+  {
+    "distrito1_id": 3,
+    "distrito2_id": 356,
+    "ubs1_id": 3,
+    "ubs2_id": 356,
+    "distancia_km": 3.03,
+    "impedancia_topografica_km": 3.03,
+    "declividade_pct": 0.48
+  },
+  {
+    "distrito1_id": 3,
+    "distrito2_id": 418,
+    "ubs1_id": 3,
+    "ubs2_id": 418,
+    "distancia_km": 1.54,
+    "impedancia_topografica_km": 1.54,
+    "declividade_pct": 0.16
+  },
+  {
+    "distrito1_id": 3,
+    "distrito2_id": 420,
+    "ubs1_id": 3,
+    "ubs2_id": 420,
+    "distancia_km": 1.5,
+    "impedancia_topografica_km": 1.5,
+    "declividade_pct": 0.28
+  },
+  {
+    "distrito1_id": 4,
+    "distrito2_id": 38,
+    "ubs1_id": 4,
+    "ubs2_id": 38,
+    "distancia_km": 4.69,
+    "impedancia_topografica_km": 4.69,
+    "declividade_pct": 0.37
+  },
+  {
+    "distrito1_id": 4,
+    "distrito2_id": 196,
+    "ubs1_id": 4,
+    "ubs2_id": 196,
+    "distancia_km": 2.34,
+    "impedancia_topografica_km": 2.34,
+    "declividade_pct": 0.04
+  },
+  {
+    "distrito1_id": 4,
+    "distrito2_id": 434,
+    "ubs1_id": 4,
+    "ubs2_id": 434,
+    "distancia_km": 0.67,
+    "impedancia_topografica_km": 0.67,
+    "declividade_pct": 0.78
+  },
+  {
+    "distrito1_id": 5,
+    "distrito2_id": 7,
+    "ubs1_id": 5,
+    "ubs2_id": 7,
+    "distancia_km": 0.84,
+    "impedancia_topografica_km": 0.84,
+    "declividade_pct": 2.18
+  },
+  {
+    "distrito1_id": 6,
     "distrito2_id": 8,
-    "distancia_km": 3.95
-  },
-  {
-    "distrito1_id": 1,
-    "distrito2_id": 54,
-    "distancia_km": 1.94
-  },
-  {
-    "distrito1_id": 1,
-    "distrito2_id": 74,
-    "distancia_km": 4.58
-  },
-  {
-    "distrito1_id": 1,
-    "distrito2_id": 82,
-    "distancia_km": 2.75
-  },
-  {
-    "distrito1_id": 1,
-    "distrito2_id": 87,
-    "distancia_km": 2.68
-  },
-  {
-    "distrito1_id": 1,
-    "distrito2_id": 95,
-    "distancia_km": 2.46
-  },
-  {
-    "distrito1_id": 2,
-    "distrito2_id": 12,
-    "distancia_km": 5.0
-  },
-  {
-    "distrito1_id": 2,
-    "distrito2_id": 40,
-    "distancia_km": 4.41
-  },
-  {
-    "distrito1_id": 2,
-    "distrito2_id": 48,
-    "distancia_km": 1.76
-  },
-  {
-    "distrito1_id": 2,
-    "distrito2_id": 61,
-    "distancia_km": 2.7
-  },
-  {
-    "distrito1_id": 2,
-    "distrito2_id": 63,
-    "distancia_km": 2.78
-  },
-  {
-    "distrito1_id": 2,
-    "distrito2_id": 90,
-    "distancia_km": 2.58
-  },
-  {
-    "distrito1_id": 3,
-    "distrito2_id": 41,
-    "distancia_km": 5.57
-  },
-  {
-    "distrito1_id": 3,
-    "distrito2_id": 62,
-    "distancia_km": 3.8
-  },
-  {
-    "distrito1_id": 4,
-    "distrito2_id": 20,
-    "distancia_km": 3.96
-  },
-  {
-    "distrito1_id": 4,
-    "distrito2_id": 24,
-    "distancia_km": 3.72
-  },
-  {
-    "distrito1_id": 4,
-    "distrito2_id": 75,
-    "distancia_km": 4.37
-  },
-  {
-    "distrito1_id": 4,
-    "distrito2_id": 78,
-    "distancia_km": 3.2
-  },
-  {
-    "distrito1_id": 4,
-    "distrito2_id": 87,
-    "distancia_km": 3.34
-  },
-  {
-    "distrito1_id": 4,
-    "distrito2_id": 93,
-    "distancia_km": 4.2
-  },
-  {
-    "distrito1_id": 5,
-    "distrito2_id": 24,
-    "distancia_km": 2.5
-  },
-  {
-    "distrito1_id": 5,
-    "distrito2_id": 36,
-    "distancia_km": 3.19
-  },
-  {
-    "distrito1_id": 5,
-    "distrito2_id": 60,
-    "distancia_km": 4.6
-  },
-  {
-    "distrito1_id": 5,
-    "distrito2_id": 65,
-    "distancia_km": 2.88
-  },
-  {
-    "distrito1_id": 5,
-    "distrito2_id": 93,
-    "distancia_km": 3.19
+    "ubs1_id": 6,
+    "ubs2_id": 8,
+    "distancia_km": 0.63,
+    "impedancia_topografica_km": 0.64,
+    "declividade_pct": 4.22
   },
   {
     "distrito1_id": 6,
-    "distrito2_id": 9,
-    "distancia_km": 4.62
+    "distrito2_id": 198,
+    "ubs1_id": 6,
+    "ubs2_id": 198,
+    "distancia_km": 3.3,
+    "impedancia_topografica_km": 3.3,
+    "declividade_pct": 0.39
   },
   {
     "distrito1_id": 6,
-    "distrito2_id": 21,
-    "distancia_km": 3.63
-  },
-  {
-    "distrito1_id": 6,
-    "distrito2_id": 26,
-    "distancia_km": 3.36
-  },
-  {
-    "distrito1_id": 6,
-    "distrito2_id": 29,
-    "distancia_km": 5.11
-  },
-  {
-    "distrito1_id": 6,
-    "distrito2_id": 48,
-    "distancia_km": 2.9
-  },
-  {
-    "distrito1_id": 6,
-    "distrito2_id": 50,
-    "distancia_km": 3.2
-  },
-  {
-    "distrito1_id": 6,
-    "distrito2_id": 61,
-    "distancia_km": 2.14
-  },
-  {
-    "distrito1_id": 6,
-    "distrito2_id": 70,
-    "distancia_km": 3.01
-  },
-  {
-    "distrito1_id": 6,
-    "distrito2_id": 71,
-    "distancia_km": 5.7
+    "distrito2_id": 306,
+    "ubs1_id": 6,
+    "ubs2_id": 306,
+    "distancia_km": 3.49,
+    "impedancia_topografica_km": 3.5,
+    "declividade_pct": 1.6
   },
   {
     "distrito1_id": 7,
-    "distrito2_id": 26,
-    "distancia_km": 2.25
-  },
-  {
-    "distrito1_id": 7,
-    "distrito2_id": 44,
-    "distancia_km": 2.38
-  },
-  {
-    "distrito1_id": 7,
-    "distrito2_id": 49,
-    "distancia_km": 1.63
-  },
-  {
-    "distrito1_id": 7,
-    "distrito2_id": 67,
-    "distancia_km": 1.86
-  },
-  {
-    "distrito1_id": 7,
-    "distrito2_id": 80,
-    "distancia_km": 2.1
-  },
-  {
-    "distrito1_id": 7,
-    "distrito2_id": 92,
-    "distancia_km": 2.69
-  },
-  {
-    "distrito1_id": 8,
-    "distrito2_id": 10,
-    "distancia_km": 2.8
-  },
-  {
-    "distrito1_id": 8,
-    "distrito2_id": 54,
-    "distancia_km": 3.59
-  },
-  {
-    "distrito1_id": 8,
-    "distrito2_id": 57,
-    "distancia_km": 2.79
-  },
-  {
-    "distrito1_id": 8,
-    "distrito2_id": 82,
-    "distancia_km": 3.01
-  },
-  {
-    "distrito1_id": 8,
-    "distrito2_id": 88,
-    "distancia_km": 3.26
-  },
-  {
-    "distrito1_id": 8,
-    "distrito2_id": 91,
-    "distancia_km": 3.22
+    "distrito2_id": 8,
+    "ubs1_id": 7,
+    "ubs2_id": 8,
+    "distancia_km": 1.3,
+    "impedancia_topografica_km": 1.3,
+    "declividade_pct": 1.44
   },
   {
     "distrito1_id": 9,
     "distrito2_id": 10,
-    "distancia_km": 2.26
+    "ubs1_id": 9,
+    "ubs2_id": 10,
+    "distancia_km": 1.22,
+    "impedancia_topografica_km": 1.22,
+    "declividade_pct": 0.76
   },
   {
     "distrito1_id": 9,
-    "distrito2_id": 21,
-    "distancia_km": 4.81
+    "distrito2_id": 11,
+    "ubs1_id": 9,
+    "ubs2_id": 11,
+    "distancia_km": 0.89,
+    "impedancia_topografica_km": 0.89,
+    "declividade_pct": 1.15
   },
   {
     "distrito1_id": 9,
-    "distrito2_id": 57,
-    "distancia_km": 1.55
+    "distrito2_id": 381,
+    "ubs1_id": 9,
+    "ubs2_id": 381,
+    "distancia_km": 0.88,
+    "impedancia_topografica_km": 0.88,
+    "declividade_pct": 0.45
   },
   {
     "distrito1_id": 9,
-    "distrito2_id": 67,
-    "distancia_km": 1.92
-  },
-  {
-    "distrito1_id": 9,
-    "distrito2_id": 70,
-    "distancia_km": 1.9
-  },
-  {
-    "distrito1_id": 9,
-    "distrito2_id": 71,
-    "distancia_km": 3.34
-  },
-  {
-    "distrito1_id": 9,
-    "distrito2_id": 80,
-    "distancia_km": 2.16
+    "distrito2_id": 421,
+    "ubs1_id": 9,
+    "ubs2_id": 421,
+    "distancia_km": 1.3,
+    "impedancia_topografica_km": 1.3,
+    "declividade_pct": 0.68
   },
   {
     "distrito1_id": 10,
+    "distrito2_id": 11,
+    "ubs1_id": 10,
+    "ubs2_id": 11,
+    "distancia_km": 0.86,
+    "impedancia_topografica_km": 0.86,
+    "declividade_pct": 0.1
+  },
+  {
+    "distrito1_id": 10,
+    "distrito2_id": 104,
+    "ubs1_id": 10,
+    "ubs2_id": 104,
+    "distancia_km": 1.55,
+    "impedancia_topografica_km": 1.55,
+    "declividade_pct": 1.01
+  },
+  {
+    "distrito1_id": 10,
+    "distrito2_id": 107,
+    "ubs1_id": 10,
+    "ubs2_id": 107,
+    "distancia_km": 1.26,
+    "impedancia_topografica_km": 1.26,
+    "declividade_pct": 0.41
+  },
+  {
+    "distrito1_id": 10,
+    "distrito2_id": 421,
+    "ubs1_id": 10,
+    "ubs2_id": 421,
+    "distancia_km": 1.45,
+    "impedancia_topografica_km": 1.45,
+    "declividade_pct": 0.03
+  },
+  {
+    "distrito1_id": 11,
+    "distrito2_id": 107,
+    "ubs1_id": 11,
+    "ubs2_id": 107,
+    "distancia_km": 0.99,
+    "impedancia_topografica_km": 0.99,
+    "declividade_pct": 0.43
+  },
+  {
+    "distrito1_id": 11,
+    "distrito2_id": 359,
+    "ubs1_id": 11,
+    "ubs2_id": 359,
+    "distancia_km": 1.63,
+    "impedancia_topografica_km": 1.63,
+    "declividade_pct": 0.41
+  },
+  {
+    "distrito1_id": 12,
     "distrito2_id": 14,
-    "distancia_km": 2.69
-  },
-  {
-    "distrito1_id": 10,
-    "distrito2_id": 49,
-    "distancia_km": 2.83
-  },
-  {
-    "distrito1_id": 10,
-    "distrito2_id": 54,
-    "distancia_km": 4.01
-  },
-  {
-    "distrito1_id": 10,
-    "distrito2_id": 57,
-    "distancia_km": 1.81
-  },
-  {
-    "distrito1_id": 10,
-    "distrito2_id": 80,
-    "distancia_km": 1.23
-  },
-  {
-    "distrito1_id": 11,
-    "distrito2_id": 13,
-    "distancia_km": 3.1
-  },
-  {
-    "distrito1_id": 11,
-    "distrito2_id": 29,
-    "distancia_km": 2.68
-  },
-  {
-    "distrito1_id": 11,
-    "distrito2_id": 41,
-    "distancia_km": 4.57
-  },
-  {
-    "distrito1_id": 11,
-    "distrito2_id": 64,
-    "distancia_km": 4.48
+    "ubs1_id": 12,
+    "ubs2_id": 14,
+    "distancia_km": 0.92,
+    "impedancia_topografica_km": 0.92,
+    "declividade_pct": 0.85
   },
   {
     "distrito1_id": 12,
-    "distrito2_id": 40,
-    "distancia_km": 3.37
+    "distrito2_id": 17,
+    "ubs1_id": 12,
+    "ubs2_id": 17,
+    "distancia_km": 1.26,
+    "impedancia_topografica_km": 1.26,
+    "declividade_pct": 0.83
   },
   {
     "distrito1_id": 12,
-    "distrito2_id": 55,
-    "distancia_km": 3.3
+    "distrito2_id": 102,
+    "ubs1_id": 12,
+    "ubs2_id": 102,
+    "distancia_km": 2.06,
+    "impedancia_topografica_km": 2.06,
+    "declividade_pct": 0.62
   },
   {
     "distrito1_id": 12,
-    "distrito2_id": 63,
-    "distancia_km": 5.67
+    "distrito2_id": 175,
+    "ubs1_id": 12,
+    "ubs2_id": 175,
+    "distancia_km": 2.12,
+    "impedancia_topografica_km": 2.12,
+    "declividade_pct": 0.33
   },
   {
     "distrito1_id": 12,
-    "distrito2_id": 66,
-    "distancia_km": 4.47
-  },
-  {
-    "distrito1_id": 12,
-    "distrito2_id": 68,
-    "distancia_km": 1.88
-  },
-  {
-    "distrito1_id": 12,
-    "distrito2_id": 96,
-    "distancia_km": 2.27
+    "distrito2_id": 180,
+    "ubs1_id": 12,
+    "ubs2_id": 180,
+    "distancia_km": 2.03,
+    "impedancia_topografica_km": 2.03,
+    "declividade_pct": 0.86
   },
   {
     "distrito1_id": 13,
-    "distrito2_id": 21,
-    "distancia_km": 4.12
+    "distrito2_id": 17,
+    "ubs1_id": 13,
+    "ubs2_id": 17,
+    "distancia_km": 1.39,
+    "impedancia_topografica_km": 1.39,
+    "declividade_pct": 0.45
   },
   {
     "distrito1_id": 13,
-    "distrito2_id": 29,
-    "distancia_km": 4.18
+    "distrito2_id": 18,
+    "ubs1_id": 13,
+    "ubs2_id": 18,
+    "distancia_km": 1.37,
+    "impedancia_topografica_km": 1.37,
+    "declividade_pct": 0.28
   },
   {
     "distrito1_id": 13,
-    "distrito2_id": 50,
-    "distancia_km": 4.27
+    "distrito2_id": 103,
+    "ubs1_id": 13,
+    "ubs2_id": 103,
+    "distancia_km": 1.18,
+    "impedancia_topografica_km": 1.18,
+    "declividade_pct": 0.63
   },
   {
     "distrito1_id": 13,
-    "distrito2_id": 51,
-    "distancia_km": 2.22
+    "distrito2_id": 106,
+    "ubs1_id": 13,
+    "ubs2_id": 106,
+    "distancia_km": 0.69,
+    "impedancia_topografica_km": 0.69,
+    "declividade_pct": 1.41
+  },
+  {
+    "distrito1_id": 13,
+    "distrito2_id": 440,
+    "ubs1_id": 13,
+    "ubs2_id": 440,
+    "distancia_km": 1.29,
+    "impedancia_topografica_km": 1.29,
+    "declividade_pct": 0.25
   },
   {
     "distrito1_id": 14,
-    "distrito2_id": 33,
-    "distancia_km": 2.71
+    "distrito2_id": 15,
+    "ubs1_id": 14,
+    "ubs2_id": 15,
+    "distancia_km": 0.57,
+    "impedancia_topografica_km": 0.57,
+    "declividade_pct": 0.58
   },
   {
     "distrito1_id": 14,
-    "distrito2_id": 49,
-    "distancia_km": 1.35
-  },
-  {
-    "distrito1_id": 14,
-    "distrito2_id": 54,
-    "distancia_km": 2.77
-  },
-  {
-    "distrito1_id": 14,
-    "distrito2_id": 80,
-    "distancia_km": 2.61
-  },
-  {
-    "distrito1_id": 14,
-    "distrito2_id": 92,
-    "distancia_km": 2.49
+    "distrito2_id": 18,
+    "ubs1_id": 14,
+    "ubs2_id": 18,
+    "distancia_km": 1.44,
+    "impedancia_topografica_km": 1.44,
+    "declividade_pct": 0.01
   },
   {
     "distrito1_id": 15,
-    "distrito2_id": 22,
-    "distancia_km": 5.04
+    "distrito2_id": 174,
+    "ubs1_id": 15,
+    "ubs2_id": 174,
+    "distancia_km": 1.14,
+    "impedancia_topografica_km": 1.14,
+    "declividade_pct": 0.7
   },
   {
     "distrito1_id": 15,
-    "distrito2_id": 34,
-    "distancia_km": 3.45
+    "distrito2_id": 318,
+    "ubs1_id": 15,
+    "ubs2_id": 318,
+    "distancia_km": 1.14,
+    "impedancia_topografica_km": 1.14,
+    "declividade_pct": 0.68
   },
   {
     "distrito1_id": 15,
-    "distrito2_id": 37,
-    "distancia_km": 3.36
-  },
-  {
-    "distrito1_id": 15,
-    "distrito2_id": 53,
-    "distancia_km": 4.13
-  },
-  {
-    "distrito1_id": 15,
-    "distrito2_id": 72,
-    "distancia_km": 2.46
-  },
-  {
-    "distrito1_id": 15,
-    "distrito2_id": 79,
-    "distancia_km": 3.48
+    "distrito2_id": 319,
+    "ubs1_id": 15,
+    "ubs2_id": 319,
+    "distancia_km": 1.3,
+    "impedancia_topografica_km": 1.3,
+    "declividade_pct": 0.5
   },
   {
     "distrito1_id": 16,
-    "distrito2_id": 22,
-    "distancia_km": 2.39
+    "distrito2_id": 17,
+    "ubs1_id": 16,
+    "ubs2_id": 17,
+    "distancia_km": 0.85,
+    "impedancia_topografica_km": 0.85,
+    "declividade_pct": 2.98
   },
   {
     "distrito1_id": 16,
-    "distrito2_id": 23,
-    "distancia_km": 8.24
+    "distrito2_id": 102,
+    "ubs1_id": 16,
+    "ubs2_id": 102,
+    "distancia_km": 2.29,
+    "impedancia_topografica_km": 2.29,
+    "declividade_pct": 0.1
   },
   {
     "distrito1_id": 16,
-    "distrito2_id": 59,
-    "distancia_km": 3.73
-  },
-  {
-    "distrito1_id": 16,
-    "distrito2_id": 72,
-    "distancia_km": 3.85
-  },
-  {
-    "distrito1_id": 16,
-    "distrito2_id": 81,
-    "distancia_km": 3.4
+    "distrito2_id": 103,
+    "ubs1_id": 16,
+    "ubs2_id": 103,
+    "distancia_km": 0.52,
+    "impedancia_topografica_km": 0.52,
+    "declividade_pct": 2.25
   },
   {
     "distrito1_id": 17,
-    "distrito2_id": 19,
-    "distancia_km": 3.65
-  },
-  {
-    "distrito1_id": 17,
-    "distrito2_id": 45,
-    "distancia_km": 3.55
-  },
-  {
-    "distrito1_id": 17,
-    "distrito2_id": 85,
-    "distancia_km": 4.41
-  },
-  {
-    "distrito1_id": 17,
-    "distrito2_id": 96,
-    "distancia_km": 5.71
+    "distrito2_id": 18,
+    "ubs1_id": 17,
+    "ubs2_id": 18,
+    "distancia_km": 0.95,
+    "impedancia_topografica_km": 0.95,
+    "declividade_pct": 0.25
   },
   {
     "distrito1_id": 18,
-    "distrito2_id": 28,
-    "distancia_km": 2.62
+    "distrito2_id": 318,
+    "ubs1_id": 18,
+    "ubs2_id": 318,
+    "distancia_km": 1.61,
+    "impedancia_topografica_km": 1.61,
+    "declividade_pct": 0.67
   },
   {
     "distrito1_id": 18,
-    "distrito2_id": 60,
-    "distancia_km": 3.09
-  },
-  {
-    "distrito1_id": 18,
-    "distrito2_id": 65,
-    "distancia_km": 2.17
+    "distrito2_id": 440,
+    "ubs1_id": 18,
+    "ubs2_id": 440,
+    "distancia_km": 1.2,
+    "impedancia_topografica_km": 1.2,
+    "declividade_pct": 0.58
   },
   {
     "distrito1_id": 19,
-    "distrito2_id": 42,
-    "distancia_km": 2.82
-  },
-  {
-    "distrito1_id": 19,
-    "distrito2_id": 45,
-    "distancia_km": 3.24
+    "distrito2_id": 20,
+    "ubs1_id": 19,
+    "ubs2_id": 20,
+    "distancia_km": 0.98,
+    "impedancia_topografica_km": 0.98,
+    "declividade_pct": 0.46
   },
   {
     "distrito1_id": 20,
+    "distrito2_id": 328,
+    "ubs1_id": 20,
+    "ubs2_id": 328,
+    "distancia_km": 0.75,
+    "impedancia_topografica_km": 0.75,
+    "declividade_pct": 0.03
+  },
+  {
+    "distrito1_id": 21,
+    "distrito2_id": 22,
+    "ubs1_id": 21,
+    "ubs2_id": 22,
+    "distancia_km": 0.38,
+    "impedancia_topografica_km": 0.38,
+    "declividade_pct": 0.0
+  },
+  {
+    "distrito1_id": 21,
     "distrito2_id": 24,
-    "distancia_km": 6.16
-  },
-  {
-    "distrito1_id": 20,
-    "distrito2_id": 60,
-    "distancia_km": 3.5
-  },
-  {
-    "distrito1_id": 20,
-    "distrito2_id": 82,
-    "distancia_km": 2.35
-  },
-  {
-    "distrito1_id": 20,
-    "distrito2_id": 87,
-    "distancia_km": 1.52
-  },
-  {
-    "distrito1_id": 20,
-    "distrito2_id": 93,
-    "distancia_km": 2.99
+    "ubs1_id": 21,
+    "ubs2_id": 24,
+    "distancia_km": 1.69,
+    "impedancia_topografica_km": 1.69,
+    "declividade_pct": 0.2
   },
   {
     "distrito1_id": 21,
-    "distrito2_id": 50,
-    "distancia_km": 1.3
-  },
-  {
-    "distrito1_id": 21,
-    "distrito2_id": 51,
-    "distancia_km": 3.99
-  },
-  {
-    "distrito1_id": 21,
-    "distrito2_id": 70,
-    "distancia_km": 4.53
-  },
-  {
-    "distrito1_id": 21,
-    "distrito2_id": 71,
-    "distancia_km": 3.37
+    "distrito2_id": 423,
+    "ubs1_id": 21,
+    "ubs2_id": 423,
+    "distancia_km": 2.53,
+    "impedancia_topografica_km": 2.53,
+    "declividade_pct": 1.34
   },
   {
     "distrito1_id": 22,
+    "distrito2_id": 267,
+    "ubs1_id": 22,
+    "ubs2_id": 267,
+    "distancia_km": 1.45,
+    "impedancia_topografica_km": 1.45,
+    "declividade_pct": 0.43
+  },
+  {
+    "distrito1_id": 22,
+    "distrito2_id": 436,
+    "ubs1_id": 22,
+    "ubs2_id": 436,
+    "distancia_km": 2.85,
+    "impedancia_topografica_km": 2.85,
+    "declividade_pct": 1.19
+  },
+  {
+    "distrito1_id": 23,
+    "distrito2_id": 285,
+    "ubs1_id": 23,
+    "ubs2_id": 285,
+    "distancia_km": 2.11,
+    "impedancia_topografica_km": 2.11,
+    "declividade_pct": 0.46
+  },
+  {
+    "distrito1_id": 23,
+    "distrito2_id": 328,
+    "ubs1_id": 23,
+    "ubs2_id": 328,
+    "distancia_km": 2.71,
+    "impedancia_topografica_km": 2.72,
+    "declividade_pct": 2.42
+  },
+  {
+    "distrito1_id": 23,
+    "distrito2_id": 342,
+    "ubs1_id": 23,
+    "ubs2_id": 342,
+    "distancia_km": 1.04,
+    "impedancia_topografica_km": 1.04,
+    "declividade_pct": 0.04
+  },
+  {
+    "distrito1_id": 23,
+    "distrito2_id": 343,
+    "ubs1_id": 23,
+    "ubs2_id": 343,
+    "distancia_km": 1.28,
+    "impedancia_topografica_km": 1.28,
+    "declividade_pct": 1.18
+  },
+  {
+    "distrito1_id": 23,
+    "distrito2_id": 345,
+    "ubs1_id": 23,
+    "ubs2_id": 345,
+    "distancia_km": 2.72,
+    "impedancia_topografica_km": 2.72,
+    "declividade_pct": 0.74
+  },
+  {
+    "distrito1_id": 24,
+    "distrito2_id": 267,
+    "ubs1_id": 24,
+    "ubs2_id": 267,
+    "distancia_km": 2.04,
+    "impedancia_topografica_km": 2.04,
+    "declividade_pct": 0.14
+  },
+  {
+    "distrito1_id": 24,
+    "distrito2_id": 285,
+    "ubs1_id": 24,
+    "ubs2_id": 285,
+    "distancia_km": 1.62,
+    "impedancia_topografica_km": 1.62,
+    "declividade_pct": 1.35
+  },
+  {
+    "distrito1_id": 24,
+    "distrito2_id": 393,
+    "ubs1_id": 24,
+    "ubs2_id": 393,
+    "distancia_km": 2.19,
+    "impedancia_topografica_km": 2.19,
+    "declividade_pct": 1.29
+  },
+  {
+    "distrito1_id": 25,
+    "distrito2_id": 29,
+    "ubs1_id": 25,
+    "ubs2_id": 29,
+    "distancia_km": 1.07,
+    "impedancia_topografica_km": 1.07,
+    "declividade_pct": 0.26
+  },
+  {
+    "distrito1_id": 25,
+    "distrito2_id": 35,
+    "ubs1_id": 25,
+    "ubs2_id": 35,
+    "distancia_km": 0.79,
+    "impedancia_topografica_km": 0.79,
+    "declividade_pct": 1.05
+  },
+  {
+    "distrito1_id": 25,
+    "distrito2_id": 39,
+    "ubs1_id": 25,
+    "ubs2_id": 39,
+    "distancia_km": 1.67,
+    "impedancia_topografica_km": 1.67,
+    "declividade_pct": 1.86
+  },
+  {
+    "distrito1_id": 25,
+    "distrito2_id": 41,
+    "ubs1_id": 25,
+    "ubs2_id": 41,
+    "distancia_km": 1.35,
+    "impedancia_topografica_km": 1.35,
+    "declividade_pct": 0.1
+  },
+  {
+    "distrito1_id": 25,
+    "distrito2_id": 42,
+    "ubs1_id": 25,
+    "ubs2_id": 42,
+    "distancia_km": 1.38,
+    "impedancia_topografica_km": 1.39,
+    "declividade_pct": 2.62
+  },
+  {
+    "distrito1_id": 25,
+    "distrito2_id": 133,
+    "ubs1_id": 25,
+    "ubs2_id": 133,
+    "distancia_km": 1.41,
+    "impedancia_topografica_km": 1.41,
+    "declividade_pct": 1.79
+  },
+  {
+    "distrito1_id": 26,
     "distrito2_id": 27,
-    "distancia_km": 6.49
+    "ubs1_id": 26,
+    "ubs2_id": 27,
+    "distancia_km": 0.95,
+    "impedancia_topografica_km": 0.95,
+    "declividade_pct": 0.82
   },
   {
-    "distrito1_id": 22,
-    "distrito2_id": 37,
-    "distancia_km": 2.55
+    "distrito1_id": 26,
+    "distrito2_id": 28,
+    "ubs1_id": 26,
+    "ubs2_id": 28,
+    "distancia_km": 0.7,
+    "impedancia_topografica_km": 0.7,
+    "declividade_pct": 0.61
   },
   {
-    "distrito1_id": 22,
-    "distrito2_id": 59,
-    "distancia_km": 2.56
-  },
-  {
-    "distrito1_id": 22,
-    "distrito2_id": 72,
-    "distancia_km": 4.98
-  },
-  {
-    "distrito1_id": 23,
-    "distrito2_id": 30,
-    "distancia_km": 6.24
-  },
-  {
-    "distrito1_id": 23,
-    "distrito2_id": 56,
-    "distancia_km": 9.03
-  },
-  {
-    "distrito1_id": 23,
-    "distrito2_id": 59,
-    "distancia_km": 7.73
-  },
-  {
-    "distrito1_id": 23,
-    "distrito2_id": 81,
-    "distancia_km": 6.13
-  },
-  {
-    "distrito1_id": 24,
-    "distrito2_id": 36,
-    "distancia_km": 4.18
-  },
-  {
-    "distrito1_id": 24,
-    "distrito2_id": 58,
-    "distancia_km": 2.47
-  },
-  {
-    "distrito1_id": 24,
-    "distrito2_id": 75,
-    "distancia_km": 4.4
-  },
-  {
-    "distrito1_id": 24,
-    "distrito2_id": 93,
-    "distancia_km": 4.22
-  },
-  {
-    "distrito1_id": 25,
-    "distrito2_id": 31,
-    "distancia_km": 3.44
-  },
-  {
-    "distrito1_id": 25,
+    "distrito1_id": 26,
     "distrito2_id": 32,
-    "distancia_km": 3.08
-  },
-  {
-    "distrito1_id": 25,
-    "distrito2_id": 46,
-    "distancia_km": 3.43
-  },
-  {
-    "distrito1_id": 26,
-    "distrito2_id": 44,
-    "distancia_km": 2.0
+    "ubs1_id": 26,
+    "ubs2_id": 32,
+    "distancia_km": 0.78,
+    "impedancia_topografica_km": 0.78,
+    "declividade_pct": 1.21
   },
   {
     "distrito1_id": 26,
-    "distrito2_id": 61,
-    "distancia_km": 2.02
-  },
-  {
-    "distrito1_id": 26,
-    "distrito2_id": 63,
-    "distancia_km": 2.69
-  },
-  {
-    "distrito1_id": 26,
-    "distrito2_id": 67,
-    "distancia_km": 2.37
-  },
-  {
-    "distrito1_id": 26,
-    "distrito2_id": 70,
-    "distancia_km": 1.99
+    "distrito2_id": 132,
+    "ubs1_id": 26,
+    "ubs2_id": 132,
+    "distancia_km": 1.34,
+    "impedancia_topografica_km": 1.34,
+    "declividade_pct": 2.06
   },
   {
     "distrito1_id": 27,
-    "distrito2_id": 33,
-    "distancia_km": 4.19
+    "distrito2_id": 28,
+    "ubs1_id": 27,
+    "ubs2_id": 28,
+    "distancia_km": 0.72,
+    "impedancia_topografica_km": 0.72,
+    "declividade_pct": 0.49
   },
   {
     "distrito1_id": 27,
-    "distrito2_id": 37,
-    "distancia_km": 4.07
+    "distrito2_id": 31,
+    "ubs1_id": 27,
+    "ubs2_id": 31,
+    "distancia_km": 1.46,
+    "impedancia_topografica_km": 1.46,
+    "declividade_pct": 2.06
   },
   {
     "distrito1_id": 27,
-    "distrito2_id": 69,
-    "distancia_km": 1.6
+    "distrito2_id": 35,
+    "ubs1_id": 27,
+    "ubs2_id": 35,
+    "distancia_km": 1.15,
+    "impedancia_topografica_km": 1.15,
+    "declividade_pct": 0.1
   },
   {
     "distrito1_id": 27,
-    "distrito2_id": 79,
-    "distancia_km": 2.63
-  },
-  {
-    "distrito1_id": 27,
-    "distrito2_id": 92,
-    "distancia_km": 5.24
+    "distrito2_id": 36,
+    "ubs1_id": 27,
+    "ubs2_id": 36,
+    "distancia_km": 0.7,
+    "impedancia_topografica_km": 0.7,
+    "declividade_pct": 3.3
   },
   {
     "distrito1_id": 28,
-    "distrito2_id": 65,
-    "distancia_km": 2.61
+    "distrito2_id": 30,
+    "ubs1_id": 28,
+    "ubs2_id": 30,
+    "distancia_km": 1.37,
+    "impedancia_topografica_km": 1.37,
+    "declividade_pct": 0.7
   },
   {
     "distrito1_id": 28,
-    "distrito2_id": 89,
-    "distancia_km": 2.77
+    "distrito2_id": 36,
+    "ubs1_id": 28,
+    "ubs2_id": 36,
+    "distancia_km": 0.8,
+    "impedancia_topografica_km": 0.8,
+    "declividade_pct": 2.45
+  },
+  {
+    "distrito1_id": 28,
+    "distrito2_id": 132,
+    "ubs1_id": 28,
+    "ubs2_id": 132,
+    "distancia_km": 1.39,
+    "impedancia_topografica_km": 1.39,
+    "declividade_pct": 1.68
   },
   {
     "distrito1_id": 29,
-    "distrito2_id": 48,
-    "distancia_km": 5.66
+    "distrito2_id": 31,
+    "ubs1_id": 29,
+    "ubs2_id": 31,
+    "distancia_km": 1.64,
+    "impedancia_topografica_km": 1.64,
+    "declividade_pct": 1.43
   },
   {
     "distrito1_id": 29,
-    "distrito2_id": 50,
-    "distancia_km": 2.77
+    "distrito2_id": 35,
+    "ubs1_id": 29,
+    "ubs2_id": 35,
+    "distancia_km": 1.0,
+    "impedancia_topografica_km": 1.0,
+    "declividade_pct": 0.55
   },
   {
     "distrito1_id": 29,
-    "distrito2_id": 64,
-    "distancia_km": 3.71
+    "distrito2_id": 41,
+    "ubs1_id": 29,
+    "ubs2_id": 41,
+    "distancia_km": 1.26,
+    "impedancia_topografica_km": 1.26,
+    "declividade_pct": 0.12
   },
   {
     "distrito1_id": 30,
-    "distrito2_id": 56,
-    "distancia_km": 3.57
+    "distrito2_id": 33,
+    "ubs1_id": 30,
+    "ubs2_id": 33,
+    "distancia_km": 0.75,
+    "impedancia_topografica_km": 0.75,
+    "declividade_pct": 0.63
+  },
+  {
+    "distrito1_id": 30,
+    "distrito2_id": 34,
+    "ubs1_id": 30,
+    "ubs2_id": 34,
+    "distancia_km": 1.24,
+    "impedancia_topografica_km": 1.24,
+    "declividade_pct": 0.01
+  },
+  {
+    "distrito1_id": 30,
+    "distrito2_id": 36,
+    "ubs1_id": 30,
+    "ubs2_id": 36,
+    "distancia_km": 1.32,
+    "impedancia_topografica_km": 1.32,
+    "declividade_pct": 0.76
+  },
+  {
+    "distrito1_id": 30,
+    "distrito2_id": 132,
+    "ubs1_id": 30,
+    "ubs2_id": 132,
+    "distancia_km": 1.78,
+    "impedancia_topografica_km": 1.78,
+    "declividade_pct": 1.85
+  },
+  {
+    "distrito1_id": 30,
+    "distrito2_id": 311,
+    "ubs1_id": 30,
+    "ubs2_id": 311,
+    "distancia_km": 1.59,
+    "impedancia_topografica_km": 1.59,
+    "declividade_pct": 0.11
+  },
+  {
+    "distrito1_id": 30,
+    "distrito2_id": 317,
+    "ubs1_id": 30,
+    "ubs2_id": 317,
+    "distancia_km": 1.74,
+    "impedancia_topografica_km": 1.74,
+    "declividade_pct": 0.75
   },
   {
     "distrito1_id": 31,
-    "distrito2_id": 46,
-    "distancia_km": 2.83
+    "distrito2_id": 34,
+    "ubs1_id": 31,
+    "ubs2_id": 34,
+    "distancia_km": 1.56,
+    "impedancia_topografica_km": 1.56,
+    "declividade_pct": 1.08
   },
   {
     "distrito1_id": 31,
-    "distrito2_id": 47,
-    "distancia_km": 2.88
+    "distrito2_id": 36,
+    "ubs1_id": 31,
+    "ubs2_id": 36,
+    "distancia_km": 1.5,
+    "impedancia_topografica_km": 1.5,
+    "declividade_pct": 0.47
   },
   {
     "distrito1_id": 32,
-    "distrito2_id": 46,
-    "distancia_km": 4.68
+    "distrito2_id": 35,
+    "ubs1_id": 32,
+    "ubs2_id": 35,
+    "distancia_km": 0.85,
+    "impedancia_topografica_km": 0.85,
+    "declividade_pct": 0.33
   },
   {
     "distrito1_id": 32,
-    "distrito2_id": 58,
-    "distancia_km": 5.69
-  },
-  {
-    "distrito1_id": 32,
-    "distrito2_id": 75,
-    "distancia_km": 5.94
-  },
-  {
-    "distrito1_id": 32,
-    "distrito2_id": 77,
-    "distancia_km": 3.55
+    "distrito2_id": 133,
+    "ubs1_id": 32,
+    "ubs2_id": 133,
+    "distancia_km": 1.22,
+    "impedancia_topografica_km": 1.22,
+    "declividade_pct": 1.16
   },
   {
     "distrito1_id": 33,
-    "distrito2_id": 54,
-    "distancia_km": 3.05
+    "distrito2_id": 34,
+    "ubs1_id": 33,
+    "ubs2_id": 34,
+    "distancia_km": 1.12,
+    "impedancia_topografica_km": 1.12,
+    "declividade_pct": 0.41
   },
   {
     "distrito1_id": 33,
-    "distrito2_id": 69,
-    "distancia_km": 4.59
+    "distrito2_id": 200,
+    "ubs1_id": 33,
+    "ubs2_id": 200,
+    "distancia_km": 1.03,
+    "impedancia_topografica_km": 1.06,
+    "declividade_pct": 5.35
   },
   {
     "distrito1_id": 33,
-    "distrito2_id": 92,
-    "distancia_km": 2.94
-  },
-  {
-    "distrito1_id": 33,
-    "distrito2_id": 95,
-    "distancia_km": 3.87
-  },
-  {
-    "distrito1_id": 34,
-    "distrito2_id": 44,
-    "distancia_km": 4.22
+    "distrito2_id": 314,
+    "ubs1_id": 33,
+    "ubs2_id": 314,
+    "distancia_km": 0.63,
+    "impedancia_topografica_km": 0.63,
+    "declividade_pct": 0.73
   },
   {
     "distrito1_id": 34,
-    "distrito2_id": 53,
-    "distancia_km": 2.21
+    "distrito2_id": 36,
+    "ubs1_id": 34,
+    "ubs2_id": 36,
+    "distancia_km": 0.54,
+    "impedancia_topografica_km": 0.54,
+    "declividade_pct": 1.83
   },
   {
-    "distrito1_id": 34,
-    "distrito2_id": 55,
-    "distancia_km": 3.7
+    "distrito1_id": 37,
+    "distrito2_id": 38,
+    "ubs1_id": 37,
+    "ubs2_id": 38,
+    "distancia_km": 1.97,
+    "impedancia_topografica_km": 1.97,
+    "declividade_pct": 0.05
   },
   {
-    "distrito1_id": 34,
-    "distrito2_id": 63,
-    "distancia_km": 4.73
+    "distrito1_id": 37,
+    "distrito2_id": 332,
+    "ubs1_id": 37,
+    "ubs2_id": 332,
+    "distancia_km": 2.14,
+    "impedancia_topografica_km": 2.14,
+    "declividade_pct": 0.1
   },
   {
-    "distrito1_id": 34,
-    "distrito2_id": 72,
-    "distancia_km": 4.59
+    "distrito1_id": 37,
+    "distrito2_id": 453,
+    "ubs1_id": 37,
+    "ubs2_id": 453,
+    "distancia_km": 2.66,
+    "impedancia_topografica_km": 2.66,
+    "declividade_pct": 0.38
   },
   {
-    "distrito1_id": 34,
-    "distrito2_id": 85,
-    "distancia_km": 5.7
+    "distrito1_id": 37,
+    "distrito2_id": 454,
+    "ubs1_id": 37,
+    "ubs2_id": 454,
+    "distancia_km": 2.31,
+    "impedancia_topografica_km": 2.31,
+    "declividade_pct": 0.62
   },
   {
-    "distrito1_id": 35,
+    "distrito1_id": 38,
+    "distrito2_id": 268,
+    "ubs1_id": 38,
+    "ubs2_id": 268,
+    "distancia_km": 3.55,
+    "impedancia_topografica_km": 3.55,
+    "declividade_pct": 0.78
+  },
+  {
+    "distrito1_id": 38,
+    "distrito2_id": 309,
+    "ubs1_id": 38,
+    "ubs2_id": 309,
+    "distancia_km": 3.72,
+    "impedancia_topografica_km": 3.72,
+    "declividade_pct": 0.52
+  },
+  {
+    "distrito1_id": 38,
+    "distrito2_id": 454,
+    "ubs1_id": 38,
+    "ubs2_id": 454,
+    "distancia_km": 2.9,
+    "impedancia_topografica_km": 2.9,
+    "declividade_pct": 0.47
+  },
+  {
+    "distrito1_id": 39,
+    "distrito2_id": 42,
+    "ubs1_id": 39,
+    "ubs2_id": 42,
+    "distancia_km": 1.04,
+    "impedancia_topografica_km": 1.04,
+    "declividade_pct": 0.48
+  },
+  {
+    "distrito1_id": 39,
     "distrito2_id": 43,
-    "distancia_km": 2.86
-  },
-  {
-    "distrito1_id": 35,
-    "distrito2_id": 47,
-    "distancia_km": 3.79
-  },
-  {
-    "distrito1_id": 35,
-    "distrito2_id": 86,
-    "distancia_km": 3.28
-  },
-  {
-    "distrito1_id": 36,
-    "distrito2_id": 46,
-    "distancia_km": 4.54
-  },
-  {
-    "distrito1_id": 36,
-    "distrito2_id": 47,
-    "distancia_km": 5.32
-  },
-  {
-    "distrito1_id": 36,
-    "distrito2_id": 58,
-    "distancia_km": 4.36
-  },
-  {
-    "distrito1_id": 36,
-    "distrito2_id": 65,
-    "distancia_km": 4.72
-  },
-  {
-    "distrito1_id": 36,
-    "distrito2_id": 76,
-    "distancia_km": 3.17
-  },
-  {
-    "distrito1_id": 36,
-    "distrito2_id": 89,
-    "distancia_km": 3.38
-  },
-  {
-    "distrito1_id": 37,
-    "distrito2_id": 72,
-    "distancia_km": 4.54
-  },
-  {
-    "distrito1_id": 37,
-    "distrito2_id": 79,
-    "distancia_km": 4.42
-  },
-  {
-    "distrito1_id": 38,
-    "distrito2_id": 83,
-    "distancia_km": 3.11
-  },
-  {
-    "distrito1_id": 38,
-    "distrito2_id": 84,
-    "distancia_km": 3.74
-  },
-  {
-    "distrito1_id": 38,
-    "distrito2_id": 94,
-    "distancia_km": 3.58
+    "ubs1_id": 39,
+    "ubs2_id": 43,
+    "distancia_km": 0.99,
+    "impedancia_topografica_km": 1.0,
+    "declividade_pct": 3.57
   },
   {
     "distrito1_id": 39,
-    "distrito2_id": 48,
-    "distancia_km": 4.78
+    "distrito2_id": 81,
+    "ubs1_id": 39,
+    "ubs2_id": 81,
+    "distancia_km": 1.17,
+    "impedancia_topografica_km": 1.17,
+    "declividade_pct": 0.85
   },
   {
     "distrito1_id": 39,
-    "distrito2_id": 73,
-    "distancia_km": 1.91
-  },
-  {
-    "distrito1_id": 39,
-    "distrito2_id": 90,
-    "distancia_km": 3.14
+    "distrito2_id": 262,
+    "ubs1_id": 39,
+    "ubs2_id": 262,
+    "distancia_km": 1.77,
+    "impedancia_topografica_km": 1.77,
+    "declividade_pct": 0.81
   },
   {
     "distrito1_id": 40,
-    "distrito2_id": 68,
-    "distancia_km": 2.71
+    "distrito2_id": 43,
+    "ubs1_id": 40,
+    "ubs2_id": 43,
+    "distancia_km": 0.58,
+    "impedancia_topografica_km": 0.58,
+    "declividade_pct": 0.16
   },
   {
     "distrito1_id": 40,
-    "distrito2_id": 90,
-    "distancia_km": 3.42
+    "distrito2_id": 261,
+    "ubs1_id": 40,
+    "ubs2_id": 261,
+    "distancia_km": 2.52,
+    "impedancia_topografica_km": 2.52,
+    "declividade_pct": 0.57
+  },
+  {
+    "distrito1_id": 40,
+    "distrito2_id": 262,
+    "ubs1_id": 40,
+    "ubs2_id": 262,
+    "distancia_km": 1.8,
+    "impedancia_topografica_km": 1.8,
+    "declividade_pct": 1.22
   },
   {
     "distrito1_id": 41,
-    "distrito2_id": 62,
-    "distancia_km": 3.9
-  },
-  {
-    "distrito1_id": 41,
-    "distrito2_id": 64,
-    "distancia_km": 2.92
-  },
-  {
-    "distrito1_id": 41,
-    "distrito2_id": 73,
-    "distancia_km": 5.11
+    "distrito2_id": 43,
+    "ubs1_id": 41,
+    "ubs2_id": 43,
+    "distancia_km": 0.45,
+    "impedancia_topografica_km": 0.45,
+    "declividade_pct": 1.22
   },
   {
     "distrito1_id": 42,
-    "distrito2_id": 45,
-    "distancia_km": 4.48
-  },
-  {
-    "distrito1_id": 43,
-    "distrito2_id": 76,
-    "distancia_km": 5.04
-  },
-  {
-    "distrito1_id": 43,
-    "distrito2_id": 86,
-    "distancia_km": 3.6
-  },
-  {
-    "distrito1_id": 44,
-    "distrito2_id": 53,
-    "distancia_km": 3.41
-  },
-  {
-    "distrito1_id": 44,
-    "distrito2_id": 61,
-    "distancia_km": 3.0
-  },
-  {
-    "distrito1_id": 44,
-    "distrito2_id": 63,
-    "distancia_km": 1.87
-  },
-  {
-    "distrito1_id": 44,
-    "distrito2_id": 92,
-    "distancia_km": 3.88
-  },
-  {
-    "distrito1_id": 45,
-    "distrito2_id": 72,
-    "distancia_km": 6.61
-  },
-  {
-    "distrito1_id": 45,
-    "distrito2_id": 81,
-    "distancia_km": 4.76
-  },
-  {
-    "distrito1_id": 45,
-    "distrito2_id": 85,
-    "distancia_km": 5.01
-  },
-  {
-    "distrito1_id": 46,
-    "distrito2_id": 47,
-    "distancia_km": 4.88
-  },
-  {
-    "distrito1_id": 46,
-    "distrito2_id": 58,
-    "distancia_km": 3.39
-  },
-  {
-    "distrito1_id": 47,
-    "distrito2_id": 76,
-    "distancia_km": 4.73
-  },
-  {
-    "distrito1_id": 47,
-    "distrito2_id": 86,
-    "distancia_km": 2.36
-  },
-  {
-    "distrito1_id": 48,
-    "distrito2_id": 61,
-    "distancia_km": 2.94
-  },
-  {
-    "distrito1_id": 48,
-    "distrito2_id": 64,
-    "distancia_km": 6.64
-  },
-  {
-    "distrito1_id": 48,
-    "distrito2_id": 73,
-    "distancia_km": 5.91
-  },
-  {
-    "distrito1_id": 48,
-    "distrito2_id": 90,
-    "distancia_km": 2.07
-  },
-  {
-    "distrito1_id": 49,
-    "distrito2_id": 67,
-    "distancia_km": 2.59
-  },
-  {
-    "distrito1_id": 49,
     "distrito2_id": 80,
-    "distancia_km": 2.14
+    "ubs1_id": 42,
+    "ubs2_id": 80,
+    "distancia_km": 0.93,
+    "impedancia_topografica_km": 0.93,
+    "declividade_pct": 0.34
+  },
+  {
+    "distrito1_id": 42,
+    "distrito2_id": 133,
+    "ubs1_id": 42,
+    "ubs2_id": 133,
+    "distancia_km": 1.04,
+    "impedancia_topografica_km": 1.04,
+    "declividade_pct": 1.04
+  },
+  {
+    "distrito1_id": 44,
+    "distrito2_id": 45,
+    "ubs1_id": 44,
+    "ubs2_id": 45,
+    "distancia_km": 1.48,
+    "impedancia_topografica_km": 1.48,
+    "declividade_pct": 0.39
+  },
+  {
+    "distrito1_id": 44,
+    "distrito2_id": 161,
+    "ubs1_id": 44,
+    "ubs2_id": 161,
+    "distancia_km": 1.23,
+    "impedancia_topografica_km": 1.23,
+    "declividade_pct": 1.29
+  },
+  {
+    "distrito1_id": 44,
+    "distrito2_id": 439,
+    "ubs1_id": 44,
+    "ubs2_id": 439,
+    "distancia_km": 3.13,
+    "impedancia_topografica_km": 3.13,
+    "declividade_pct": 0.67
+  },
+  {
+    "distrito1_id": 45,
+    "distrito2_id": 267,
+    "ubs1_id": 45,
+    "ubs2_id": 267,
+    "distancia_km": 2.88,
+    "impedancia_topografica_km": 2.88,
+    "declividade_pct": 1.06
+  },
+  {
+    "distrito1_id": 45,
+    "distrito2_id": 393,
+    "ubs1_id": 45,
+    "ubs2_id": 393,
+    "distancia_km": 0.67,
+    "impedancia_topografica_km": 0.67,
+    "declividade_pct": 0.78
+  },
+  {
+    "distrito1_id": 46,
+    "distrito2_id": 166,
+    "ubs1_id": 46,
+    "ubs2_id": 166,
+    "distancia_km": 2.25,
+    "impedancia_topografica_km": 2.25,
+    "declividade_pct": 0.22
+  },
+  {
+    "distrito1_id": 46,
+    "distrito2_id": 184,
+    "ubs1_id": 46,
+    "ubs2_id": 184,
+    "distancia_km": 1.92,
+    "impedancia_topografica_km": 1.92,
+    "declividade_pct": 1.2
+  },
+  {
+    "distrito1_id": 46,
+    "distrito2_id": 266,
+    "ubs1_id": 46,
+    "ubs2_id": 266,
+    "distancia_km": 3.42,
+    "impedancia_topografica_km": 3.42,
+    "declividade_pct": 0.33
+  },
+  {
+    "distrito1_id": 46,
+    "distrito2_id": 391,
+    "ubs1_id": 46,
+    "ubs2_id": 391,
+    "distancia_km": 2.4,
+    "impedancia_topografica_km": 2.4,
+    "declividade_pct": 0.27
+  },
+  {
+    "distrito1_id": 47,
+    "distrito2_id": 48,
+    "ubs1_id": 47,
+    "ubs2_id": 48,
+    "distancia_km": 0.68,
+    "impedancia_topografica_km": 0.68,
+    "declividade_pct": 0.16
+  },
+  {
+    "distrito1_id": 47,
+    "distrito2_id": 89,
+    "ubs1_id": 47,
+    "ubs2_id": 89,
+    "distancia_km": 2.2,
+    "impedancia_topografica_km": 2.2,
+    "declividade_pct": 0.63
+  },
+  {
+    "distrito1_id": 47,
+    "distrito2_id": 92,
+    "ubs1_id": 47,
+    "ubs2_id": 92,
+    "distancia_km": 2.2,
+    "impedancia_topografica_km": 2.2,
+    "declividade_pct": 0.1
+  },
+  {
+    "distrito1_id": 47,
+    "distrito2_id": 347,
+    "ubs1_id": 47,
+    "ubs2_id": 347,
+    "distancia_km": 3.39,
+    "impedancia_topografica_km": 3.39,
+    "declividade_pct": 0.35
+  },
+  {
+    "distrito1_id": 48,
+    "distrito2_id": 87,
+    "ubs1_id": 48,
+    "ubs2_id": 87,
+    "distancia_km": 1.88,
+    "impedancia_topografica_km": 1.88,
+    "declividade_pct": 0.19
+  },
+  {
+    "distrito1_id": 48,
+    "distrito2_id": 298,
+    "ubs1_id": 48,
+    "ubs2_id": 298,
+    "distancia_km": 2.01,
+    "impedancia_topografica_km": 2.01,
+    "declividade_pct": 0.04
+  },
+  {
+    "distrito1_id": 48,
+    "distrito2_id": 394,
+    "ubs1_id": 48,
+    "ubs2_id": 394,
+    "distancia_km": 2.57,
+    "impedancia_topografica_km": 2.57,
+    "declividade_pct": 0.27
   },
   {
     "distrito1_id": 49,
-    "distrito2_id": 92,
-    "distancia_km": 1.88
+    "distrito2_id": 52,
+    "ubs1_id": 49,
+    "ubs2_id": 52,
+    "distancia_km": 0.55,
+    "impedancia_topografica_km": 0.55,
+    "declividade_pct": 3.25
+  },
+  {
+    "distrito1_id": 49,
+    "distrito2_id": 54,
+    "ubs1_id": 49,
+    "ubs2_id": 54,
+    "distancia_km": 0.96,
+    "impedancia_topografica_km": 0.96,
+    "declividade_pct": 0.45
+  },
+  {
+    "distrito1_id": 49,
+    "distrito2_id": 66,
+    "ubs1_id": 49,
+    "ubs2_id": 66,
+    "distancia_km": 1.57,
+    "impedancia_topografica_km": 1.57,
+    "declividade_pct": 1.03
+  },
+  {
+    "distrito1_id": 49,
+    "distrito2_id": 70,
+    "ubs1_id": 49,
+    "ubs2_id": 70,
+    "distancia_km": 1.06,
+    "impedancia_topografica_km": 1.06,
+    "declividade_pct": 2.09
+  },
+  {
+    "distrito1_id": 49,
+    "distrito2_id": 228,
+    "ubs1_id": 49,
+    "ubs2_id": 228,
+    "distancia_km": 1.89,
+    "impedancia_topografica_km": 1.89,
+    "declividade_pct": 0.44
+  },
+  {
+    "distrito1_id": 50,
+    "distrito2_id": 52,
+    "ubs1_id": 50,
+    "ubs2_id": 52,
+    "distancia_km": 0.92,
+    "impedancia_topografica_km": 0.92,
+    "declividade_pct": 1.17
+  },
+  {
+    "distrito1_id": 50,
+    "distrito2_id": 57,
+    "ubs1_id": 50,
+    "ubs2_id": 57,
+    "distancia_km": 0.87,
+    "impedancia_topografica_km": 0.87,
+    "declividade_pct": 1.07
+  },
+  {
+    "distrito1_id": 50,
+    "distrito2_id": 228,
+    "ubs1_id": 50,
+    "ubs2_id": 228,
+    "distancia_km": 1.6,
+    "impedancia_topografica_km": 1.6,
+    "declividade_pct": 0.07
   },
   {
     "distrito1_id": 51,
-    "distrito2_id": 71,
-    "distancia_km": 4.31
+    "distrito2_id": 52,
+    "ubs1_id": 51,
+    "ubs2_id": 52,
+    "distancia_km": 1.01,
+    "impedancia_topografica_km": 1.01,
+    "declividade_pct": 0.65
   },
   {
     "distrito1_id": 51,
-    "distrito2_id": 83,
-    "distancia_km": 5.83
-  },
-  {
-    "distrito1_id": 51,
-    "distrito2_id": 84,
-    "distancia_km": 3.05
+    "distrito2_id": 54,
+    "ubs1_id": 51,
+    "ubs2_id": 54,
+    "distancia_km": 0.98,
+    "impedancia_topografica_km": 0.98,
+    "declividade_pct": 1.59
   },
   {
     "distrito1_id": 52,
-    "distrito2_id": 56,
-    "distancia_km": 13.87
+    "distrito2_id": 54,
+    "ubs1_id": 52,
+    "ubs2_id": 54,
+    "distancia_km": 0.99,
+    "impedancia_topografica_km": 0.99,
+    "declividade_pct": 2.24
   },
   {
     "distrito1_id": 53,
-    "distrito2_id": 79,
-    "distancia_km": 2.98
+    "distrito2_id": 55,
+    "ubs1_id": 53,
+    "ubs2_id": 55,
+    "distancia_km": 0.72,
+    "impedancia_topografica_km": 0.72,
+    "declividade_pct": 1.32
   },
   {
     "distrito1_id": 53,
-    "distrito2_id": 92,
-    "distancia_km": 2.69
+    "distrito2_id": 409,
+    "ubs1_id": 53,
+    "ubs2_id": 409,
+    "distancia_km": 0.96,
+    "impedancia_topografica_km": 0.96,
+    "declividade_pct": 0.02
   },
   {
     "distrito1_id": 54,
-    "distrito2_id": 95,
-    "distancia_km": 3.01
+    "distrito2_id": 66,
+    "ubs1_id": 54,
+    "ubs2_id": 66,
+    "distancia_km": 1.34,
+    "impedancia_topografica_km": 1.34,
+    "declividade_pct": 1.52
   },
   {
     "distrito1_id": 55,
-    "distrito2_id": 63,
-    "distancia_km": 5.6
+    "distrito2_id": 57,
+    "ubs1_id": 55,
+    "ubs2_id": 57,
+    "distancia_km": 0.65,
+    "impedancia_topografica_km": 0.65,
+    "declividade_pct": 1.88
   },
   {
-    "distrito1_id": 55,
-    "distrito2_id": 72,
-    "distancia_km": 5.26
+    "distrito1_id": 56,
+    "distrito2_id": 57,
+    "ubs1_id": 56,
+    "ubs2_id": 57,
+    "distancia_km": 0.71,
+    "impedancia_topografica_km": 0.71,
+    "declividade_pct": 0.46
   },
   {
-    "distrito1_id": 55,
-    "distrito2_id": 85,
-    "distancia_km": 2.99
+    "distrito1_id": 56,
+    "distrito2_id": 228,
+    "ubs1_id": 56,
+    "ubs2_id": 228,
+    "distancia_km": 1.22,
+    "impedancia_topografica_km": 1.22,
+    "declividade_pct": 0.59
   },
   {
-    "distrito1_id": 55,
-    "distrito2_id": 96,
-    "distancia_km": 2.12
-  },
-  {
-    "distrito1_id": 57,
-    "distrito2_id": 71,
-    "distancia_km": 3.34
-  },
-  {
-    "distrito1_id": 57,
-    "distrito2_id": 88,
-    "distancia_km": 2.49
+    "distrito1_id": 56,
+    "distrito2_id": 239,
+    "ubs1_id": 56,
+    "ubs2_id": 239,
+    "distancia_km": 1.04,
+    "impedancia_topografica_km": 1.04,
+    "declividade_pct": 1.17
   },
   {
     "distrito1_id": 58,
-    "distrito2_id": 75,
-    "distancia_km": 3.65
+    "distrito2_id": 59,
+    "ubs1_id": 58,
+    "ubs2_id": 59,
+    "distancia_km": 1.43,
+    "impedancia_topografica_km": 1.43,
+    "declividade_pct": 0.95
+  },
+  {
+    "distrito1_id": 58,
+    "distrito2_id": 60,
+    "ubs1_id": 58,
+    "ubs2_id": 60,
+    "distancia_km": 1.31,
+    "impedancia_topografica_km": 1.31,
+    "declividade_pct": 0.11
+  },
+  {
+    "distrito1_id": 58,
+    "distrito2_id": 61,
+    "ubs1_id": 58,
+    "ubs2_id": 61,
+    "distancia_km": 0.69,
+    "impedancia_topografica_km": 0.69,
+    "declividade_pct": 1.57
+  },
+  {
+    "distrito1_id": 58,
+    "distrito2_id": 320,
+    "ubs1_id": 58,
+    "ubs2_id": 320,
+    "distancia_km": 1.34,
+    "impedancia_topografica_km": 1.34,
+    "declividade_pct": 0.32
+  },
+  {
+    "distrito1_id": 59,
+    "distrito2_id": 60,
+    "ubs1_id": 59,
+    "ubs2_id": 60,
+    "distancia_km": 1.79,
+    "impedancia_topografica_km": 1.79,
+    "declividade_pct": 0.68
+  },
+  {
+    "distrito1_id": 59,
+    "distrito2_id": 300,
+    "ubs1_id": 59,
+    "ubs2_id": 300,
+    "distancia_km": 1.14,
+    "impedancia_topografica_km": 1.14,
+    "declividade_pct": 0.0
+  },
+  {
+    "distrito1_id": 59,
+    "distrito2_id": 301,
+    "ubs1_id": 59,
+    "ubs2_id": 301,
+    "distancia_km": 1.95,
+    "impedancia_topografica_km": 1.95,
+    "declividade_pct": 0.03
+  },
+  {
+    "distrito1_id": 59,
+    "distrito2_id": 320,
+    "ubs1_id": 59,
+    "ubs2_id": 320,
+    "distancia_km": 1.92,
+    "impedancia_topografica_km": 1.92,
+    "declividade_pct": 0.48
   },
   {
     "distrito1_id": 60,
+    "distrito2_id": 61,
+    "ubs1_id": 60,
+    "ubs2_id": 61,
+    "distancia_km": 1.39,
+    "impedancia_topografica_km": 1.39,
+    "declividade_pct": 0.67
+  },
+  {
+    "distrito1_id": 60,
+    "distrito2_id": 301,
+    "ubs1_id": 60,
+    "ubs2_id": 301,
+    "distancia_km": 2.55,
+    "impedancia_topografica_km": 2.55,
+    "declividade_pct": 0.45
+  },
+  {
+    "distrito1_id": 61,
+    "distrito2_id": 62,
+    "ubs1_id": 61,
+    "ubs2_id": 62,
+    "distancia_km": 1.73,
+    "impedancia_topografica_km": 1.73,
+    "declividade_pct": 1.97
+  },
+  {
+    "distrito1_id": 62,
+    "distrito2_id": 124,
+    "ubs1_id": 62,
+    "ubs2_id": 124,
+    "distancia_km": 1.66,
+    "impedancia_topografica_km": 1.66,
+    "declividade_pct": 1.34
+  },
+  {
+    "distrito1_id": 62,
+    "distrito2_id": 125,
+    "ubs1_id": 62,
+    "ubs2_id": 125,
+    "distancia_km": 1.37,
+    "impedancia_topografica_km": 1.37,
+    "declividade_pct": 0.59
+  },
+  {
+    "distrito1_id": 62,
+    "distrito2_id": 126,
+    "ubs1_id": 62,
+    "ubs2_id": 126,
+    "distancia_km": 1.24,
+    "impedancia_topografica_km": 1.24,
+    "declividade_pct": 0.53
+  },
+  {
+    "distrito1_id": 63,
     "distrito2_id": 65,
-    "distancia_km": 3.37
+    "ubs1_id": 63,
+    "ubs2_id": 65,
+    "distancia_km": 1.42,
+    "impedancia_topografica_km": 1.42,
+    "declividade_pct": 0.86
   },
   {
-    "distrito1_id": 60,
-    "distrito2_id": 82,
-    "distancia_km": 4.34
+    "distrito1_id": 63,
+    "distrito2_id": 75,
+    "ubs1_id": 63,
+    "ubs2_id": 75,
+    "distancia_km": 0.89,
+    "impedancia_topografica_km": 0.89,
+    "declividade_pct": 1.08
   },
   {
-    "distrito1_id": 60,
-    "distrito2_id": 91,
-    "distancia_km": 5.97
-  },
-  {
-    "distrito1_id": 60,
-    "distrito2_id": 93,
-    "distancia_km": 2.05
-  },
-  {
-    "distrito1_id": 61,
-    "distrito2_id": 63,
-    "distancia_km": 2.17
-  },
-  {
-    "distrito1_id": 61,
-    "distrito2_id": 70,
-    "distancia_km": 3.07
+    "distrito1_id": 63,
+    "distrito2_id": 76,
+    "ubs1_id": 63,
+    "ubs2_id": 76,
+    "distancia_km": 1.01,
+    "impedancia_topografica_km": 1.01,
+    "declividade_pct": 0.45
   },
   {
     "distrito1_id": 64,
-    "distrito2_id": 73,
-    "distancia_km": 2.72
+    "distrito2_id": 65,
+    "ubs1_id": 64,
+    "ubs2_id": 65,
+    "distancia_km": 0.7,
+    "impedancia_topografica_km": 0.71,
+    "declividade_pct": 3.74
+  },
+  {
+    "distrito1_id": 64,
+    "distrito2_id": 68,
+    "ubs1_id": 64,
+    "ubs2_id": 68,
+    "distancia_km": 1.24,
+    "impedancia_topografica_km": 1.24,
+    "declividade_pct": 0.94
+  },
+  {
+    "distrito1_id": 64,
+    "distrito2_id": 71,
+    "ubs1_id": 64,
+    "ubs2_id": 71,
+    "distancia_km": 1.09,
+    "impedancia_topografica_km": 1.09,
+    "declividade_pct": 0.21
+  },
+  {
+    "distrito1_id": 64,
+    "distrito2_id": 72,
+    "ubs1_id": 64,
+    "ubs2_id": 72,
+    "distancia_km": 1.56,
+    "impedancia_topografica_km": 1.56,
+    "declividade_pct": 0.86
+  },
+  {
+    "distrito1_id": 64,
+    "distrito2_id": 212,
+    "ubs1_id": 64,
+    "ubs2_id": 212,
+    "distancia_km": 1.28,
+    "impedancia_topografica_km": 1.28,
+    "declividade_pct": 0.35
   },
   {
     "distrito1_id": 65,
-    "distrito2_id": 89,
-    "distancia_km": 3.63
+    "distrito2_id": 71,
+    "ubs1_id": 65,
+    "ubs2_id": 71,
+    "distancia_km": 0.85,
+    "impedancia_topografica_km": 0.86,
+    "declividade_pct": 3.35
+  },
+  {
+    "distrito1_id": 65,
+    "distrito2_id": 72,
+    "ubs1_id": 65,
+    "ubs2_id": 72,
+    "distancia_km": 1.59,
+    "impedancia_topografica_km": 1.59,
+    "declividade_pct": 0.81
+  },
+  {
+    "distrito1_id": 65,
+    "distrito2_id": 75,
+    "ubs1_id": 65,
+    "ubs2_id": 75,
+    "distancia_km": 1.33,
+    "impedancia_topografica_km": 1.33,
+    "declividade_pct": 0.2
+  },
+  {
+    "distrito1_id": 65,
+    "distrito2_id": 76,
+    "ubs1_id": 65,
+    "ubs2_id": 76,
+    "distancia_km": 1.38,
+    "impedancia_topografica_km": 1.38,
+    "declividade_pct": 1.21
   },
   {
     "distrito1_id": 66,
-    "distrito2_id": 68,
-    "distancia_km": 3.04
+    "distrito2_id": 69,
+    "ubs1_id": 66,
+    "ubs2_id": 69,
+    "distancia_km": 0.43,
+    "impedancia_topografica_km": 0.43,
+    "declividade_pct": 0.23
   },
   {
     "distrito1_id": 66,
-    "distrito2_id": 96,
-    "distancia_km": 4.42
+    "distrito2_id": 72,
+    "ubs1_id": 66,
+    "ubs2_id": 72,
+    "distancia_km": 1.16,
+    "impedancia_topografica_km": 1.16,
+    "declividade_pct": 0.13
+  },
+  {
+    "distrito1_id": 66,
+    "distrito2_id": 75,
+    "ubs1_id": 66,
+    "ubs2_id": 75,
+    "distancia_km": 0.84,
+    "impedancia_topografica_km": 0.84,
+    "declividade_pct": 1.04
   },
   {
     "distrito1_id": 67,
     "distrito2_id": 70,
-    "distancia_km": 1.83
+    "ubs1_id": 67,
+    "ubs2_id": 70,
+    "distancia_km": 1.39,
+    "impedancia_topografica_km": 1.39,
+    "declividade_pct": 0.11
   },
   {
     "distrito1_id": 67,
-    "distrito2_id": 80,
-    "distancia_km": 0.96
+    "distrito2_id": 228,
+    "ubs1_id": 67,
+    "ubs2_id": 228,
+    "distancia_km": 0.73,
+    "impedancia_topografica_km": 0.73,
+    "declividade_pct": 1.7
+  },
+  {
+    "distrito1_id": 67,
+    "distrito2_id": 238,
+    "ubs1_id": 67,
+    "ubs2_id": 238,
+    "distancia_km": 0.38,
+    "impedancia_topografica_km": 0.38,
+    "declividade_pct": 0.0
   },
   {
     "distrito1_id": 68,
-    "distrito2_id": 96,
-    "distancia_km": 3.32
+    "distrito2_id": 74,
+    "ubs1_id": 68,
+    "ubs2_id": 74,
+    "distancia_km": 0.25,
+    "impedancia_topografica_km": 0.25,
+    "declividade_pct": 0.16
+  },
+  {
+    "distrito1_id": 68,
+    "distrito2_id": 234,
+    "ubs1_id": 68,
+    "ubs2_id": 234,
+    "distancia_km": 1.15,
+    "impedancia_topografica_km": 1.15,
+    "declividade_pct": 0.2
+  },
+  {
+    "distrito1_id": 69,
+    "distrito2_id": 75,
+    "ubs1_id": 69,
+    "ubs2_id": 75,
+    "distancia_km": 0.94,
+    "impedancia_topografica_km": 0.94,
+    "declividade_pct": 0.82
   },
   {
     "distrito1_id": 70,
-    "distrito2_id": 71,
-    "distancia_km": 4.48
+    "distrito2_id": 72,
+    "ubs1_id": 70,
+    "ubs2_id": 72,
+    "distancia_km": 0.48,
+    "impedancia_topografica_km": 0.48,
+    "declividade_pct": 0.96
+  },
+  {
+    "distrito1_id": 70,
+    "distrito2_id": 74,
+    "ubs1_id": 70,
+    "ubs2_id": 74,
+    "distancia_km": 1.22,
+    "impedancia_topografica_km": 1.22,
+    "declividade_pct": 0.26
   },
   {
     "distrito1_id": 71,
-    "distrito2_id": 84,
-    "distancia_km": 3.56
+    "distrito2_id": 76,
+    "ubs1_id": 71,
+    "ubs2_id": 76,
+    "distancia_km": 1.35,
+    "impedancia_topografica_km": 1.35,
+    "declividade_pct": 0.87
   },
   {
     "distrito1_id": 71,
-    "distrito2_id": 88,
-    "distancia_km": 2.66
+    "distrito2_id": 210,
+    "ubs1_id": 71,
+    "ubs2_id": 210,
+    "distancia_km": 0.64,
+    "impedancia_topografica_km": 0.64,
+    "declividade_pct": 1.23
+  },
+  {
+    "distrito1_id": 71,
+    "distrito2_id": 213,
+    "ubs1_id": 71,
+    "ubs2_id": 213,
+    "distancia_km": 1.7,
+    "impedancia_topografica_km": 1.7,
+    "declividade_pct": 1.21
   },
   {
     "distrito1_id": 72,
-    "distrito2_id": 81,
-    "distancia_km": 5.7
-  },
-  {
-    "distrito1_id": 72,
-    "distrito2_id": 85,
-    "distancia_km": 4.47
+    "distrito2_id": 75,
+    "ubs1_id": 72,
+    "ubs2_id": 75,
+    "distancia_km": 1.17,
+    "impedancia_topografica_km": 1.17,
+    "declividade_pct": 0.87
   },
   {
     "distrito1_id": 73,
-    "distrito2_id": 90,
-    "distancia_km": 4.71
+    "distrito2_id": 76,
+    "ubs1_id": 73,
+    "ubs2_id": 76,
+    "distancia_km": 1.95,
+    "impedancia_topografica_km": 1.95,
+    "declividade_pct": 0.9
+  },
+  {
+    "distrito1_id": 73,
+    "distrito2_id": 206,
+    "ubs1_id": 73,
+    "ubs2_id": 206,
+    "distancia_km": 0.27,
+    "impedancia_topografica_km": 0.27,
+    "declividade_pct": 2.3
+  },
+  {
+    "distrito1_id": 73,
+    "distrito2_id": 213,
+    "ubs1_id": 73,
+    "ubs2_id": 213,
+    "distancia_km": 0.67,
+    "impedancia_topografica_km": 0.68,
+    "declividade_pct": 3.94
   },
   {
     "distrito1_id": 74,
-    "distrito2_id": 78,
-    "distancia_km": 3.39
-  },
-  {
-    "distrito1_id": 74,
-    "distrito2_id": 87,
-    "distancia_km": 3.59
-  },
-  {
-    "distrito1_id": 74,
-    "distrito2_id": 95,
-    "distancia_km": 3.13
-  },
-  {
-    "distrito1_id": 75,
-    "distrito2_id": 77,
-    "distancia_km": 3.99
-  },
-  {
-    "distrito1_id": 75,
-    "distrito2_id": 78,
-    "distancia_km": 2.82
+    "distrito2_id": 238,
+    "ubs1_id": 74,
+    "ubs2_id": 238,
+    "distancia_km": 0.93,
+    "impedancia_topografica_km": 0.93,
+    "declividade_pct": 0.18
   },
   {
     "distrito1_id": 76,
-    "distrito2_id": 86,
-    "distancia_km": 2.91
-  },
-  {
-    "distrito1_id": 76,
-    "distrito2_id": 89,
-    "distancia_km": 2.14
+    "distrito2_id": 213,
+    "ubs1_id": 76,
+    "ubs2_id": 213,
+    "distancia_km": 1.9,
+    "impedancia_topografica_km": 1.9,
+    "declividade_pct": 0.46
   },
   {
     "distrito1_id": 77,
     "distrito2_id": 78,
-    "distancia_km": 6.07
+    "ubs1_id": 77,
+    "ubs2_id": 78,
+    "distancia_km": 1.04,
+    "impedancia_topografica_km": 1.04,
+    "declividade_pct": 0.07
+  },
+  {
+    "distrito1_id": 77,
+    "distrito2_id": 395,
+    "ubs1_id": 77,
+    "ubs2_id": 395,
+    "distancia_km": 2.97,
+    "impedancia_topografica_km": 2.97,
+    "declividade_pct": 0.44
+  },
+  {
+    "distrito1_id": 77,
+    "distrito2_id": 418,
+    "ubs1_id": 77,
+    "ubs2_id": 418,
+    "distancia_km": 2.7,
+    "impedancia_topografica_km": 2.7,
+    "declividade_pct": 0.5
+  },
+  {
+    "distrito1_id": 77,
+    "distrito2_id": 420,
+    "ubs1_id": 77,
+    "ubs2_id": 420,
+    "distancia_km": 2.72,
+    "impedancia_topografica_km": 2.72,
+    "declividade_pct": 0.74
+  },
+  {
+    "distrito1_id": 77,
+    "distrito2_id": 441,
+    "ubs1_id": 77,
+    "ubs2_id": 441,
+    "distancia_km": 1.38,
+    "impedancia_topografica_km": 1.38,
+    "declividade_pct": 0.3
+  },
+  {
+    "distrito1_id": 77,
+    "distrito2_id": 443,
+    "ubs1_id": 77,
+    "ubs2_id": 443,
+    "distancia_km": 1.17,
+    "impedancia_topografica_km": 1.17,
+    "declividade_pct": 1.32
   },
   {
     "distrito1_id": 78,
-    "distrito2_id": 87,
-    "distancia_km": 5.81
+    "distrito2_id": 419,
+    "ubs1_id": 78,
+    "ubs2_id": 419,
+    "distancia_km": 2.16,
+    "impedancia_topografica_km": 2.16,
+    "declividade_pct": 0.51
+  },
+  {
+    "distrito1_id": 78,
+    "distrito2_id": 444,
+    "ubs1_id": 78,
+    "ubs2_id": 444,
+    "distancia_km": 0.98,
+    "impedancia_topografica_km": 0.98,
+    "declividade_pct": 1.03
   },
   {
     "distrito1_id": 79,
-    "distrito2_id": 92,
-    "distancia_km": 3.45
+    "distrito2_id": 82,
+    "ubs1_id": 79,
+    "ubs2_id": 82,
+    "distancia_km": 0.92,
+    "impedancia_topografica_km": 0.92,
+    "declividade_pct": 0.47
+  },
+  {
+    "distrito1_id": 79,
+    "distrito2_id": 83,
+    "ubs1_id": 79,
+    "ubs2_id": 83,
+    "distancia_km": 0.67,
+    "impedancia_topografica_km": 0.67,
+    "declividade_pct": 1.09
+  },
+  {
+    "distrito1_id": 79,
+    "distrito2_id": 259,
+    "ubs1_id": 79,
+    "ubs2_id": 259,
+    "distancia_km": 1.73,
+    "impedancia_topografica_km": 1.73,
+    "declividade_pct": 1.21
+  },
+  {
+    "distrito1_id": 80,
+    "distrito2_id": 81,
+    "ubs1_id": 80,
+    "ubs2_id": 81,
+    "distancia_km": 0.97,
+    "impedancia_topografica_km": 0.97,
+    "declividade_pct": 0.19
+  },
+  {
+    "distrito1_id": 80,
+    "distrito2_id": 82,
+    "ubs1_id": 80,
+    "ubs2_id": 82,
+    "distancia_km": 1.41,
+    "impedancia_topografica_km": 1.41,
+    "declividade_pct": 1.43
+  },
+  {
+    "distrito1_id": 80,
+    "distrito2_id": 259,
+    "ubs1_id": 80,
+    "ubs2_id": 259,
+    "distancia_km": 0.83,
+    "impedancia_topografica_km": 0.83,
+    "declividade_pct": 0.41
+  },
+  {
+    "distrito1_id": 81,
+    "distrito2_id": 82,
+    "ubs1_id": 81,
+    "ubs2_id": 82,
+    "distancia_km": 1.26,
+    "impedancia_topografica_km": 1.26,
+    "declividade_pct": 1.45
+  },
+  {
+    "distrito1_id": 81,
+    "distrito2_id": 262,
+    "ubs1_id": 81,
+    "ubs2_id": 262,
+    "distancia_km": 1.89,
+    "impedancia_topografica_km": 1.89,
+    "declividade_pct": 1.29
+  },
+  {
+    "distrito1_id": 81,
+    "distrito2_id": 344,
+    "ubs1_id": 81,
+    "ubs2_id": 344,
+    "distancia_km": 2.02,
+    "impedancia_topografica_km": 2.02,
+    "declividade_pct": 0.02
   },
   {
     "distrito1_id": 82,
-    "distrito2_id": 87,
-    "distancia_km": 3.06
-  },
-  {
-    "distrito1_id": 82,
-    "distrito2_id": 91,
-    "distancia_km": 4.28
-  },
-  {
-    "distrito1_id": 82,
-    "distrito2_id": 93,
-    "distancia_km": 4.83
+    "distrito2_id": 344,
+    "ubs1_id": 82,
+    "ubs2_id": 344,
+    "distancia_km": 1.76,
+    "impedancia_topografica_km": 1.76,
+    "declividade_pct": 1.02
   },
   {
     "distrito1_id": 83,
-    "distrito2_id": 84,
-    "distancia_km": 4.61
+    "distrito2_id": 258,
+    "ubs1_id": 83,
+    "ubs2_id": 258,
+    "distancia_km": 0.8,
+    "impedancia_topografica_km": 0.8,
+    "declividade_pct": 0.99
+  },
+  {
+    "distrito1_id": 83,
+    "distrito2_id": 342,
+    "ubs1_id": 83,
+    "ubs2_id": 342,
+    "distancia_km": 2.14,
+    "impedancia_topografica_km": 2.14,
+    "declividade_pct": 0.88
   },
   {
     "distrito1_id": 84,
-    "distrito2_id": 88,
-    "distancia_km": 4.4
+    "distrito2_id": 85,
+    "ubs1_id": 84,
+    "ubs2_id": 85,
+    "distancia_km": 1.33,
+    "impedancia_topografica_km": 1.33,
+    "declividade_pct": 0.65
   },
   {
     "distrito1_id": 84,
-    "distrito2_id": 94,
-    "distancia_km": 3.75
+    "distrito2_id": 96,
+    "ubs1_id": 84,
+    "ubs2_id": 96,
+    "distancia_km": 0.97,
+    "impedancia_topografica_km": 0.97,
+    "declividade_pct": 0.44
+  },
+  {
+    "distrito1_id": 84,
+    "distrito2_id": 291,
+    "ubs1_id": 84,
+    "ubs2_id": 291,
+    "distancia_km": 0.94,
+    "impedancia_topografica_km": 0.94,
+    "declividade_pct": 1.68
+  },
+  {
+    "distrito1_id": 84,
+    "distrito2_id": 297,
+    "ubs1_id": 84,
+    "ubs2_id": 297,
+    "distancia_km": 1.09,
+    "impedancia_topografica_km": 1.09,
+    "declividade_pct": 0.06
   },
   {
     "distrito1_id": 85,
+    "distrito2_id": 86,
+    "ubs1_id": 85,
+    "ubs2_id": 86,
+    "distancia_km": 0.43,
+    "impedancia_topografica_km": 0.44,
+    "declividade_pct": 4.84
+  },
+  {
+    "distrito1_id": 86,
+    "distrito2_id": 91,
+    "ubs1_id": 86,
+    "ubs2_id": 91,
+    "distancia_km": 0.81,
+    "impedancia_topografica_km": 0.81,
+    "declividade_pct": 2.88
+  },
+  {
+    "distrito1_id": 86,
+    "distrito2_id": 93,
+    "ubs1_id": 86,
+    "ubs2_id": 93,
+    "distancia_km": 0.76,
+    "impedancia_topografica_km": 0.76,
+    "declividade_pct": 3.09
+  },
+  {
+    "distrito1_id": 86,
+    "distrito2_id": 94,
+    "ubs1_id": 86,
+    "ubs2_id": 94,
+    "distancia_km": 0.76,
+    "impedancia_topografica_km": 0.76,
+    "declividade_pct": 3.09
+  },
+  {
+    "distrito1_id": 86,
     "distrito2_id": 96,
-    "distancia_km": 3.0
+    "ubs1_id": 86,
+    "ubs2_id": 96,
+    "distancia_km": 1.28,
+    "impedancia_topografica_km": 1.28,
+    "declividade_pct": 0.61
+  },
+  {
+    "distrito1_id": 87,
+    "distrito2_id": 90,
+    "ubs1_id": 87,
+    "ubs2_id": 90,
+    "distancia_km": 0.75,
+    "impedancia_topografica_km": 0.75,
+    "declividade_pct": 1.76
+  },
+  {
+    "distrito1_id": 87,
+    "distrito2_id": 92,
+    "ubs1_id": 87,
+    "ubs2_id": 92,
+    "distancia_km": 1.06,
+    "impedancia_topografica_km": 1.06,
+    "declividade_pct": 0.25
+  },
+  {
+    "distrito1_id": 87,
+    "distrito2_id": 298,
+    "ubs1_id": 87,
+    "ubs2_id": 298,
+    "distancia_km": 1.01,
+    "impedancia_topografica_km": 1.01,
+    "declividade_pct": 0.28
   },
   {
     "distrito1_id": 88,
-    "distrito2_id": 91,
-    "distancia_km": 2.09
+    "distrito2_id": 90,
+    "ubs1_id": 88,
+    "ubs2_id": 90,
+    "distancia_km": 0.46,
+    "impedancia_topografica_km": 0.46,
+    "declividade_pct": 2.39
+  },
+  {
+    "distrito1_id": 88,
+    "distrito2_id": 93,
+    "ubs1_id": 88,
+    "ubs2_id": 93,
+    "distancia_km": 0.89,
+    "impedancia_topografica_km": 0.89,
+    "declividade_pct": 1.37
   },
   {
     "distrito1_id": 88,
     "distrito2_id": 94,
-    "distancia_km": 3.23
+    "ubs1_id": 88,
+    "ubs2_id": 94,
+    "distancia_km": 0.89,
+    "impedancia_topografica_km": 0.89,
+    "declividade_pct": 1.37
+  },
+  {
+    "distrito1_id": 88,
+    "distrito2_id": 95,
+    "ubs1_id": 88,
+    "ubs2_id": 95,
+    "distancia_km": 0.92,
+    "impedancia_topografica_km": 0.92,
+    "declividade_pct": 0.62
+  },
+  {
+    "distrito1_id": 89,
+    "distrito2_id": 92,
+    "ubs1_id": 89,
+    "ubs2_id": 92,
+    "distancia_km": 1.33,
+    "impedancia_topografica_km": 1.33,
+    "declividade_pct": 1.2
+  },
+  {
+    "distrito1_id": 89,
+    "distrito2_id": 186,
+    "ubs1_id": 89,
+    "ubs2_id": 186,
+    "distancia_km": 1.04,
+    "impedancia_topografica_km": 1.04,
+    "declividade_pct": 0.47
+  },
+  {
+    "distrito1_id": 89,
+    "distrito2_id": 347,
+    "ubs1_id": 89,
+    "ubs2_id": 347,
+    "distancia_km": 3.66,
+    "impedancia_topografica_km": 3.66,
+    "declividade_pct": 0.05
+  },
+  {
+    "distrito1_id": 90,
+    "distrito2_id": 293,
+    "ubs1_id": 90,
+    "ubs2_id": 293,
+    "distancia_km": 0.68,
+    "impedancia_topografica_km": 0.68,
+    "declividade_pct": 2.21
+  },
+  {
+    "distrito1_id": 90,
+    "distrito2_id": 298,
+    "ubs1_id": 90,
+    "ubs2_id": 298,
+    "distancia_km": 1.12,
+    "impedancia_topografica_km": 1.12,
+    "declividade_pct": 0.93
+  },
+  {
+    "distrito1_id": 91,
+    "distrito2_id": 93,
+    "ubs1_id": 91,
+    "ubs2_id": 93,
+    "distancia_km": 1.09,
+    "impedancia_topografica_km": 1.09,
+    "declividade_pct": 0.02
   },
   {
     "distrito1_id": 91,
     "distrito2_id": 94,
-    "distancia_km": 2.2
+    "ubs1_id": 91,
+    "ubs2_id": 94,
+    "distancia_km": 1.09,
+    "impedancia_topografica_km": 1.09,
+    "declividade_pct": 0.02
+  },
+  {
+    "distrito1_id": 91,
+    "distrito2_id": 182,
+    "ubs1_id": 91,
+    "ubs2_id": 182,
+    "distancia_km": 0.7,
+    "impedancia_topografica_km": 0.7,
+    "declividade_pct": 2.09
+  },
+  {
+    "distrito1_id": 92,
+    "distrito2_id": 95,
+    "ubs1_id": 92,
+    "ubs2_id": 95,
+    "distancia_km": 0.6,
+    "impedancia_topografica_km": 0.6,
+    "declividade_pct": 0.88
+  },
+  {
+    "distrito1_id": 93,
+    "distrito2_id": 94,
+    "ubs1_id": 93,
+    "ubs2_id": 94,
+    "distancia_km": 0.05,
+    "impedancia_topografica_km": 0.05,
+    "declividade_pct": 0.0
+  },
+  {
+    "distrito1_id": 93,
+    "distrito2_id": 95,
+    "ubs1_id": 93,
+    "ubs2_id": 95,
+    "distancia_km": 0.86,
+    "impedancia_topografica_km": 0.86,
+    "declividade_pct": 0.76
+  },
+  {
+    "distrito1_id": 93,
+    "distrito2_id": 96,
+    "ubs1_id": 93,
+    "ubs2_id": 96,
+    "distancia_km": 1.3,
+    "impedancia_topografica_km": 1.3,
+    "declividade_pct": 1.21
+  },
+  {
+    "distrito1_id": 94,
+    "distrito2_id": 95,
+    "ubs1_id": 94,
+    "ubs2_id": 95,
+    "distancia_km": 0.86,
+    "impedancia_topografica_km": 0.86,
+    "declividade_pct": 0.76
+  },
+  {
+    "distrito1_id": 94,
+    "distrito2_id": 96,
+    "ubs1_id": 94,
+    "ubs2_id": 96,
+    "distancia_km": 1.3,
+    "impedancia_topografica_km": 1.3,
+    "declividade_pct": 1.21
+  },
+  {
+    "distrito1_id": 95,
+    "distrito2_id": 188,
+    "ubs1_id": 95,
+    "ubs2_id": 188,
+    "distancia_km": 1.77,
+    "impedancia_topografica_km": 1.77,
+    "declividade_pct": 0.21
+  },
+  {
+    "distrito1_id": 96,
+    "distrito2_id": 293,
+    "ubs1_id": 96,
+    "ubs2_id": 293,
+    "distancia_km": 0.77,
+    "impedancia_topografica_km": 0.77,
+    "declividade_pct": 0.06
+  },
+  {
+    "distrito1_id": 96,
+    "distrito2_id": 297,
+    "ubs1_id": 96,
+    "ubs2_id": 297,
+    "distancia_km": 1.1,
+    "impedancia_topografica_km": 1.1,
+    "declividade_pct": 0.34
+  },
+  {
+    "distrito1_id": 97,
+    "distrito2_id": 99,
+    "ubs1_id": 97,
+    "ubs2_id": 99,
+    "distancia_km": 1.97,
+    "impedancia_topografica_km": 1.97,
+    "declividade_pct": 1.06
+  },
+  {
+    "distrito1_id": 97,
+    "distrito2_id": 100,
+    "ubs1_id": 97,
+    "ubs2_id": 100,
+    "distancia_km": 0.73,
+    "impedancia_topografica_km": 0.73,
+    "declividade_pct": 2.42
+  },
+  {
+    "distrito1_id": 97,
+    "distrito2_id": 394,
+    "ubs1_id": 97,
+    "ubs2_id": 394,
+    "distancia_km": 4.46,
+    "impedancia_topografica_km": 4.46,
+    "declividade_pct": 0.54
+  },
+  {
+    "distrito1_id": 98,
+    "distrito2_id": 100,
+    "ubs1_id": 98,
+    "ubs2_id": 100,
+    "distancia_km": 1.68,
+    "impedancia_topografica_km": 1.68,
+    "declividade_pct": 0.08
+  },
+  {
+    "distrito1_id": 98,
+    "distrito2_id": 101,
+    "ubs1_id": 98,
+    "ubs2_id": 101,
+    "distancia_km": 0.6,
+    "impedancia_topografica_km": 0.6,
+    "declividade_pct": 2.78
+  },
+  {
+    "distrito1_id": 98,
+    "distrito2_id": 139,
+    "ubs1_id": 98,
+    "ubs2_id": 139,
+    "distancia_km": 1.91,
+    "impedancia_topografica_km": 1.91,
+    "declividade_pct": 0.54
+  },
+  {
+    "distrito1_id": 98,
+    "distrito2_id": 146,
+    "ubs1_id": 98,
+    "ubs2_id": 146,
+    "distancia_km": 2.21,
+    "impedancia_topografica_km": 2.21,
+    "declividade_pct": 0.73
+  },
+  {
+    "distrito1_id": 99,
+    "distrito2_id": 138,
+    "ubs1_id": 99,
+    "ubs2_id": 138,
+    "distancia_km": 3.46,
+    "impedancia_topografica_km": 3.46,
+    "declividade_pct": 0.36
+  },
+  {
+    "distrito1_id": 99,
+    "distrito2_id": 139,
+    "ubs1_id": 99,
+    "ubs2_id": 139,
+    "distancia_km": 3.05,
+    "impedancia_topografica_km": 3.05,
+    "declividade_pct": 0.49
+  },
+  {
+    "distrito1_id": 99,
+    "distrito2_id": 292,
+    "ubs1_id": 99,
+    "ubs2_id": 292,
+    "distancia_km": 3.5,
+    "impedancia_topografica_km": 3.5,
+    "declividade_pct": 0.19
+  },
+  {
+    "distrito1_id": 99,
+    "distrito2_id": 295,
+    "ubs1_id": 99,
+    "ubs2_id": 295,
+    "distancia_km": 3.24,
+    "impedancia_topografica_km": 3.24,
+    "declividade_pct": 0.04
+  },
+  {
+    "distrito1_id": 99,
+    "distrito2_id": 298,
+    "ubs1_id": 99,
+    "ubs2_id": 298,
+    "distancia_km": 3.17,
+    "impedancia_topografica_km": 3.17,
+    "declividade_pct": 0.29
+  },
+  {
+    "distrito1_id": 99,
+    "distrito2_id": 394,
+    "ubs1_id": 99,
+    "ubs2_id": 394,
+    "distancia_km": 4.31,
+    "impedancia_topografica_km": 4.31,
+    "declividade_pct": 0.07
+  },
+  {
+    "distrito1_id": 100,
+    "distrito2_id": 139,
+    "ubs1_id": 100,
+    "ubs2_id": 139,
+    "distancia_km": 2.25,
+    "impedancia_topografica_km": 2.25,
+    "declividade_pct": 0.52
+  },
+  {
+    "distrito1_id": 102,
+    "distrito2_id": 175,
+    "ubs1_id": 102,
+    "ubs2_id": 175,
+    "distancia_km": 1.98,
+    "impedancia_topografica_km": 1.98,
+    "declividade_pct": 0.28
+  },
+  {
+    "distrito1_id": 102,
+    "distrito2_id": 289,
+    "ubs1_id": 102,
+    "ubs2_id": 289,
+    "distancia_km": 2.52,
+    "impedancia_topografica_km": 2.52,
+    "declividade_pct": 0.4
+  },
+  {
+    "distrito1_id": 102,
+    "distrito2_id": 290,
+    "ubs1_id": 102,
+    "ubs2_id": 290,
+    "distancia_km": 0.74,
+    "impedancia_topografica_km": 0.74,
+    "declividade_pct": 0.82
+  },
+  {
+    "distrito1_id": 103,
+    "distrito2_id": 105,
+    "ubs1_id": 103,
+    "ubs2_id": 105,
+    "distancia_km": 1.65,
+    "impedancia_topografica_km": 1.65,
+    "declividade_pct": 0.13
+  },
+  {
+    "distrito1_id": 104,
+    "distrito2_id": 106,
+    "ubs1_id": 104,
+    "ubs2_id": 106,
+    "distancia_km": 1.14,
+    "impedancia_topografica_km": 1.14,
+    "declividade_pct": 0.56
+  },
+  {
+    "distrito1_id": 104,
+    "distrito2_id": 107,
+    "ubs1_id": 104,
+    "ubs2_id": 107,
+    "distancia_km": 1.49,
+    "impedancia_topografica_km": 1.49,
+    "declividade_pct": 1.4
+  },
+  {
+    "distrito1_id": 104,
+    "distrito2_id": 444,
+    "ubs1_id": 104,
+    "ubs2_id": 444,
+    "distancia_km": 0.93,
+    "impedancia_topografica_km": 0.93,
+    "declividade_pct": 1.24
+  },
+  {
+    "distrito1_id": 105,
+    "distrito2_id": 107,
+    "ubs1_id": 105,
+    "ubs2_id": 107,
+    "distancia_km": 1.16,
+    "impedancia_topografica_km": 1.16,
+    "declividade_pct": 1.23
+  },
+  {
+    "distrito1_id": 105,
+    "distrito2_id": 289,
+    "ubs1_id": 105,
+    "ubs2_id": 289,
+    "distancia_km": 1.31,
+    "impedancia_topografica_km": 1.31,
+    "declividade_pct": 1.33
+  },
+  {
+    "distrito1_id": 105,
+    "distrito2_id": 362,
+    "ubs1_id": 105,
+    "ubs2_id": 362,
+    "distancia_km": 1.96,
+    "impedancia_topografica_km": 1.96,
+    "declividade_pct": 0.05
+  },
+  {
+    "distrito1_id": 106,
+    "distrito2_id": 442,
+    "ubs1_id": 106,
+    "ubs2_id": 442,
+    "distancia_km": 1.69,
+    "impedancia_topografica_km": 1.69,
+    "declividade_pct": 1.2
+  },
+  {
+    "distrito1_id": 106,
+    "distrito2_id": 444,
+    "ubs1_id": 106,
+    "ubs2_id": 444,
+    "distancia_km": 0.97,
+    "impedancia_topografica_km": 0.97,
+    "declividade_pct": 0.53
+  },
+  {
+    "distrito1_id": 107,
+    "distrito2_id": 362,
+    "ubs1_id": 107,
+    "ubs2_id": 362,
+    "distancia_km": 2.02,
+    "impedancia_topografica_km": 2.02,
+    "declividade_pct": 0.76
+  },
+  {
+    "distrito1_id": 108,
+    "distrito2_id": 109,
+    "ubs1_id": 108,
+    "ubs2_id": 109,
+    "distancia_km": 0.61,
+    "impedancia_topografica_km": 0.61,
+    "declividade_pct": 0.95
+  },
+  {
+    "distrito1_id": 108,
+    "distrito2_id": 110,
+    "ubs1_id": 108,
+    "ubs2_id": 110,
+    "distancia_km": 1.18,
+    "impedancia_topografica_km": 1.18,
+    "declividade_pct": 0.9
+  },
+  {
+    "distrito1_id": 108,
+    "distrito2_id": 112,
+    "ubs1_id": 108,
+    "ubs2_id": 112,
+    "distancia_km": 1.13,
+    "impedancia_topografica_km": 1.13,
+    "declividade_pct": 1.79
+  },
+  {
+    "distrito1_id": 108,
+    "distrito2_id": 147,
+    "ubs1_id": 108,
+    "ubs2_id": 147,
+    "distancia_km": 2.3,
+    "impedancia_topografica_km": 2.3,
+    "declividade_pct": 0.22
+  },
+  {
+    "distrito1_id": 109,
+    "distrito2_id": 110,
+    "ubs1_id": 109,
+    "ubs2_id": 110,
+    "distancia_km": 1.21,
+    "impedancia_topografica_km": 1.21,
+    "declividade_pct": 0.4
+  },
+  {
+    "distrito1_id": 109,
+    "distrito2_id": 111,
+    "ubs1_id": 109,
+    "ubs2_id": 111,
+    "distancia_km": 1.08,
+    "impedancia_topografica_km": 1.08,
+    "declividade_pct": 1.29
+  },
+  {
+    "distrito1_id": 109,
+    "distrito2_id": 114,
+    "ubs1_id": 109,
+    "ubs2_id": 114,
+    "distancia_km": 1.15,
+    "impedancia_topografica_km": 1.15,
+    "declividade_pct": 0.02
+  },
+  {
+    "distrito1_id": 109,
+    "distrito2_id": 118,
+    "ubs1_id": 109,
+    "ubs2_id": 118,
+    "distancia_km": 1.83,
+    "impedancia_topografica_km": 1.83,
+    "declividade_pct": 0.88
+  },
+  {
+    "distrito1_id": 110,
+    "distrito2_id": 111,
+    "ubs1_id": 110,
+    "ubs2_id": 111,
+    "distancia_km": 0.76,
+    "impedancia_topografica_km": 0.76,
+    "declividade_pct": 2.46
+  },
+  {
+    "distrito1_id": 110,
+    "distrito2_id": 117,
+    "ubs1_id": 110,
+    "ubs2_id": 117,
+    "distancia_km": 1.66,
+    "impedancia_topografica_km": 1.66,
+    "declividade_pct": 0.1
+  },
+  {
+    "distrito1_id": 110,
+    "distrito2_id": 147,
+    "ubs1_id": 110,
+    "ubs2_id": 147,
+    "distancia_km": 2.05,
+    "impedancia_topografica_km": 2.05,
+    "declividade_pct": 0.77
+  },
+  {
+    "distrito1_id": 111,
+    "distrito2_id": 118,
+    "ubs1_id": 111,
+    "ubs2_id": 118,
+    "distancia_km": 1.83,
+    "impedancia_topografica_km": 1.83,
+    "declividade_pct": 0.12
+  },
+  {
+    "distrito1_id": 111,
+    "distrito2_id": 152,
+    "ubs1_id": 111,
+    "ubs2_id": 152,
+    "distancia_km": 1.54,
+    "impedancia_topografica_km": 1.54,
+    "declividade_pct": 1.49
+  },
+  {
+    "distrito1_id": 112,
+    "distrito2_id": 147,
+    "ubs1_id": 112,
+    "ubs2_id": 147,
+    "distancia_km": 2.35,
+    "impedancia_topografica_km": 2.35,
+    "declividade_pct": 0.64
+  },
+  {
+    "distrito1_id": 113,
+    "distrito2_id": 116,
+    "ubs1_id": 113,
+    "ubs2_id": 116,
+    "distancia_km": 0.32,
+    "impedancia_topografica_km": 0.32,
+    "declividade_pct": 4.09
+  },
+  {
+    "distrito1_id": 113,
+    "distrito2_id": 151,
+    "ubs1_id": 113,
+    "ubs2_id": 151,
+    "distancia_km": 0.73,
+    "impedancia_topografica_km": 0.73,
+    "declividade_pct": 0.84
+  },
+  {
+    "distrito1_id": 114,
+    "distrito2_id": 115,
+    "ubs1_id": 114,
+    "ubs2_id": 115,
+    "distancia_km": 1.58,
+    "impedancia_topografica_km": 1.58,
+    "declividade_pct": 1.09
+  },
+  {
+    "distrito1_id": 114,
+    "distrito2_id": 118,
+    "ubs1_id": 114,
+    "ubs2_id": 118,
+    "distancia_km": 1.45,
+    "impedancia_topografica_km": 1.45,
+    "declividade_pct": 1.1
+  },
+  {
+    "distrito1_id": 115,
+    "distrito2_id": 118,
+    "ubs1_id": 115,
+    "ubs2_id": 118,
+    "distancia_km": 1.22,
+    "impedancia_topografica_km": 1.22,
+    "declividade_pct": 0.11
+  },
+  {
+    "distrito1_id": 115,
+    "distrito2_id": 158,
+    "ubs1_id": 115,
+    "ubs2_id": 158,
+    "distancia_km": 2.21,
+    "impedancia_topografica_km": 2.21,
+    "declividade_pct": 0.75
+  },
+  {
+    "distrito1_id": 116,
+    "distrito2_id": 117,
+    "ubs1_id": 116,
+    "ubs2_id": 117,
+    "distancia_km": 0.67,
+    "impedancia_topografica_km": 0.67,
+    "declividade_pct": 1.63
+  },
+  {
+    "distrito1_id": 116,
+    "distrito2_id": 149,
+    "ubs1_id": 116,
+    "ubs2_id": 149,
+    "distancia_km": 0.74,
+    "impedancia_topografica_km": 0.74,
+    "declividade_pct": 2.8
+  },
+  {
+    "distrito1_id": 117,
+    "distrito2_id": 147,
+    "ubs1_id": 117,
+    "ubs2_id": 147,
+    "distancia_km": 1.28,
+    "impedancia_topografica_km": 1.28,
+    "declividade_pct": 1.09
+  },
+  {
+    "distrito1_id": 117,
+    "distrito2_id": 149,
+    "ubs1_id": 117,
+    "ubs2_id": 149,
+    "distancia_km": 0.99,
+    "impedancia_topografica_km": 0.99,
+    "declividade_pct": 0.99
+  },
+  {
+    "distrito1_id": 118,
+    "distrito2_id": 152,
+    "ubs1_id": 118,
+    "ubs2_id": 152,
+    "distancia_km": 1.73,
+    "impedancia_topografica_km": 1.73,
+    "declividade_pct": 1.45
+  },
+  {
+    "distrito1_id": 118,
+    "distrito2_id": 158,
+    "ubs1_id": 118,
+    "ubs2_id": 158,
+    "distancia_km": 1.96,
+    "impedancia_topografica_km": 1.96,
+    "declividade_pct": 0.77
+  },
+  {
+    "distrito1_id": 119,
+    "distrito2_id": 120,
+    "ubs1_id": 119,
+    "ubs2_id": 120,
+    "distancia_km": 2.23,
+    "impedancia_topografica_km": 2.23,
+    "declividade_pct": 0.31
+  },
+  {
+    "distrito1_id": 119,
+    "distrito2_id": 122,
+    "ubs1_id": 119,
+    "ubs2_id": 122,
+    "distancia_km": 1.48,
+    "impedancia_topografica_km": 1.48,
+    "declividade_pct": 0.18
+  },
+  {
+    "distrito1_id": 119,
+    "distrito2_id": 183,
+    "ubs1_id": 119,
+    "ubs2_id": 183,
+    "distancia_km": 2.31,
+    "impedancia_topografica_km": 2.31,
+    "declividade_pct": 0.46
+  },
+  {
+    "distrito1_id": 119,
+    "distrito2_id": 392,
+    "ubs1_id": 119,
+    "ubs2_id": 392,
+    "distancia_km": 1.41,
+    "impedancia_topografica_km": 1.41,
+    "declividade_pct": 0.48
+  },
+  {
+    "distrito1_id": 120,
+    "distrito2_id": 121,
+    "ubs1_id": 120,
+    "ubs2_id": 121,
+    "distancia_km": 1.24,
+    "impedancia_topografica_km": 1.24,
+    "declividade_pct": 0.24
+  },
+  {
+    "distrito1_id": 120,
+    "distrito2_id": 336,
+    "ubs1_id": 120,
+    "ubs2_id": 336,
+    "distancia_km": 1.06,
+    "impedancia_topografica_km": 1.06,
+    "declividade_pct": 1.46
+  },
+  {
+    "distrito1_id": 120,
+    "distrito2_id": 340,
+    "ubs1_id": 120,
+    "ubs2_id": 340,
+    "distancia_km": 2.2,
+    "impedancia_topografica_km": 2.2,
+    "declividade_pct": 0.34
+  },
+  {
+    "distrito1_id": 121,
+    "distrito2_id": 392,
+    "ubs1_id": 121,
+    "ubs2_id": 392,
+    "distancia_km": 3.21,
+    "impedancia_topografica_km": 3.21,
+    "declividade_pct": 0.33
+  },
+  {
+    "distrito1_id": 121,
+    "distrito2_id": 439,
+    "ubs1_id": 121,
+    "ubs2_id": 439,
+    "distancia_km": 0.72,
+    "impedancia_topografica_km": 0.73,
+    "declividade_pct": 3.58
+  },
+  {
+    "distrito1_id": 122,
+    "distrito2_id": 333,
+    "ubs1_id": 122,
+    "ubs2_id": 333,
+    "distancia_km": 0.81,
+    "impedancia_topografica_km": 0.81,
+    "declividade_pct": 0.23
+  },
+  {
+    "distrito1_id": 122,
+    "distrito2_id": 340,
+    "ubs1_id": 122,
+    "ubs2_id": 340,
+    "distancia_km": 0.92,
+    "impedancia_topografica_km": 0.92,
+    "declividade_pct": 0.23
+  },
+  {
+    "distrito1_id": 123,
+    "distrito2_id": 127,
+    "ubs1_id": 123,
+    "ubs2_id": 127,
+    "distancia_km": 1.7,
+    "impedancia_topografica_km": 1.7,
+    "declividade_pct": 1.3
+  },
+  {
+    "distrito1_id": 123,
+    "distrito2_id": 128,
+    "ubs1_id": 123,
+    "ubs2_id": 128,
+    "distancia_km": 1.52,
+    "impedancia_topografica_km": 1.52,
+    "declividade_pct": 0.36
+  },
+  {
+    "distrito1_id": 123,
+    "distrito2_id": 426,
+    "ubs1_id": 123,
+    "ubs2_id": 426,
+    "distancia_km": 1.94,
+    "impedancia_topografica_km": 1.94,
+    "declividade_pct": 0.53
+  },
+  {
+    "distrito1_id": 123,
+    "distrito2_id": 430,
+    "ubs1_id": 123,
+    "ubs2_id": 430,
+    "distancia_km": 1.73,
+    "impedancia_topografica_km": 1.73,
+    "declividade_pct": 0.82
+  },
+  {
+    "distrito1_id": 123,
+    "distrito2_id": 432,
+    "ubs1_id": 123,
+    "ubs2_id": 432,
+    "distancia_km": 1.7,
+    "impedancia_topografica_km": 1.7,
+    "declividade_pct": 0.08
+  },
+  {
+    "distrito1_id": 124,
+    "distrito2_id": 126,
+    "ubs1_id": 124,
+    "ubs2_id": 126,
+    "distancia_km": 1.39,
+    "impedancia_topografica_km": 1.39,
+    "declividade_pct": 1.12
+  },
+  {
+    "distrito1_id": 124,
+    "distrito2_id": 127,
+    "ubs1_id": 124,
+    "ubs2_id": 127,
+    "distancia_km": 1.0,
+    "impedancia_topografica_km": 1.0,
+    "declividade_pct": 0.03
+  },
+  {
+    "distrito1_id": 124,
+    "distrito2_id": 321,
+    "ubs1_id": 124,
+    "ubs2_id": 321,
+    "distancia_km": 0.63,
+    "impedancia_topografica_km": 0.63,
+    "declividade_pct": 0.35
+  },
+  {
+    "distrito1_id": 125,
+    "distrito2_id": 126,
+    "ubs1_id": 125,
+    "ubs2_id": 126,
+    "distancia_km": 0.85,
+    "impedancia_topografica_km": 0.85,
+    "declividade_pct": 1.73
+  },
+  {
+    "distrito1_id": 126,
+    "distrito2_id": 128,
+    "ubs1_id": 126,
+    "ubs2_id": 128,
+    "distancia_km": 0.05,
+    "impedancia_topografica_km": 0.05,
+    "declividade_pct": 2.8
+  },
+  {
+    "distrito1_id": 127,
+    "distrito2_id": 128,
+    "ubs1_id": 127,
+    "ubs2_id": 128,
+    "distancia_km": 1.66,
+    "impedancia_topografica_km": 1.66,
+    "declividade_pct": 1.01
+  },
+  {
+    "distrito1_id": 127,
+    "distrito2_id": 319,
+    "ubs1_id": 127,
+    "ubs2_id": 319,
+    "distancia_km": 1.34,
+    "impedancia_topografica_km": 1.34,
+    "declividade_pct": 0.13
+  },
+  {
+    "distrito1_id": 127,
+    "distrito2_id": 321,
+    "ubs1_id": 127,
+    "ubs2_id": 321,
+    "distancia_km": 0.9,
+    "impedancia_topografica_km": 0.9,
+    "declividade_pct": 0.28
+  },
+  {
+    "distrito1_id": 127,
+    "distrito2_id": 430,
+    "ubs1_id": 127,
+    "ubs2_id": 430,
+    "distancia_km": 1.37,
+    "impedancia_topografica_km": 1.37,
+    "declividade_pct": 0.58
+  },
+  {
+    "distrito1_id": 129,
+    "distrito2_id": 130,
+    "ubs1_id": 129,
+    "ubs2_id": 130,
+    "distancia_km": 1.07,
+    "impedancia_topografica_km": 1.07,
+    "declividade_pct": 1.5
+  },
+  {
+    "distrito1_id": 129,
+    "distrito2_id": 132,
+    "ubs1_id": 129,
+    "ubs2_id": 132,
+    "distancia_km": 0.79,
+    "impedancia_topografica_km": 0.79,
+    "declividade_pct": 0.41
+  },
+  {
+    "distrito1_id": 129,
+    "distrito2_id": 315,
+    "ubs1_id": 129,
+    "ubs2_id": 315,
+    "distancia_km": 1.14,
+    "impedancia_topografica_km": 1.14,
+    "declividade_pct": 1.12
+  },
+  {
+    "distrito1_id": 130,
+    "distrito2_id": 131,
+    "ubs1_id": 130,
+    "ubs2_id": 131,
+    "distancia_km": 1.61,
+    "impedancia_topografica_km": 1.61,
+    "declividade_pct": 0.19
+  },
+  {
+    "distrito1_id": 130,
+    "distrito2_id": 256,
+    "ubs1_id": 130,
+    "ubs2_id": 256,
+    "distancia_km": 3.96,
+    "impedancia_topografica_km": 3.96,
+    "declividade_pct": 0.17
+  },
+  {
+    "distrito1_id": 130,
+    "distrito2_id": 313,
+    "ubs1_id": 130,
+    "ubs2_id": 313,
+    "distancia_km": 1.23,
+    "impedancia_topografica_km": 1.23,
+    "declividade_pct": 0.28
+  },
+  {
+    "distrito1_id": 130,
+    "distrito2_id": 315,
+    "ubs1_id": 130,
+    "ubs2_id": 315,
+    "distancia_km": 1.41,
+    "impedancia_topografica_km": 1.41,
+    "declividade_pct": 0.23
+  },
+  {
+    "distrito1_id": 131,
+    "distrito2_id": 133,
+    "ubs1_id": 131,
+    "ubs2_id": 133,
+    "distancia_km": 1.56,
+    "impedancia_topografica_km": 1.56,
+    "declividade_pct": 1.28
+  },
+  {
+    "distrito1_id": 131,
+    "distrito2_id": 256,
+    "ubs1_id": 131,
+    "ubs2_id": 256,
+    "distancia_km": 3.88,
+    "impedancia_topografica_km": 3.88,
+    "declividade_pct": 0.1
+  },
+  {
+    "distrito1_id": 131,
+    "distrito2_id": 257,
+    "ubs1_id": 131,
+    "ubs2_id": 257,
+    "distancia_km": 0.87,
+    "impedancia_topografica_km": 0.87,
+    "declividade_pct": 0.51
+  },
+  {
+    "distrito1_id": 132,
+    "distrito2_id": 317,
+    "ubs1_id": 132,
+    "ubs2_id": 317,
+    "distancia_km": 0.82,
+    "impedancia_topografica_km": 0.82,
+    "declividade_pct": 2.43
+  },
+  {
+    "distrito1_id": 133,
+    "distrito2_id": 259,
+    "ubs1_id": 133,
+    "ubs2_id": 259,
+    "distancia_km": 1.36,
+    "impedancia_topografica_km": 1.36,
+    "declividade_pct": 1.28
+  },
+  {
+    "distrito1_id": 134,
+    "distrito2_id": 136,
+    "ubs1_id": 134,
+    "ubs2_id": 136,
+    "distancia_km": 2.71,
+    "impedancia_topografica_km": 2.71,
+    "declividade_pct": 0.29
+  },
+  {
+    "distrito1_id": 134,
+    "distrito2_id": 140,
+    "ubs1_id": 134,
+    "ubs2_id": 140,
+    "distancia_km": 3.12,
+    "impedancia_topografica_km": 3.12,
+    "declividade_pct": 0.32
+  },
+  {
+    "distrito1_id": 135,
+    "distrito2_id": 142,
+    "ubs1_id": 135,
+    "ubs2_id": 142,
+    "distancia_km": 0.62,
+    "impedancia_topografica_km": 0.62,
+    "declividade_pct": 0.29
+  },
+  {
+    "distrito1_id": 135,
+    "distrito2_id": 146,
+    "ubs1_id": 135,
+    "ubs2_id": 146,
+    "distancia_km": 0.81,
+    "impedancia_topografica_km": 0.81,
+    "declividade_pct": 1.32
+  },
+  {
+    "distrito1_id": 135,
+    "distrito2_id": 271,
+    "ubs1_id": 135,
+    "ubs2_id": 271,
+    "distancia_km": 0.74,
+    "impedancia_topografica_km": 0.74,
+    "declividade_pct": 2.42
+  },
+  {
+    "distrito1_id": 136,
+    "distrito2_id": 143,
+    "ubs1_id": 136,
+    "ubs2_id": 143,
+    "distancia_km": 1.7,
+    "impedancia_topografica_km": 1.7,
+    "declividade_pct": 0.96
+  },
+  {
+    "distrito1_id": 136,
+    "distrito2_id": 145,
+    "ubs1_id": 136,
+    "ubs2_id": 145,
+    "distancia_km": 1.37,
+    "impedancia_topografica_km": 1.37,
+    "declividade_pct": 0.04
+  },
+  {
+    "distrito1_id": 137,
+    "distrito2_id": 145,
+    "ubs1_id": 137,
+    "ubs2_id": 145,
+    "distancia_km": 4.0,
+    "impedancia_topografica_km": 4.0,
+    "declividade_pct": 0.11
+  },
+  {
+    "distrito1_id": 137,
+    "distrito2_id": 270,
+    "ubs1_id": 137,
+    "ubs2_id": 270,
+    "distancia_km": 3.92,
+    "impedancia_topografica_km": 3.92,
+    "declividade_pct": 1.29
+  },
+  {
+    "distrito1_id": 137,
+    "distrito2_id": 274,
+    "ubs1_id": 137,
+    "ubs2_id": 274,
+    "distancia_km": 3.28,
+    "impedancia_topografica_km": 3.28,
+    "declividade_pct": 0.82
+  },
+  {
+    "distrito1_id": 138,
+    "distrito2_id": 144,
+    "ubs1_id": 138,
+    "ubs2_id": 144,
+    "distancia_km": 1.4,
+    "impedancia_topografica_km": 1.4,
+    "declividade_pct": 1.13
+  },
+  {
+    "distrito1_id": 139,
+    "distrito2_id": 140,
+    "ubs1_id": 139,
+    "ubs2_id": 140,
+    "distancia_km": 2.03,
+    "impedancia_topografica_km": 2.03,
+    "declividade_pct": 0.0
+  },
+  {
+    "distrito1_id": 139,
+    "distrito2_id": 143,
+    "ubs1_id": 139,
+    "ubs2_id": 143,
+    "distancia_km": 3.02,
+    "impedancia_topografica_km": 3.02,
+    "declividade_pct": 0.05
+  },
+  {
+    "distrito1_id": 139,
+    "distrito2_id": 144,
+    "ubs1_id": 139,
+    "ubs2_id": 144,
+    "distancia_km": 1.84,
+    "impedancia_topografica_km": 1.84,
+    "declividade_pct": 0.73
+  },
+  {
+    "distrito1_id": 140,
+    "distrito2_id": 143,
+    "ubs1_id": 140,
+    "ubs2_id": 143,
+    "distancia_km": 2.25,
+    "impedancia_topografica_km": 2.25,
+    "declividade_pct": 0.07
+  },
+  {
+    "distrito1_id": 140,
+    "distrito2_id": 144,
+    "ubs1_id": 140,
+    "ubs2_id": 144,
+    "distancia_km": 1.0,
+    "impedancia_topografica_km": 1.0,
+    "declividade_pct": 1.35
+  },
+  {
+    "distrito1_id": 141,
+    "distrito2_id": 142,
+    "ubs1_id": 141,
+    "ubs2_id": 142,
+    "distancia_km": 0.63,
+    "impedancia_topografica_km": 0.63,
+    "declividade_pct": 0.79
+  },
+  {
+    "distrito1_id": 141,
+    "distrito2_id": 143,
+    "ubs1_id": 141,
+    "ubs2_id": 143,
+    "distancia_km": 1.21,
+    "impedancia_topografica_km": 1.21,
+    "declividade_pct": 0.67
+  },
+  {
+    "distrito1_id": 141,
+    "distrito2_id": 145,
+    "ubs1_id": 141,
+    "ubs2_id": 145,
+    "distancia_km": 2.09,
+    "impedancia_topografica_km": 2.09,
+    "declividade_pct": 0.37
+  },
+  {
+    "distrito1_id": 142,
+    "distrito2_id": 145,
+    "ubs1_id": 142,
+    "ubs2_id": 145,
+    "distancia_km": 2.16,
+    "impedancia_topografica_km": 2.16,
+    "declividade_pct": 0.13
+  },
+  {
+    "distrito1_id": 142,
+    "distrito2_id": 273,
+    "ubs1_id": 142,
+    "ubs2_id": 273,
+    "distancia_km": 1.44,
+    "impedancia_topografica_km": 1.44,
+    "declividade_pct": 0.94
+  },
+  {
+    "distrito1_id": 143,
+    "distrito2_id": 145,
+    "ubs1_id": 143,
+    "ubs2_id": 145,
+    "distancia_km": 1.93,
+    "impedancia_topografica_km": 1.93,
+    "declividade_pct": 0.82
+  },
+  {
+    "distrito1_id": 145,
+    "distrito2_id": 274,
+    "ubs1_id": 145,
+    "ubs2_id": 274,
+    "distancia_km": 4.0,
+    "impedancia_topografica_km": 4.0,
+    "declividade_pct": 0.78
+  },
+  {
+    "distrito1_id": 146,
+    "distrito2_id": 271,
+    "ubs1_id": 146,
+    "ubs2_id": 271,
+    "distancia_km": 1.01,
+    "impedancia_topografica_km": 1.01,
+    "declividade_pct": 2.83
+  },
+  {
+    "distrito1_id": 147,
+    "distrito2_id": 150,
+    "ubs1_id": 147,
+    "ubs2_id": 150,
+    "distancia_km": 1.06,
+    "impedancia_topografica_km": 1.06,
+    "declividade_pct": 0.12
+  },
+  {
+    "distrito1_id": 148,
+    "distrito2_id": 149,
+    "ubs1_id": 148,
+    "ubs2_id": 149,
+    "distancia_km": 1.39,
+    "impedancia_topografica_km": 1.39,
+    "declividade_pct": 0.11
+  },
+  {
+    "distrito1_id": 148,
+    "distrito2_id": 241,
+    "ubs1_id": 148,
+    "ubs2_id": 241,
+    "distancia_km": 1.51,
+    "impedancia_topografica_km": 1.51,
+    "declividade_pct": 0.47
+  },
+  {
+    "distrito1_id": 148,
+    "distrito2_id": 242,
+    "ubs1_id": 148,
+    "ubs2_id": 242,
+    "distancia_km": 1.62,
+    "impedancia_topografica_km": 1.62,
+    "declividade_pct": 0.51
+  },
+  {
+    "distrito1_id": 148,
+    "distrito2_id": 245,
+    "ubs1_id": 148,
+    "ubs2_id": 245,
+    "distancia_km": 0.66,
+    "impedancia_topografica_km": 0.66,
+    "declividade_pct": 1.53
+  },
+  {
+    "distrito1_id": 148,
+    "distrito2_id": 246,
+    "ubs1_id": 148,
+    "ubs2_id": 246,
+    "distancia_km": 1.04,
+    "impedancia_topografica_km": 1.04,
+    "declividade_pct": 0.49
+  },
+  {
+    "distrito1_id": 149,
+    "distrito2_id": 150,
+    "ubs1_id": 149,
+    "ubs2_id": 150,
+    "distancia_km": 1.53,
+    "impedancia_topografica_km": 1.53,
+    "declividade_pct": 1.47
+  },
+  {
+    "distrito1_id": 149,
+    "distrito2_id": 151,
+    "ubs1_id": 149,
+    "ubs2_id": 151,
+    "distancia_km": 1.14,
+    "impedancia_topografica_km": 1.14,
+    "declividade_pct": 1.2
+  },
+  {
+    "distrito1_id": 150,
+    "distrito2_id": 245,
+    "ubs1_id": 150,
+    "ubs2_id": 245,
+    "distancia_km": 1.62,
+    "impedancia_topografica_km": 1.62,
+    "declividade_pct": 0.86
+  },
+  {
+    "distrito1_id": 150,
+    "distrito2_id": 249,
+    "ubs1_id": 150,
+    "ubs2_id": 249,
+    "distancia_km": 0.79,
+    "impedancia_topografica_km": 0.79,
+    "declividade_pct": 1.11
+  },
+  {
+    "distrito1_id": 151,
+    "distrito2_id": 241,
+    "ubs1_id": 151,
+    "ubs2_id": 241,
+    "distancia_km": 1.53,
+    "impedancia_topografica_km": 1.53,
+    "declividade_pct": 0.53
+  },
+  {
+    "distrito1_id": 152,
+    "distrito2_id": 155,
+    "ubs1_id": 152,
+    "ubs2_id": 155,
+    "distancia_km": 1.48,
+    "impedancia_topografica_km": 1.48,
+    "declividade_pct": 0.53
+  },
+  {
+    "distrito1_id": 152,
+    "distrito2_id": 158,
+    "ubs1_id": 152,
+    "ubs2_id": 158,
+    "distancia_km": 2.35,
+    "impedancia_topografica_km": 2.35,
+    "declividade_pct": 0.43
+  },
+  {
+    "distrito1_id": 153,
+    "distrito2_id": 154,
+    "ubs1_id": 153,
+    "ubs2_id": 154,
+    "distancia_km": 0.05,
+    "impedancia_topografica_km": 0.05,
+    "declividade_pct": 0.0
+  },
+  {
+    "distrito1_id": 153,
+    "distrito2_id": 156,
+    "ubs1_id": 153,
+    "ubs2_id": 156,
+    "distancia_km": 1.86,
+    "impedancia_topografica_km": 1.86,
+    "declividade_pct": 0.56
+  },
+  {
+    "distrito1_id": 153,
+    "distrito2_id": 157,
+    "ubs1_id": 153,
+    "ubs2_id": 157,
+    "distancia_km": 1.6,
+    "impedancia_topografica_km": 1.6,
+    "declividade_pct": 0.11
+  },
+  {
+    "distrito1_id": 153,
+    "distrito2_id": 371,
+    "ubs1_id": 153,
+    "ubs2_id": 371,
+    "distancia_km": 0.43,
+    "impedancia_topografica_km": 0.43,
+    "declividade_pct": 0.0
+  },
+  {
+    "distrito1_id": 154,
+    "distrito2_id": 156,
+    "ubs1_id": 154,
+    "ubs2_id": 156,
+    "distancia_km": 1.86,
+    "impedancia_topografica_km": 1.86,
+    "declividade_pct": 0.56
+  },
+  {
+    "distrito1_id": 154,
+    "distrito2_id": 157,
+    "ubs1_id": 154,
+    "ubs2_id": 157,
+    "distancia_km": 1.6,
+    "impedancia_topografica_km": 1.6,
+    "declividade_pct": 0.11
+  },
+  {
+    "distrito1_id": 154,
+    "distrito2_id": 371,
+    "ubs1_id": 154,
+    "ubs2_id": 371,
+    "distancia_km": 0.43,
+    "impedancia_topografica_km": 0.43,
+    "declividade_pct": 0.0
+  },
+  {
+    "distrito1_id": 155,
+    "distrito2_id": 156,
+    "ubs1_id": 155,
+    "ubs2_id": 156,
+    "distancia_km": 1.22,
+    "impedancia_topografica_km": 1.22,
+    "declividade_pct": 0.54
+  },
+  {
+    "distrito1_id": 155,
+    "distrito2_id": 158,
+    "ubs1_id": 155,
+    "ubs2_id": 158,
+    "distancia_km": 1.83,
+    "impedancia_topografica_km": 1.83,
+    "declividade_pct": 0.97
+  },
+  {
+    "distrito1_id": 155,
+    "distrito2_id": 372,
+    "ubs1_id": 155,
+    "ubs2_id": 372,
+    "distancia_km": 3.42,
+    "impedancia_topografica_km": 3.42,
+    "declividade_pct": 0.14
+  },
+  {
+    "distrito1_id": 156,
+    "distrito2_id": 157,
+    "ubs1_id": 156,
+    "ubs2_id": 157,
+    "distancia_km": 0.96,
+    "impedancia_topografica_km": 0.96,
+    "declividade_pct": 0.91
+  },
+  {
+    "distrito1_id": 157,
+    "distrito2_id": 286,
+    "ubs1_id": 157,
+    "ubs2_id": 286,
+    "distancia_km": 1.92,
+    "impedancia_topografica_km": 1.92,
+    "declividade_pct": 0.74
+  },
+  {
+    "distrito1_id": 157,
+    "distrito2_id": 358,
+    "ubs1_id": 157,
+    "ubs2_id": 358,
+    "distancia_km": 2.5,
+    "impedancia_topografica_km": 2.5,
+    "declividade_pct": 0.44
+  },
+  {
+    "distrito1_id": 158,
+    "distrito2_id": 372,
+    "ubs1_id": 158,
+    "ubs2_id": 372,
+    "distancia_km": 3.13,
+    "impedancia_topografica_km": 3.13,
+    "declividade_pct": 0.72
+  },
+  {
+    "distrito1_id": 159,
+    "distrito2_id": 163,
+    "ubs1_id": 159,
+    "ubs2_id": 163,
+    "distancia_km": 0.79,
+    "impedancia_topografica_km": 0.79,
+    "declividade_pct": 2.33
+  },
+  {
+    "distrito1_id": 159,
+    "distrito2_id": 336,
+    "ubs1_id": 159,
+    "ubs2_id": 336,
+    "distancia_km": 1.35,
+    "impedancia_topografica_km": 1.35,
+    "declividade_pct": 0.81
+  },
+  {
+    "distrito1_id": 159,
+    "distrito2_id": 339,
+    "ubs1_id": 159,
+    "ubs2_id": 339,
+    "distancia_km": 1.14,
+    "impedancia_topografica_km": 1.14,
+    "declividade_pct": 0.81
+  },
+  {
+    "distrito1_id": 160,
+    "distrito2_id": 163,
+    "ubs1_id": 160,
+    "ubs2_id": 163,
+    "distancia_km": 0.23,
+    "impedancia_topografica_km": 0.23,
+    "declividade_pct": 0.74
+  },
+  {
+    "distrito1_id": 160,
+    "distrito2_id": 450,
+    "ubs1_id": 160,
+    "ubs2_id": 450,
+    "distancia_km": 2.54,
+    "impedancia_topografica_km": 2.54,
+    "declividade_pct": 0.77
+  },
+  {
+    "distrito1_id": 160,
+    "distrito2_id": 452,
+    "ubs1_id": 160,
+    "ubs2_id": 452,
+    "distancia_km": 1.89,
+    "impedancia_topografica_km": 1.89,
+    "declividade_pct": 0.86
+  },
+  {
+    "distrito1_id": 161,
+    "distrito2_id": 162,
+    "ubs1_id": 161,
+    "ubs2_id": 162,
+    "distancia_km": 2.29,
+    "impedancia_topografica_km": 2.29,
+    "declividade_pct": 0.9
+  },
+  {
+    "distrito1_id": 161,
+    "distrito2_id": 267,
+    "ubs1_id": 161,
+    "ubs2_id": 267,
+    "distancia_km": 2.59,
+    "impedancia_topografica_km": 2.59,
+    "declividade_pct": 0.79
+  },
+  {
+    "distrito1_id": 161,
+    "distrito2_id": 452,
+    "ubs1_id": 161,
+    "ubs2_id": 452,
+    "distancia_km": 3.2,
+    "impedancia_topografica_km": 3.2,
+    "declividade_pct": 0.79
+  },
+  {
+    "distrito1_id": 162,
+    "distrito2_id": 163,
+    "ubs1_id": 162,
+    "ubs2_id": 163,
+    "distancia_km": 1.58,
+    "impedancia_topografica_km": 1.58,
+    "declividade_pct": 0.62
+  },
+  {
+    "distrito1_id": 162,
+    "distrito2_id": 336,
+    "ubs1_id": 162,
+    "ubs2_id": 336,
+    "distancia_km": 2.37,
+    "impedancia_topografica_km": 2.37,
+    "declividade_pct": 0.1
+  },
+  {
+    "distrito1_id": 162,
+    "distrito2_id": 439,
+    "ubs1_id": 162,
+    "ubs2_id": 439,
+    "distancia_km": 1.83,
+    "impedancia_topografica_km": 1.83,
+    "declividade_pct": 0.86
+  },
+  {
+    "distrito1_id": 164,
+    "distrito2_id": 165,
+    "ubs1_id": 164,
+    "ubs2_id": 165,
+    "distancia_km": 2.99,
+    "impedancia_topografica_km": 2.99,
+    "declividade_pct": 0.32
+  },
+  {
+    "distrito1_id": 164,
+    "distrito2_id": 166,
+    "ubs1_id": 164,
+    "ubs2_id": 166,
+    "distancia_km": 1.09,
+    "impedancia_topografica_km": 1.09,
+    "declividade_pct": 0.7
+  },
+  {
+    "distrito1_id": 164,
+    "distrito2_id": 265,
+    "ubs1_id": 164,
+    "ubs2_id": 265,
+    "distancia_km": 3.32,
+    "impedancia_topografica_km": 3.32,
+    "declividade_pct": 0.89
+  },
+  {
+    "distrito1_id": 164,
+    "distrito2_id": 268,
+    "ubs1_id": 164,
+    "ubs2_id": 268,
+    "distancia_km": 1.19,
+    "impedancia_topografica_km": 1.19,
+    "declividade_pct": 1.38
+  },
+  {
+    "distrito1_id": 165,
+    "distrito2_id": 265,
+    "ubs1_id": 165,
+    "ubs2_id": 265,
+    "distancia_km": 1.52,
+    "impedancia_topografica_km": 1.52,
+    "declividade_pct": 1.31
+  },
+  {
+    "distrito1_id": 165,
+    "distrito2_id": 309,
+    "ubs1_id": 165,
+    "ubs2_id": 309,
+    "distancia_km": 3.83,
+    "impedancia_topografica_km": 3.83,
+    "declividade_pct": 0.55
+  },
+  {
+    "distrito1_id": 166,
+    "distrito2_id": 266,
+    "ubs1_id": 166,
+    "ubs2_id": 266,
+    "distancia_km": 3.89,
+    "impedancia_topografica_km": 3.89,
+    "declividade_pct": 0.16
+  },
+  {
+    "distrito1_id": 166,
+    "distrito2_id": 346,
+    "ubs1_id": 166,
+    "ubs2_id": 346,
+    "distancia_km": 1.98,
+    "impedancia_topografica_km": 1.98,
+    "declividade_pct": 0.47
+  },
+  {
+    "distrito1_id": 167,
+    "distrito2_id": 169,
+    "ubs1_id": 167,
+    "ubs2_id": 169,
+    "distancia_km": 1.6,
+    "impedancia_topografica_km": 1.6,
+    "declividade_pct": 0.72
+  },
+  {
+    "distrito1_id": 167,
+    "distrito2_id": 170,
+    "ubs1_id": 167,
+    "ubs2_id": 170,
+    "distancia_km": 1.16,
+    "impedancia_topografica_km": 1.16,
+    "declividade_pct": 0.8
+  },
+  {
+    "distrito1_id": 167,
+    "distrito2_id": 172,
+    "ubs1_id": 167,
+    "ubs2_id": 172,
+    "distancia_km": 0.84,
+    "impedancia_topografica_km": 0.84,
+    "declividade_pct": 1.96
+  },
+  {
+    "distrito1_id": 167,
+    "distrito2_id": 173,
+    "ubs1_id": 167,
+    "ubs2_id": 173,
+    "distancia_km": 1.24,
+    "impedancia_topografica_km": 1.24,
+    "declividade_pct": 0.69
+  },
+  {
+    "distrito1_id": 167,
+    "distrito2_id": 411,
+    "ubs1_id": 167,
+    "ubs2_id": 411,
+    "distancia_km": 1.34,
+    "impedancia_topografica_km": 1.34,
+    "declividade_pct": 0.9
+  },
+  {
+    "distrito1_id": 167,
+    "distrito2_id": 412,
+    "ubs1_id": 167,
+    "ubs2_id": 412,
+    "distancia_km": 1.4,
+    "impedancia_topografica_km": 1.4,
+    "declividade_pct": 0.45
+  },
+  {
+    "distrito1_id": 168,
+    "distrito2_id": 170,
+    "ubs1_id": 168,
+    "ubs2_id": 170,
+    "distancia_km": 1.91,
+    "impedancia_topografica_km": 1.91,
+    "declividade_pct": 0.43
+  },
+  {
+    "distrito1_id": 168,
+    "distrito2_id": 171,
+    "ubs1_id": 168,
+    "ubs2_id": 171,
+    "distancia_km": 1.68,
+    "impedancia_topografica_km": 1.68,
+    "declividade_pct": 0.08
+  },
+  {
+    "distrito1_id": 168,
+    "distrito2_id": 173,
+    "ubs1_id": 168,
+    "ubs2_id": 173,
+    "distancia_km": 1.95,
+    "impedancia_topografica_km": 1.95,
+    "declividade_pct": 1.34
+  },
+  {
+    "distrito1_id": 169,
+    "distrito2_id": 170,
+    "ubs1_id": 169,
+    "ubs2_id": 170,
+    "distancia_km": 1.84,
+    "impedancia_topografica_km": 1.84,
+    "declividade_pct": 0.12
+  },
+  {
+    "distrito1_id": 169,
+    "distrito2_id": 225,
+    "ubs1_id": 169,
+    "ubs2_id": 225,
+    "distancia_km": 1.22,
+    "impedancia_topografica_km": 1.22,
+    "declividade_pct": 1.21
+  },
+  {
+    "distrito1_id": 169,
+    "distrito2_id": 414,
+    "ubs1_id": 169,
+    "ubs2_id": 414,
+    "distancia_km": 1.05,
+    "impedancia_topografica_km": 1.05,
+    "declividade_pct": 0.63
+  },
+  {
+    "distrito1_id": 170,
+    "distrito2_id": 171,
+    "ubs1_id": 170,
+    "ubs2_id": 171,
+    "distancia_km": 1.08,
+    "impedancia_topografica_km": 1.08,
+    "declividade_pct": 0.64
+  },
+  {
+    "distrito1_id": 170,
+    "distrito2_id": 173,
+    "ubs1_id": 170,
+    "ubs2_id": 173,
+    "distancia_km": 0.86,
+    "impedancia_topografica_km": 0.86,
+    "declividade_pct": 2.08
+  },
+  {
+    "distrito1_id": 171,
+    "distrito2_id": 225,
+    "ubs1_id": 171,
+    "ubs2_id": 225,
+    "distancia_km": 1.59,
+    "impedancia_topografica_km": 1.59,
+    "declividade_pct": 0.64
+  },
+  {
+    "distrito1_id": 172,
+    "distrito2_id": 173,
+    "ubs1_id": 172,
+    "ubs2_id": 173,
+    "distancia_km": 1.44,
+    "impedancia_topografica_km": 1.44,
+    "declividade_pct": 0.55
+  },
+  {
+    "distrito1_id": 172,
+    "distrito2_id": 252,
+    "ubs1_id": 172,
+    "ubs2_id": 252,
+    "distancia_km": 1.17,
+    "impedancia_topografica_km": 1.17,
+    "declividade_pct": 0.67
+  },
+  {
+    "distrito1_id": 172,
+    "distrito2_id": 410,
+    "ubs1_id": 172,
+    "ubs2_id": 410,
+    "distancia_km": 0.83,
+    "impedancia_topografica_km": 0.83,
+    "declividade_pct": 2.66
+  },
+  {
+    "distrito1_id": 172,
+    "distrito2_id": 412,
+    "ubs1_id": 172,
+    "ubs2_id": 412,
+    "distancia_km": 1.2,
+    "impedancia_topografica_km": 1.2,
+    "declividade_pct": 0.85
+  },
+  {
+    "distrito1_id": 173,
+    "distrito2_id": 252,
+    "ubs1_id": 173,
+    "ubs2_id": 252,
+    "distancia_km": 1.35,
+    "impedancia_topografica_km": 1.35,
+    "declividade_pct": 0.01
+  },
+  {
+    "distrito1_id": 174,
+    "distrito2_id": 176,
+    "ubs1_id": 174,
+    "ubs2_id": 176,
+    "distancia_km": 0.61,
+    "impedancia_topografica_km": 0.61,
+    "declividade_pct": 0.93
+  },
+  {
+    "distrito1_id": 174,
+    "distrito2_id": 319,
+    "ubs1_id": 174,
+    "ubs2_id": 319,
+    "distancia_km": 1.6,
+    "impedancia_topografica_km": 1.6,
+    "declividade_pct": 0.09
+  },
+  {
+    "distrito1_id": 175,
+    "distrito2_id": 178,
+    "ubs1_id": 175,
+    "ubs2_id": 178,
+    "distancia_km": 1.33,
+    "impedancia_topografica_km": 1.33,
+    "declividade_pct": 0.37
+  },
+  {
+    "distrito1_id": 175,
+    "distrito2_id": 179,
+    "ubs1_id": 175,
+    "ubs2_id": 179,
+    "distancia_km": 1.4,
+    "impedancia_topografica_km": 1.4,
+    "declividade_pct": 0.48
+  },
+  {
+    "distrito1_id": 175,
+    "distrito2_id": 180,
+    "ubs1_id": 175,
+    "ubs2_id": 180,
+    "distancia_km": 1.09,
+    "impedancia_topografica_km": 1.09,
+    "declividade_pct": 2.25
+  },
+  {
+    "distrito1_id": 176,
+    "distrito2_id": 180,
+    "ubs1_id": 176,
+    "ubs2_id": 180,
+    "distancia_km": 1.19,
+    "impedancia_topografica_km": 1.19,
+    "declividade_pct": 0.62
+  },
+  {
+    "distrito1_id": 176,
+    "distrito2_id": 427,
+    "ubs1_id": 176,
+    "ubs2_id": 427,
+    "distancia_km": 0.86,
+    "impedancia_topografica_km": 0.86,
+    "declividade_pct": 1.02
+  },
+  {
+    "distrito1_id": 177,
+    "distrito2_id": 179,
+    "ubs1_id": 177,
+    "ubs2_id": 179,
+    "distancia_km": 1.06,
+    "impedancia_topografica_km": 1.06,
+    "declividade_pct": 0.22
+  },
+  {
+    "distrito1_id": 177,
+    "distrito2_id": 181,
+    "ubs1_id": 177,
+    "ubs2_id": 181,
+    "distancia_km": 1.07,
+    "impedancia_topografica_km": 1.07,
+    "declividade_pct": 1.69
+  },
+  {
+    "distrito1_id": 177,
+    "distrito2_id": 248,
+    "ubs1_id": 177,
+    "ubs2_id": 248,
+    "distancia_km": 1.46,
+    "impedancia_topografica_km": 1.46,
+    "declividade_pct": 0.58
+  },
+  {
+    "distrito1_id": 177,
+    "distrito2_id": 368,
+    "ubs1_id": 177,
+    "ubs2_id": 368,
+    "distancia_km": 1.37,
+    "impedancia_topografica_km": 1.37,
+    "declividade_pct": 0.95
+  },
+  {
+    "distrito1_id": 178,
+    "distrito2_id": 243,
+    "ubs1_id": 178,
+    "ubs2_id": 243,
+    "distancia_km": 0.62,
+    "impedancia_topografica_km": 0.62,
+    "declividade_pct": 2.34
+  },
+  {
+    "distrito1_id": 178,
+    "distrito2_id": 244,
+    "ubs1_id": 178,
+    "ubs2_id": 244,
+    "distancia_km": 1.4,
+    "impedancia_topografica_km": 1.4,
+    "declividade_pct": 0.19
+  },
+  {
+    "distrito1_id": 178,
+    "distrito2_id": 290,
+    "ubs1_id": 178,
+    "ubs2_id": 290,
+    "distancia_km": 1.61,
+    "impedancia_topografica_km": 1.61,
+    "declividade_pct": 0.34
+  },
+  {
+    "distrito1_id": 179,
+    "distrito2_id": 180,
+    "ubs1_id": 179,
+    "ubs2_id": 180,
+    "distancia_km": 1.7,
+    "impedancia_topografica_km": 1.7,
+    "declividade_pct": 1.84
+  },
+  {
+    "distrito1_id": 179,
+    "distrito2_id": 181,
+    "ubs1_id": 179,
+    "ubs2_id": 181,
+    "distancia_km": 1.04,
+    "impedancia_topografica_km": 1.04,
+    "declividade_pct": 1.96
+  },
+  {
+    "distrito1_id": 179,
+    "distrito2_id": 244,
+    "ubs1_id": 179,
+    "ubs2_id": 244,
+    "distancia_km": 0.79,
+    "impedancia_topografica_km": 0.79,
+    "declividade_pct": 0.1
+  },
+  {
+    "distrito1_id": 180,
+    "distrito2_id": 181,
+    "ubs1_id": 180,
+    "ubs2_id": 181,
+    "distancia_km": 1.44,
+    "impedancia_topografica_km": 1.44,
+    "declividade_pct": 0.75
+  },
+  {
+    "distrito1_id": 181,
+    "distrito2_id": 368,
+    "ubs1_id": 181,
+    "ubs2_id": 368,
+    "distancia_km": 1.7,
+    "impedancia_topografica_km": 1.7,
+    "declividade_pct": 0.3
+  },
+  {
+    "distrito1_id": 181,
+    "distrito2_id": 428,
+    "ubs1_id": 181,
+    "ubs2_id": 428,
+    "distancia_km": 1.7,
+    "impedancia_topografica_km": 1.7,
+    "declividade_pct": 0.17
+  },
+  {
+    "distrito1_id": 182,
+    "distrito2_id": 187,
+    "ubs1_id": 182,
+    "ubs2_id": 187,
+    "distancia_km": 0.9,
+    "impedancia_topografica_km": 0.9,
+    "declividade_pct": 1.4
+  },
+  {
+    "distrito1_id": 182,
+    "distrito2_id": 188,
+    "ubs1_id": 182,
+    "ubs2_id": 188,
+    "distancia_km": 0.84,
+    "impedancia_topografica_km": 0.84,
+    "declividade_pct": 1.43
+  },
+  {
+    "distrito1_id": 183,
+    "distrito2_id": 185,
+    "ubs1_id": 183,
+    "ubs2_id": 185,
+    "distancia_km": 0.47,
+    "impedancia_topografica_km": 0.47,
+    "declividade_pct": 3.15
+  },
+  {
+    "distrito1_id": 183,
+    "distrito2_id": 189,
+    "ubs1_id": 183,
+    "ubs2_id": 189,
+    "distancia_km": 1.55,
+    "impedancia_topografica_km": 1.55,
+    "declividade_pct": 1.41
+  },
+  {
+    "distrito1_id": 183,
+    "distrito2_id": 392,
+    "ubs1_id": 183,
+    "ubs2_id": 392,
+    "distancia_km": 2.18,
+    "impedancia_topografica_km": 2.18,
+    "declividade_pct": 0.8
+  },
+  {
+    "distrito1_id": 184,
+    "distrito2_id": 186,
+    "ubs1_id": 184,
+    "ubs2_id": 186,
+    "distancia_km": 0.75,
+    "impedancia_topografica_km": 0.75,
+    "declividade_pct": 1.17
+  },
+  {
+    "distrito1_id": 184,
+    "distrito2_id": 189,
+    "ubs1_id": 184,
+    "ubs2_id": 189,
+    "distancia_km": 1.18,
+    "impedancia_topografica_km": 1.18,
+    "declividade_pct": 0.12
+  },
+  {
+    "distrito1_id": 184,
+    "distrito2_id": 391,
+    "ubs1_id": 184,
+    "ubs2_id": 391,
+    "distancia_km": 2.67,
+    "impedancia_topografica_km": 2.67,
+    "declividade_pct": 0.63
+  },
+  {
+    "distrito1_id": 185,
+    "distrito2_id": 187,
+    "ubs1_id": 185,
+    "ubs2_id": 187,
+    "distancia_km": 0.89,
+    "impedancia_topografica_km": 0.89,
+    "declividade_pct": 0.12
+  },
+  {
+    "distrito1_id": 185,
+    "distrito2_id": 188,
+    "ubs1_id": 185,
+    "ubs2_id": 188,
+    "distancia_km": 1.56,
+    "impedancia_topografica_km": 1.56,
+    "declividade_pct": 0.11
+  },
+  {
+    "distrito1_id": 185,
+    "distrito2_id": 189,
+    "ubs1_id": 185,
+    "ubs2_id": 189,
+    "distancia_km": 1.48,
+    "impedancia_topografica_km": 1.48,
+    "declividade_pct": 0.47
+  },
+  {
+    "distrito1_id": 186,
+    "distrito2_id": 189,
+    "ubs1_id": 186,
+    "ubs2_id": 189,
+    "distancia_km": 1.19,
+    "impedancia_topografica_km": 1.19,
+    "declividade_pct": 0.62
+  },
+  {
+    "distrito1_id": 188,
+    "distrito2_id": 189,
+    "ubs1_id": 188,
+    "ubs2_id": 189,
+    "distancia_km": 0.8,
+    "impedancia_topografica_km": 0.8,
+    "declividade_pct": 0.66
+  },
+  {
+    "distrito1_id": 190,
+    "distrito2_id": 191,
+    "ubs1_id": 190,
+    "ubs2_id": 191,
+    "distancia_km": 1.54,
+    "impedancia_topografica_km": 1.54,
+    "declividade_pct": 0.58
+  },
+  {
+    "distrito1_id": 190,
+    "distrito2_id": 192,
+    "ubs1_id": 190,
+    "ubs2_id": 192,
+    "distancia_km": 1.2,
+    "impedancia_topografica_km": 1.2,
+    "declividade_pct": 1.69
+  },
+  {
+    "distrito1_id": 190,
+    "distrito2_id": 404,
+    "ubs1_id": 190,
+    "ubs2_id": 404,
+    "distancia_km": 0.84,
+    "impedancia_topografica_km": 0.84,
+    "declividade_pct": 2.17
+  },
+  {
+    "distrito1_id": 190,
+    "distrito2_id": 446,
+    "ubs1_id": 190,
+    "ubs2_id": 446,
+    "distancia_km": 1.3,
+    "impedancia_topografica_km": 1.31,
+    "declividade_pct": 2.7
+  },
+  {
+    "distrito1_id": 191,
+    "distrito2_id": 193,
+    "ubs1_id": 191,
+    "ubs2_id": 193,
+    "distancia_km": 1.53,
+    "impedancia_topografica_km": 1.53,
+    "declividade_pct": 1.69
+  },
+  {
+    "distrito1_id": 191,
+    "distrito2_id": 396,
+    "ubs1_id": 191,
+    "ubs2_id": 396,
+    "distancia_km": 0.96,
+    "impedancia_topografica_km": 1.0,
+    "declividade_pct": 5.86
+  },
+  {
+    "distrito1_id": 191,
+    "distrito2_id": 405,
+    "ubs1_id": 191,
+    "ubs2_id": 405,
+    "distancia_km": 2.22,
+    "impedancia_topografica_km": 2.22,
+    "declividade_pct": 0.07
+  },
+  {
+    "distrito1_id": 192,
+    "distrito2_id": 446,
+    "ubs1_id": 192,
+    "ubs2_id": 446,
+    "distancia_km": 1.27,
+    "impedancia_topografica_km": 1.27,
+    "declividade_pct": 1.17
+  },
+  {
+    "distrito1_id": 193,
+    "distrito2_id": 396,
+    "ubs1_id": 193,
+    "ubs2_id": 396,
+    "distancia_km": 1.39,
+    "impedancia_topografica_km": 1.39,
+    "declividade_pct": 2.19
+  },
+  {
+    "distrito1_id": 193,
+    "distrito2_id": 399,
+    "ubs1_id": 193,
+    "ubs2_id": 399,
+    "distancia_km": 1.92,
+    "impedancia_topografica_km": 1.93,
+    "declividade_pct": 2.13
+  },
+  {
+    "distrito1_id": 194,
+    "distrito2_id": 195,
+    "ubs1_id": 194,
+    "ubs2_id": 195,
+    "distancia_km": 2.01,
+    "impedancia_topografica_km": 2.01,
+    "declividade_pct": 0.42
+  },
+  {
+    "distrito1_id": 194,
+    "distrito2_id": 254,
+    "ubs1_id": 194,
+    "ubs2_id": 254,
+    "distancia_km": 2.69,
+    "impedancia_topografica_km": 2.69,
+    "declividade_pct": 0.58
+  },
+  {
+    "distrito1_id": 194,
+    "distrito2_id": 350,
+    "ubs1_id": 194,
+    "ubs2_id": 350,
+    "distancia_km": 2.05,
+    "impedancia_topografica_km": 2.05,
+    "declividade_pct": 1.01
+  },
+  {
+    "distrito1_id": 194,
+    "distrito2_id": 351,
+    "ubs1_id": 194,
+    "ubs2_id": 351,
+    "distancia_km": 2.06,
+    "impedancia_topografica_km": 2.06,
+    "declividade_pct": 0.74
+  },
+  {
+    "distrito1_id": 194,
+    "distrito2_id": 434,
+    "ubs1_id": 194,
+    "ubs2_id": 434,
+    "distancia_km": 3.3,
+    "impedancia_topografica_km": 3.3,
+    "declividade_pct": 0.63
+  },
+  {
+    "distrito1_id": 195,
+    "distrito2_id": 348,
+    "ubs1_id": 195,
+    "ubs2_id": 348,
+    "distancia_km": 1.47,
+    "impedancia_topografica_km": 1.47,
+    "declividade_pct": 1.5
+  },
+  {
+    "distrito1_id": 195,
+    "distrito2_id": 350,
+    "ubs1_id": 195,
+    "ubs2_id": 350,
+    "distancia_km": 1.35,
+    "impedancia_topografica_km": 1.35,
+    "declividade_pct": 0.92
+  },
+  {
+    "distrito1_id": 196,
+    "distrito2_id": 332,
+    "ubs1_id": 196,
+    "ubs2_id": 332,
+    "distancia_km": 2.28,
+    "impedancia_topografica_km": 2.28,
+    "declividade_pct": 0.67
+  },
+  {
+    "distrito1_id": 197,
+    "distrito2_id": 198,
+    "ubs1_id": 197,
+    "ubs2_id": 198,
+    "distancia_km": 1.93,
+    "impedancia_topografica_km": 1.93,
+    "declividade_pct": 1.18
+  },
+  {
+    "distrito1_id": 197,
+    "distrito2_id": 311,
+    "ubs1_id": 197,
+    "ubs2_id": 311,
+    "distancia_km": 3.43,
+    "impedancia_topografica_km": 3.43,
+    "declividade_pct": 0.71
+  },
+  {
+    "distrito1_id": 197,
+    "distrito2_id": 316,
+    "ubs1_id": 197,
+    "ubs2_id": 316,
+    "distancia_km": 2.16,
+    "impedancia_topografica_km": 2.17,
+    "declividade_pct": 2.57
+  },
+  {
+    "distrito1_id": 198,
+    "distrito2_id": 201,
+    "ubs1_id": 198,
+    "ubs2_id": 201,
+    "distancia_km": 0.47,
+    "impedancia_topografica_km": 0.47,
+    "declividade_pct": 2.0
+  },
+  {
+    "distrito1_id": 199,
+    "distrito2_id": 201,
+    "ubs1_id": 199,
+    "ubs2_id": 201,
+    "distancia_km": 1.57,
+    "impedancia_topografica_km": 1.57,
+    "declividade_pct": 1.47
+  },
+  {
+    "distrito1_id": 199,
+    "distrito2_id": 202,
+    "ubs1_id": 199,
+    "ubs2_id": 202,
+    "distancia_km": 1.11,
+    "impedancia_topografica_km": 1.11,
+    "declividade_pct": 1.77
+  },
+  {
+    "distrito1_id": 199,
+    "distrito2_id": 203,
+    "ubs1_id": 199,
+    "ubs2_id": 203,
+    "distancia_km": 1.03,
+    "impedancia_topografica_km": 1.03,
+    "declividade_pct": 0.55
+  },
+  {
+    "distrito1_id": 200,
+    "distrito2_id": 202,
+    "ubs1_id": 200,
+    "ubs2_id": 202,
+    "distancia_km": 1.63,
+    "impedancia_topografica_km": 1.63,
+    "declividade_pct": 1.25
+  },
+  {
+    "distrito1_id": 200,
+    "distrito2_id": 204,
+    "ubs1_id": 200,
+    "ubs2_id": 204,
+    "distancia_km": 1.28,
+    "impedancia_topografica_km": 1.28,
+    "declividade_pct": 0.37
+  },
+  {
+    "distrito1_id": 200,
+    "distrito2_id": 314,
+    "ubs1_id": 200,
+    "ubs2_id": 314,
+    "distancia_km": 1.03,
+    "impedancia_topografica_km": 1.05,
+    "declividade_pct": 4.9
+  },
+  {
+    "distrito1_id": 201,
+    "distrito2_id": 307,
+    "ubs1_id": 201,
+    "ubs2_id": 307,
+    "distancia_km": 3.63,
+    "impedancia_topografica_km": 3.63,
+    "declividade_pct": 1.49
+  },
+  {
+    "distrito1_id": 202,
+    "distrito2_id": 314,
+    "ubs1_id": 202,
+    "ubs2_id": 314,
+    "distancia_km": 1.43,
+    "impedancia_topografica_km": 1.43,
+    "declividade_pct": 2.11
+  },
+  {
+    "distrito1_id": 203,
+    "distrito2_id": 204,
+    "ubs1_id": 203,
+    "ubs2_id": 204,
+    "distancia_km": 0.97,
+    "impedancia_topografica_km": 0.97,
+    "declividade_pct": 0.02
+  },
+  {
+    "distrito1_id": 203,
+    "distrito2_id": 307,
+    "ubs1_id": 203,
+    "ubs2_id": 307,
+    "distancia_km": 3.34,
+    "impedancia_topografica_km": 3.34,
+    "declividade_pct": 0.75
+  },
+  {
+    "distrito1_id": 205,
+    "distrito2_id": 207,
+    "ubs1_id": 205,
+    "ubs2_id": 207,
+    "distancia_km": 2.54,
+    "impedancia_topografica_km": 2.54,
+    "declividade_pct": 0.47
+  },
+  {
+    "distrito1_id": 205,
+    "distrito2_id": 209,
+    "ubs1_id": 205,
+    "ubs2_id": 209,
+    "distancia_km": 2.5,
+    "impedancia_topografica_km": 2.5,
+    "declividade_pct": 0.36
+  },
+  {
+    "distrito1_id": 205,
+    "distrito2_id": 214,
+    "ubs1_id": 205,
+    "ubs2_id": 214,
+    "distancia_km": 0.72,
+    "impedancia_topografica_km": 0.72,
+    "declividade_pct": 2.21
+  },
+  {
+    "distrito1_id": 205,
+    "distrito2_id": 216,
+    "ubs1_id": 205,
+    "ubs2_id": 216,
+    "distancia_km": 1.33,
+    "impedancia_topografica_km": 1.33,
+    "declividade_pct": 0.6
+  },
+  {
+    "distrito1_id": 205,
+    "distrito2_id": 220,
+    "ubs1_id": 205,
+    "ubs2_id": 220,
+    "distancia_km": 0.66,
+    "impedancia_topografica_km": 0.66,
+    "declividade_pct": 0.32
+  },
+  {
+    "distrito1_id": 206,
+    "distrito2_id": 213,
+    "ubs1_id": 206,
+    "ubs2_id": 213,
+    "distancia_km": 0.64,
+    "impedancia_topografica_km": 0.64,
+    "declividade_pct": 3.16
+  },
+  {
+    "distrito1_id": 206,
+    "distrito2_id": 221,
+    "ubs1_id": 206,
+    "ubs2_id": 221,
+    "distancia_km": 1.03,
+    "impedancia_topografica_km": 1.03,
+    "declividade_pct": 0.37
+  },
+  {
+    "distrito1_id": 207,
+    "distrito2_id": 209,
+    "ubs1_id": 207,
+    "ubs2_id": 209,
+    "distancia_km": 0.61,
+    "impedancia_topografica_km": 0.61,
+    "declividade_pct": 0.49
+  },
+  {
+    "distrito1_id": 208,
+    "distrito2_id": 219,
+    "ubs1_id": 208,
+    "ubs2_id": 219,
+    "distancia_km": 1.95,
+    "impedancia_topografica_km": 1.95,
+    "declividade_pct": 0.17
+  },
+  {
+    "distrito1_id": 209,
+    "distrito2_id": 216,
+    "ubs1_id": 209,
+    "ubs2_id": 216,
+    "distancia_km": 2.21,
+    "impedancia_topografica_km": 2.21,
+    "declividade_pct": 0.05
+  },
+  {
+    "distrito1_id": 209,
+    "distrito2_id": 223,
+    "ubs1_id": 209,
+    "ubs2_id": 223,
+    "distancia_km": 2.0,
+    "impedancia_topografica_km": 2.0,
+    "declividade_pct": 0.49
+  },
+  {
+    "distrito1_id": 210,
+    "distrito2_id": 212,
+    "ubs1_id": 210,
+    "ubs2_id": 212,
+    "distancia_km": 1.42,
+    "impedancia_topografica_km": 1.42,
+    "declividade_pct": 0.08
+  },
+  {
+    "distrito1_id": 210,
+    "distrito2_id": 217,
+    "ubs1_id": 210,
+    "ubs2_id": 217,
+    "distancia_km": 1.22,
+    "impedancia_topografica_km": 1.22,
+    "declividade_pct": 1.19
+  },
+  {
+    "distrito1_id": 210,
+    "distrito2_id": 222,
+    "ubs1_id": 210,
+    "ubs2_id": 222,
+    "distancia_km": 1.15,
+    "impedancia_topografica_km": 1.15,
+    "declividade_pct": 0.28
+  },
+  {
+    "distrito1_id": 211,
+    "distrito2_id": 219,
+    "ubs1_id": 211,
+    "ubs2_id": 219,
+    "distancia_km": 0.49,
+    "impedancia_topografica_km": 0.49,
+    "declividade_pct": 0.22
+  },
+  {
+    "distrito1_id": 211,
+    "distrito2_id": 223,
+    "ubs1_id": 211,
+    "ubs2_id": 223,
+    "distancia_km": 0.44,
+    "impedancia_topografica_km": 0.44,
+    "declividade_pct": 0.05
+  },
+  {
+    "distrito1_id": 212,
+    "distrito2_id": 215,
+    "ubs1_id": 212,
+    "ubs2_id": 215,
+    "distancia_km": 1.14,
+    "impedancia_topografica_km": 1.14,
+    "declividade_pct": 0.11
+  },
+  {
+    "distrito1_id": 212,
+    "distrito2_id": 218,
+    "ubs1_id": 212,
+    "ubs2_id": 218,
+    "distancia_km": 0.79,
+    "impedancia_topografica_km": 0.79,
+    "declividade_pct": 1.46
+  },
+  {
+    "distrito1_id": 212,
+    "distrito2_id": 222,
+    "ubs1_id": 212,
+    "ubs2_id": 222,
+    "distancia_km": 1.22,
+    "impedancia_topografica_km": 1.22,
+    "declividade_pct": 0.35
+  },
+  {
+    "distrito1_id": 212,
+    "distrito2_id": 234,
+    "ubs1_id": 212,
+    "ubs2_id": 234,
+    "distancia_km": 0.81,
+    "impedancia_topografica_km": 0.81,
+    "declividade_pct": 0.59
+  },
+  {
+    "distrito1_id": 213,
+    "distrito2_id": 217,
+    "ubs1_id": 213,
+    "ubs2_id": 217,
+    "distancia_km": 0.76,
+    "impedancia_topografica_km": 0.77,
+    "declividade_pct": 3.58
+  },
+  {
+    "distrito1_id": 213,
+    "distrito2_id": 221,
+    "ubs1_id": 213,
+    "ubs2_id": 221,
+    "distancia_km": 0.87,
+    "impedancia_topografica_km": 0.87,
+    "declividade_pct": 1.89
+  },
+  {
+    "distrito1_id": 214,
+    "distrito2_id": 215,
+    "ubs1_id": 214,
+    "ubs2_id": 215,
+    "distancia_km": 0.46,
+    "impedancia_topografica_km": 0.46,
+    "declividade_pct": 3.11
+  },
+  {
+    "distrito1_id": 214,
+    "distrito2_id": 220,
+    "ubs1_id": 214,
+    "ubs2_id": 220,
+    "distancia_km": 0.45,
+    "impedancia_topografica_km": 0.45,
+    "declividade_pct": 3.07
+  },
+  {
+    "distrito1_id": 214,
+    "distrito2_id": 233,
+    "ubs1_id": 214,
+    "ubs2_id": 233,
+    "distancia_km": 1.01,
+    "impedancia_topografica_km": 1.01,
+    "declividade_pct": 0.77
+  },
+  {
+    "distrito1_id": 215,
+    "distrito2_id": 218,
+    "ubs1_id": 215,
+    "ubs2_id": 218,
+    "distancia_km": 1.36,
+    "impedancia_topografica_km": 1.36,
+    "declividade_pct": 0.94
+  },
+  {
+    "distrito1_id": 215,
+    "distrito2_id": 220,
+    "ubs1_id": 215,
+    "ubs2_id": 220,
+    "distancia_km": 0.43,
+    "impedancia_topografica_km": 0.43,
+    "declividade_pct": 0.12
+  },
+  {
+    "distrito1_id": 215,
+    "distrito2_id": 222,
+    "ubs1_id": 215,
+    "ubs2_id": 222,
+    "distancia_km": 0.64,
+    "impedancia_topografica_km": 0.64,
+    "declividade_pct": 0.88
+  },
+  {
+    "distrito1_id": 215,
+    "distrito2_id": 237,
+    "ubs1_id": 215,
+    "ubs2_id": 237,
+    "distancia_km": 1.49,
+    "impedancia_topografica_km": 1.49,
+    "declividade_pct": 0.26
+  },
+  {
+    "distrito1_id": 216,
+    "distrito2_id": 217,
+    "ubs1_id": 216,
+    "ubs2_id": 217,
+    "distancia_km": 0.93,
+    "impedancia_topografica_km": 0.93,
+    "declividade_pct": 0.27
+  },
+  {
+    "distrito1_id": 216,
+    "distrito2_id": 220,
+    "ubs1_id": 216,
+    "ubs2_id": 220,
+    "distancia_km": 1.42,
+    "impedancia_topografica_km": 1.42,
+    "declividade_pct": 0.71
+  },
+  {
+    "distrito1_id": 216,
+    "distrito2_id": 221,
+    "ubs1_id": 216,
+    "ubs2_id": 221,
+    "distancia_km": 1.07,
+    "impedancia_topografica_km": 1.07,
+    "declividade_pct": 0.78
+  },
+  {
+    "distrito1_id": 216,
+    "distrito2_id": 222,
+    "ubs1_id": 216,
+    "ubs2_id": 222,
+    "distancia_km": 1.33,
+    "impedancia_topografica_km": 1.33,
+    "declividade_pct": 1.14
+  },
+  {
+    "distrito1_id": 217,
+    "distrito2_id": 221,
+    "ubs1_id": 217,
+    "ubs2_id": 221,
+    "distancia_km": 0.76,
+    "impedancia_topografica_km": 0.76,
+    "declividade_pct": 1.42
+  },
+  {
+    "distrito1_id": 217,
+    "distrito2_id": 222,
+    "ubs1_id": 217,
+    "ubs2_id": 222,
+    "distancia_km": 1.54,
+    "impedancia_topografica_km": 1.54,
+    "declividade_pct": 1.15
+  },
+  {
+    "distrito1_id": 218,
+    "distrito2_id": 230,
+    "ubs1_id": 218,
+    "ubs2_id": 230,
+    "distancia_km": 1.02,
+    "impedancia_topografica_km": 1.02,
+    "declividade_pct": 0.03
+  },
+  {
+    "distrito1_id": 218,
+    "distrito2_id": 234,
+    "ubs1_id": 218,
+    "ubs2_id": 234,
+    "distancia_km": 0.39,
+    "impedancia_topografica_km": 0.39,
+    "declividade_pct": 1.72
+  },
+  {
+    "distrito1_id": 218,
+    "distrito2_id": 237,
+    "ubs1_id": 218,
+    "ubs2_id": 237,
+    "distancia_km": 0.65,
+    "impedancia_topografica_km": 0.65,
+    "declividade_pct": 2.57
+  },
+  {
+    "distrito1_id": 219,
+    "distrito2_id": 223,
+    "ubs1_id": 219,
+    "ubs2_id": 223,
+    "distancia_km": 0.32,
+    "impedancia_topografica_km": 0.32,
+    "declividade_pct": 0.28
+  },
+  {
+    "distrito1_id": 220,
+    "distrito2_id": 222,
+    "ubs1_id": 220,
+    "ubs2_id": 222,
+    "distancia_km": 0.53,
+    "impedancia_topografica_km": 0.53,
+    "declividade_pct": 0.96
+  },
+  {
+    "distrito1_id": 224,
+    "distrito2_id": 226,
+    "ubs1_id": 224,
+    "ubs2_id": 226,
+    "distancia_km": 1.51,
+    "impedancia_topografica_km": 1.51,
+    "declividade_pct": 0.29
+  },
+  {
+    "distrito1_id": 224,
+    "distrito2_id": 227,
+    "ubs1_id": 224,
+    "ubs2_id": 227,
+    "distancia_km": 1.5,
+    "impedancia_topografica_km": 1.5,
+    "declividade_pct": 0.99
+  },
+  {
+    "distrito1_id": 226,
+    "distrito2_id": 227,
+    "ubs1_id": 226,
+    "ubs2_id": 227,
+    "distancia_km": 1.77,
+    "impedancia_topografica_km": 1.77,
+    "declividade_pct": 0.59
+  },
+  {
+    "distrito1_id": 226,
+    "distrito2_id": 414,
+    "ubs1_id": 226,
+    "ubs2_id": 414,
+    "distancia_km": 1.15,
+    "impedancia_topografica_km": 1.15,
+    "declividade_pct": 0.85
+  },
+  {
+    "distrito1_id": 226,
+    "distrito2_id": 416,
+    "ubs1_id": 226,
+    "ubs2_id": 416,
+    "distancia_km": 1.32,
+    "impedancia_topografica_km": 1.32,
+    "declividade_pct": 1.73
+  },
+  {
+    "distrito1_id": 227,
+    "distrito2_id": 367,
+    "ubs1_id": 227,
+    "ubs2_id": 367,
+    "distancia_km": 0.88,
+    "impedancia_topografica_km": 0.88,
+    "declividade_pct": 1.58
+  },
+  {
+    "distrito1_id": 228,
+    "distrito2_id": 229,
+    "ubs1_id": 228,
+    "ubs2_id": 229,
+    "distancia_km": 1.07,
+    "impedancia_topografica_km": 1.07,
+    "declividade_pct": 0.59
+  },
+  {
+    "distrito1_id": 228,
+    "distrito2_id": 239,
+    "ubs1_id": 228,
+    "ubs2_id": 239,
+    "distancia_km": 1.44,
+    "impedancia_topografica_km": 1.44,
+    "declividade_pct": 0.35
+  },
+  {
+    "distrito1_id": 229,
+    "distrito2_id": 232,
+    "ubs1_id": 229,
+    "ubs2_id": 232,
+    "distancia_km": 0.53,
+    "impedancia_topografica_km": 0.53,
+    "declividade_pct": 1.53
+  },
+  {
+    "distrito1_id": 229,
+    "distrito2_id": 238,
+    "ubs1_id": 229,
+    "ubs2_id": 238,
+    "distancia_km": 1.14,
+    "impedancia_topografica_km": 1.14,
+    "declividade_pct": 0.54
+  },
+  {
+    "distrito1_id": 229,
+    "distrito2_id": 239,
+    "ubs1_id": 229,
+    "ubs2_id": 239,
+    "distancia_km": 1.26,
+    "impedancia_topografica_km": 1.26,
+    "declividade_pct": 0.1
+  },
+  {
+    "distrito1_id": 230,
+    "distrito2_id": 234,
+    "ubs1_id": 230,
+    "ubs2_id": 234,
+    "distancia_km": 0.99,
+    "impedancia_topografica_km": 0.99,
+    "declividade_pct": 0.65
+  },
+  {
+    "distrito1_id": 230,
+    "distrito2_id": 237,
+    "ubs1_id": 230,
+    "ubs2_id": 237,
+    "distancia_km": 0.89,
+    "impedancia_topografica_km": 0.89,
+    "declividade_pct": 1.84
+  },
+  {
+    "distrito1_id": 230,
+    "distrito2_id": 238,
+    "ubs1_id": 230,
+    "ubs2_id": 238,
+    "distancia_km": 1.86,
+    "impedancia_topografica_km": 1.86,
+    "declividade_pct": 0.29
+  },
+  {
+    "distrito1_id": 230,
+    "distrito2_id": 240,
+    "ubs1_id": 230,
+    "ubs2_id": 240,
+    "distancia_km": 0.11,
+    "impedancia_topografica_km": 0.11,
+    "declividade_pct": 5.0
+  },
+  {
+    "distrito1_id": 231,
+    "distrito2_id": 233,
+    "ubs1_id": 231,
+    "ubs2_id": 233,
+    "distancia_km": 1.21,
+    "impedancia_topografica_km": 1.21,
+    "declividade_pct": 0.02
+  },
+  {
+    "distrito1_id": 231,
+    "distrito2_id": 236,
+    "ubs1_id": 231,
+    "ubs2_id": 236,
+    "distancia_km": 1.74,
+    "impedancia_topografica_km": 1.74,
+    "declividade_pct": 0.11
+  },
+  {
+    "distrito1_id": 231,
+    "distrito2_id": 237,
+    "ubs1_id": 231,
+    "ubs2_id": 237,
+    "distancia_km": 1.05,
+    "impedancia_topografica_km": 1.05,
+    "declividade_pct": 0.96
+  },
+  {
+    "distrito1_id": 231,
+    "distrito2_id": 240,
+    "ubs1_id": 231,
+    "ubs2_id": 240,
+    "distancia_km": 1.29,
+    "impedancia_topografica_km": 1.29,
+    "declividade_pct": 0.06
+  },
+  {
+    "distrito1_id": 231,
+    "distrito2_id": 394,
+    "ubs1_id": 231,
+    "ubs2_id": 394,
+    "distancia_km": 2.81,
+    "impedancia_topografica_km": 2.81,
+    "declividade_pct": 0.18
+  },
+  {
+    "distrito1_id": 232,
+    "distrito2_id": 235,
+    "ubs1_id": 232,
+    "ubs2_id": 235,
+    "distancia_km": 0.74,
+    "impedancia_topografica_km": 0.74,
+    "declividade_pct": 3.12
+  },
+  {
+    "distrito1_id": 232,
+    "distrito2_id": 236,
+    "ubs1_id": 232,
+    "ubs2_id": 236,
+    "distancia_km": 1.18,
+    "impedancia_topografica_km": 1.18,
+    "declividade_pct": 0.25
+  },
+  {
+    "distrito1_id": 233,
+    "distrito2_id": 237,
+    "ubs1_id": 233,
+    "ubs2_id": 237,
+    "distancia_km": 1.04,
+    "impedancia_topografica_km": 1.04,
+    "declividade_pct": 1.0
+  },
+  {
+    "distrito1_id": 235,
+    "distrito2_id": 236,
+    "ubs1_id": 235,
+    "ubs2_id": 236,
+    "distancia_km": 1.32,
+    "impedancia_topografica_km": 1.32,
+    "declividade_pct": 1.52
+  },
+  {
+    "distrito1_id": 235,
+    "distrito2_id": 239,
+    "ubs1_id": 235,
+    "ubs2_id": 239,
+    "distancia_km": 1.46,
+    "impedancia_topografica_km": 1.46,
+    "declividade_pct": 0.94
+  },
+  {
+    "distrito1_id": 235,
+    "distrito2_id": 347,
+    "ubs1_id": 235,
+    "ubs2_id": 347,
+    "distancia_km": 3.42,
+    "impedancia_topografica_km": 3.42,
+    "declividade_pct": 0.21
+  },
+  {
+    "distrito1_id": 236,
+    "distrito2_id": 240,
+    "ubs1_id": 236,
+    "ubs2_id": 240,
+    "distancia_km": 1.17,
+    "impedancia_topografica_km": 1.17,
+    "declividade_pct": 0.09
+  },
+  {
+    "distrito1_id": 236,
+    "distrito2_id": 394,
+    "ubs1_id": 236,
+    "ubs2_id": 394,
+    "distancia_km": 3.14,
+    "impedancia_topografica_km": 3.14,
+    "declividade_pct": 0.22
+  },
+  {
+    "distrito1_id": 237,
+    "distrito2_id": 240,
+    "ubs1_id": 237,
+    "ubs2_id": 240,
+    "distancia_km": 0.88,
+    "impedancia_topografica_km": 0.88,
+    "declividade_pct": 1.24
+  },
+  {
+    "distrito1_id": 239,
+    "distrito2_id": 407,
+    "ubs1_id": 239,
+    "ubs2_id": 407,
+    "distancia_km": 3.25,
+    "impedancia_topografica_km": 3.25,
+    "declividade_pct": 0.75
+  },
+  {
+    "distrito1_id": 241,
+    "distrito2_id": 242,
+    "ubs1_id": 241,
+    "ubs2_id": 242,
+    "distancia_km": 0.62,
+    "impedancia_topografica_km": 0.62,
+    "declividade_pct": 2.48
+  },
+  {
+    "distrito1_id": 241,
+    "distrito2_id": 243,
+    "ubs1_id": 241,
+    "ubs2_id": 243,
+    "distancia_km": 1.62,
+    "impedancia_topografica_km": 1.62,
+    "declividade_pct": 0.1
+  },
+  {
+    "distrito1_id": 242,
+    "distrito2_id": 244,
+    "ubs1_id": 242,
+    "ubs2_id": 244,
+    "distancia_km": 0.87,
+    "impedancia_topografica_km": 0.87,
+    "declividade_pct": 0.22
+  },
+  {
+    "distrito1_id": 242,
+    "distrito2_id": 246,
+    "ubs1_id": 242,
+    "ubs2_id": 246,
+    "distancia_km": 1.53,
+    "impedancia_topografica_km": 1.53,
+    "declividade_pct": 0.21
+  },
+  {
+    "distrito1_id": 242,
+    "distrito2_id": 248,
+    "ubs1_id": 242,
+    "ubs2_id": 248,
+    "distancia_km": 1.69,
+    "impedancia_topografica_km": 1.69,
+    "declividade_pct": 0.43
+  },
+  {
+    "distrito1_id": 243,
+    "distrito2_id": 287,
+    "ubs1_id": 243,
+    "ubs2_id": 287,
+    "distancia_km": 1.59,
+    "impedancia_topografica_km": 1.59,
+    "declividade_pct": 0.51
+  },
+  {
+    "distrito1_id": 245,
+    "distrito2_id": 246,
+    "ubs1_id": 245,
+    "ubs2_id": 246,
+    "distancia_km": 1.15,
+    "impedancia_topografica_km": 1.15,
+    "declividade_pct": 1.32
+  },
+  {
+    "distrito1_id": 245,
+    "distrito2_id": 249,
+    "ubs1_id": 245,
+    "ubs2_id": 249,
+    "distancia_km": 1.44,
+    "impedancia_topografica_km": 1.44,
+    "declividade_pct": 0.35
+  },
+  {
+    "distrito1_id": 245,
+    "distrito2_id": 253,
+    "ubs1_id": 245,
+    "ubs2_id": 253,
+    "distancia_km": 0.55,
+    "impedancia_topografica_km": 0.55,
+    "declividade_pct": 2.18
+  },
+  {
+    "distrito1_id": 246,
+    "distrito2_id": 248,
+    "ubs1_id": 246,
+    "ubs2_id": 248,
+    "distancia_km": 0.79,
+    "impedancia_topografica_km": 0.79,
+    "declividade_pct": 0.51
+  },
+  {
+    "distrito1_id": 246,
+    "distrito2_id": 253,
+    "ubs1_id": 246,
+    "ubs2_id": 253,
+    "distancia_km": 1.07,
+    "impedancia_topografica_km": 1.07,
+    "declividade_pct": 0.3
+  },
+  {
+    "distrito1_id": 247,
+    "distrito2_id": 249,
+    "ubs1_id": 247,
+    "ubs2_id": 249,
+    "distancia_km": 0.64,
+    "impedancia_topografica_km": 0.64,
+    "declividade_pct": 0.94
+  },
+  {
+    "distrito1_id": 247,
+    "distrito2_id": 251,
+    "ubs1_id": 247,
+    "ubs2_id": 251,
+    "distancia_km": 1.38,
+    "impedancia_topografica_km": 1.38,
+    "declividade_pct": 2.37
+  },
+  {
+    "distrito1_id": 247,
+    "distrito2_id": 253,
+    "ubs1_id": 247,
+    "ubs2_id": 253,
+    "distancia_km": 1.54,
+    "impedancia_topografica_km": 1.54,
+    "declividade_pct": 1.5
+  },
+  {
+    "distrito1_id": 248,
+    "distrito2_id": 250,
+    "ubs1_id": 248,
+    "ubs2_id": 250,
+    "distancia_km": 0.57,
+    "impedancia_topografica_km": 0.57,
+    "declividade_pct": 2.12
+  },
+  {
+    "distrito1_id": 249,
+    "distrito2_id": 253,
+    "ubs1_id": 249,
+    "ubs2_id": 253,
+    "distancia_km": 1.51,
+    "impedancia_topografica_km": 1.51,
+    "declividade_pct": 1.13
+  },
+  {
+    "distrito1_id": 250,
+    "distrito2_id": 413,
+    "ubs1_id": 250,
+    "ubs2_id": 413,
+    "distancia_km": 0.82,
+    "impedancia_topografica_km": 0.82,
+    "declividade_pct": 1.0
+  },
+  {
+    "distrito1_id": 250,
+    "distrito2_id": 417,
+    "ubs1_id": 250,
+    "ubs2_id": 417,
+    "distancia_km": 1.48,
+    "impedancia_topografica_km": 1.48,
+    "declividade_pct": 1.09
+  },
+  {
+    "distrito1_id": 251,
+    "distrito2_id": 252,
+    "ubs1_id": 251,
+    "ubs2_id": 252,
+    "distancia_km": 1.23,
+    "impedancia_topografica_km": 1.23,
+    "declividade_pct": 0.24
+  },
+  {
+    "distrito1_id": 251,
+    "distrito2_id": 253,
+    "ubs1_id": 251,
+    "ubs2_id": 253,
+    "distancia_km": 1.35,
+    "impedancia_topografica_km": 1.35,
+    "declividade_pct": 0.71
+  },
+  {
+    "distrito1_id": 251,
+    "distrito2_id": 410,
+    "ubs1_id": 251,
+    "ubs2_id": 410,
+    "distancia_km": 0.86,
+    "impedancia_topografica_km": 0.86,
+    "declividade_pct": 1.31
+  },
+  {
+    "distrito1_id": 252,
+    "distrito2_id": 410,
+    "ubs1_id": 252,
+    "ubs2_id": 410,
+    "distancia_km": 1.02,
+    "impedancia_topografica_km": 1.02,
+    "declividade_pct": 1.4
+  },
+  {
+    "distrito1_id": 254,
+    "distrito2_id": 255,
+    "ubs1_id": 254,
+    "ubs2_id": 255,
+    "distancia_km": 2.78,
+    "impedancia_topografica_km": 2.78,
+    "declividade_pct": 0.27
+  },
+  {
+    "distrito1_id": 254,
+    "distrito2_id": 310,
+    "ubs1_id": 254,
+    "ubs2_id": 310,
+    "distancia_km": 2.31,
+    "impedancia_topografica_km": 2.31,
+    "declividade_pct": 0.28
+  },
+  {
+    "distrito1_id": 254,
+    "distrito2_id": 313,
+    "ubs1_id": 254,
+    "ubs2_id": 313,
+    "distancia_km": 2.25,
+    "impedancia_topografica_km": 2.25,
+    "declividade_pct": 0.15
+  },
+  {
+    "distrito1_id": 254,
+    "distrito2_id": 434,
+    "ubs1_id": 254,
+    "ubs2_id": 434,
+    "distancia_km": 1.97,
+    "impedancia_topografica_km": 1.97,
+    "declividade_pct": 0.26
+  },
+  {
+    "distrito1_id": 255,
+    "distrito2_id": 256,
+    "ubs1_id": 255,
+    "ubs2_id": 256,
+    "distancia_km": 0.72,
+    "impedancia_topografica_km": 0.72,
+    "declividade_pct": 1.06
+  },
+  {
+    "distrito1_id": 255,
+    "distrito2_id": 304,
+    "ubs1_id": 255,
+    "ubs2_id": 304,
+    "distancia_km": 1.44,
+    "impedancia_topografica_km": 1.44,
+    "declividade_pct": 1.03
+  },
+  {
+    "distrito1_id": 255,
+    "distrito2_id": 434,
+    "ubs1_id": 255,
+    "ubs2_id": 434,
+    "distancia_km": 1.98,
+    "impedancia_topografica_km": 1.98,
+    "declividade_pct": 0.12
+  },
+  {
+    "distrito1_id": 256,
+    "distrito2_id": 304,
+    "ubs1_id": 256,
+    "ubs2_id": 304,
+    "distancia_km": 1.29,
+    "impedancia_topografica_km": 1.29,
+    "declividade_pct": 1.74
+  },
+  {
+    "distrito1_id": 256,
+    "distrito2_id": 305,
+    "ubs1_id": 256,
+    "ubs2_id": 305,
+    "distancia_km": 1.62,
+    "impedancia_topografica_km": 1.62,
+    "declividade_pct": 0.88
+  },
+  {
+    "distrito1_id": 257,
+    "distrito2_id": 258,
+    "ubs1_id": 257,
+    "ubs2_id": 258,
+    "distancia_km": 1.07,
+    "impedancia_topografica_km": 1.07,
+    "declividade_pct": 0.72
+  },
+  {
+    "distrito1_id": 257,
+    "distrito2_id": 259,
+    "ubs1_id": 257,
+    "ubs2_id": 259,
+    "distancia_km": 0.84,
+    "impedancia_topografica_km": 0.84,
+    "declividade_pct": 0.23
+  },
+  {
+    "distrito1_id": 258,
+    "distrito2_id": 259,
+    "ubs1_id": 258,
+    "ubs2_id": 259,
+    "distancia_km": 1.35,
+    "impedancia_topografica_km": 1.35,
+    "declividade_pct": 0.43
+  },
+  {
+    "distrito1_id": 260,
+    "distrito2_id": 261,
+    "ubs1_id": 260,
+    "ubs2_id": 261,
+    "distancia_km": 1.52,
+    "impedancia_topografica_km": 1.52,
+    "declividade_pct": 1.51
+  },
+  {
+    "distrito1_id": 260,
+    "distrito2_id": 262,
+    "ubs1_id": 260,
+    "ubs2_id": 262,
+    "distancia_km": 1.16,
+    "impedancia_topografica_km": 1.16,
+    "declividade_pct": 1.33
+  },
+  {
+    "distrito1_id": 260,
+    "distrito2_id": 344,
+    "ubs1_id": 260,
+    "ubs2_id": 344,
+    "distancia_km": 2.18,
+    "impedancia_topografica_km": 2.18,
+    "declividade_pct": 0.43
+  },
+  {
+    "distrito1_id": 260,
+    "distrito2_id": 401,
+    "ubs1_id": 260,
+    "ubs2_id": 401,
+    "distancia_km": 1.61,
+    "impedancia_topografica_km": 1.63,
+    "declividade_pct": 4.41
+  },
+  {
+    "distrito1_id": 261,
+    "distrito2_id": 262,
+    "ubs1_id": 261,
+    "ubs2_id": 262,
+    "distancia_km": 1.87,
+    "impedancia_topografica_km": 1.87,
+    "declividade_pct": 0.4
+  },
+  {
+    "distrito1_id": 261,
+    "distrito2_id": 401,
+    "ubs1_id": 261,
+    "ubs2_id": 401,
+    "distancia_km": 0.67,
+    "impedancia_topografica_km": 0.73,
+    "declividade_pct": 7.18
+  },
+  {
+    "distrito1_id": 262,
+    "distrito2_id": 344,
+    "ubs1_id": 262,
+    "ubs2_id": 344,
+    "distancia_km": 2.17,
+    "impedancia_topografica_km": 2.17,
+    "declividade_pct": 1.14
+  },
+  {
+    "distrito1_id": 263,
+    "distrito2_id": 272,
+    "ubs1_id": 263,
+    "ubs2_id": 272,
+    "distancia_km": 1.46,
+    "impedancia_topografica_km": 1.46,
+    "declividade_pct": 1.15
+  },
+  {
+    "distrito1_id": 263,
+    "distrito2_id": 277,
+    "ubs1_id": 263,
+    "ubs2_id": 277,
+    "distancia_km": 1.49,
+    "impedancia_topografica_km": 1.49,
+    "declividade_pct": 0.64
+  },
+  {
+    "distrito1_id": 264,
+    "distrito2_id": 278,
+    "ubs1_id": 264,
+    "ubs2_id": 278,
+    "distancia_km": 6.44,
+    "impedancia_topografica_km": 6.44,
+    "declividade_pct": 0.45
+  },
+  {
+    "distrito1_id": 265,
+    "distrito2_id": 266,
+    "ubs1_id": 265,
+    "ubs2_id": 266,
+    "distancia_km": 2.17,
+    "impedancia_topografica_km": 2.17,
+    "declividade_pct": 0.71
+  },
+  {
+    "distrito1_id": 266,
+    "distrito2_id": 391,
+    "ubs1_id": 266,
+    "ubs2_id": 391,
+    "distancia_km": 2.83,
+    "impedancia_topografica_km": 2.83,
+    "declividade_pct": 0.17
+  },
+  {
+    "distrito1_id": 266,
+    "distrito2_id": 439,
+    "ubs1_id": 266,
+    "ubs2_id": 439,
+    "distancia_km": 3.04,
+    "impedancia_topografica_km": 3.04,
+    "declividade_pct": 0.7
+  },
+  {
+    "distrito1_id": 268,
+    "distrito2_id": 406,
+    "ubs1_id": 268,
+    "ubs2_id": 406,
+    "distancia_km": 1.64,
+    "impedancia_topografica_km": 1.64,
+    "declividade_pct": 1.9
+  },
+  {
+    "distrito1_id": 269,
+    "distrito2_id": 282,
+    "ubs1_id": 269,
+    "ubs2_id": 282,
+    "distancia_km": 0.45,
+    "impedancia_topografica_km": 0.45,
+    "declividade_pct": 1.91
+  },
+  {
+    "distrito1_id": 270,
+    "distrito2_id": 275,
+    "ubs1_id": 270,
+    "ubs2_id": 275,
+    "distancia_km": 2.81,
+    "impedancia_topografica_km": 2.81,
+    "declividade_pct": 0.37
+  },
+  {
+    "distrito1_id": 270,
+    "distrito2_id": 278,
+    "ubs1_id": 270,
+    "ubs2_id": 278,
+    "distancia_km": 2.76,
+    "impedancia_topografica_km": 2.76,
+    "declividade_pct": 0.03
+  },
+  {
+    "distrito1_id": 270,
+    "distrito2_id": 281,
+    "ubs1_id": 270,
+    "ubs2_id": 281,
+    "distancia_km": 1.35,
+    "impedancia_topografica_km": 1.35,
+    "declividade_pct": 0.36
+  },
+  {
+    "distrito1_id": 271,
+    "distrito2_id": 273,
+    "ubs1_id": 271,
+    "ubs2_id": 273,
+    "distancia_km": 1.34,
+    "impedancia_topografica_km": 1.34,
+    "declividade_pct": 0.46
+  },
+  {
+    "distrito1_id": 271,
+    "distrito2_id": 280,
+    "ubs1_id": 271,
+    "ubs2_id": 280,
+    "distancia_km": 1.15,
+    "impedancia_topografica_km": 1.15,
+    "declividade_pct": 0.36
+  },
+  {
+    "distrito1_id": 272,
+    "distrito2_id": 277,
+    "ubs1_id": 272,
+    "ubs2_id": 277,
+    "distancia_km": 0.79,
+    "impedancia_topografica_km": 0.79,
+    "declividade_pct": 0.92
+  },
+  {
+    "distrito1_id": 273,
+    "distrito2_id": 274,
+    "ubs1_id": 273,
+    "ubs2_id": 274,
+    "distancia_km": 3.83,
+    "impedancia_topografica_km": 3.83,
+    "declividade_pct": 0.54
+  },
+  {
+    "distrito1_id": 273,
+    "distrito2_id": 280,
+    "ubs1_id": 273,
+    "ubs2_id": 280,
+    "distancia_km": 1.39,
+    "impedancia_topografica_km": 1.39,
+    "declividade_pct": 0.15
+  },
+  {
+    "distrito1_id": 273,
+    "distrito2_id": 283,
+    "ubs1_id": 273,
+    "ubs2_id": 283,
+    "distancia_km": 0.87,
+    "impedancia_topografica_km": 0.87,
+    "declividade_pct": 2.2
+  },
+  {
+    "distrito1_id": 274,
+    "distrito2_id": 275,
+    "ubs1_id": 274,
+    "ubs2_id": 275,
+    "distancia_km": 1.91,
+    "impedancia_topografica_km": 1.91,
+    "declividade_pct": 0.7
+  },
+  {
+    "distrito1_id": 274,
+    "distrito2_id": 283,
+    "ubs1_id": 274,
+    "ubs2_id": 283,
+    "distancia_km": 3.84,
+    "impedancia_topografica_km": 3.84,
+    "declividade_pct": 0.04
+  },
+  {
+    "distrito1_id": 275,
+    "distrito2_id": 276,
+    "ubs1_id": 275,
+    "ubs2_id": 276,
+    "distancia_km": 2.24,
+    "impedancia_topografica_km": 2.24,
+    "declividade_pct": 0.45
+  },
+  {
+    "distrito1_id": 275,
+    "distrito2_id": 279,
+    "ubs1_id": 275,
+    "ubs2_id": 279,
+    "distancia_km": 1.28,
+    "impedancia_topografica_km": 1.28,
+    "declividade_pct": 0.95
+  },
+  {
+    "distrito1_id": 276,
+    "distrito2_id": 277,
+    "ubs1_id": 276,
+    "ubs2_id": 277,
+    "distancia_km": 3.4,
+    "impedancia_topografica_km": 3.4,
+    "declividade_pct": 0.24
+  },
+  {
+    "distrito1_id": 276,
+    "distrito2_id": 281,
+    "ubs1_id": 276,
+    "ubs2_id": 281,
+    "distancia_km": 0.74,
+    "impedancia_topografica_km": 0.74,
+    "declividade_pct": 0.62
+  },
+  {
+    "distrito1_id": 276,
+    "distrito2_id": 284,
+    "ubs1_id": 276,
+    "ubs2_id": 284,
+    "distancia_km": 2.54,
+    "impedancia_topografica_km": 2.54,
+    "declividade_pct": 0.09
+  },
+  {
+    "distrito1_id": 277,
+    "distrito2_id": 284,
+    "ubs1_id": 277,
+    "ubs2_id": 284,
+    "distancia_km": 2.99,
+    "impedancia_topografica_km": 2.99,
+    "declividade_pct": 0.35
+  },
+  {
+    "distrito1_id": 278,
+    "distrito2_id": 282,
+    "ubs1_id": 278,
+    "ubs2_id": 282,
+    "distancia_km": 2.24,
+    "impedancia_topografica_km": 2.24,
+    "declividade_pct": 0.08
+  },
+  {
+    "distrito1_id": 279,
+    "distrito2_id": 284,
+    "ubs1_id": 279,
+    "ubs2_id": 284,
+    "distancia_km": 1.51,
+    "impedancia_topografica_km": 1.51,
+    "declividade_pct": 1.31
+  },
+  {
+    "distrito1_id": 280,
+    "distrito2_id": 283,
+    "ubs1_id": 280,
+    "ubs2_id": 283,
+    "distancia_km": 1.12,
+    "impedancia_topografica_km": 1.12,
+    "declividade_pct": 1.52
+  },
+  {
+    "distrito1_id": 285,
+    "distrito2_id": 345,
+    "ubs1_id": 285,
+    "ubs2_id": 345,
+    "distancia_km": 2.74,
+    "impedancia_topografica_km": 2.74,
+    "declividade_pct": 0.38
+  },
+  {
+    "distrito1_id": 285,
+    "distrito2_id": 423,
+    "ubs1_id": 285,
+    "ubs2_id": 423,
+    "distancia_km": 1.91,
+    "impedancia_topografica_km": 1.91,
+    "declividade_pct": 0.81
+  },
+  {
+    "distrito1_id": 286,
+    "distrito2_id": 288,
+    "ubs1_id": 286,
+    "ubs2_id": 288,
+    "distancia_km": 0.35,
+    "impedancia_topografica_km": 0.35,
+    "declividade_pct": 3.46
+  },
+  {
+    "distrito1_id": 286,
+    "distrito2_id": 289,
+    "ubs1_id": 286,
+    "ubs2_id": 289,
+    "distancia_km": 2.41,
+    "impedancia_topografica_km": 2.41,
+    "declividade_pct": 0.33
+  },
+  {
+    "distrito1_id": 286,
+    "distrito2_id": 358,
+    "ubs1_id": 286,
+    "ubs2_id": 358,
+    "distancia_km": 2.85,
+    "impedancia_topografica_km": 2.85,
+    "declividade_pct": 0.89
+  },
+  {
+    "distrito1_id": 286,
+    "distrito2_id": 363,
+    "ubs1_id": 286,
+    "ubs2_id": 363,
+    "distancia_km": 3.13,
+    "impedancia_topografica_km": 3.13,
+    "declividade_pct": 0.76
+  },
+  {
+    "distrito1_id": 287,
+    "distrito2_id": 288,
+    "ubs1_id": 287,
+    "ubs2_id": 288,
+    "distancia_km": 1.63,
+    "impedancia_topografica_km": 1.63,
+    "declividade_pct": 0.01
+  },
+  {
+    "distrito1_id": 287,
+    "distrito2_id": 290,
+    "ubs1_id": 287,
+    "ubs2_id": 290,
+    "distancia_km": 0.43,
+    "impedancia_topografica_km": 0.43,
+    "declividade_pct": 2.74
+  },
+  {
+    "distrito1_id": 289,
+    "distrito2_id": 290,
+    "ubs1_id": 289,
+    "ubs2_id": 290,
+    "distancia_km": 2.52,
+    "impedancia_topografica_km": 2.52,
+    "declividade_pct": 0.64
+  },
+  {
+    "distrito1_id": 289,
+    "distrito2_id": 362,
+    "ubs1_id": 289,
+    "ubs2_id": 362,
+    "distancia_km": 2.02,
+    "impedancia_topografica_km": 2.02,
+    "declividade_pct": 0.81
+  },
+  {
+    "distrito1_id": 289,
+    "distrito2_id": 363,
+    "ubs1_id": 289,
+    "ubs2_id": 363,
+    "distancia_km": 2.15,
+    "impedancia_topografica_km": 2.15,
+    "declividade_pct": 0.74
+  },
+  {
+    "distrito1_id": 291,
+    "distrito2_id": 297,
+    "ubs1_id": 291,
+    "ubs2_id": 297,
+    "distancia_km": 0.72,
+    "impedancia_topografica_km": 0.72,
+    "declividade_pct": 2.11
+  },
+  {
+    "distrito1_id": 291,
+    "distrito2_id": 299,
+    "ubs1_id": 291,
+    "ubs2_id": 299,
+    "distancia_km": 0.58,
+    "impedancia_topografica_km": 0.58,
+    "declividade_pct": 0.22
+  },
+  {
+    "distrito1_id": 292,
+    "distrito2_id": 295,
+    "ubs1_id": 292,
+    "ubs2_id": 295,
+    "distancia_km": 1.78,
+    "impedancia_topografica_km": 1.78,
+    "declividade_pct": 0.31
+  },
+  {
+    "distrito1_id": 292,
+    "distrito2_id": 297,
+    "ubs1_id": 292,
+    "ubs2_id": 297,
+    "distancia_km": 1.44,
+    "impedancia_topografica_km": 1.44,
+    "declividade_pct": 0.14
+  },
+  {
+    "distrito1_id": 293,
+    "distrito2_id": 295,
+    "ubs1_id": 293,
+    "ubs2_id": 295,
+    "distancia_km": 0.93,
+    "impedancia_topografica_km": 0.93,
+    "declividade_pct": 0.37
+  },
+  {
+    "distrito1_id": 294,
+    "distrito2_id": 296,
+    "ubs1_id": 294,
+    "ubs2_id": 296,
+    "distancia_km": 1.18,
+    "impedancia_topografica_km": 1.18,
+    "declividade_pct": 0.27
+  },
+  {
+    "distrito1_id": 294,
+    "distrito2_id": 299,
+    "ubs1_id": 294,
+    "ubs2_id": 299,
+    "distancia_km": 0.75,
+    "impedancia_topografica_km": 0.75,
+    "declividade_pct": 0.92
+  },
+  {
+    "distrito1_id": 295,
+    "distrito2_id": 297,
+    "ubs1_id": 295,
+    "ubs2_id": 297,
+    "distancia_km": 1.62,
+    "impedancia_topografica_km": 1.62,
+    "declividade_pct": 0.47
+  },
+  {
+    "distrito1_id": 295,
+    "distrito2_id": 298,
+    "ubs1_id": 295,
+    "ubs2_id": 298,
+    "distancia_km": 0.98,
+    "impedancia_topografica_km": 0.98,
+    "declividade_pct": 0.82
+  },
+  {
+    "distrito1_id": 300,
+    "distrito2_id": 302,
+    "ubs1_id": 300,
+    "ubs2_id": 302,
+    "distancia_km": 0.53,
+    "impedancia_topografica_km": 0.53,
+    "declividade_pct": 3.11
+  },
+  {
+    "distrito1_id": 300,
+    "distrito2_id": 303,
+    "ubs1_id": 300,
+    "ubs2_id": 303,
+    "distancia_km": 1.81,
+    "impedancia_topografica_km": 1.81,
+    "declividade_pct": 0.03
+  },
+  {
+    "distrito1_id": 300,
+    "distrito2_id": 320,
+    "ubs1_id": 300,
+    "ubs2_id": 320,
+    "distancia_km": 1.59,
+    "impedancia_topografica_km": 1.59,
+    "declividade_pct": 0.58
+  },
+  {
+    "distrito1_id": 301,
+    "distrito2_id": 437,
+    "ubs1_id": 301,
+    "ubs2_id": 437,
+    "distancia_km": 1.55,
+    "impedancia_topografica_km": 1.55,
+    "declividade_pct": 0.03
+  },
+  {
+    "distrito1_id": 301,
+    "distrito2_id": 441,
+    "ubs1_id": 301,
+    "ubs2_id": 441,
+    "distancia_km": 3.02,
+    "impedancia_topografica_km": 3.02,
+    "declividade_pct": 0.68
+  },
+  {
+    "distrito1_id": 302,
+    "distrito2_id": 441,
+    "ubs1_id": 302,
+    "ubs2_id": 441,
+    "distancia_km": 1.23,
+    "impedancia_topografica_km": 1.23,
+    "declividade_pct": 0.37
+  },
+  {
+    "distrito1_id": 302,
+    "distrito2_id": 443,
+    "ubs1_id": 302,
+    "ubs2_id": 443,
+    "distancia_km": 1.08,
+    "impedancia_topografica_km": 1.08,
+    "declividade_pct": 0.62
+  },
+  {
+    "distrito1_id": 303,
+    "distrito2_id": 320,
+    "ubs1_id": 303,
+    "ubs2_id": 320,
+    "distancia_km": 1.04,
+    "impedancia_topografica_km": 1.04,
+    "declividade_pct": 0.85
+  },
+  {
+    "distrito1_id": 303,
+    "distrito2_id": 323,
+    "ubs1_id": 303,
+    "ubs2_id": 323,
+    "distancia_km": 0.7,
+    "impedancia_topografica_km": 0.7,
+    "declividade_pct": 0.33
+  },
+  {
+    "distrito1_id": 303,
+    "distrito2_id": 440,
+    "ubs1_id": 303,
+    "ubs2_id": 440,
+    "distancia_km": 1.5,
+    "impedancia_topografica_km": 1.5,
+    "declividade_pct": 2.19
+  },
+  {
+    "distrito1_id": 303,
+    "distrito2_id": 442,
+    "ubs1_id": 303,
+    "ubs2_id": 442,
+    "distancia_km": 1.68,
+    "impedancia_topografica_km": 1.68,
+    "declividade_pct": 1.13
+  },
+  {
+    "distrito1_id": 304,
+    "distrito2_id": 305,
+    "ubs1_id": 304,
+    "ubs2_id": 305,
+    "distancia_km": 1.47,
+    "impedancia_topografica_km": 1.47,
+    "declividade_pct": 0.55
+  },
+  {
+    "distrito1_id": 304,
+    "distrito2_id": 309,
+    "ubs1_id": 304,
+    "ubs2_id": 309,
+    "distancia_km": 1.68,
+    "impedancia_topografica_km": 1.68,
+    "declividade_pct": 0.86
+  },
+  {
+    "distrito1_id": 305,
+    "distrito2_id": 342,
+    "ubs1_id": 305,
+    "ubs2_id": 342,
+    "distancia_km": 2.84,
+    "impedancia_topografica_km": 2.84,
+    "declividade_pct": 0.1
+  },
+  {
+    "distrito1_id": 305,
+    "distrito2_id": 343,
+    "ubs1_id": 305,
+    "ubs2_id": 343,
+    "distancia_km": 2.76,
+    "impedancia_topografica_km": 2.76,
+    "declividade_pct": 0.43
+  },
+  {
+    "distrito1_id": 306,
+    "distrito2_id": 307,
+    "ubs1_id": 306,
+    "ubs2_id": 307,
+    "distancia_km": 0.83,
+    "impedancia_topografica_km": 0.83,
+    "declividade_pct": 0.23
+  },
+  {
+    "distrito1_id": 306,
+    "distrito2_id": 308,
+    "ubs1_id": 306,
+    "ubs2_id": 308,
+    "distancia_km": 1.24,
+    "impedancia_topografica_km": 1.24,
+    "declividade_pct": 1.65
+  },
+  {
+    "distrito1_id": 310,
+    "distrito2_id": 312,
+    "ubs1_id": 310,
+    "ubs2_id": 312,
+    "distancia_km": 1.86,
+    "impedancia_topografica_km": 1.86,
+    "declividade_pct": 0.48
+  },
+  {
+    "distrito1_id": 310,
+    "distrito2_id": 313,
+    "ubs1_id": 310,
+    "ubs2_id": 313,
+    "distancia_km": 1.26,
+    "impedancia_topografica_km": 1.26,
+    "declividade_pct": 0.25
+  },
+  {
+    "distrito1_id": 310,
+    "distrito2_id": 315,
+    "ubs1_id": 310,
+    "ubs2_id": 315,
+    "distancia_km": 1.38,
+    "impedancia_topografica_km": 1.38,
+    "declividade_pct": 0.27
+  },
+  {
+    "distrito1_id": 310,
+    "distrito2_id": 349,
+    "ubs1_id": 310,
+    "ubs2_id": 349,
+    "distancia_km": 1.43,
+    "impedancia_topografica_km": 1.43,
+    "declividade_pct": 0.04
+  },
+  {
+    "distrito1_id": 311,
+    "distrito2_id": 312,
+    "ubs1_id": 311,
+    "ubs2_id": 312,
+    "distancia_km": 0.81,
+    "impedancia_topografica_km": 0.82,
+    "declividade_pct": 4.38
+  },
+  {
+    "distrito1_id": 311,
+    "distrito2_id": 314,
+    "ubs1_id": 311,
+    "ubs2_id": 314,
+    "distancia_km": 1.72,
+    "impedancia_topografica_km": 1.72,
+    "declividade_pct": 0.65
+  },
+  {
+    "distrito1_id": 311,
+    "distrito2_id": 317,
+    "ubs1_id": 311,
+    "ubs2_id": 317,
+    "distancia_km": 1.25,
+    "impedancia_topografica_km": 1.25,
+    "declividade_pct": 0.9
+  },
+  {
+    "distrito1_id": 312,
+    "distrito2_id": 315,
+    "ubs1_id": 312,
+    "ubs2_id": 315,
+    "distancia_km": 1.37,
+    "impedancia_topografica_km": 1.37,
+    "declividade_pct": 0.38
+  },
+  {
+    "distrito1_id": 312,
+    "distrito2_id": 317,
+    "ubs1_id": 312,
+    "ubs2_id": 317,
+    "distancia_km": 0.97,
+    "impedancia_topografica_km": 0.97,
+    "declividade_pct": 2.51
+  },
+  {
+    "distrito1_id": 312,
+    "distrito2_id": 349,
+    "ubs1_id": 312,
+    "ubs2_id": 349,
+    "distancia_km": 2.15,
+    "impedancia_topografica_km": 2.15,
+    "declividade_pct": 0.44
+  },
+  {
+    "distrito1_id": 313,
+    "distrito2_id": 315,
+    "ubs1_id": 313,
+    "ubs2_id": 315,
+    "distancia_km": 0.8,
+    "impedancia_topografica_km": 0.8,
+    "declividade_pct": 0.85
+  },
+  {
+    "distrito1_id": 315,
+    "distrito2_id": 317,
+    "ubs1_id": 315,
+    "ubs2_id": 317,
+    "distancia_km": 1.21,
+    "impedancia_topografica_km": 1.21,
+    "declividade_pct": 2.44
+  },
+  {
+    "distrito1_id": 316,
+    "distrito2_id": 348,
+    "ubs1_id": 316,
+    "ubs2_id": 348,
+    "distancia_km": 1.44,
+    "impedancia_topografica_km": 1.44,
+    "declividade_pct": 0.34
+  },
+  {
+    "distrito1_id": 316,
+    "distrito2_id": 349,
+    "ubs1_id": 316,
+    "ubs2_id": 349,
+    "distancia_km": 1.15,
+    "impedancia_topografica_km": 1.15,
+    "declividade_pct": 1.22
+  },
+  {
+    "distrito1_id": 316,
+    "distrito2_id": 350,
+    "ubs1_id": 316,
+    "ubs2_id": 350,
+    "distancia_km": 1.53,
+    "impedancia_topografica_km": 1.53,
+    "declividade_pct": 0.95
+  },
+  {
+    "distrito1_id": 316,
+    "distrito2_id": 351,
+    "ubs1_id": 316,
+    "ubs2_id": 351,
+    "distancia_km": 1.47,
+    "impedancia_topografica_km": 1.47,
+    "declividade_pct": 1.36
+  },
+  {
+    "distrito1_id": 318,
+    "distrito2_id": 322,
+    "ubs1_id": 318,
+    "ubs2_id": 322,
+    "distancia_km": 0.56,
+    "impedancia_topografica_km": 0.56,
+    "declividade_pct": 1.73
+  },
+  {
+    "distrito1_id": 319,
+    "distrito2_id": 321,
+    "ubs1_id": 319,
+    "ubs2_id": 321,
+    "distancia_km": 1.22,
+    "impedancia_topografica_km": 1.22,
+    "declividade_pct": 0.34
+  },
+  {
+    "distrito1_id": 319,
+    "distrito2_id": 322,
+    "ubs1_id": 319,
+    "ubs2_id": 322,
+    "distancia_km": 1.01,
+    "impedancia_topografica_km": 1.01,
+    "declividade_pct": 1.08
+  },
+  {
+    "distrito1_id": 319,
+    "distrito2_id": 430,
+    "ubs1_id": 319,
+    "ubs2_id": 430,
+    "distancia_km": 1.77,
+    "impedancia_topografica_km": 1.77,
+    "declividade_pct": 0.36
+  },
+  {
+    "distrito1_id": 320,
+    "distrito2_id": 323,
+    "ubs1_id": 320,
+    "ubs2_id": 323,
+    "distancia_km": 0.77,
+    "impedancia_topografica_km": 0.77,
+    "declividade_pct": 0.84
+  },
+  {
+    "distrito1_id": 321,
+    "distrito2_id": 322,
+    "ubs1_id": 321,
+    "ubs2_id": 322,
+    "distancia_km": 1.24,
+    "impedancia_topografica_km": 1.24,
+    "declividade_pct": 0.54
+  },
+  {
+    "distrito1_id": 321,
+    "distrito2_id": 323,
+    "ubs1_id": 321,
+    "ubs2_id": 323,
+    "distancia_km": 1.88,
+    "impedancia_topografica_km": 1.88,
+    "declividade_pct": 0.52
+  },
+  {
+    "distrito1_id": 322,
+    "distrito2_id": 323,
+    "ubs1_id": 322,
+    "ubs2_id": 323,
+    "distancia_km": 1.42,
+    "impedancia_topografica_km": 1.42,
+    "declividade_pct": 0.21
+  },
+  {
+    "distrito1_id": 324,
+    "distrito2_id": 325,
+    "ubs1_id": 324,
+    "ubs2_id": 325,
+    "distancia_km": 1.26,
+    "impedancia_topografica_km": 1.26,
+    "declividade_pct": 0.05
+  },
+  {
+    "distrito1_id": 324,
+    "distrito2_id": 330,
+    "ubs1_id": 324,
+    "ubs2_id": 330,
+    "distancia_km": 1.86,
+    "impedancia_topografica_km": 1.86,
+    "declividade_pct": 0.24
+  },
+  {
+    "distrito1_id": 325,
+    "distrito2_id": 326,
+    "ubs1_id": 325,
+    "ubs2_id": 326,
+    "distancia_km": 1.56,
+    "impedancia_topografica_km": 1.56,
+    "declividade_pct": 0.69
+  },
+  {
+    "distrito1_id": 325,
+    "distrito2_id": 327,
+    "ubs1_id": 325,
+    "ubs2_id": 327,
+    "distancia_km": 1.47,
+    "impedancia_topografica_km": 1.47,
+    "declividade_pct": 0.44
+  },
+  {
+    "distrito1_id": 327,
+    "distrito2_id": 330,
+    "ubs1_id": 327,
+    "ubs2_id": 330,
+    "distancia_km": 1.38,
+    "impedancia_topografica_km": 1.38,
+    "declividade_pct": 0.2
+  },
+  {
+    "distrito1_id": 327,
+    "distrito2_id": 331,
+    "ubs1_id": 327,
+    "ubs2_id": 331,
+    "distancia_km": 1.87,
+    "impedancia_topografica_km": 1.87,
+    "declividade_pct": 0.25
+  },
+  {
+    "distrito1_id": 327,
+    "distrito2_id": 453,
+    "ubs1_id": 327,
+    "ubs2_id": 453,
+    "distancia_km": 2.09,
+    "impedancia_topografica_km": 2.09,
+    "declividade_pct": 0.21
+  },
+  {
+    "distrito1_id": 328,
+    "distrito2_id": 343,
+    "ubs1_id": 328,
+    "ubs2_id": 343,
+    "distancia_km": 2.39,
+    "impedancia_topografica_km": 2.4,
+    "declividade_pct": 2.12
+  },
+  {
+    "distrito1_id": 328,
+    "distrito2_id": 393,
+    "ubs1_id": 328,
+    "ubs2_id": 393,
+    "distancia_km": 1.21,
+    "impedancia_topografica_km": 1.21,
+    "declividade_pct": 2.1
+  },
+  {
+    "distrito1_id": 329,
+    "distrito2_id": 330,
+    "ubs1_id": 329,
+    "ubs2_id": 330,
+    "distancia_km": 1.8,
+    "impedancia_topografica_km": 1.8,
+    "declividade_pct": 0.06
+  },
+  {
+    "distrito1_id": 329,
+    "distrito2_id": 331,
+    "ubs1_id": 329,
+    "ubs2_id": 331,
+    "distancia_km": 1.16,
+    "impedancia_topografica_km": 1.16,
+    "declividade_pct": 0.09
+  },
+  {
+    "distrito1_id": 329,
+    "distrito2_id": 332,
+    "ubs1_id": 329,
+    "ubs2_id": 332,
+    "distancia_km": 1.63,
+    "impedancia_topografica_km": 1.63,
+    "declividade_pct": 0.01
+  },
+  {
+    "distrito1_id": 330,
+    "distrito2_id": 331,
+    "ubs1_id": 330,
+    "ubs2_id": 331,
+    "distancia_km": 1.49,
+    "impedancia_topografica_km": 1.49,
+    "declividade_pct": 0.13
+  },
+  {
+    "distrito1_id": 331,
+    "distrito2_id": 332,
+    "ubs1_id": 331,
+    "ubs2_id": 332,
+    "distancia_km": 1.67,
+    "impedancia_topografica_km": 1.67,
+    "declividade_pct": 0.07
+  },
+  {
+    "distrito1_id": 331,
+    "distrito2_id": 453,
+    "ubs1_id": 331,
+    "ubs2_id": 453,
+    "distancia_km": 2.63,
+    "impedancia_topografica_km": 2.63,
+    "declividade_pct": 0.34
+  },
+  {
+    "distrito1_id": 333,
+    "distrito2_id": 335,
+    "ubs1_id": 333,
+    "ubs2_id": 335,
+    "distancia_km": 1.5,
+    "impedancia_topografica_km": 1.5,
+    "declividade_pct": 0.27
+  },
+  {
+    "distrito1_id": 333,
+    "distrito2_id": 337,
+    "ubs1_id": 333,
+    "ubs2_id": 337,
+    "distancia_km": 1.26,
+    "impedancia_topografica_km": 1.26,
+    "declividade_pct": 0.74
+  },
+  {
+    "distrito1_id": 333,
+    "distrito2_id": 340,
+    "ubs1_id": 333,
+    "ubs2_id": 340,
+    "distancia_km": 1.01,
+    "impedancia_topografica_km": 1.01,
+    "declividade_pct": 0.4
+  },
+  {
+    "distrito1_id": 333,
+    "distrito2_id": 341,
+    "ubs1_id": 333,
+    "ubs2_id": 341,
+    "distancia_km": 1.82,
+    "impedancia_topografica_km": 1.82,
+    "declividade_pct": 0.09
+  },
+  {
+    "distrito1_id": 334,
+    "distrito2_id": 339,
+    "ubs1_id": 334,
+    "ubs2_id": 339,
+    "distancia_km": 0.93,
+    "impedancia_topografica_km": 0.93,
+    "declividade_pct": 0.56
+  },
+  {
+    "distrito1_id": 334,
+    "distrito2_id": 340,
+    "ubs1_id": 334,
+    "ubs2_id": 340,
+    "distancia_km": 2.15,
+    "impedancia_topografica_km": 2.15,
+    "declividade_pct": 0.53
+  },
+  {
+    "distrito1_id": 334,
+    "distrito2_id": 341,
+    "ubs1_id": 334,
+    "ubs2_id": 341,
+    "distancia_km": 1.6,
+    "impedancia_topografica_km": 1.6,
+    "declividade_pct": 0.57
+  },
+  {
+    "distrito1_id": 335,
+    "distrito2_id": 337,
+    "ubs1_id": 335,
+    "ubs2_id": 337,
+    "distancia_km": 1.83,
+    "impedancia_topografica_km": 1.83,
+    "declividade_pct": 0.29
+  },
+  {
+    "distrito1_id": 335,
+    "distrito2_id": 341,
+    "ubs1_id": 335,
+    "ubs2_id": 341,
+    "distancia_km": 1.32,
+    "impedancia_topografica_km": 1.32,
+    "declividade_pct": 0.17
+  },
+  {
+    "distrito1_id": 336,
+    "distrito2_id": 339,
+    "ubs1_id": 336,
+    "ubs2_id": 339,
+    "distancia_km": 1.21,
+    "impedancia_topografica_km": 1.21,
+    "declividade_pct": 0.15
+  },
+  {
+    "distrito1_id": 336,
+    "distrito2_id": 340,
+    "ubs1_id": 336,
+    "ubs2_id": 340,
+    "distancia_km": 1.95,
+    "impedancia_topografica_km": 1.95,
+    "declividade_pct": 0.41
+  },
+  {
+    "distrito1_id": 337,
+    "distrito2_id": 338,
+    "ubs1_id": 337,
+    "ubs2_id": 338,
+    "distancia_km": 0.99,
+    "impedancia_topografica_km": 0.99,
+    "declividade_pct": 0.12
+  },
+  {
+    "distrito1_id": 339,
+    "distrito2_id": 340,
+    "ubs1_id": 339,
+    "ubs2_id": 340,
+    "distancia_km": 2.08,
+    "impedancia_topografica_km": 2.08,
+    "declividade_pct": 0.3
+  },
+  {
+    "distrito1_id": 340,
+    "distrito2_id": 341,
+    "ubs1_id": 340,
+    "ubs2_id": 341,
+    "distancia_km": 1.67,
+    "impedancia_topografica_km": 1.67,
+    "declividade_pct": 0.14
+  },
+  {
+    "distrito1_id": 342,
+    "distrito2_id": 343,
+    "ubs1_id": 342,
+    "ubs2_id": 343,
+    "distancia_km": 0.81,
+    "impedancia_topografica_km": 0.81,
+    "declividade_pct": 1.81
+  },
+  {
+    "distrito1_id": 344,
+    "distrito2_id": 345,
+    "ubs1_id": 344,
+    "ubs2_id": 345,
+    "distancia_km": 1.17,
+    "impedancia_topografica_km": 1.17,
+    "declividade_pct": 1.41
+  },
+  {
+    "distrito1_id": 345,
+    "distrito2_id": 422,
+    "ubs1_id": 345,
+    "ubs2_id": 422,
+    "distancia_km": 2.11,
+    "impedancia_topografica_km": 2.11,
+    "declividade_pct": 0.27
+  },
+  {
+    "distrito1_id": 346,
+    "distrito2_id": 347,
+    "ubs1_id": 346,
+    "ubs2_id": 347,
+    "distancia_km": 1.37,
+    "impedancia_topografica_km": 1.37,
+    "declividade_pct": 1.15
+  },
+  {
+    "distrito1_id": 346,
+    "distrito2_id": 406,
+    "ubs1_id": 346,
+    "ubs2_id": 406,
+    "distancia_km": 2.81,
+    "impedancia_topografica_km": 2.81,
+    "declividade_pct": 0.59
+  },
+  {
+    "distrito1_id": 347,
+    "distrito2_id": 394,
+    "ubs1_id": 347,
+    "ubs2_id": 394,
+    "distancia_km": 4.09,
+    "impedancia_topografica_km": 4.09,
+    "declividade_pct": 0.49
+  },
+  {
+    "distrito1_id": 348,
+    "distrito2_id": 350,
+    "ubs1_id": 348,
+    "ubs2_id": 350,
+    "distancia_km": 1.2,
+    "impedancia_topografica_km": 1.2,
+    "declividade_pct": 0.8
+  },
+  {
+    "distrito1_id": 349,
+    "distrito2_id": 351,
+    "ubs1_id": 349,
+    "ubs2_id": 351,
+    "distancia_km": 1.07,
+    "impedancia_topografica_km": 1.07,
+    "declividade_pct": 0.56
+  },
+  {
+    "distrito1_id": 350,
+    "distrito2_id": 351,
+    "ubs1_id": 350,
+    "ubs2_id": 351,
+    "distancia_km": 0.46,
+    "impedancia_topografica_km": 0.46,
+    "declividade_pct": 1.2
+  },
+  {
+    "distrito1_id": 352,
+    "distrito2_id": 354,
+    "ubs1_id": 352,
+    "ubs2_id": 354,
+    "distancia_km": 1.67,
+    "impedancia_topografica_km": 1.67,
+    "declividade_pct": 0.7
+  },
+  {
+    "distrito1_id": 352,
+    "distrito2_id": 450,
+    "ubs1_id": 352,
+    "ubs2_id": 450,
+    "distancia_km": 1.14,
+    "impedancia_topografica_km": 1.14,
+    "declividade_pct": 0.11
+  },
+  {
+    "distrito1_id": 352,
+    "distrito2_id": 451,
+    "ubs1_id": 352,
+    "ubs2_id": 451,
+    "distancia_km": 1.9,
+    "impedancia_topografica_km": 1.9,
+    "declividade_pct": 0.73
+  },
+  {
+    "distrito1_id": 352,
+    "distrito2_id": 452,
+    "ubs1_id": 352,
+    "ubs2_id": 452,
+    "distancia_km": 2.4,
+    "impedancia_topografica_km": 2.4,
+    "declividade_pct": 0.19
+  },
+  {
+    "distrito1_id": 353,
+    "distrito2_id": 354,
+    "ubs1_id": 353,
+    "ubs2_id": 354,
+    "distancia_km": 0.74,
+    "impedancia_topografica_km": 0.74,
+    "declividade_pct": 1.15
+  },
+  {
+    "distrito1_id": 353,
+    "distrito2_id": 355,
+    "ubs1_id": 353,
+    "ubs2_id": 355,
+    "distancia_km": 0.89,
+    "impedancia_topografica_km": 0.89,
+    "declividade_pct": 1.47
+  },
+  {
+    "distrito1_id": 353,
+    "distrito2_id": 356,
+    "ubs1_id": 353,
+    "ubs2_id": 356,
+    "distancia_km": 1.24,
+    "impedancia_topografica_km": 1.24,
+    "declividade_pct": 0.83
+  },
+  {
+    "distrito1_id": 354,
+    "distrito2_id": 356,
+    "ubs1_id": 354,
+    "ubs2_id": 356,
+    "distancia_km": 1.37,
+    "impedancia_topografica_km": 1.37,
+    "declividade_pct": 1.37
+  },
+  {
+    "distrito1_id": 354,
+    "distrito2_id": 451,
+    "ubs1_id": 354,
+    "ubs2_id": 451,
+    "distancia_km": 1.33,
+    "impedancia_topografica_km": 1.33,
+    "declividade_pct": 0.17
+  },
+  {
+    "distrito1_id": 355,
+    "distrito2_id": 380,
+    "ubs1_id": 355,
+    "ubs2_id": 380,
+    "distancia_km": 1.4,
+    "impedancia_topografica_km": 1.4,
+    "declividade_pct": 0.71
+  },
+  {
+    "distrito1_id": 355,
+    "distrito2_id": 386,
+    "ubs1_id": 355,
+    "ubs2_id": 386,
+    "distancia_km": 1.2,
+    "impedancia_topografica_km": 1.2,
+    "declividade_pct": 0.57
+  },
+  {
+    "distrito1_id": 356,
+    "distrito2_id": 381,
+    "ubs1_id": 356,
+    "ubs2_id": 381,
+    "distancia_km": 1.9,
+    "impedancia_topografica_km": 1.9,
+    "declividade_pct": 0.47
+  },
+  {
+    "distrito1_id": 356,
+    "distrito2_id": 421,
+    "ubs1_id": 356,
+    "ubs2_id": 421,
+    "distancia_km": 1.32,
+    "impedancia_topografica_km": 1.32,
+    "declividade_pct": 0.32
+  },
+  {
+    "distrito1_id": 357,
+    "distrito2_id": 358,
+    "ubs1_id": 357,
+    "ubs2_id": 358,
+    "distancia_km": 1.4,
+    "impedancia_topografica_km": 1.4,
+    "declividade_pct": 0.39
+  },
+  {
+    "distrito1_id": 357,
+    "distrito2_id": 369,
+    "ubs1_id": 357,
+    "ubs2_id": 369,
+    "distancia_km": 0.89,
+    "impedancia_topografica_km": 0.89,
+    "declividade_pct": 0.08
+  },
+  {
+    "distrito1_id": 357,
+    "distrito2_id": 371,
+    "ubs1_id": 357,
+    "ubs2_id": 371,
+    "distancia_km": 1.04,
+    "impedancia_topografica_km": 1.04,
+    "declividade_pct": 0.38
+  },
+  {
+    "distrito1_id": 357,
+    "distrito2_id": 373,
+    "ubs1_id": 357,
+    "ubs2_id": 373,
+    "distancia_km": 1.64,
+    "impedancia_topografica_km": 1.64,
+    "declividade_pct": 0.15
+  },
+  {
+    "distrito1_id": 358,
+    "distrito2_id": 364,
+    "ubs1_id": 358,
+    "ubs2_id": 364,
+    "distancia_km": 1.21,
+    "impedancia_topografica_km": 1.21,
+    "declividade_pct": 0.22
+  },
+  {
+    "distrito1_id": 359,
+    "distrito2_id": 360,
+    "ubs1_id": 359,
+    "ubs2_id": 360,
+    "distancia_km": 0.64,
+    "impedancia_topografica_km": 0.64,
+    "declividade_pct": 0.55
+  },
+  {
+    "distrito1_id": 359,
+    "distrito2_id": 362,
+    "ubs1_id": 359,
+    "ubs2_id": 362,
+    "distancia_km": 0.83,
+    "impedancia_topografica_km": 0.83,
+    "declividade_pct": 0.52
+  },
+  {
+    "distrito1_id": 359,
+    "distrito2_id": 384,
+    "ubs1_id": 359,
+    "ubs2_id": 384,
+    "distancia_km": 1.25,
+    "impedancia_topografica_km": 1.25,
+    "declividade_pct": 0.5
+  },
+  {
+    "distrito1_id": 360,
+    "distrito2_id": 361,
+    "ubs1_id": 360,
+    "ubs2_id": 361,
+    "distancia_km": 0.63,
+    "impedancia_topografica_km": 0.63,
+    "declividade_pct": 1.03
+  },
+  {
+    "distrito1_id": 360,
+    "distrito2_id": 378,
+    "ubs1_id": 360,
+    "ubs2_id": 378,
+    "distancia_km": 0.99,
+    "impedancia_topografica_km": 0.99,
+    "declividade_pct": 0.05
+  },
+  {
+    "distrito1_id": 360,
+    "distrito2_id": 384,
+    "ubs1_id": 360,
+    "ubs2_id": 384,
+    "distancia_km": 1.18,
+    "impedancia_topografica_km": 1.18,
+    "declividade_pct": 0.82
+  },
+  {
+    "distrito1_id": 360,
+    "distrito2_id": 389,
+    "ubs1_id": 360,
+    "ubs2_id": 389,
+    "distancia_km": 1.18,
+    "impedancia_topografica_km": 1.18,
+    "declividade_pct": 0.88
+  },
+  {
+    "distrito1_id": 361,
+    "distrito2_id": 362,
+    "ubs1_id": 361,
+    "ubs2_id": 362,
+    "distancia_km": 1.31,
+    "impedancia_topografica_km": 1.31,
+    "declividade_pct": 0.56
+  },
+  {
+    "distrito1_id": 361,
+    "distrito2_id": 363,
+    "ubs1_id": 361,
+    "ubs2_id": 363,
+    "distancia_km": 1.23,
+    "impedancia_topografica_km": 1.23,
+    "declividade_pct": 0.63
+  },
+  {
+    "distrito1_id": 361,
+    "distrito2_id": 364,
+    "ubs1_id": 361,
+    "ubs2_id": 364,
+    "distancia_km": 1.16,
+    "impedancia_topografica_km": 1.16,
+    "declividade_pct": 0.78
+  },
+  {
+    "distrito1_id": 361,
+    "distrito2_id": 383,
+    "ubs1_id": 361,
+    "ubs2_id": 383,
+    "distancia_km": 1.46,
+    "impedancia_topografica_km": 1.46,
+    "declividade_pct": 0.08
+  },
+  {
+    "distrito1_id": 361,
+    "distrito2_id": 389,
+    "ubs1_id": 361,
+    "ubs2_id": 389,
+    "distancia_km": 1.19,
+    "impedancia_topografica_km": 1.19,
+    "declividade_pct": 0.33
+  },
+  {
+    "distrito1_id": 362,
+    "distrito2_id": 363,
+    "ubs1_id": 362,
+    "ubs2_id": 363,
+    "distancia_km": 0.84,
+    "impedancia_topografica_km": 0.84,
+    "declividade_pct": 0.06
+  },
+  {
+    "distrito1_id": 363,
+    "distrito2_id": 364,
+    "ubs1_id": 363,
+    "ubs2_id": 364,
+    "distancia_km": 0.89,
+    "impedancia_topografica_km": 0.89,
+    "declividade_pct": 0.13
+  },
+  {
+    "distrito1_id": 364,
+    "distrito2_id": 383,
+    "ubs1_id": 364,
+    "ubs2_id": 383,
+    "distancia_km": 1.69,
+    "impedancia_topografica_km": 1.69,
+    "declividade_pct": 0.47
+  },
+  {
+    "distrito1_id": 365,
+    "distrito2_id": 367,
+    "ubs1_id": 365,
+    "ubs2_id": 367,
+    "distancia_km": 1.24,
+    "impedancia_topografica_km": 1.24,
+    "declividade_pct": 0.87
+  },
+  {
+    "distrito1_id": 365,
+    "distrito2_id": 368,
+    "ubs1_id": 365,
+    "ubs2_id": 368,
+    "distancia_km": 1.14,
+    "impedancia_topografica_km": 1.14,
+    "declividade_pct": 0.32
+  },
+  {
+    "distrito1_id": 365,
+    "distrito2_id": 416,
+    "ubs1_id": 365,
+    "ubs2_id": 416,
+    "distancia_km": 1.17,
+    "impedancia_topografica_km": 1.17,
+    "declividade_pct": 1.05
+  },
+  {
+    "distrito1_id": 365,
+    "distrito2_id": 428,
+    "ubs1_id": 365,
+    "ubs2_id": 428,
+    "distancia_km": 1.47,
+    "impedancia_topografica_km": 1.47,
+    "declividade_pct": 0.29
+  },
+  {
+    "distrito1_id": 365,
+    "distrito2_id": 433,
+    "ubs1_id": 365,
+    "ubs2_id": 433,
+    "distancia_km": 1.7,
+    "impedancia_topografica_km": 1.7,
+    "declividade_pct": 0.06
+  },
+  {
+    "distrito1_id": 366,
+    "distrito2_id": 367,
+    "ubs1_id": 366,
+    "ubs2_id": 367,
+    "distancia_km": 1.4,
+    "impedancia_topografica_km": 1.4,
+    "declividade_pct": 0.43
+  },
+  {
+    "distrito1_id": 366,
+    "distrito2_id": 431,
+    "ubs1_id": 366,
+    "ubs2_id": 431,
+    "distancia_km": 0.79,
+    "impedancia_topografica_km": 0.79,
+    "declividade_pct": 0.2
+  },
+  {
+    "distrito1_id": 367,
+    "distrito2_id": 433,
+    "ubs1_id": 367,
+    "ubs2_id": 433,
+    "distancia_km": 1.66,
+    "impedancia_topografica_km": 1.66,
+    "declividade_pct": 0.58
+  },
+  {
+    "distrito1_id": 368,
+    "distrito2_id": 417,
+    "ubs1_id": 368,
+    "ubs2_id": 417,
+    "distancia_km": 0.69,
+    "impedancia_topografica_km": 0.69,
+    "declividade_pct": 0.99
+  },
+  {
+    "distrito1_id": 368,
+    "distrito2_id": 428,
+    "ubs1_id": 368,
+    "ubs2_id": 428,
+    "distancia_km": 1.49,
+    "impedancia_topografica_km": 1.49,
+    "declividade_pct": 0.54
+  },
+  {
+    "distrito1_id": 369,
+    "distrito2_id": 371,
+    "ubs1_id": 369,
+    "ubs2_id": 371,
+    "distancia_km": 0.59,
+    "impedancia_topografica_km": 0.59,
+    "declividade_pct": 0.56
+  },
+  {
+    "distrito1_id": 369,
+    "distrito2_id": 374,
+    "ubs1_id": 369,
+    "ubs2_id": 374,
+    "distancia_km": 1.08,
+    "impedancia_topografica_km": 1.08,
+    "declividade_pct": 1.97
+  },
+  {
+    "distrito1_id": 370,
+    "distrito2_id": 373,
+    "ubs1_id": 370,
+    "ubs2_id": 373,
+    "distancia_km": 0.61,
+    "impedancia_topografica_km": 0.61,
+    "declividade_pct": 0.54
+  },
+  {
+    "distrito1_id": 370,
+    "distrito2_id": 374,
+    "ubs1_id": 370,
+    "ubs2_id": 374,
+    "distancia_km": 0.52,
+    "impedancia_topografica_km": 0.53,
+    "declividade_pct": 4.4
+  },
+  {
+    "distrito1_id": 372,
+    "distrito2_id": 375,
+    "ubs1_id": 372,
+    "ubs2_id": 375,
+    "distancia_km": 1.49,
+    "impedancia_topografica_km": 1.49,
+    "declividade_pct": 0.17
+  },
+  {
+    "distrito1_id": 373,
+    "distrito2_id": 377,
+    "ubs1_id": 373,
+    "ubs2_id": 377,
+    "distancia_km": 1.88,
+    "impedancia_topografica_km": 1.88,
+    "declividade_pct": 0.21
+  },
+  {
+    "distrito1_id": 374,
+    "distrito2_id": 375,
+    "ubs1_id": 374,
+    "ubs2_id": 375,
+    "distancia_km": 0.54,
+    "impedancia_topografica_km": 0.55,
+    "declividade_pct": 3.98
+  },
+  {
+    "distrito1_id": 376,
+    "distrito2_id": 377,
+    "ubs1_id": 376,
+    "ubs2_id": 377,
+    "distancia_km": 0.57,
+    "impedancia_topografica_km": 0.57,
+    "declividade_pct": 1.11
+  },
+  {
+    "distrito1_id": 376,
+    "distrito2_id": 388,
+    "ubs1_id": 376,
+    "ubs2_id": 388,
+    "distancia_km": 0.81,
+    "impedancia_topografica_km": 0.81,
+    "declividade_pct": 1.43
+  },
+  {
+    "distrito1_id": 378,
+    "distrito2_id": 382,
+    "ubs1_id": 378,
+    "ubs2_id": 382,
+    "distancia_km": 1.08,
+    "impedancia_topografica_km": 1.08,
+    "declividade_pct": 1.35
+  },
+  {
+    "distrito1_id": 378,
+    "distrito2_id": 384,
+    "ubs1_id": 378,
+    "ubs2_id": 384,
+    "distancia_km": 0.89,
+    "impedancia_topografica_km": 0.89,
+    "declividade_pct": 1.03
+  },
+  {
+    "distrito1_id": 378,
+    "distrito2_id": 386,
+    "ubs1_id": 378,
+    "ubs2_id": 386,
+    "distancia_km": 1.37,
+    "impedancia_topografica_km": 1.37,
+    "declividade_pct": 0.62
+  },
+  {
+    "distrito1_id": 378,
+    "distrito2_id": 389,
+    "ubs1_id": 378,
+    "ubs2_id": 389,
+    "distancia_km": 0.72,
+    "impedancia_topografica_km": 0.72,
+    "declividade_pct": 1.37
+  },
+  {
+    "distrito1_id": 379,
+    "distrito2_id": 390,
+    "ubs1_id": 379,
+    "ubs2_id": 390,
+    "distancia_km": 0.48,
+    "impedancia_topografica_km": 0.48,
+    "declividade_pct": 1.15
+  },
+  {
+    "distrito1_id": 380,
+    "distrito2_id": 385,
+    "ubs1_id": 380,
+    "ubs2_id": 385,
+    "distancia_km": 0.74,
+    "impedancia_topografica_km": 0.74,
+    "declividade_pct": 0.35
+  },
+  {
+    "distrito1_id": 380,
+    "distrito2_id": 386,
+    "ubs1_id": 380,
+    "ubs2_id": 386,
+    "distancia_km": 0.92,
+    "impedancia_topografica_km": 0.92,
+    "declividade_pct": 0.35
+  },
+  {
+    "distrito1_id": 381,
+    "distrito2_id": 384,
+    "ubs1_id": 381,
+    "ubs2_id": 384,
+    "distancia_km": 0.51,
+    "impedancia_topografica_km": 0.51,
+    "declividade_pct": 1.12
+  },
+  {
+    "distrito1_id": 381,
+    "distrito2_id": 386,
+    "ubs1_id": 381,
+    "ubs2_id": 386,
+    "distancia_km": 1.5,
+    "impedancia_topografica_km": 1.5,
+    "declividade_pct": 0.33
+  },
+  {
+    "distrito1_id": 382,
+    "distrito2_id": 386,
+    "ubs1_id": 382,
+    "ubs2_id": 386,
+    "distancia_km": 1.29,
+    "impedancia_topografica_km": 1.29,
+    "declividade_pct": 0.47
+  },
+  {
+    "distrito1_id": 382,
+    "distrito2_id": 387,
+    "ubs1_id": 382,
+    "ubs2_id": 387,
+    "distancia_km": 0.54,
+    "impedancia_topografica_km": 0.54,
+    "declividade_pct": 2.83
+  },
+  {
+    "distrito1_id": 382,
+    "distrito2_id": 389,
+    "ubs1_id": 382,
+    "ubs2_id": 389,
+    "distancia_km": 0.82,
+    "impedancia_topografica_km": 0.82,
+    "declividade_pct": 0.57
+  },
+  {
+    "distrito1_id": 383,
+    "distrito2_id": 388,
+    "ubs1_id": 383,
+    "ubs2_id": 388,
+    "distancia_km": 0.61,
+    "impedancia_topografica_km": 0.61,
+    "declividade_pct": 2.34
+  },
+  {
+    "distrito1_id": 383,
+    "distrito2_id": 389,
+    "ubs1_id": 383,
+    "ubs2_id": 389,
+    "distancia_km": 1.23,
+    "impedancia_topografica_km": 1.23,
+    "declividade_pct": 0.41
+  },
+  {
+    "distrito1_id": 384,
+    "distrito2_id": 386,
+    "ubs1_id": 384,
+    "ubs2_id": 386,
+    "distancia_km": 1.57,
+    "impedancia_topografica_km": 1.57,
+    "declividade_pct": 0.04
+  },
+  {
+    "distrito1_id": 385,
+    "distrito2_id": 387,
+    "ubs1_id": 385,
+    "ubs2_id": 387,
+    "distancia_km": 0.61,
+    "impedancia_topografica_km": 0.61,
+    "declividade_pct": 1.41
+  },
+  {
+    "distrito1_id": 387,
+    "distrito2_id": 390,
+    "ubs1_id": 387,
+    "ubs2_id": 390,
+    "distancia_km": 0.45,
+    "impedancia_topografica_km": 0.45,
+    "declividade_pct": 0.96
+  },
+  {
+    "distrito1_id": 388,
+    "distrito2_id": 390,
+    "ubs1_id": 388,
+    "ubs2_id": 390,
+    "distancia_km": 1.13,
+    "impedancia_topografica_km": 1.13,
+    "declividade_pct": 1.15
+  },
+  {
+    "distrito1_id": 391,
+    "distrito2_id": 392,
+    "ubs1_id": 391,
+    "ubs2_id": 392,
+    "distancia_km": 0.65,
+    "impedancia_topografica_km": 0.65,
+    "declividade_pct": 1.68
+  },
+  {
+    "distrito1_id": 395,
+    "distrito2_id": 418,
+    "ubs1_id": 395,
+    "ubs2_id": 418,
+    "distancia_km": 1.57,
+    "impedancia_topografica_km": 1.57,
+    "declividade_pct": 0.04
+  },
+  {
+    "distrito1_id": 395,
+    "distrito2_id": 436,
+    "ubs1_id": 395,
+    "ubs2_id": 436,
+    "distancia_km": 3.88,
+    "impedancia_topografica_km": 3.88,
+    "declividade_pct": 0.9
+  },
+  {
+    "distrito1_id": 395,
+    "distrito2_id": 441,
+    "ubs1_id": 395,
+    "ubs2_id": 441,
+    "distancia_km": 2.97,
+    "impedancia_topografica_km": 2.97,
+    "declividade_pct": 0.58
+  },
+  {
+    "distrito1_id": 396,
+    "distrito2_id": 399,
+    "ubs1_id": 396,
+    "ubs2_id": 399,
+    "distancia_km": 1.99,
+    "impedancia_topografica_km": 1.99,
+    "declividade_pct": 0.53
+  },
+  {
+    "distrito1_id": 396,
+    "distrito2_id": 400,
+    "ubs1_id": 396,
+    "ubs2_id": 400,
+    "distancia_km": 1.11,
+    "impedancia_topografica_km": 1.11,
+    "declividade_pct": 0.42
+  },
+  {
+    "distrito1_id": 397,
+    "distrito2_id": 398,
+    "ubs1_id": 397,
+    "ubs2_id": 398,
+    "distancia_km": 2.04,
+    "impedancia_topografica_km": 2.04,
+    "declividade_pct": 0.72
+  },
+  {
+    "distrito1_id": 397,
+    "distrito2_id": 399,
+    "ubs1_id": 397,
+    "ubs2_id": 399,
+    "distancia_km": 2.11,
+    "impedancia_topografica_km": 2.11,
+    "declividade_pct": 1.33
+  },
+  {
+    "distrito1_id": 398,
+    "distrito2_id": 399,
+    "ubs1_id": 398,
+    "ubs2_id": 399,
+    "distancia_km": 0.71,
+    "impedancia_topografica_km": 0.71,
+    "declividade_pct": 1.87
+  },
+  {
+    "distrito1_id": 399,
+    "distrito2_id": 400,
+    "ubs1_id": 399,
+    "ubs2_id": 400,
+    "distancia_km": 2.17,
+    "impedancia_topografica_km": 2.17,
+    "declividade_pct": 0.7
+  },
+  {
+    "distrito1_id": 400,
+    "distrito2_id": 402,
+    "ubs1_id": 400,
+    "ubs2_id": 402,
+    "distancia_km": 1.44,
+    "impedancia_topografica_km": 1.44,
+    "declividade_pct": 0.13
+  },
+  {
+    "distrito1_id": 400,
+    "distrito2_id": 403,
+    "ubs1_id": 400,
+    "ubs2_id": 403,
+    "distancia_km": 1.98,
+    "impedancia_topografica_km": 1.99,
+    "declividade_pct": 2.54
+  },
+  {
+    "distrito1_id": 401,
+    "distrito2_id": 402,
+    "ubs1_id": 401,
+    "ubs2_id": 402,
+    "distancia_km": 2.05,
+    "impedancia_topografica_km": 2.05,
+    "declividade_pct": 0.65
+  },
+  {
+    "distrito1_id": 401,
+    "distrito2_id": 403,
+    "ubs1_id": 401,
+    "ubs2_id": 403,
+    "distancia_km": 1.89,
+    "impedancia_topografica_km": 1.89,
+    "declividade_pct": 2.05
+  },
+  {
+    "distrito1_id": 402,
+    "distrito2_id": 403,
+    "ubs1_id": 402,
+    "ubs2_id": 403,
+    "distancia_km": 1.83,
+    "impedancia_topografica_km": 1.84,
+    "declividade_pct": 2.85
+  },
+  {
+    "distrito1_id": 403,
+    "distrito2_id": 405,
+    "ubs1_id": 403,
+    "ubs2_id": 405,
+    "distancia_km": 0.47,
+    "impedancia_topografica_km": 0.47,
+    "declividade_pct": 0.04
+  },
+  {
+    "distrito1_id": 404,
+    "distrito2_id": 405,
+    "ubs1_id": 404,
+    "ubs2_id": 405,
+    "distancia_km": 1.84,
+    "impedancia_topografica_km": 1.84,
+    "declividade_pct": 1.56
+  },
+  {
+    "distrito1_id": 404,
+    "distrito2_id": 446,
+    "ubs1_id": 404,
+    "ubs2_id": 446,
+    "distancia_km": 1.48,
+    "impedancia_topografica_km": 1.48,
+    "declividade_pct": 1.14
+  },
+  {
+    "distrito1_id": 404,
+    "distrito2_id": 447,
+    "ubs1_id": 404,
+    "ubs2_id": 447,
+    "distancia_km": 1.5,
+    "impedancia_topografica_km": 1.5,
+    "declividade_pct": 0.31
+  },
+  {
+    "distrito1_id": 405,
+    "distrito2_id": 424,
+    "ubs1_id": 405,
+    "ubs2_id": 424,
+    "distancia_km": 2.74,
+    "impedancia_topografica_km": 2.75,
+    "declividade_pct": 2.0
+  },
+  {
+    "distrito1_id": 406,
+    "distrito2_id": 407,
+    "ubs1_id": 406,
+    "ubs2_id": 407,
+    "distancia_km": 0.85,
+    "impedancia_topografica_km": 0.85,
+    "declividade_pct": 2.18
+  },
+  {
+    "distrito1_id": 406,
+    "distrito2_id": 408,
+    "ubs1_id": 406,
+    "ubs2_id": 408,
+    "distancia_km": 0.95,
+    "impedancia_topografica_km": 0.95,
+    "declividade_pct": 0.17
+  },
+  {
+    "distrito1_id": 407,
+    "distrito2_id": 408,
+    "ubs1_id": 407,
+    "ubs2_id": 408,
+    "distancia_km": 0.49,
+    "impedancia_topografica_km": 0.49,
+    "declividade_pct": 3.45
+  },
+  {
+    "distrito1_id": 407,
+    "distrito2_id": 409,
+    "ubs1_id": 407,
+    "ubs2_id": 409,
+    "distancia_km": 1.88,
+    "impedancia_topografica_km": 1.88,
+    "declividade_pct": 0.6
+  },
+  {
+    "distrito1_id": 408,
+    "distrito2_id": 454,
+    "ubs1_id": 408,
+    "ubs2_id": 454,
+    "distancia_km": 1.85,
+    "impedancia_topografica_km": 1.85,
+    "declividade_pct": 0.83
+  },
+  {
+    "distrito1_id": 409,
+    "distrito2_id": 453,
+    "ubs1_id": 409,
+    "ubs2_id": 453,
+    "distancia_km": 2.55,
+    "impedancia_topografica_km": 2.55,
+    "declividade_pct": 0.21
+  },
+  {
+    "distrito1_id": 409,
+    "distrito2_id": 454,
+    "ubs1_id": 409,
+    "ubs2_id": 454,
+    "distancia_km": 2.42,
+    "impedancia_topografica_km": 2.42,
+    "declividade_pct": 0.4
+  },
+  {
+    "distrito1_id": 410,
+    "distrito2_id": 413,
+    "ubs1_id": 410,
+    "ubs2_id": 413,
+    "distancia_km": 1.35,
+    "impedancia_topografica_km": 1.35,
+    "declividade_pct": 0.36
+  },
+  {
+    "distrito1_id": 411,
+    "distrito2_id": 412,
+    "ubs1_id": 411,
+    "ubs2_id": 412,
+    "distancia_km": 0.83,
+    "impedancia_topografica_km": 0.83,
+    "declividade_pct": 0.69
+  },
+  {
+    "distrito1_id": 411,
+    "distrito2_id": 414,
+    "ubs1_id": 411,
+    "ubs2_id": 414,
+    "distancia_km": 0.51,
+    "impedancia_topografica_km": 0.51,
+    "declividade_pct": 3.31
+  },
+  {
+    "distrito1_id": 411,
+    "distrito2_id": 416,
+    "ubs1_id": 411,
+    "ubs2_id": 416,
+    "distancia_km": 1.42,
+    "impedancia_topografica_km": 1.42,
+    "declividade_pct": 0.27
+  },
+  {
+    "distrito1_id": 412,
+    "distrito2_id": 415,
+    "ubs1_id": 412,
+    "ubs2_id": 415,
+    "distancia_km": 0.48,
+    "impedancia_topografica_km": 0.49,
+    "declividade_pct": 4.17
+  },
+  {
+    "distrito1_id": 413,
+    "distrito2_id": 415,
+    "ubs1_id": 413,
+    "ubs2_id": 415,
+    "distancia_km": 0.92,
+    "impedancia_topografica_km": 0.92,
+    "declividade_pct": 2.95
+  },
+  {
+    "distrito1_id": 413,
+    "distrito2_id": 417,
+    "ubs1_id": 413,
+    "ubs2_id": 417,
+    "distancia_km": 1.56,
+    "impedancia_topografica_km": 1.56,
+    "declividade_pct": 1.56
+  },
+  {
+    "distrito1_id": 414,
+    "distrito2_id": 416,
+    "ubs1_id": 414,
+    "ubs2_id": 416,
+    "distancia_km": 1.4,
+    "impedancia_topografica_km": 1.4,
+    "declividade_pct": 0.93
+  },
+  {
+    "distrito1_id": 415,
+    "distrito2_id": 416,
+    "ubs1_id": 415,
+    "ubs2_id": 416,
+    "distancia_km": 1.46,
+    "impedancia_topografica_km": 1.46,
+    "declividade_pct": 1.25
+  },
+  {
+    "distrito1_id": 415,
+    "distrito2_id": 417,
+    "ubs1_id": 415,
+    "ubs2_id": 417,
+    "distancia_km": 1.37,
+    "impedancia_topografica_km": 1.37,
+    "declividade_pct": 0.2
+  },
+  {
+    "distrito1_id": 416,
+    "distrito2_id": 417,
+    "ubs1_id": 416,
+    "ubs2_id": 417,
+    "distancia_km": 1.59,
+    "impedancia_topografica_km": 1.59,
+    "declividade_pct": 0.97
+  },
+  {
+    "distrito1_id": 418,
+    "distrito2_id": 420,
+    "ubs1_id": 418,
+    "ubs2_id": 420,
+    "distancia_km": 0.93,
+    "impedancia_topografica_km": 0.93,
+    "declividade_pct": 0.71
+  },
+  {
+    "distrito1_id": 419,
+    "distrito2_id": 420,
+    "ubs1_id": 419,
+    "ubs2_id": 420,
+    "distancia_km": 1.24,
+    "impedancia_topografica_km": 1.24,
+    "declividade_pct": 0.8
+  },
+  {
+    "distrito1_id": 419,
+    "distrito2_id": 421,
+    "ubs1_id": 419,
+    "ubs2_id": 421,
+    "distancia_km": 1.22,
+    "impedancia_topografica_km": 1.22,
+    "declividade_pct": 0.37
+  },
+  {
+    "distrito1_id": 422,
+    "distrito2_id": 423,
+    "ubs1_id": 422,
+    "ubs2_id": 423,
+    "distancia_km": 1.43,
+    "impedancia_topografica_km": 1.43,
+    "declividade_pct": 0.76
+  },
+  {
+    "distrito1_id": 422,
+    "distrito2_id": 424,
+    "ubs1_id": 422,
+    "ubs2_id": 424,
+    "distancia_km": 1.59,
+    "impedancia_topografica_km": 1.59,
+    "declividade_pct": 0.14
+  },
+  {
+    "distrito1_id": 422,
+    "distrito2_id": 425,
+    "ubs1_id": 422,
+    "ubs2_id": 425,
+    "distancia_km": 1.47,
+    "impedancia_topografica_km": 1.47,
+    "declividade_pct": 0.1
+  },
+  {
+    "distrito1_id": 423,
+    "distrito2_id": 425,
+    "ubs1_id": 423,
+    "ubs2_id": 425,
+    "distancia_km": 1.91,
+    "impedancia_topografica_km": 1.91,
+    "declividade_pct": 0.49
+  },
+  {
+    "distrito1_id": 423,
+    "distrito2_id": 435,
+    "ubs1_id": 423,
+    "ubs2_id": 435,
+    "distancia_km": 2.05,
+    "impedancia_topografica_km": 2.05,
+    "declividade_pct": 0.08
+  },
+  {
+    "distrito1_id": 424,
+    "distrito2_id": 425,
+    "ubs1_id": 424,
+    "ubs2_id": 425,
+    "distancia_km": 0.94,
+    "impedancia_topografica_km": 0.94,
+    "declividade_pct": 0.09
+  },
+  {
+    "distrito1_id": 424,
+    "distrito2_id": 447,
+    "ubs1_id": 424,
+    "ubs2_id": 447,
+    "distancia_km": 1.02,
+    "impedancia_topografica_km": 1.02,
+    "declividade_pct": 2.11
+  },
+  {
+    "distrito1_id": 425,
+    "distrito2_id": 438,
+    "ubs1_id": 425,
+    "ubs2_id": 438,
+    "distancia_km": 0.66,
+    "impedancia_topografica_km": 0.66,
+    "declividade_pct": 0.67
+  },
+  {
+    "distrito1_id": 426,
+    "distrito2_id": 427,
+    "ubs1_id": 426,
+    "ubs2_id": 427,
+    "distancia_km": 1.33,
+    "impedancia_topografica_km": 1.33,
+    "declividade_pct": 0.65
+  },
+  {
+    "distrito1_id": 426,
+    "distrito2_id": 429,
+    "ubs1_id": 426,
+    "ubs2_id": 429,
+    "distancia_km": 1.0,
+    "impedancia_topografica_km": 1.0,
+    "declividade_pct": 2.37
+  },
+  {
+    "distrito1_id": 426,
+    "distrito2_id": 430,
+    "ubs1_id": 426,
+    "ubs2_id": 430,
+    "distancia_km": 0.92,
+    "impedancia_topografica_km": 0.92,
+    "declividade_pct": 0.42
+  },
+  {
+    "distrito1_id": 426,
+    "distrito2_id": 433,
+    "ubs1_id": 426,
+    "ubs2_id": 433,
+    "distancia_km": 1.28,
+    "impedancia_topografica_km": 1.28,
+    "declividade_pct": 0.26
+  },
+  {
+    "distrito1_id": 427,
+    "distrito2_id": 428,
+    "ubs1_id": 427,
+    "ubs2_id": 428,
+    "distancia_km": 1.64,
+    "impedancia_topografica_km": 1.64,
+    "declividade_pct": 0.4
+  },
+  {
+    "distrito1_id": 427,
+    "distrito2_id": 430,
+    "ubs1_id": 427,
+    "ubs2_id": 430,
+    "distancia_km": 1.29,
+    "impedancia_topografica_km": 1.29,
+    "declividade_pct": 0.36
+  },
+  {
+    "distrito1_id": 427,
+    "distrito2_id": 433,
+    "ubs1_id": 427,
+    "ubs2_id": 433,
+    "distancia_km": 1.72,
+    "impedancia_topografica_km": 1.72,
+    "declividade_pct": 0.69
+  },
+  {
+    "distrito1_id": 428,
+    "distrito2_id": 433,
+    "ubs1_id": 428,
+    "ubs2_id": 433,
+    "distancia_km": 0.88,
+    "impedancia_topografica_km": 0.88,
+    "declividade_pct": 0.61
+  },
+  {
+    "distrito1_id": 429,
+    "distrito2_id": 431,
+    "ubs1_id": 429,
+    "ubs2_id": 431,
+    "distancia_km": 0.36,
+    "impedancia_topografica_km": 0.36,
+    "declividade_pct": 1.75
+  },
+  {
+    "distrito1_id": 429,
+    "distrito2_id": 432,
+    "ubs1_id": 429,
+    "ubs2_id": 432,
+    "distancia_km": 0.71,
+    "impedancia_topografica_km": 0.71,
+    "declividade_pct": 1.72
+  },
+  {
+    "distrito1_id": 429,
+    "distrito2_id": 433,
+    "ubs1_id": 429,
+    "ubs2_id": 433,
+    "distancia_km": 1.43,
+    "impedancia_topografica_km": 1.43,
+    "declividade_pct": 1.43
+  },
+  {
+    "distrito1_id": 431,
+    "distrito2_id": 432,
+    "ubs1_id": 431,
+    "ubs2_id": 432,
+    "distancia_km": 0.74,
+    "impedancia_topografica_km": 0.74,
+    "declividade_pct": 0.8
+  },
+  {
+    "distrito1_id": 431,
+    "distrito2_id": 433,
+    "ubs1_id": 431,
+    "ubs2_id": 433,
+    "distancia_km": 1.39,
+    "impedancia_topografica_km": 1.39,
+    "declividade_pct": 1.01
+  },
+  {
+    "distrito1_id": 435,
+    "distrito2_id": 436,
+    "ubs1_id": 435,
+    "ubs2_id": 436,
+    "distancia_km": 1.82,
+    "impedancia_topografica_km": 1.82,
+    "declividade_pct": 0.09
+  },
+  {
+    "distrito1_id": 435,
+    "distrito2_id": 438,
+    "ubs1_id": 435,
+    "ubs2_id": 438,
+    "distancia_km": 0.65,
+    "impedancia_topografica_km": 0.65,
+    "declividade_pct": 0.51
+  },
+  {
+    "distrito1_id": 436,
+    "distrito2_id": 437,
+    "ubs1_id": 436,
+    "ubs2_id": 437,
+    "distancia_km": 1.27,
+    "impedancia_topografica_km": 1.27,
+    "declividade_pct": 0.27
+  },
+  {
+    "distrito1_id": 437,
+    "distrito2_id": 445,
+    "ubs1_id": 437,
+    "ubs2_id": 445,
+    "distancia_km": 1.74,
+    "impedancia_topografica_km": 1.74,
+    "declividade_pct": 1.22
+  },
+  {
+    "distrito1_id": 438,
+    "distrito2_id": 447,
+    "ubs1_id": 438,
+    "ubs2_id": 447,
+    "distancia_km": 1.01,
+    "impedancia_topografica_km": 1.01,
+    "declividade_pct": 2.49
+  },
+  {
+    "distrito1_id": 438,
+    "distrito2_id": 448,
+    "ubs1_id": 438,
+    "ubs2_id": 448,
+    "distancia_km": 1.01,
+    "impedancia_topografica_km": 1.01,
+    "declividade_pct": 0.15
+  },
+  {
+    "distrito1_id": 440,
+    "distrito2_id": 442,
+    "ubs1_id": 440,
+    "ubs2_id": 442,
+    "distancia_km": 1.12,
+    "impedancia_topografica_km": 1.12,
+    "declividade_pct": 1.23
+  },
+  {
+    "distrito1_id": 441,
+    "distrito2_id": 443,
+    "ubs1_id": 441,
+    "ubs2_id": 443,
+    "distancia_km": 0.93,
+    "impedancia_topografica_km": 0.93,
+    "declividade_pct": 1.22
+  },
+  {
+    "distrito1_id": 442,
+    "distrito2_id": 443,
+    "ubs1_id": 442,
+    "ubs2_id": 443,
+    "distancia_km": 1.35,
+    "impedancia_topografica_km": 1.35,
+    "declividade_pct": 0.72
+  },
+  {
+    "distrito1_id": 442,
+    "distrito2_id": 444,
+    "ubs1_id": 442,
+    "ubs2_id": 444,
+    "distancia_km": 1.71,
+    "impedancia_topografica_km": 1.71,
+    "declividade_pct": 0.89
+  },
+  {
+    "distrito1_id": 445,
+    "distrito2_id": 449,
+    "ubs1_id": 445,
+    "ubs2_id": 449,
+    "distancia_km": 0.68,
+    "impedancia_topografica_km": 0.68,
+    "declividade_pct": 0.85
+  },
+  {
+    "distrito1_id": 446,
+    "distrito2_id": 448,
+    "ubs1_id": 446,
+    "ubs2_id": 448,
+    "distancia_km": 1.12,
+    "impedancia_topografica_km": 1.12,
+    "declividade_pct": 1.01
+  },
+  {
+    "distrito1_id": 446,
+    "distrito2_id": 449,
+    "ubs1_id": 446,
+    "ubs2_id": 449,
+    "distancia_km": 0.79,
+    "impedancia_topografica_km": 0.79,
+    "declividade_pct": 0.73
+  },
+  {
+    "distrito1_id": 447,
+    "distrito2_id": 448,
+    "ubs1_id": 447,
+    "ubs2_id": 448,
+    "distancia_km": 0.65,
+    "impedancia_topografica_km": 0.66,
+    "declividade_pct": 3.63
+  },
+  {
+    "distrito1_id": 448,
+    "distrito2_id": 449,
+    "ubs1_id": 448,
+    "ubs2_id": 449,
+    "distancia_km": 1.22,
+    "impedancia_topografica_km": 1.22,
+    "declividade_pct": 0.45
+  },
+  {
+    "distrito1_id": 450,
+    "distrito2_id": 451,
+    "ubs1_id": 450,
+    "ubs2_id": 451,
+    "distancia_km": 1.6,
+    "impedancia_topografica_km": 1.6,
+    "declividade_pct": 0.79
+  },
+  {
+    "distrito1_id": 450,
+    "distrito2_id": 452,
+    "ubs1_id": 450,
+    "ubs2_id": 452,
+    "distancia_km": 2.21,
+    "impedancia_topografica_km": 2.21,
+    "declividade_pct": 0.15
+  },
+  {
+    "distrito1_id": 453,
+    "distrito2_id": 454,
+    "ubs1_id": 453,
+    "ubs2_id": 454,
+    "distancia_km": 1.76,
+    "impedancia_topografica_km": 1.76,
+    "declividade_pct": 0.25
   }
 ]

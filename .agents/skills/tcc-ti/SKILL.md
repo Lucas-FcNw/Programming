@@ -3,9 +3,9 @@ name: "TCC Tecnologia da Informação"
 description: "Skill para elaboração completa de Trabalho de Conclusão de Curso (TCC) em Tecnologia da Informação (T.I.), com verificação antiplágio, autenticidade, linguagem acadêmica de alta qualidade, originalidade, código-fonte funcional, uso rigoroso de fontes primárias verificáveis e conformidade com normas ABNT. Acionada quando o usuário solicitar criação, revisão ou auxílio em TCC de Tecnologia da Informação, Ciência da Computação, Sistemas de Informação, Engenharia de Software ou áreas correlatas."
 ---
 
-# TCC de Tecnologia da Informação — Guia de Elaboração (v3)
+# TCC de Tecnologia da Informação — Guia de Elaboração (v4)
 
-> **Projeto de referência desta skill**: **Rede de Acesso SP** — sistema de recomendação de Unidades Básicas de Saúde (UBSs) utilizando localização do usuário, dados geográficos, áreas de abrangência das UBSs (AAUBSs), população do Censo IBGE 2022, distância e algoritmos de grafos.
+> **Projeto de referência desta skill**: **SPGraph** — modelo baseado em Teoria dos Grafos para identificação de vulnerabilidades topológicas ocultas ("gargalos invisíveis" via algoritmo de Tarjan) e simulação de efeito cascata por sobrecarga operacional (via Busca em Largura — BFS acoplada ao Modelo Gravitacional de Huff/3SFCA e à regra de 70% Demanda Programada / 30% Demanda Espontânea do SUS) na malha de 454 Unidades Básicas de Saúde (UBSs) de São Paulo.
 >
 > Esta skill é especializada nesse projeto. Ela não deve ser transformada em skill genérica de TCC.
 
