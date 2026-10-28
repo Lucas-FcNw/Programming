@@ -5,6 +5,47 @@
 
 ---
 
+## Resumo Geral (Para Ler Antes das Fórmulas): O Que Usamos, Por Quê e Onde Tudo se Encaixa
+
+Antes de olhar para as 9 fórmulas matemáticas abaixo, **esta é a lógica completa do nosso TCC em linguagem direta**, mostrando exatamente o que usamos e onde cada peça se conecta:
+
+### 1. Qual é a grande ideia do projeto?
+Hoje a gestão pública analisa as **454 UBSs de São Paulo** em planilhas e tabelas estáticas. Se uma UBS tem capacidade para $60.000$ pessoas e atende $42.000$ da região dela ($70\%$ de ocupação), na tabela ela aparece **Verde (Ótima)**. Só que a tabela não enxerga **as conexões geográficas entre os postos**. Quando colocamos as 454 UBSs num **Grafo Topográfico ($882$ conexões)**, descobrimos dois pontos cegos que a planilha esconde:
+1. **Gargalos Invisíveis:** Uma UBS pode estar "Verde" na tabela, mas ser a **única ponte geográfica** que conecta 3 ou 4 bairros periféricos ao resto da rede. Se ela cair, esses bairros ficam ilhados.
+2. **Efeito Cascata (Dominó):** Pela regra do SUS no dia a dia, **70% das vagas de uma UBS são travadas para os moradores agendados da própria região**, sobrando **no máximo 30% de folga** para atender gente de fora. Se uma UBS cai e despeja sua população nas vizinhas, a vizinha mais próxima recebe gente demais, **estoura esses 30% de folga e quebra junto**, jogando a sobra para a próxima vizinha em efeito dominó.
+
+---
+
+### 2. Por que usamos Tarjan (DFS) e por que usamos Busca em Largura (BFS)? Onde eles entram?
+O nosso software tem **dois motores de algoritmos de grafos**, cada um resolvendo uma metade do problema:
+
+* **Motor 1 — Algoritmo de Tarjan via Busca em Profundidade (DFS): *Onde entra e por quê?***
+  * **Para que serve:** Entra **antes de olhar para lotação**, para caçar os **Gargalos Invisíveis** na estrutura pura do mapa.
+  * **Como funciona:** A Busca em Profundidade (DFS) com o Algoritmo de Tarjan caminha até o fundo de cada ramificação da cidade (como Parelheiros, Jardim Ângela, Tremembé) e testa matematicamente se existe algum **caminho alternativo de volta** caso uma UBS $X$ seja desligada. Se não existir caminho alternativo (**Equação 9**), ele marca $X$ como **Vértice de Articulação** (ou a rua como **Ponte Crítica**), mesmo que na tabela da prefeitura aquela UBS pareça 100% saudável.
+* **Motor 2 — Busca em Largura (BFS em Camadas): *Onde entra e por quê?***
+  * **Para que serve:** Entra quando o usuário **desativa uma UBS no sistema** para simular o **Efeito Cascata (Dominó)** e descobrir quantos saltos o cidadão precisa dar até achar vaga.
+  * **Como funciona:** Quando uma UBS cai, a população não atravessa a cidade inteira de uma vez; o choque se espalha pelo mapa em **ondas concêntricas (camadas)**, exatamente como funciona uma **Busca em Largura (BFS)**:
+    * **Camada 1 do BFS (1º salto):** Os moradores da UBS que caiu caminham apenas para as **UBSs vizinhas diretas** conectadas a ela.
+    * **Camada 2 do BFS (2º salto):** Se uma dessas vizinhas diretas estourar seus 30% de folga e colapsar também, os pacientes que bateram com a porta na cara caminham mais um salto para as **vizinhas de segundo nível**, e o BFS continua expandindo camada por camada até todas as pessoas serem absorvidas!
+
+---
+
+### 3. Mapa Rápido das 9 Fórmulas: Para que serve cada método matemático?
+Você não precisa decorar todas as 9 fórmulas — elas estão divididas em **3 blocos lógicos** (Preparação dos Dados $\to$ Movimento da População na Cascata BFS $\to$ Caça-Gargalos de Tarjan):
+
+| Bloco | Qual método / fórmula usamos? | Por que precisamos dele no TCC? (Em 1 frase) |
+| :--- | :--- | :--- |
+| **Bloco A: Montar o Grafo Real** *(preparação dos dados)* | **Eq. 1 — Grafo Ponderado ($G$)** | Define formalmente que os nós são as **454 UBSs** (com capacidade e demanda) e as arestas são as **882 conexões**. |
+| | **Eq. 2 — Diagrama de Voronoi ($D_v^0$)** | Como o IBGE só dá a população do distrito inteiro (ex.: Grajaú todo), o Voronoi fatia o mapa do distrito para descobrirmos **quantos moradores pertencem a cada UBS individualmente**. |
+| | **Eq. 3 — Função de Tobler ($d_{\text{topo}}$)** | Transforma a distância em linha reta numa **distância com peso de relevo/ladeira**, porque caminhar $1\text{ km}$ subindo morro cansa muito mais do que $1\text{ km}$ no plano. |
+| **Bloco B: Movimento do Povo e Cascata no BFS** *(a pergunta principal do orientador)* | **Eq. 4 — Regra 70%/30% do SUS ($F_v$)** | Calcula quantas vagas livres reais (**no máximo 30% da capacidade**) cada UBS vizinha tem para socorrer gente de fora sem quebrar sua rotina local. |
+| | **Eq. 5 — Modelo Gravitacional de Huff + 3SFCA ($W_{uv}$)** | **Substitui o chute de dividir 25% para cada vizinha:** calcula a porcentagem exata de moradores que vai para cada UBS vizinha, puxando muito mais gente para a vizinha **mais próxima** e de **maior porte**. |
+| | **Eq. 6 — Pacientes na Aresta ($\Delta D_{u \to v}$)** | Multiplica o total de moradores sem posto pela porcentagem da Eq. 5 para achar **quantas pessoas (em número absoluto) caminham por aquela conexão**. |
+| | **Eq. 7 e Eq. 8 — Cascata de Motter & Lai no BFS** | Soma quantos pacientes chegaram na porta da vizinha (**Eq. 7**) e compara com a folga de 30% dela (**Eq. 8**): se passar da folga, **ela colapsa** e joga a sobra para a próxima camada do BFS! |
+| **Bloco C: Gargalos Estruturais** | **Eq. 9 — Algoritmo de Tarjan via DFS ($\text{low}[v] \ge \text{disc}[u]$)** | Testa matematicamente na árvore da DFS se uma UBS é o **único caminho** entre um grupo de bairros e o resto de São Paulo (**Gargalo Invisível**). |
+
+---
+
 ## 1. Visão Geral da Nova Modelagem do Grafo ($G = (V, E, W_V, W_E)$)
 
 Em vez de agrupar a cidade em 96 distritos genéricos (o que esconderia as vulnerabilidades locais entre postos de saúde), o sistema modela diretamente a **malha real das Unidades Básicas de Saúde (UBSs)** do município de São Paulo.
